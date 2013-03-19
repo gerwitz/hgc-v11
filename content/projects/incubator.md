@@ -1,0 +1,42 @@
+---
+date: '2008-04-05 01:09:15'
+layout: page
+old_url: http://hans.gerwitz.com/projects/incubator.html
+slug: incubator
+title: Incubator
+---
+
+Projects that may or may not ever see the light of day.  
+
+
+
+	
+  * mosaicbot - arrange tiles to match video input.
+
+	
+  * liquidcoin.com - competitive ecosystem of stock-trading agents.
+
+	
+  * colorclaim.com - claim a color.  details TBD.
+
+	
+  * 3D scan - iPhone [SunPad][1]
+
+	
+  * rate - simple rate and comment based on email addresses
+
+	
+  * obnoxious - inventory of web pages that make noise without asking
+
+	
+  * cul de sac - subdivision with streets named "up", "left", "farther", etc.
+
+	
+  * pretension - smartypants that adds ligatures, makes "etc." into "&c.;"
+
+  
+ID.'&depth;=1'); ?>
+
+
+   [1]: /2007/02/12/sunpad.html
+

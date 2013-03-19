@@ -1,0 +1,9 @@
+	<section class="categories">
+		<ol class="category-list">
+		<% @item[:categories].each do |cat| %>	
+		<li>
+			<%= link_to(cat[:title], cat) %> (<%= cat[:posts].count %> posts)
+		</li>
+		<% end %>
+		</ol>
+	</section>

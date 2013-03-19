@@ -1,0 +1,12 @@
+---
+title: 2005 season is here
+categories:
+- personal
+tags:
+- cycling
+---
+
+Rode the Riverfront Trail with [Ryan?][1] and Scott, 30 mile round trip from home to Chain of Rocks.  I am so terribly, terribly out of shape.  Ryan isn't.  Scott is riding a tank, so there's no telling with him.
+
+   [1]: http://nopaper.net/
+

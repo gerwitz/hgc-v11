@@ -1,0 +1,14 @@
+---
+title: QOTD
+categories:
+- culture
+tags:
+- quote
+- politics
+---
+
+> Hate, unfortunately is what substitutes for political discourse these days.
+> --[Diane Meyer][1]
+
+   [1]: http://respublica.typepad.com/
+

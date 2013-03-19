@@ -1,0 +1,63 @@
+---
+title: Search results
+---
+
+<section class="search-results">
+	<header>
+		<h1 class="entry-title">Search results</h1>
+	</header>
+	<div id="results">
+		<p>
+			Loading results…
+		</p>
+	</div>
+
+	<div>Search provided by <a href="http://tapirgo.com/">Tapir</a>.</div>
+</div>
+
+<script>
+	// parse querystring value
+	function paramValue(query_param) {
+		var results = new RegExp('[\\?&]' + query_param + '=([^&#]*)').exec(window.location.href);
+		return results ? results[1] : false;
+	}
+	
+	// only good for n < 100
+	function ordinal(n) {
+		var sfx = ["th","st","nd","rd"];
+		return n + (sfx[(n-20)%10] || sfx[n] || sfx[0]);
+	}
+	
+    var monthNames = new Array("January","February","March","April","May"," June","July","August","September","October","November","December");
+	function monthName(n) {
+		return(monthNames[n]);
+	}
+
+	function tapirResults(el) {
+		var token = '4f3367f23f61b02e51000003';
+		var query = paramValue('query');
+
+		$('.entry-title').html('Posts matching “' + query + '”');
+		
+		$.getJSON(
+        'http://tapirgo.com/api/1/search.json?token=' + token + '&query=' + query + '&callback=?',
+		function(data) {
+			// data = jQuery.unique(data);
+	        var list = $('<ol class="article-list">');
+			$.each(data, function(key, val) {
+				var pub = new Date(val.published_on);
+	            list.append('<li><a class="title" href="' + val.link + '">' + val.title + '</a><a class="date" href="' + val.link + '">' + monthName(pub.getMonth()) + ' ' + ordinal(pub.getDate()) + ', ' + pub.getFullYear() + '</a></li>');
+			});
+			if (data.length > 0) {
+				el.html(''); // clear loading indicator
+				el.append(list);				
+			}
+			else {
+				el.html('No results, sorry.');
+			}
+		});
+	}
+	
+	tapirResults($('#results'));
+
+</script>

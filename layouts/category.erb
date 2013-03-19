@@ -1,0 +1,19 @@
+	<section class="category">
+		<div class="entry-content">
+			<%= yield %>
+		</div>
+
+		<ol class="article-list">
+			<% @item[:posts].each do |article| %>	
+		<li>
+			<% if article[:external] -%>
+			<%= link_to(article[:title], article[:external], :class => 'title') %>
+			<%= link_to(Time.parse(article[:date]).localtime.format_as_date, article[:external], :class => 'date') %>
+			<% else -%>
+			<%= link_to(article[:title], article, :class => 'title') %>
+			<%= link_to(Time.parse(article[:date]).localtime.format_as_date, article, :class => 'date') %>
+			<% end -%>
+		</li>
+		<% end %>
+		</ol>
+	</section>

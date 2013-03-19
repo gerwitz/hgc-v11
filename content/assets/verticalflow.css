@@ -1,0 +1,162 @@
+/* Establish a vertical flow by styling common elements. */
+/* Font sizes are based on f-stops. */
+/* Basic paragraphs */
+p {
+	line-height: 	1.5;
+	font-size:		1em;
+	margin:			0;
+}
+small {
+	font-size:		0.7072em;		/* base - 1 stop */
+	line-height:	2.121;
+}
+/* Headings */
+h1 {
+	font-size:		2em;		/* base + 2 stops */
+	line-height:	1.5;
+	margin-top:		1.125em;
+	margin-bottom:	0.375em;
+	font-weight: 	normal;
+}
+h2 {
+	font-size:		1.609em;	/* base + 1 1/3 stop */
+	line-height:	1.864;
+	margin-top:		1.398em;
+	margin-bottom:	0.466em;
+	font-weight: 	normal;
+}
+h3 {
+	font-size:		1.276em;	/* base + 2/3 stop */
+	line-height:	1.1755;
+	margin-top:		1.9592em;
+	margin-bottom:	0.3918em;
+	font-weight:	normal;
+}
+h4 {
+	font-size:		1.138em;	/* base + 1/3 stop */
+	line-height:	1.3181;
+	margin-top:		2.1968em;
+	margin-bottom:	0.4393em;
+	font-weight:	normal;
+	font-style: 	italic;
+}
+h5,h6 {
+	font-size:		1em;
+	line-height:	1.5;
+	display: 		run-in;
+}
+h6 {
+	font-weight:	normal;
+	font-style:		italic;
+}
+h5:after, h6:after {
+	content:		'.';
+	margin-right:	1ex;
+}
+h1+p, h2+p, h3+p, h4+p {
+	margin-top:		0;
+}
+h5+p, h6+p {
+	margin-top:		1.5em;
+}
+/* Lists */
+ul,ol {
+	margin:			1.5em 0;
+	padding:		0 4ex 0 6ex;
+}
+li {
+	line-height: 	1.5;
+	text-align:		justify;
+}
+/* Blockquotes */
+blockquote {
+	margin:			1.5em 0;
+	padding:		0 3ex;
+	font-style: 	italic;
+}
+blockquote p {
+	font-size:		0.9024em;		/* base - 1/3 stop */
+	line-height:	1.75;
+	margin:			0;
+	padding:		0;
+}
+/* Code */
+pre {
+	font-size:		0.8048em;		/* base - 2/3 stop */
+	line-height:	1.8638;
+	margin:			1.8638em 0;
+	padding:		0 3.7276ex;
+}
+/* Tables */
+table, table * { margin: 0; padding: 0; }
+table {
+	margin:			1.5em auto;
+	margin-top:		1.2em;
+	line-height:	1.5;
+	max-width:		29em;
+	border-collapse:collapse;
+	border-spacing:	0;
+	border-color:	black;
+	border-style:	solid;
+	border-width:	.3ex 0 .3ex 0;
+}
+thead {
+	text-align:		center;
+	margin-top:		-.3ex;
+	margin-bottom:	-.2ex;
+}
+tbody {
+	border-top:		.2ex solid black;
+	margin-top:		-.2ex;
+}
+tbody tr:last-child {
+	margin-bottom:	-.3ex;
+}
+tr {
+	height:			1.5em;
+	overflow:		hidden;
+}
+td,th {
+	height:			1.5em;
+	line-height:	1.5;
+	padding:		0 1ex;
+}
+/* Definition lists */
+dl {
+	line-height:	1.5;
+	margin:			1.5em 0;
+	overflow:		hidden;
+}
+dt {
+	font-weight:	bold;
+	clear:			left;
+	float:			left;
+	width:			20%;
+}
+dd {
+	float:			left;
+	width:			80%;
+	margin:			0;
+}
+dd+dd {
+	margin-left:	20%;
+}
+/* Fieldsets */
+fieldset {
+	border:			0;
+	margin:			1.5em 0;
+	padding:		0;
+	line-height:	1.5;
+	border-top:		1px solid black;
+}
+fieldset legend {
+	font-weight:	bold;
+}
+/* Other elements */
+div,form {
+	margin:			0;
+	padding:		0;
+}
+sup, sub {
+	line-height:	0;
+}

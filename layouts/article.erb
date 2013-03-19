@@ -1,0 +1,32 @@
+	<article class="hentry">
+	  <header>
+	    <h1 class="entry-title"><%= @item[:title] %></h1>
+	    <time class="updated" datetime="<%= attribute_to_time(@item[:date]).strftime('%Y-%m-%d %H:%M:%S%z') %>" pubdate>
+          <%= attribute_to_time(@item[:date]).localtime.format_as_date %>
+	    </time>
+	  <!--
+	    <p class="byline author vcard">
+	        By <span class="fn">Hans Gerwitz</span>
+	    </p>
+	  -->
+	  </header>
+ 
+	  <div class="entry-content">
+		  <%= yield %>
+	  </div>
+ 
+	  <footer>
+
+        <div id="disqus_thread" class="comments"></div>
+        <script type="text/javascript">
+            var disqus_shortname = 'gerwitz';
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+
+	  </footer>
+ 
+	</article>

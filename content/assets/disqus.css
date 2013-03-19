@@ -1,0 +1,106 @@
+#dsq-subscribe, #dsq-sort-by, #dsq-global-toolbar,
+#dsq-avatar, .dsq-avatar,
+.dsq-trackback-url { display: none; }
+/* until I can bother styling reactions */
+.dsq-h3-reactions { display: none; }
+#disqus_thread {
+	margin-top:		1em;
+	margin-bottom:	0;
+	font-size:		1em;
+}
+#dsq-account-dropdown {
+	font-size:		0.7072em;		/* base - 1 stop */
+	line-height:	2.121;
+}
+#dsq-content>h3 {
+	display:		none;
+}
+.dsq-reply {
+	margin-top:		0;
+}
+.dsq-textarea-reply {
+	margin-left:	0 !important;
+}
+.dsq-comment-body {
+	padding-left:	0 !important;
+}
+.dsq-comment-header {
+	padding:		0 !important;
+	font-size:		1em;
+	line-height:	2.121 !important;
+	margin:			1.414em 0 0.707em 0 !important;
+	background:		none;
+	border:			none;
+}
+.dsq-comment-header a, .dsq-comment-header a:hover {
+	display:		inline-block;
+	margin-left:	3px;
+	background:		transparent !important;
+	border:			0 !important;
+}
+.dsq-commenter-bio {
+	display:		none;
+}
+.dsq-comment-message {
+	margin-bottom:	0 !important;
+}
+.dsq-comment-footer {
+	font-size:		0.7072em;		/* base - 1 stop */
+	line-height:	2.121;
+	overflow:		hidden;
+}
+.dsq-comment-footer ul {
+	float:			right !important;
+}
+.dsq-collapse-toggle {
+	display:		none;
+	background:		transparent !important;
+}
+.dsq-more-button, .dsq-more-button:hover {
+	background:		none;
+	border:			none;
+	box-shadow:		none;
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+	font-weight:	inherit;
+	color:			inherit;
+}
+#comments {
+	margin-top: 	3em;
+	border-top: 	1px solid rgba(230,230,230,1.0);
+	opacity: 		0.6;
+}
+#comments:hover {
+	border-top-color:rgba(230,230,230,0.75);
+	opacity:		0.8;
+}
+#comments hgroup h1 {
+	font-size:		1.609em;	/* base + 1 1/3 stop */
+	line-height:	1.864;
+	margin-top:		0.466em;
+	margin-bottom:	0.466em;
+	font-weight: 	normal;
+	display: 		inline-block;
+}
+#comments hgroup h2 {
+	font-size:		0.7072em;		/* base - 1 stop */
+	line-height:	2.121;
+	display:		inline-block;
+	position:		relative;
+	top:			-0.33em;
+}
+#comments hgroup h2:before {
+	margin-left:	1em;
+	content:		'(';
+}
+#comments hgroup h2:after {
+	content:		')';
+}
+#comments h3 {
+	font-size:		1.138em;	/* base + 1/3 stop */
+	line-height:	1.3181;
+	margin-top:		0.8788em !important;
+	margin-bottom:	0.4393em !important;
+	font-weight:	normal;
+	font-style: 	italic;
+}

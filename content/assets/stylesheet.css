@@ -1,0 +1,251 @@
+@import url('html5.css');
+@import url('verticalflow.css');
+
+body {
+	background: 	#FFFFFF;
+	font-family: 	Garamond, Times, 'Times New Roman', sans-serif;
+	font-size: 		100%;
+	margin: 		0;
+	color:			#000000;
+}
+pre, code, samp, tt, kbd {
+	font-family:	Courier, 'Courier New', 'Anonymous Pro', Monaco, monospace;
+}
+a {
+	text-decoration:underline;
+	color:			inherit;
+}
+article:hover a {
+	color:			#1A1AC7;
+}
+p:hover a, li:hover a, dl:hover a, table:hover a {
+	color:			#1A1AC7;
+}
+a:hover {
+	color:			#0000EE;
+}
+body>article, body>section {
+	width:			512px;
+	margin:			4em auto;
+}
+
+article>.entry-content>p:first-child:first-letter { 
+	float:			left;
+	font-size:		3.5262em;
+	line-height:	0.83;
+	font-weight: 	normal;
+	margin-right:	2px;
+}
+article>.entry-content>p:first-child { 
+	text-indent:	0;
+}
+article>.entry-content>p {
+	text-indent:	4ex;
+}
+
+.footnotes li {
+	font-size:		0.7072em;	/* base - 1 stop */
+	color:			#222222;
+}
+.footnotes li>p {
+	line-height:	2.121;
+}
+.footnotes li:first-child {
+	margin-top:		1em; 		/* Should be 1.121? */
+}
+
+
+body>article>footer {
+	margin-top:		0.7956em;
+	text-align:		right;
+}
+body>article>footer time {
+	font-style:		italic;
+}
+
+body>header {
+	background:		#FFFFFF;
+	width: 			512px;
+	position:		fixed;
+	top:			0;
+	left: 			50%;
+	margin-left: 	-256px;
+	height:			2em;
+	padding-top:	1em;
+	border-bottom:	1px solid #CCCCCC;
+	margin-bottom:	2em;
+	display:		block;
+
+	font-family:	"Lucida Grande", Verdana, Arial, sans-serif;
+	text-transform:	lowercase;
+	font-size:		0.7072em;
+}
+body>header a {
+	text-decoration:none;
+}
+
+body>header h1 {
+	font-size:		inherit;
+	display:		inline;
+	float:			left;
+	margin-top:		0;
+	margin-bottom:	0;
+	
+	font-weight:	bold;
+}
+
+
+body>header ul {
+	float:			right;
+	list-style:		none;
+	margin:			0;
+	padding:		0;
+}
+body>header li {
+	display:		inline;
+	margin-left:	10px;
+}
+
+
+body>footer {
+	width:			512px;
+	height:			1.5em;
+	margin:			0 auto;
+	margin-top:		5.75em;
+	display:		block;
+	overflow:		visible;
+	border-top:		1px solid #CCCCCC;
+	margin-bottom:	3em;
+	padding-top:	3px;
+	font-family:	"Lucida Grande", Verdana, Arial, sans-serif;
+	text-transform:	lowercase;
+	font-size:		0.7072em;
+}
+body>footer a {
+	text-decoration:none;
+}
+body>footer form {
+	float:			left;
+}
+body>footer nav {
+	display:		inline;
+	float:			right;
+}
+body>footer nav ul {
+	padding:		0;
+	display:		inline-block;
+	margin:			0;
+	list-style:		none;
+}
+body>footer nav ul li {
+	display: 		inline-block;
+}
+body>footer nav li+li {
+	padding-left:	2ex;
+}
+article img, article video, article audio {
+	display: 		block;
+	margin:			1.75em auto;
+	width:			512px;
+	background:		#FAFAFA;
+	padding:		.5em;
+	position:		relative;
+	top:			-.25em;
+}
+.noindent, .next-noindent+p {
+	text-indent:	0;
+}
+
+blockquote p+p:last-child, blockquote small {
+	display:		block;
+	text-align:		right;
+	font-style:		normal;
+}
+blockquote p+p:last-child:before {
+	content:		'\2014 '; /* &mdash; */
+}
+
+/* See http://www.w3.org/Style/Examples/007/leaders.en.html */
+ol.article-list {
+	width:			480px;
+	margin-left:	16px;
+    padding:		0;
+    overflow-x:		hidden;
+    list-style:		none
+}
+ol.article-list li:before {
+    float:			left;
+    width:			0;
+    white-space:	nowrap;
+    content:
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+}
+ol.article-list .title {
+    padding-right:	0.33em;
+}
+ol.article-list .date {
+    float:			right;
+    padding-left:	0.33em;
+}
+ol.article-list .title, ol.article-list .date {
+    background:		#FFFFFF;
+	text-decoration:none;
+}
+ol.article-list .title:hover, ol.article-list .date:hover {
+    background:		#FFFFFF;
+	text-decoration:underline;
+}
+
+aside>div#disqus_thread {
+	margin-top:		1.5em;
+}
+
+.feedburnerFeedBlock ul {
+	width:			480px;
+	margin-left:	16px;
+    padding:		0;
+    overflow-x:		hidden;
+    list-style:		none
+}
+.feedburnerFeedBlock li:before {
+   float:			left;
+   width:			0;
+   white-space:	nowrap;
+   content:
+". . . . . . . . . . . . . . . . . . . . "
+". . . . . . . . . . . . . . . . . . . . "
+". . . . . . . . . . . . . . . . . . . . "
+". . . . . . . . . . . . . . . . . . . . "
+}
+.feedburnerFeedBlock .headline a {
+    padding-right:	0.33em;
+}
+.feedburnerFeedBlock .date {
+    float:			right;
+    padding-left:	0.33em;
+}
+.feedburnerFeedBlock .headline a, .feedburnerFeedBlock .date {
+    background:		#FFFFFF;
+	text-decoration:none;
+}
+.feedburnerFeedBlock .headline:hover, .feedburnerFeedBlock .date:hover {
+    background:		#FFFFFF;
+	text-decoration:underline;
+}
+.feedburnerFeedBlock #creditfooter { display:none; }
+
+.flickr-photos, .tumblr-photos {
+	text-align: center;
+}
+.flickr-photos a, .tumblr-photos a {
+	margin-left: 8px;
+	margin-right: 8px;
+}
+.flickr-photos img, .tumblr-photos img {
+	margin-left: 1px;
+	margin-right: 2px;
+	padding: 2px;
+}

@@ -1,0 +1,262 @@
+#!/usr/bin/env ruby
+
+# A few helpful tips about the Rules file:
+#
+# * The string given to #compile and #route are matching patterns for
+#   identifiers--not for paths. Therefore, you can’t match on extension.
+#
+# * The order of rules is important: for each item, only the first matching
+#   rule is applied.
+#
+# * Item identifiers start and end with a slash (e.g. “/about/” for the file
+#   “content/about.html”). To select all children, grandchildren, … of an
+#   item, use the pattern “/about/*/”; “/about/*” will also select the parent,
+#   because “*” matches zero or more characters.
+
+$LOAD_PATH << File.expand_path(File.dirname(__FILE__))
+require 'rubygems'
+require 'lib/helpers_.rb'
+require 'lib/filters_.rb'
+
+preprocess do  
+  # archive inspiration from http://groups.google.com/group/nanoc/tree/browse_frm/month/2010-04/1b4bc5b52641bca8?rnum=61&_done=%2Fgroup%2Fnanoc%2Fbrowse_frm%2Fmonth%2F2010-04%3F
+  # def gen_year_pages
+  #     links = items_under('^/links/').reject { |i| i.binary? }.reject { 
+  # |i| ! i[:created_at] } 
+  #     link_years = Hash.new{|h, k| h[k] = []} 
+  #     links.each do |i| 
+  #         link_years[Time.parse(i[:created_at]).year] << i 
+  #     end 
+  #     link_years.each_pair do |y, i| 
+  #         @items << Nanoc3::Item.new( 
+  #             "content", 
+  #             { 
+  #                 :title => "Links: #{y}", 
+  #                 :year => y.to_s 
+  #             }, 
+  #             "/links/#{y}/", 
+  #             { :mtime => i.map { |l| l.mtime }.max } 
+  #         ) 
+  #     end 
+  # end 
+  
+  post_categories = Hash.new{|h, k| h[k] = []}
+  @items.select { |i| i.identifier.start_with?('/articles/') and not i.binary? }.each do |post|
+    post[:kind] ||= 'post'
+    id_parts = post.identifier.split('/')
+    # id_parts[0] is 'articles'
+    post[:date] ||= id_parts[2..4].join('/')
+    post[:slug] ||= id_parts[5]
+    if (post[:categories] != nil) and (post[:kind] != 'hidden')
+      post[:categories].map do |cat|
+        post_categories[cat.downcase] << post
+      end
+    end
+  end
+
+  # make RSS feed
+  @items << Nanoc3::Item.new(
+    "latest posts",
+    {
+      :posts => latest_posts(10)
+    },
+    "/feeds/rss/"
+    # :checksum => something
+  )
+  # make uberfeed
+  @items << Nanoc3::Item.new(
+    "Superfeed!",
+    {
+      :posts => sorted_posts
+    },
+    "/feeds/rss-all/"
+    # :checksum => something
+  )
+
+  # make category pages
+  # TODO: real checksum
+  cat_hash = Hash.new
+  post_categories.each_pair do |cat, posts|
+    cat_id = "/archive/categories/#{cat}/"
+    
+    posts.sort_by! do |a|
+      attribute_to_time(a[:date])
+    end.reverse!
+
+    existing_item_i = @items.index { |item| item.identifier == cat_id }
+    if existing_item_i
+      # print "Found content for #{cat_id}\n"
+      category_item = @items[existing_item_i]
+      category_item[:posts] = posts
+    else
+      category_item = Nanoc3::Item.new(
+        "<!-- If #{cat} had content, it would be here. -->",
+        {
+          :title => "#{cat}",
+          :posts => posts
+        },
+        cat_id
+      )
+      @items << category_item
+    end
+    print "Category #{category_item.identifier} has #{category_item[:posts].count} posts\n"
+    cat_hash[cat_id] = category_item
+  end
+  
+  # make category list page
+  @items << Nanoc3::Item.new(
+    "Lorum ipsum",
+    {
+      :title => "categories",
+      :categories => cat_hash.values
+    },
+    "/archive/categories/"
+    # :checksum => something
+  )
+  
+end
+
+
+
+
+
+compile 'sitemap' do
+  filter :erubis
+end
+
+compile '/feeds/*' do
+  filter :erubis
+  layout 'rss'
+end
+
+compile 'robots' do
+  # unfiltered
+end
+
+compile 'htaccess' do
+  # unfiltered
+end
+
+compile '/assets/*' do
+  case item[:extension]
+    when 'css'
+#      filter :rainpress
+    when 'js'
+#      filter :jsmin
+  end
+end
+
+compile '/archive/categories/' do
+  layout 'categories-index'
+  # filter :erubis
+  layout 'site'
+end
+
+compile '/archive/categories/*' do
+  case item[:extension]
+    when 'md'
+      filter :kramdown
+  end
+  layout 'category'
+  # filter :erubis
+  layout 'site'
+end
+
+compile '/' do
+  filter :kramdown
+  filter :typogruby
+  layout 'home'
+  filter :erubis
+  layout 'site'
+end
+
+compile '/search' do
+  filter :kramdown
+  layout 'site'
+end
+
+# could compile /articles/* separately and not check kind, but would sitll have to test binary
+compile '*', :rep => 'default' do
+  if item.binary? or item[:kind] == 'hidden' or item[:external]
+    # noop
+  else
+    case item[:extension]
+      when 'md'
+        filter :kramdown
+    end
+    # filter :typogruby
+    if item[:kind] == 'post'
+      layout 'article'
+    else
+      layout 'page'
+    end
+    filter :erubis
+    layout 'site'
+  end
+end
+
+
+
+
+route "/" do
+  '/index.html'
+end
+
+route 'sitemap' do
+  item.identifier.chop + '.xml'
+end
+
+route 'robots' do
+  item.identifier.chop + '.txt'
+end
+
+route '/assets/*' do
+  item.identifier.chop + '.' + item[:extension]
+end
+
+route '/feeds/*' do
+	item.identifier.chop + '.xml'
+end
+
+route 'htaccess' do
+  '/.htaccess'
+end
+
+route '*/htaccess' do
+  dir = item.identifier.chop
+  dir[0,dir.rindex('/')] + '/.htaccess'
+end
+
+route '/articles/*/' do
+  if item[:kind] == 'hidden'
+    # puts "ignoring #{item.identifier}"
+    nil
+  else
+    item.identifier.slice!('/articles')
+    filelike_identifier(item)
+  end
+end
+
+route '/categories/' do
+  '/categories/index.html'
+end
+
+route '/categories/*/' do
+  filelike_identifier(item)
+end
+
+
+route '*' do
+  if item[:kind] == 'hidden'
+    # puts "ignoring #{item.identifier}"
+    nil
+  elsif item.binary?
+    # Write item with identifier /foo/ to /foo.ext
+    item.identifier.chop + '.' + item[:extension]
+  else
+    # Write item with identifier /foo/ to /foo.html
+    item.identifier.chop + '.html'
+  end
+end
+
+layout '*', :erubis

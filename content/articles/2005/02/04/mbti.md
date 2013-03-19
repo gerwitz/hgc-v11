@@ -1,0 +1,15 @@
+---
+title: MBTI
+categories:
+- Personal
+tags:
+- me
+- mind
+- Personal
+- personality
+---
+
+Several MBTI tests have rated me an INTp, although I've never taken the official [Myers Briggs][1].  Over time, I've moved from extreme Introverted to only mildly Introverted, but the other measures have been stable.
+
+   [1]: http://www.knowyourtype.com/
+

@@ -1,0 +1,91 @@
+	<script type="text/javascript" src="/assets/moment.min.js"></script>
+
+	<section class="home">
+		<div class="entry-content">
+			<%= yield %>
+		</div>
+
+		<h2>Journal Posts <small>from my soliloquy</small></h2>
+		<ol class="article-list">
+		<% sorted_posts_local_only[0, 6].each do |article| %>	
+		<li>
+			<% if article[:external] -%>
+			<%= link_to(article[:title], article[:external], :class => 'title') %>
+			<%= link_to(Time.parse(article[:date]).localtime.format_as_date, article[:external], :class => 'date') %>
+			<% else -%>
+			<%= link_to(article[:title], article, :class => 'title') %>
+			<%= link_to(Time.parse(article[:date]).localtime.format_as_date, article, :class => 'date') %>
+			<% end -%>
+		</li>
+		<% end %>
+		</ol>
+
+		<h2>Latest Tweet <small>from <a href="http://twitter.com/gerwitz" id="twitter-lure">@gerwitz</a></small></h2>
+		<blockquote id="last_tweet">
+			<p>Loading…</p>
+			<small></small>
+		</blockquote>
+		<script>
+		function twitter_callback_function( tweets ) {
+			var this_tweet = tweets[0];
+			var tweet_msg = this_tweet.text;
+			for (var i=0; i<this_tweet.entities.urls.length; i++) {
+				var this_url = this_tweet.entities.urls[i];
+				var this_anchor = '<a href="'+this_url.expanded_url+'">'+this_url.display_url+'</a>';
+				tweet_msg = tweet_msg.replace(this_url.url, this_anchor);
+			}
+			var tweet_date = moment(this_tweet.created_at).format('MMMM Do, YYYY');
+		    $('#last_tweet>p').html(tweet_msg);
+			var tweet_link = $('<a/>');
+			var tweet_url = 'http://twitter.com/gerwitz/status/'+this_tweet.id;
+			tweet_link.attr('href', tweet_url);
+		    tweet_link.html('<date>'+tweet_date+'</date>');
+		    $('#last_tweet>small').html(tweet_link);
+		}
+		</script>
+		<script src="http://api.twitter.com/1/statuses/user_timeline.json?user_id=521&include_rts=false&exclude_replies=true&include_entities=true&trim_user=true&count=1&callback=twitter_callback_function"></script>
+
+		<h2>Articles <small>on <a href="http://safelyignored.com/">Safely Ignored</a></small></h2>
+		<script src="http://feeds.feedburner.com/safelyignored?format=sigpro" type="text/javascript" ></script>
+		<script>
+		$('.feedburnerFeedBlock .date').each(function(i) {
+			var item_date = moment($(this).text());			
+			$(this).text(moment(item_date).format('MMMM Do, YYYY'));
+		});
+		</script>
+		
+		<h2>Photographs <small>on <a href="http://www.flickr.com/photos/phobia/">Flickr</a></small></h2>
+		<div class="flickr-photos">
+		<script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=5&display=latest&size=s&layout=h&source=user&user=78928298%40N00"></script>
+		</div>
+		
+		<h2>Findings <small>collected in the <a href="http://tumblr.gerwitz.com/">Observatory</a></small></h2>
+
+		<blockquote id="tumblr-quotes">
+			<span class="loading">Loading…</span>
+		</blockquote>
+		<script type="text/javascript">
+		function tumblr(resp) {
+			var last_quote = resp.posts[0];
+			$('#tumblr-quotes').html('<p>'+last_quote['quote-text']+'</p><small>'+last_quote['quote-source']+'</small>');
+		}
+		</script>
+		<script src="http://gerwitz.tumblr.com/api/read/json?callback=tumblr&num=1&type=quote" type="text/javascript"></script>
+
+		<div class='tumblr-photos'><a id='tumblr-url-tumblphotos-1' href=''><img border='0' id='tumblr-photo-tumblphotos-1' class='tumblr-photo' src='' alt='' /></a><a id='tumblr-url-tumblphotos-2' href=''><img border='0' id='tumblr-photo-tumblphotos-2' class='tumblr-photo' src='' alt='' /></a><a id='tumblr-url-tumblphotos-3' href=''><img border='0' id='tumblr-photo-tumblphotos-3' class='tumblr-photo' src='' alt='' /></a><a id='tumblr-url-tumblphotos-4' href=''><img border='0' id='tumblr-photo-tumblphotos-4' class='tumblr-photo' src='' alt='' /></a><a id='tumblr-url-tumblphotos-5' href=''><img border='0' id='tumblr-photo-tumblphotos-5' class='tumblr-photo' src='' alt='' /></a>
+		</div>
+		<script type='text/javascript' src='http://gerwitz.tumblr.com/api/read/json?number=5&type=photo'></script>
+		<script type='text/javascript'>
+		document.getElementById('tumblr-photo-tumblphotos-1').setAttribute('src', tumblr_api_read.posts[0]['photo-url-75']);
+		document.getElementById('tumblr-url-tumblphotos-1').setAttribute('href', tumblr_api_read.posts[0]['url-with-slug']);
+		document.getElementById('tumblr-photo-tumblphotos-2').setAttribute('src', tumblr_api_read.posts[1]['photo-url-75']);
+		document.getElementById('tumblr-url-tumblphotos-2').setAttribute('href', tumblr_api_read.posts[1]['url-with-slug']);
+		document.getElementById('tumblr-photo-tumblphotos-3').setAttribute('src', tumblr_api_read.posts[2]['photo-url-75']);
+		document.getElementById('tumblr-url-tumblphotos-3').setAttribute('href', tumblr_api_read.posts[2]['url-with-slug']);
+		document.getElementById('tumblr-photo-tumblphotos-4').setAttribute('src', tumblr_api_read.posts[3]['photo-url-75']);
+		document.getElementById('tumblr-url-tumblphotos-4').setAttribute('href', tumblr_api_read.posts[3]['url-with-slug']);
+		document.getElementById('tumblr-photo-tumblphotos-5').setAttribute('src', tumblr_api_read.posts[4]['photo-url-75']);
+		document.getElementById('tumblr-url-tumblphotos-5').setAttribute('href', tumblr_api_read.posts[4]['url-with-slug']);
+		</script>
+
+	</section>

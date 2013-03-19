@@ -1,0 +1,24 @@
+	<article class="hentry">
+	  <header>
+	    <h1 class="entry-title"><%= @item[:title] %></h1>
+	  <!--
+	    <p class="byline author vcard">
+	        By <span class="fn">Hans Gerwitz</span>
+	    </p>
+	  -->
+	  </header>
+ 
+	  <div class="entry-content">
+		  <%= yield %>
+	  </div>
+ 
+<!--
+	  <footer>
+	  	Tags, categories, etc.  comments, even?
+	    <div class="source-org vcard copyright">
+	        Copyright 2010 <span class="org fn">The New York Times Company</span>
+			<%= @site.config[:tagline] %>
+	    </div>
+	  </footer>
+-->
+	</article>

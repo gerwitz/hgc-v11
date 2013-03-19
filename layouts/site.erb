@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title><%= @item[:title] %></title>
+    <meta name="generator" content="nanoc">
+	<link rel="alternate" type="application/rss+xml" href="/feed" title="All posts to hans.gerwitz.com">
+	<!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link rel="stylesheet" href="/assets/stylesheet.css" media="screen">
+	<link rel="openid.server" href="http://www.myopenid.com/server" />
+	<link rel="openid.delegate" href="http://gerwitz.myopenid.com/" />
+	<link rel="openid2.local_id" href="http://gerwitz.myopenid.com" />
+	<link rel="openid2.provider" href="http://www.myopenid.com/server" />
+	<meta http-equiv="X-XRDS-Location" content="http://www.myopenid.com/xrds?username=gerwitz.myopenid.com" />
+	
+	<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js"></script>
+</head>
+<body>
+	<header>
+		<% home = @items.find { |i| i.rep_named(:default).path == '/' } %>
+		<h1><%= link_to_unless_current(@site.config[:site_name], home) %></h1>
+		<ul class="nav">
+<!--
+			<li>
+				<a href="/library.html">library</a>
+			</li>
+			<li>
+				<a href="/projects.html">projects</a>
+			</li>
+ -->
+			<li>
+				<a href="/archive.html">archives</a>
+			</li>
+			<li>
+				<a href="http://twitter.com/gerwitz" id="twitter-lure">twitter</a>
+			</li>
+		</ul>
+	</header>
+
+	<%= yield %>
+
+	<footer>
+		<form method="get" action="/search.html">
+			<input type="search" placeholder="Search posts" name="query" />
+		</form>
+		<nav>
+			<ul>
+				<li>
+					<a href="/about.html">Colophon</a>
+				</li>
+				<li>
+					<a href="/feed" rel="alternate" type="application/rss+xml">Feed</a>
+				</li>
+			</ul>
+		</nav>
+	</footer>
+	
+<!-- Google Analytics (async) -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-271475-2']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<!-- Twitter hovercard -->
+<script type="text/javascript">
+	function twittify() {
+	  twttr.anywhere(function (T) {
+	    T("#twitter-lure").hovercards({
+	      username: function(node) {
+	        return "gerwitz";
+	      }
+	    });
+	  });
+	}
+</script>
+<script defer type="text/javascript" src="//platform.twitter.com/anywhere.js?id= PtTAi8OeBRKouc3OzYLyGQ&v=1" onload="twittify()"></script>
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+Crashlog created at Sat Jun 23 20:24:29 -0700 2012
+
+=== MESSAGE:
+
+NoMethodError: undefined method `sort_by!' for #<Array:0x100b40658>
+
+=== COMPILATION STACK:
+
+  (empty)
+
+=== BACKTRACE:
+
+  0. ./Rules:82:in `load'
+  1. ./Rules:79:in `each_pair'
+  2. ./Rules:79:in `load'
+  3. /Library/Ruby/Gems/1.8/gems/nanoc-3.4.0/lib/nanoc/base/compilation/compiler.rb:196:in `instance_eval'
+  4. /Library/Ruby/Gems/1.8/gems/nanoc-3.4.0/lib/nanoc/base/compilation/compiler.rb:196:in `preprocess'
+  5. /Library/Ruby/Gems/1.8/gems/nanoc-3.4.0/lib/nanoc/base/compilation/compiler.rb:116:in `load'
+  6. /Library/Ruby/Gems/1.8/gems/nanoc-3.4.0/lib/nanoc/base/compilation/compiler.rb:82:in `run'
+  7. /Library/Ruby/Gems/1.8/gems/nanoc-3.4.0/lib/nanoc/base/source_data/site.rb:57:in `compile'
+  8. /Library/Ruby/Gems/1.8/gems/nanoc-3.4.0/lib/nanoc/cli/commands/compile.rb:57:in `run'
+  9. /Library/Ruby/Gems/1.8/gems/nanoc-3.4.0/lib/nanoc/cli/command_runner.rb:14:in `call'
+  10. /Library/Ruby/Gems/1.8/gems/nanoc-3.4.0/lib/nanoc/cli/error_handler.rb:63:in `handle_while'
+  11. /Library/Ruby/Gems/1.8/gems/nanoc-3.4.0/lib/nanoc/cli/error_handler.rb:26:in `handle_while'
+  12. /Library/Ruby/Gems/1.8/gems/nanoc-3.4.0/lib/nanoc/cli/command_runner.rb:13:in `call'
+  13. /Library/Ruby/Gems/1.8/gems/cri-2.2.1/lib/cri/command_dsl.rb:175:in `runner'
+  14. /Library/Ruby/Gems/1.8/gems/cri-2.2.1/lib/cri/command.rb:291:in `call'
+  15. /Library/Ruby/Gems/1.8/gems/cri-2.2.1/lib/cri/command.rb:291:in `run_this'
+  16. /Library/Ruby/Gems/1.8/gems/cri-2.2.1/lib/cri/command.rb:244:in `run'
+  17. /Library/Ruby/Gems/1.8/gems/cri-2.2.1/lib/cri/command.rb:257:in `run'
+  18. /Library/Ruby/Gems/1.8/gems/nanoc-3.4.0/lib/nanoc/cli.rb:47:in `run'
+  19. /Library/Ruby/Gems/1.8/gems/nanoc-3.4.0/lib/nanoc/cli/error_handler.rb:63:in `handle_while'
+  20. /Library/Ruby/Gems/1.8/gems/nanoc-3.4.0/lib/nanoc/cli/error_handler.rb:26:in `handle_while'
+  21. /Library/Ruby/Gems/1.8/gems/nanoc-3.4.0/lib/nanoc/cli.rb:44:in `run'
+  22. /Library/Ruby/Gems/1.8/gems/nanoc-3.4.0/bin/nanoc:19
+  23. /usr/bin/nanoc:23:in `load'
+  24. /usr/bin/nanoc:23
+
+=== VERSION INFORMATION:
+
+nanoc 3.4.0 © 2007-2012 Denis Defreyne.
+Running ruby 1.8.7 (2011-12-28) on universal-darwin11.0 with RubyGems 1.8.24.
+
+=== INSTALLED GEMS:
+
+  erubis 2.7.0
+  builder 3.0.0
+  rubypants 0.2.0
+  kramdown 0.13.5
+  nokogiri 1.5.2
+  cri 2.2.1
+  bundler 1.0.15
+  systemu 2.5.0
+  deadweight 0.2.1
+  typogruby 1.0.15
+  nanoc 3.3.5
+
+=== ENVIRONMENT:
+
+Apple_PubSub_Socket_Render => "/tmp/launch-1JAJhW/Render"
+Apple_Ubiquity_Message => "/tmp/launch-l6LXd7/Apple_Ubiquity_Message"
+BUNDLE_BIN_PATH => "/Library/Ruby/Gems/1.8/gems/bundler-1.0.15/bin/bundle"
+BUNDLE_GEMFILE => "/Users/hans/Dropbox/blog/publish/Gemfile"
+COMMAND_MODE => "unix2003"
+DISPLAY => "/tmp/launch-7IqPei/org.x:0"
+HOME => "/Users/hans"
+LANG => "en_US.UTF-8"
+LOGNAME => "hans"
+OLDPWD => "/Users/hans/Dropbox/blog/publish/content"
+PATH => "/Library/Ruby/Gems/1.8/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/usr/local/git/bin/"
+PWD => "/Users/hans/Dropbox/blog/publish"
+RUBYOPT => "-I/Library/Ruby/Gems/1.8/gems/bundler-1.0.15/lib -rbundler/setup"
+SHELL => "/bin/bash"
+SHLVL => "1"
+SSH_AUTH_SOCK => "/tmp/launch-DCgKHf/Listeners"
+TERM => "xterm-256color"
+TERM_PROGRAM => "Apple_Terminal"
+TERM_PROGRAM_VERSION => "303.2"
+TERM_SESSION_ID => "4A275AB6-6D9C-4772-B0D0-F3635B8ABC9E"
+TMPDIR => "/var/folders/nc/s3590n390sq28h6ypxzvsh3h0000gn/T/"
+USER => "hans"
+_ => "/usr/bin/nanoc"
+__CF_USER_TEXT_ENCODING => "0x1F5:0:0"
+
+=== GEMFILE.LOCK:
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    builder (3.0.0)
+    cri (2.2.1)
+    deadweight (0.2.1)
+      nokogiri
+    erubis (2.7.0)
+    kramdown (0.13.5)
+    nanoc (3.3.5)
+      cri (~> 2.2)
+    nokogiri (1.5.2)
+    rubypants (0.2.0)
+    systemu (2.5.0)
+    typogruby (1.0.15)
+      rubypants
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  builder
+  deadweight
+  erubis
+  kramdown
+  nanoc
+  systemu
+  typogruby
+
+=== $LOAD_PATH:
+
+  0. /Library/Ruby/Gems/1.8/gems/nanoc-3.4.0/lib
+  1. /Library/Ruby/Gems/1.8/gems/kramdown-0.13.5/lib
+  2. /Library/Ruby/Gems/1.8/gems/erubis-2.7.0/lib
+  3. /Library/Ruby/Gems/1.8/gems/deadweight-0.2.1/lib
+  4. /Library/Ruby/Gems/1.8/gems/nokogiri-1.5.2/lib
+  5. /Library/Ruby/Gems/1.8/gems/cri-2.2.1/lib
+  6. /Library/Ruby/Gems/1.8/gems/builder-3.0.0/lib
+  7. /Library/Ruby/Gems/1.8/gems/bundler-1.0.15/lib
+  8. /Library/Ruby/Site/1.8
+  9. /Library/Ruby/Site/1.8/powerpc-darwin11.0
+  10. /Library/Ruby/Site/1.8/universal-darwin11.0
+  11. /Library/Ruby/Site
+  12. /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/vendor_ruby/1.8
+  13. /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/vendor_ruby/1.8/universal-darwin11.0
+  14. /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/vendor_ruby
+  15. /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8
+  16. /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/powerpc-darwin11.0
+  17. /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/universal-darwin11.0
+  18. .
+  19. /Users/hans/Dropbox/blog/publish

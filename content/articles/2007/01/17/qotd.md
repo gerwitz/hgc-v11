@@ -1,0 +1,14 @@
+---
+title: QOTD
+categories:
+- work
+tags:
+- tech
+- funny
+- quote
+---
+
+> ...this is totally reinventing the wheel, but reinventing it with corners.
+> --"Winter" on [The Daily WTF][1]
+
+   [1]: http://thedailywtf.com/
