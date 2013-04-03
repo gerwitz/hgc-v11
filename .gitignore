@@ -1,19 +1,16 @@
-<<<<<<< HEAD
 # osx noise
 .DS_Store
 profile
 
+# Ruby miscellany 
+crash.log
+Gemfile.lock
+
 # nanoc
-=======
 # For projects using nanoc (http://nanoc.stoneship.org/)
->>>>>>> 2293e8afb02077e4fede624eb7c9238c4dc96511
 
 # Default location for output, needs to match output_dir's value found in config.yaml
 output/
 
 # Temporary file directory
-<<<<<<< HEAD
 tmp/
-=======
-tmp/
->>>>>>> 2293e8afb02077e4fede624eb7c9238c4dc96511
