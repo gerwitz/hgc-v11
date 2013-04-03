@@ -54,13 +54,16 @@ article>.entry-content>p {
 	margin-top:		1em; 		/* Should be 1.121? */
 }
 
+body>article>header {
+	margin-bottom:	0.7956em;
+}
+body>article>header time {
+	font-style:		italic;
+}
 
 body>article>footer {
 	margin-top:		0.7956em;
 	text-align:		right;
-}
-body>article>footer time {
-	font-style:		italic;
 }
 
 body>header {

@@ -1,17 +1,25 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    builder (3.0.0)
+    addressable (2.3.3)
+    builder (3.2.0)
     colored (1.2)
     cri (2.3.0)
       colored (>= 1.2)
-    deadweight (0.2.1)
+    css_parser (1.2.6)
+      addressable
+      rdoc
+    deadweight (0.2.2)
+      css_parser (~> 1.2.6)
       nokogiri
     erubis (2.7.0)
-    kramdown (0.13.7)
-    nanoc (3.4.0)
-      cri (~> 2.2)
-    nokogiri (1.5.5)
+    json (1.7.7)
+    kramdown (1.0.1)
+    nanoc (3.6.2)
+      cri (~> 2.3)
+    nokogiri (1.5.9)
+    rdoc (4.0.1)
+      json (~> 1.4)
     rubypants (0.2.0)
     systemu (2.5.2)
     typogruby (1.0.15)

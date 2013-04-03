@@ -8,13 +8,12 @@ title: Hans
 
 I'm Hans Gerwitz, [human][1] and critic of all things.
 
-I share life with the beautiful [Shannon E Thomas][2] on Seattle's [Capitol Hill][3] and work as a Strategy Director for [frog design][4].
+I enjoy life with the beautiful [Shannon E Thomas][2] in Amsterdam, where I'm [looking for new work][linkedin].
 
-If you really just can't get enough, follow me on [Twitter][5].
+If you really just can't get enough of my thoughts, follow me on [Twitter][5].
 
    [1]: http://www.eol.org/pages/327955
    [2]: http://www.shannonethomas.com/
-   [3]: http://en.wikipedia.org/wiki/Capitol_Hill,_Seattle,_Washington
-   [4]: http://www.frogdesign.com/
+   [linkedin]: http://www.linkedin.com/in/gerwitz
    [5]: http://twitter.com/gerwitz
 
