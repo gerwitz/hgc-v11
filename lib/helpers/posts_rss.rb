@@ -10,10 +10,6 @@ module Posts
 		params[:posts] || latest_posts(10)
 	end
 
-	def feed_content_proc(params)
-		params[:content_proc] || lambda { |a| process_relative_urls(a.path, a.reps[0].content_at_snapshot(:pre))}
-	end
-
   def latest_posts(max=nil)
     # total = @site.items.select{|p| p.attributes[:kind] == 'post'}.sort{|a, b| a.attributes[:date] <=> b.attributes[:date]}.reverse 
     total = sorted_posts_local_only
@@ -54,7 +50,7 @@ module Posts
               end
             end
   					xml.comments url_for(a)+'#comments'
-  					xml.description feed_content_proc(params).call(a)
+            xml.description process_relative_urls(a.path, a.compiled_content)
   				end
   			end
   		end

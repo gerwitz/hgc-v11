@@ -40,6 +40,9 @@ preprocess do
   #     end 
   # end 
   
+  # remove hidden items
+  @items.delete_if { |i| i[:kind] == 'hidden' }
+
   # set article metadata based on filesystem path, and build categories hash
   post_categories = Hash.new{|h, k| h[k] = []}
   @items.select { |i| i.identifier.start_with?('/articles/') and not i.binary? }.each do |post|
@@ -48,7 +51,7 @@ preprocess do
     # id_parts[0] is 'articles'
     post[:date] ||= id_parts[2..4].join('/')
     post[:slug] ||= id_parts[5]
-    if (post[:categories] != nil) and (post[:kind] != 'hidden')
+    if (post[:categories] != nil)
       post[:categories].map do |cat|
         post_categories[cat.downcase] << post
       end
@@ -174,32 +177,8 @@ compile '/search' do
   layout 'site'
 end
 
-# could compile /articles/* separately and not check kind, but would sitll have to test binary
-# compile '*', :rep => 'default' do
-#   if item.binary? or item[:kind] == 'hidden' or item[:external]
-#     # noop
-#   else
-#     case item[:extension]
-#       when 'md'
-#         filter :kramdown
-#     end
-#     # filter :typogruby
-#     if item[:kind] == 'post'
-#       layout 'article'
-#       print("found article #{item.identifier}\n")
-#     else
-#       layout 'page'
-#     end
-#     filter :erb
-#     layout 'site'
-#   end
-# end
-
 compile '/articles/*/', :rep => 'default' do
-  # unless item.binary? or item[:kind] == 'hidden' or item[:external]
-  if item.binary? or item[:kind] == 'hidden' or item[:external]
-    # noop
-  else
+  unless item.binary? or item[:external]
     case item[:extension]
       when 'md'
         filter :kramdown
@@ -210,8 +189,19 @@ compile '/articles/*/', :rep => 'default' do
   end
 end
 
+# not yet used, but eventually we'll filter these for absolute links and use them in RSS
+compile '/articles/*/', :rep => 'absolute' do
+  unless item.binary? or item[:external]
+    case item[:extension]
+      when 'md'
+        filter :kramdown
+    end
+  end
+end
+
+# all other pages
 compile '*', :rep => 'default' do
-  unless item.binary? or item[:kind] == 'hidden' or item[:external]
+  unless item.binary? or item[:external]
     case item[:extension]
       when 'md'
         filter :kramdown
@@ -255,12 +245,12 @@ route '*/htaccess' do
 end
 
 route '/articles/*/' do
-  if item[:kind] == 'hidden'
-    # puts "ignoring #{item.identifier}"
-    nil
-  else
-    filelike_identifier(item).partition('/articles')[2]
-  end
+  filelike_identifier(item).partition('/articles')[2]
+end
+
+# don't route these, they are only for feeds
+route '/articles/*/', :rep => :absolute do
+  nil
 end
 
 route '/categories/' do
@@ -273,10 +263,7 @@ end
 
 
 route '*' do
-  if item[:kind] == 'hidden'
-    # puts "ignoring #{item.identifier}"
-    nil
-  elsif item.binary?
+  if item.binary?
     # Write item with identifier /foo/ to /foo.ext
     item.identifier.chop + '.' + item[:extension]
   else

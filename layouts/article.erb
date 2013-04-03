@@ -12,9 +12,7 @@
  
 	  <footer>
 
-		<% if ['off', 'no', 'false'].include?(@item[:comments]) %>
-		<!-- comments disabled -->
-		<% else %>
+		<% if @item[:comments].nil? or @item[:comments] %>
         <div id="disqus_thread" class="comments"></div>
         <script type="text/javascript">
             var disqus_shortname = 'gerwitz';
@@ -24,6 +22,8 @@
                 (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
             })();
         </script>
+		<% else %>
+		<!-- comments disabled -->
 		<% end %>
 
 	  </footer>
