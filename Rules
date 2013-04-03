@@ -121,11 +121,13 @@ end
 
 
 compile 'sitemap' do
-  filter :erubis
+  # filter :erubis
+  filter :erb
 end
 
 compile '/feeds/*' do
-  filter :erubis
+  # filter :erubis
+  filter :erb
   layout 'rss'
 end
 
@@ -166,7 +168,8 @@ compile '/' do
   filter :kramdown
   filter :typogruby
   layout 'home'
-  filter :erubis
+  # filter :erubis
+  filter :erb
   layout 'site'
 end
 
@@ -190,7 +193,8 @@ compile '*', :rep => 'default' do
     else
       layout 'page'
     end
-    filter :erubis
+    # filter :erubis
+    filter :erb
     layout 'site'
   end
 end
@@ -259,4 +263,5 @@ route '*' do
   end
 end
 
-layout '*', :erubis
+# layout '*', :erubis
+layout '*', :erb

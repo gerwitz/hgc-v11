@@ -72,7 +72,6 @@ module Posts
   
   def absolutize_url(item_path, target)
     # print("in '#{item_path}' absolutizing '#{target}'")
-    print("absolutizing '#{target}'")
     if target.start_with?("//")
       url_s = target
     elsif target.start_with?("/")
