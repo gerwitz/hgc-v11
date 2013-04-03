@@ -6,6 +6,7 @@ categories:
 tags:
 - frog
 - amsterdam
+comments: off
 ---
 
 As most of you already know, both Shannon and I have left [frog][]. To simplify answering the curiosity of so many, I'm going to write down what just happened. No judgement is implied, this is only a record.

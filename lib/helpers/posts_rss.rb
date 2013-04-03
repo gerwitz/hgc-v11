@@ -79,7 +79,7 @@ module Posts
     else
       url_s = @site.config[:base_url] + item_path.match(/(.*?)[^\/]*$/)[1] + target
     end
-    print(" to '#{url_s}'\n")
+    # print(" to '#{url_s}'\n")
 
     return url_s
   end

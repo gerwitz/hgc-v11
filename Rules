@@ -13,10 +13,10 @@
 #   item, use the pattern “/about/*/”; “/about/*” will also select the parent,
 #   because “*” matches zero or more characters.
 
-$LOAD_PATH << File.expand_path(File.dirname(__FILE__))
-require 'rubygems'
-require 'lib/helpers_.rb'
-require 'lib/filters_.rb'
+# $LOAD_PATH << File.expand_path(File.dirname(__FILE__))
+# require 'rubygems'
+# require 'lib/helpers_.rb'
+# require 'lib/filters_.rb'
 
 preprocess do  
   # archive inspiration from http://groups.google.com/group/nanoc/tree/browse_frm/month/2010-04/1b4bc5b52641bca8?rnum=61&_done=%2Fgroup%2Fnanoc%2Fbrowse_frm%2Fmonth%2F2010-04%3F
@@ -40,6 +40,7 @@ preprocess do
   #     end 
   # end 
   
+  # set article metadata based on filesystem path, and build categories hash
   post_categories = Hash.new{|h, k| h[k] = []}
   @items.select { |i| i.identifier.start_with?('/articles/') and not i.binary? }.each do |post|
     post[:kind] ||= 'post'
@@ -63,7 +64,7 @@ preprocess do
     "/feeds/rss/"
     # :checksum => something
   )
-  # make uberfeed
+  # make uberfeed for Tapir
   @items << Nanoc3::Item.new(
     "Superfeed!",
     {
@@ -105,7 +106,7 @@ preprocess do
   
   # make category list page
   @items << Nanoc3::Item.new(
-    "Lorum ipsum",
+    "Article Categories", # not used
     {
       :title => "categories",
       :categories => cat_hash.values
@@ -113,7 +114,6 @@ preprocess do
     "/archive/categories/"
     # :checksum => something
   )
-  
 end
 
 
@@ -129,13 +129,13 @@ compile '/feeds/*' do
   layout 'rss'
 end
 
-compile 'robots' do
-  # unfiltered
-end
+# compile 'robots' do
+#   # unfiltered
+# end
 
-compile 'htaccess' do
-  # unfiltered
-end
+# compile 'htaccess' do
+#   # unfiltered
+# end
 
 compile '/assets/*' do
   case item[:extension]
@@ -175,7 +175,28 @@ compile '/search' do
 end
 
 # could compile /articles/* separately and not check kind, but would sitll have to test binary
-compile '*', :rep => 'default' do
+# compile '*', :rep => 'default' do
+#   if item.binary? or item[:kind] == 'hidden' or item[:external]
+#     # noop
+#   else
+#     case item[:extension]
+#       when 'md'
+#         filter :kramdown
+#     end
+#     # filter :typogruby
+#     if item[:kind] == 'post'
+#       layout 'article'
+#       print("found article #{item.identifier}\n")
+#     else
+#       layout 'page'
+#     end
+#     filter :erb
+#     layout 'site'
+#   end
+# end
+
+compile '/articles/*/', :rep => 'default' do
+  # unless item.binary? or item[:kind] == 'hidden' or item[:external]
   if item.binary? or item[:kind] == 'hidden' or item[:external]
     # noop
   else
@@ -183,13 +204,20 @@ compile '*', :rep => 'default' do
       when 'md'
         filter :kramdown
     end
-    # filter :typogruby
-    if item[:kind] == 'post'
-      layout 'article'
-    else
-      layout 'page'
-    end
+    layout 'article'
     filter :erb
+    layout 'site'
+  end
+end
+
+compile '*', :rep => 'default' do
+  unless item.binary? or item[:kind] == 'hidden' or item[:external]
+    case item[:extension]
+      when 'md'
+        filter :kramdown
+    end
+    layout 'page'
+    # filter :erb
     layout 'site'
   end
 end
@@ -197,7 +225,7 @@ end
 
 
 
-route "/" do
+route '/' do
   '/index.html'
 end
 
@@ -231,8 +259,7 @@ route '/articles/*/' do
     # puts "ignoring #{item.identifier}"
     nil
   else
-    item.identifier.slice!('/articles')
-    filelike_identifier(item)
+    filelike_identifier(item).partition('/articles')[2]
   end
 end
 
