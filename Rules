@@ -132,13 +132,13 @@ compile '/feeds/*' do
   layout 'rss'
 end
 
-# compile 'robots' do
-#   # unfiltered
-# end
+compile 'robots' do
+  # unfiltered
+end
 
-# compile 'htaccess' do
-#   # unfiltered
-# end
+compile 'htaccess' do
+  # unfiltered
+end
 
 compile '/assets/*' do
   case item[:extension]
