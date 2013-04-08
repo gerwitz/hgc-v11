@@ -18,6 +18,7 @@ module Posts
   end
 
   def rss_feed(params={})
+    print("building rss ")
   	require 'builder'
   	require 'time'
   	check_data params
@@ -51,11 +52,13 @@ module Posts
             end
   					xml.comments url_for(a)+'#comments'
             xml.description process_relative_urls(a.path, a.compiled_content)
+            print('.')
   				end
   			end
   		end
   		buffer
   	end
+    print(" done\n")
   end
   
   def process_relative_urls(item_path, content)

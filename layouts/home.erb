@@ -5,8 +5,8 @@
 			<%= yield %>
 		</div>
 
-		<h2>Latest Tweet <small>from <a href="http://twitter.com/gerwitz">@gerwitz</a> <a href="https://twitter.com/gerwitz" class="twitter-follow-button" data-align="left" data-size="small" data-show-count="false" data-dnt="true" data-show-screen-name="false">follow</a>
-</small></h2>
+		<h2>Latest Tweet <small><a href="https://twitter.com/gerwitz" class="twitter-follow-button" data-size="small" data-dnt="true" data-show-count="false">from @gerwitz</a></small>
+		</h2>
 		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 		<blockquote id="last_tweet">
 			<p>Loading…</p>
@@ -32,6 +32,16 @@
 		</script>
 		<script src="http://api.twitter.com/1/statuses/user_timeline.json?user_id=521&include_rts=false&exclude_replies=true&include_entities=true&trim_user=true&count=1&callback=twitter_callback_function"></script>
 		
+		<h2>Articles <small>from other sites</small></h2>
+		<ol class="article-list">
+		<% sorted_posts_external_only[0, 6].each do |article| %>	
+			<li>
+			<%= link_to("<img src=\"https://plus.google.com/_/favicon?domain=#{URI.parse(article[:external]).host}\" height=\"12\" width=\"12\" /> #{article[:title]}", article[:external], :class => 'title') %>
+			<%= link_to(Time.parse(article[:date]).localtime.format_as_date, article[:external], :class => 'date') %></li>
+		<% end %>
+		</ol>
+		
+<!--
 		<h2>Articles <small>on <a href="http://safelyignored.com/">Safely Ignored</a></small></h2>
 		<script src="http://feeds.feedburner.com/safelyignored?format=sigpro" type="text/javascript" ></script>
 		<script>
@@ -40,21 +50,18 @@
 			$(this).text(moment(item_date).format('MMMM Do, YYYY'));
 		});
 		</script>
+-->
 
-		<h2>Photographs <small>on <a href="http://www.flickr.com/photos/phobia/">Flickr</a></small></h2>
+		<h2>Photographs <small>from <a href="http://www.flickr.com/photos/phobia/">Flickr</a></small></h2>
 		<div class="flickr-photos">
 		<script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=5&display=latest&size=s&layout=h&source=user&user=78928298%40N00"></script>
 		</div>
 
-		<h2>Journal Posts <small>from my soliloquy</small></h2>
+		<h2>Journal Posts <small>from this soliloquy</small></h2>
 		<ol class="article-list">
 		<% sorted_posts_local_only[0, 6].each do |article| %>	
-			<li>
-			<% if article[:external] %><%= link_to(article[:title], article[:external], :class => 'title') %>
-			<%= link_to(Time.parse(article[:date]).localtime.format_as_date, article[:external], :class => 'date') %>
-			<% else %><%= link_to(article[:title], article, :class => 'title') %>
-			<%= link_to(Time.parse(article[:date]).localtime.format_as_date, article, :class => 'date') %>
-			<% end %></li>
+			<li><%= link_to(article[:title], article, :class => 'title') %>
+			<%= link_to(Time.parse(article[:date]).localtime.format_as_date, article, :class => 'date') %></li>
 		<% end %>
 		</ol>
 				
@@ -66,7 +73,7 @@
 		<script type="text/javascript">
 		function tumblr(resp) {
 			var last_quote = resp.posts[0];
-			$('#tumblr-quotes').html('<p>'+last_quote['quote-text']+'</p><small>'+last_quote['quote-source']+'</small>');
+			$('#tumblr-quotes').html('<p>'+last_quote['quote-text']+'</p><small>&mdash;'+last_quote['quote-source']+'</small>');
 		}
 		</script>
 		<script src="http://gerwitz.tumblr.com/api/read/json?callback=tumblr&num=1&type=quote" type="text/javascript"></script>

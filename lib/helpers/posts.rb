@@ -15,6 +15,12 @@ module Posts
       attribute_to_time(a[:date])
     end.reverse.delete_if{|a| a[:external]}
   end
+
+  def sorted_posts_external_only
+    posts.sort_by do |a|
+      attribute_to_time(a[:date])
+    end.reverse.delete_if{|a| a[:external].nil?}
+  end
   
   # attributes we use:
   # * date

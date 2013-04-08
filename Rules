@@ -117,6 +117,8 @@ preprocess do
     "/archive/categories/"
     # :checksum => something
   )
+  
+  print("preprocess complete\n")
 end
 
 
