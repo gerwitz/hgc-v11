@@ -1,5 +1,6 @@
 @import url('html5.css');
 @import url('verticalflow.css');
+@import url('font-awesome.min.css');
 
 body {
 	background: 	#FFFFFF;
@@ -251,4 +252,12 @@ aside>div#disqus_thread {
 	margin-left: 1px;
 	margin-right: 2px;
 	padding: 2px;
+	-webkit-filter: grayscale(100%);
+}
+
+#follow-button {
+	background-image: none;
+}
+#follow-button>I {
+	-webkit-filter: grayscale(100%);
 }

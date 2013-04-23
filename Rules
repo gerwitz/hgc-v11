@@ -13,46 +13,26 @@
 #   item, use the pattern “/about/*/”; “/about/*” will also select the parent,
 #   because “*” matches zero or more characters.
 
-# $LOAD_PATH << File.expand_path(File.dirname(__FILE__))
-# require 'rubygems'
-# require 'lib/helpers_.rb'
-# require 'lib/filters_.rb'
-
 preprocess do  
-  # archive inspiration from http://groups.google.com/group/nanoc/tree/browse_frm/month/2010-04/1b4bc5b52641bca8?rnum=61&_done=%2Fgroup%2Fnanoc%2Fbrowse_frm%2Fmonth%2F2010-04%3F
-  # def gen_year_pages
-  #     links = items_under('^/links/').reject { |i| i.binary? }.reject { 
-  # |i| ! i[:created_at] } 
-  #     link_years = Hash.new{|h, k| h[k] = []} 
-  #     links.each do |i| 
-  #         link_years[Time.parse(i[:created_at]).year] << i 
-  #     end 
-  #     link_years.each_pair do |y, i| 
-  #         @items << Nanoc3::Item.new( 
-  #             "content", 
-  #             { 
-  #                 :title => "Links: #{y}", 
-  #                 :year => y.to_s 
-  #             }, 
-  #             "/links/#{y}/", 
-  #             { :mtime => i.map { |l| l.mtime }.max } 
-  #         ) 
-  #     end 
-  # end 
-  
   # remove hidden items
   @items.delete_if { |i| i[:kind] == 'hidden' }
 
-  # set article metadata based on filesystem path, and build categories hash
-  post_categories = Hash.new{|h, k| h[k] = []}
+  # init "smart" archive hashes
+  post_categories = Hash.new{|h, c| h[c] = []}
+  post_years_months = Hash.new do |h, y|
+    h[y] = Hash.new{|ms, m| ms[m] = []}
+  end
+
+  # set article metadata based on filesystem path, and build archive hashes
   @items.select { |i| i.identifier.start_with?('/articles/') and not i.binary? }.each do |post|
     post[:kind] ||= 'post'
     id_parts = post.identifier.split('/')
-    # id_parts[0] is 'articles'
+    # id_parts[1] is 'articles'
+    post_years_months[id_parts[2]][id_parts[3]] << post
     post[:date] ||= id_parts[2..4].join('/')
     post[:slug] ||= id_parts[5]
     if (post[:categories] != nil)
-      post[:categories].map do |cat|
+      post[:categories].each do |cat|
         post_categories[cat.downcase] << post
       end
     end
@@ -107,18 +87,34 @@ preprocess do
     cat_hash[cat_id] = category_item
   end
   
+  # cats_summary = cat_hash.map do |cat,posts|
+  #   cat + posts.map {|post| post.identifier}
+  # end
+  # print "\n\n cats_summary: #{cats_summary}\n\n"
+  
   # make category list page
   @items << Nanoc3::Item.new(
-    "Article Categories", # not used
+    "Archive Categories", # not used
     {
       :title => "categories",
       :categories => cat_hash.values
     },
     "/archive/categories/"
-    # :checksum => something
+    # :checksum => Digest::MD5.hexdigest( cats_summary )
   )
   
-  print("preprocess complete\n")
+  # make year list page
+  @items << Nanoc3::Item.new(
+    "Archive Years", # not used
+    {
+      :title => "years",
+      :months_by_year => post_years_months
+    },
+    "/archive/years/"
+    # :checksum => Digest::MD5.hexdigest( months_summary )
+  )
+      
+  print("Preprocess complete\n")
 end
 
 
@@ -150,6 +146,13 @@ compile '/assets/*' do
 #      filter :jsmin
   end
 end
+
+compile '/archive/years/' do
+  layout 'years'
+  # filter :erubis
+  layout 'site'
+end
+
 
 compile '/archive/categories/' do
   layout 'categories-index'
@@ -227,6 +230,11 @@ end
 
 route 'robots' do
   item.identifier.chop + '.txt'
+end
+
+route '/fonts/*' do 
+  # from static data source, so they already have extension in identifier
+  '/assets/' + item.identifier.chop
 end
 
 route '/assets/*' do

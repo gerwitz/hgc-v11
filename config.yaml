@@ -47,21 +47,27 @@ enable_output_diff: false
 # there is only a single data source that reads data from the “content/” and
 # “layout/” directories in the site directory.
 data_sources:
+
   -
     # The type is the identifier of the data source. By default, this will be
     # `filesystem_unified`.
     type: filesystem_unified
-
+  
     # The path where items should be mounted (comparable to mount points in
     # Unix-like systems). This is “/” by default, meaning that items will have
     # “/” prefixed to their identifiers. If the items root were “/en/”
     # instead, an item at content/about.html would have an identifier of
     # “/en/about/” instead of just “/about/”.
     items_root: /
-
+  
     # The path where layouts should be mounted. The layouts root behaves the
     # same as the items root, but applies to layouts rather than items.
     layouts_root: /
+
+  -
+    # Static data source looks in "/static" by default. Note: preserves filename extensions
+    type: static
+    # prefix: static
 
 # Configuration for the “watch” command, which watches a site for changes and
 # recompiles if necessary.

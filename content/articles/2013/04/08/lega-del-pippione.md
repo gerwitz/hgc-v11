@@ -21,6 +21,7 @@ Galileo also made a political error in accommodating Pope Urban VIII's arguments
 
 It is from the original inspiration for Simplicio we can draw a modern lesson. "The pigeon" Lodovico delle Colombe was a staunch defender of existing models of nature, including not only an immobile Earth, but also a perfectly spherical moon (all heavenly bodies must be pure) and buoyancy based on form. Galileo was a figure of controversy because he dared to question the way people were raised to understand the world, presenting alternative views that align with observed measurements. 
 
-When Pope John Paul II famously apologized to Galileo in 1992, he summed up this faux pax: > [Galileo] rejected the suggestion made to him to present the Copernican system as a hypothesis, inasmuch as it had not been confirmed by irrefutable proof.
+When Pope John Paul II famously apologized to Galileo in 1992, he summed up this faux pax:
+> [Galileo] rejected the suggestion made to him to present the Copernican system as a hypothesis, inasmuch as it had not been confirmed by irrefutable proof.
 
 Centuries later, a large population considers only the teachings of our parents  irrefutable, and insists that evolutionary speciation, anthropogenic climate change, or collectivist economies must be carefully disclaimed as abstract hypotheses. It is important not to let these pigeons dictate the role of science in our culture.

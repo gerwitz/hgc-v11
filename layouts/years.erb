@@ -1,0 +1,20 @@
+	<section class="year">
+		<div class="entry-content">
+			<%= yield %>
+		</div>
+
+		<ol class="article-list">
+			<% @item[:months_by_year].each do |year, months| %>	
+			<li>
+				<%= year %>
+				<ol>
+					<% months.each do |month, posts| %>
+					<li>
+						<%= month %>: <%= posts.count %>
+					</li>
+					<% end %>
+				</ol>
+			</li>
+		<% end %>
+		</ol>
+	</section>
