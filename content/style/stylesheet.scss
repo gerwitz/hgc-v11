@@ -1,88 +1,75 @@
-@import url('html5.css');
-@import url('verticalflow.css');
-@import url('font-awesome.min.css');
+/*
+ *= require_self
+*/
+@import "normalize";
+@import "typography";
+@import "font-awesome";
+
+$width:			512px;
+$background:	#FFF;
+$color:			#444;
+
+html {
+	background:		$background;
+	color:			$color;
+}
 
 body {
-	background: 	#FFFFFF;
-	font-family: 	Garamond, Times, 'Times New Roman', sans-serif;
-	font-size: 		100%;
-	margin: 		0;
-	color:			#000000;
+	max-width:		$width;
+	margin-left:	auto;
+	margin-right:	auto;
 }
-pre, code, samp, tt, kbd {
-	font-family:	Courier, 'Courier New', 'Anonymous Pro', Monaco, monospace;
-}
+
 a {
 	text-decoration:underline;
 	color:			inherit;
+	transition:		color 0.5s 0;
 }
-article:hover a {
-	color:			#1A1AC7;
-}
+
 p:hover a, li:hover a, dl:hover a, table:hover a {
 	color:			#1A1AC7;
+	transition:		color 1s 0.5s ease;
 }
 a:hover {
 	color:			#0000EE;
 }
 body>article, body>section {
-	width:			512px;
+	width:			$width;
 	margin:			4em auto;
 }
 
-article>.entry-content>p:first-child:first-letter { 
-	float:			left;
-	font-size:		3.5262em;
-	line-height:	0.83;
-	font-weight: 	normal;
-	margin-right:	2px;
-}
-article>.entry-content>p:first-child { 
-	text-indent:	0;
-}
-article>.entry-content>p {
-	text-indent:	4ex;
-}
-
-.footnotes li {
-	font-size:		0.7072em;	/* base - 1 stop */
-	color:			#222222;
-}
-.footnotes li>p {
-	line-height:	2.121;
-}
-.footnotes li:first-child {
-	margin-top:		1em; 		/* Should be 1.121? */
+.footnotes {
+	color:			#222;
 }
 
 body>article>header {
-	margin-bottom:	0.7956em;
+	margin-bottom:	1rem;
 }
 body>article>header time {
 	font-style:		italic;
 }
 
 body>article>footer {
-	margin-top:		0.7956em;
+	margin-top:		1rem;
 	text-align:		right;
 }
 
 body>header {
-	background:		#FFFFFF;
-	width: 			512px;
 	position:		fixed;
+	width:			$width;
+	background:		$background; 
 	top:			0;
-	left: 			50%;
-	margin-left: 	-256px;
+
 	height:			2em;
 	padding-top:	1em;
-	border-bottom:	1px solid #CCCCCC;
+	border-bottom:	1px solid $color;
 	margin-bottom:	2em;
 	display:		block;
+	z-index:		1;
 
 	font-family:	"Lucida Grande", Verdana, Arial, sans-serif;
+	font-size:		0.75rem;
 	text-transform:	lowercase;
-	font-size:		0.7072em;
 }
 body>header a {
 	text-decoration:none;
@@ -90,12 +77,14 @@ body>header a {
 
 body>header h1 {
 	font-size:		inherit;
+	font-family:	inherit;
+	font-weight:	inherit;
 	display:		inline;
+	line-height:	inherit;
+
 	float:			left;
 	margin-top:		0;
 	margin-bottom:	0;
-	
-	font-weight:	bold;
 }
 
 
@@ -104,6 +93,9 @@ body>header ul {
 	list-style:		none;
 	margin:			0;
 	padding:		0;
+
+	font-size:		0.75rem;
+	line-height:	inherit;
 }
 body>header li {
 	display:		inline;
@@ -111,19 +103,23 @@ body>header li {
 }
 
 
+
+
+
 body>footer {
-	width:			512px;
+	// width:		$width;
+
 	height:			1.5em;
 	margin:			0 auto;
 	margin-top:		5.75em;
 	display:		block;
 	overflow:		visible;
-	border-top:		1px solid #CCCCCC;
+	border-top:		1px solid $color;
 	margin-bottom:	3em;
 	padding-top:	3px;
 	font-family:	"Lucida Grande", Verdana, Arial, sans-serif;
+	font-size:		0.75rem;
 	text-transform:	lowercase;
-	font-size:		0.7072em;
 }
 body>footer a {
 	text-decoration:none;
@@ -147,10 +143,32 @@ body>footer nav ul li {
 body>footer nav li+li {
 	padding-left:	2ex;
 }
+
+
+input#search {
+	outline:		none;
+	border:			none;
+	color:			$color;
+//    height: 13px;
+//    padding: 2px 10px;
+//    width: 200px;
+//    color: #999;
+    font-weight: normal;
+}
+input#search:focus {
+	border: 1px solid $color;
+}
+// thanks http://stackoverflow.com/a/2610741
+::-webkit-input-placeholder { color: $color; }
+:-moz-input-placeholder { color: $color; }
+::-moz-input-placeholder { color: $color; }
+:-ms-input-placeholder { color: $color; }
+
+
 article img, article video, article audio {
 	display: 		block;
 	margin:			1.75em auto;
-	width:			512px;
+//	width:			$width;
 	background:		#FAFAFA;
 	padding:		.5em;
 	position:		relative;
@@ -158,6 +176,13 @@ article img, article video, article audio {
 }
 .noindent, .next-noindent+p {
 	text-indent:	0;
+}
+
+blockquote {
+	width: $width-32px;
+	margin: 1rem 16px;
+    padding-left: 10px;
+	border-left: 5px solid #bbb;
 }
 
 blockquote p+p:last-child, blockquote small {
@@ -169,9 +194,9 @@ blockquote p+p:last-child:before {
 	content:		'\2014 '; /* &mdash; */
 }
 
-/* See http://www.w3.org/Style/Examples/007/leaders.en.html */
+// See http://www.w3.org/Style/Examples/007/leaders.en.html */
 ol.article-list {
-	width:			480px;
+	width:			$width - 32px;
 	margin-left:	16px;
     padding:		0;
     overflow-x:		hidden;
@@ -195,20 +220,21 @@ ol.article-list .date {
     padding-left:	0.33em;
 }
 ol.article-list .title, ol.article-list .date {
-    background:		#FFFFFF;
+    background:		$background;
 	text-decoration:none;
 }
 ol.article-list .title:hover, ol.article-list .date:hover {
-    background:		#FFFFFF;
+    background:		$background;
 	text-decoration:underline;
 }
 
+/*
 aside>div#disqus_thread {
 	margin-top:		1.5em;
 }
 
 .feedburnerFeedBlock ul {
-	width:			480px;
+	width:			$width - 32px;
 	margin-left:	16px;
     padding:		0;
     overflow-x:		hidden;
@@ -240,6 +266,7 @@ aside>div#disqus_thread {
 	text-decoration:underline;
 }
 .feedburnerFeedBlock #creditfooter { display:none; }
+*/
 
 .flickr-photos, .tumblr-photos {
 	text-align: center;
@@ -252,12 +279,15 @@ aside>div#disqus_thread {
 	margin-left: 1px;
 	margin-right: 2px;
 	padding: 2px;
-	-webkit-filter: grayscale(100%);
 }
 
-#follow-button {
-	background-image: none;
+img {
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+	filter: gray; /* IE6-9 */
+	-webkit-filter: grayscale(1) opacity(0.6) /* Chrome 19+ & Safari 6+ */
 }
-#follow-button>I {
-	-webkit-filter: grayscale(100%);
+
+a:hover img {
+	filter: none;
+	-webkit-filter: none;
 }

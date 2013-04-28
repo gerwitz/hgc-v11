@@ -14,10 +14,11 @@ gem 'deadweight'
 # sitemap.xml, feeds
 gem 'builder'
 
-# article filters
+# filters
 gem 'kramdown'
 gem 'erubis'
 gem 'typogruby'
+gem 'sass'
 
 # nanoc
 gem 'nanoc'

@@ -14,3 +14,6 @@ output/
 
 # Temporary file directory
 tmp/
+
+# Sass cache
+.sass-cache/

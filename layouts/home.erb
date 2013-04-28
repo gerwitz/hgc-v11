@@ -8,7 +8,7 @@
 		<h2>Latest Tweet <small>from <a href="https://twitter.com/gerwitz">@gerwitz</a></small>
 		</h2>
 		<blockquote id="last_tweet">
-			<p>Loading…</p>
+			<p><i class="icon-refresh icon-spin"></i> Loading…</p>
 			<small></small>
 		</blockquote>
 		<script>
@@ -31,11 +31,11 @@
 		</script>
 		<script src="http://api.twitter.com/1/statuses/user_timeline.json?user_id=521&include_rts=false&exclude_replies=true&include_entities=true&trim_user=true&count=1&callback=twitter_callback_function"></script>
 		
-		<h2>Articles <small>from other sites</small></h2>
+		<h2>Writings <small>posted elsewhere</small></h2>
 		<ol class="article-list">
 		<% sorted_posts_external_only[0, 6].each do |article| %>	
 			<li>
-			<%= link_to("<img src=\"https://plus.google.com/_/favicon?domain=#{URI.parse(article[:external]).host}\" height=\"12\" width=\"12\" /> #{article[:title]}", article[:external], :class => 'title') %>
+			<%= link_to("<img src=\"https://plus.google.com/_/favicon?domain=#{URI.parse(article[:external]).host}\" height=\"12\" width=\"12\" class=\"favicon\" /> #{article[:title]}", article[:external], :class => 'title') %>
 			<%= link_to(Time.parse(article[:date]).localtime.format_as_date, article[:external], :class => 'date') %></li>
 		<% end %>
 		</ol>
@@ -56,7 +56,7 @@
 		<script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=5&display=latest&size=s&layout=h&source=user&user=78928298%40N00"></script>
 		</div>
 
-		<h2>Journal Posts <small>from this soliloquy</small></h2>
+		<h2>Journal Entries <small>in this soliloquy</small></h2>
 		<ol class="article-list">
 		<% sorted_posts_local_only[0, 6].each do |article| %>	
 			<li><%= link_to(article[:title], article, :class => 'title') %>
@@ -64,18 +64,20 @@
 		<% end %>
 		</ol>
 				
-		<h2>Findings <small>collected in the <a href="http://tumblr.gerwitz.com/">Observatory</a></small></h2>
+		<h2>Findings <small>collected in the <a href="http://tumblr.gerwitz.com/">Wunderkammer</a></small></h2>
 
+		<p>
 		<blockquote id="tumblr-quotes">
-			<span class="loading">Loading…</span>
+			<p><i class="icon-refresh icon-spin"></i> Loading…</p>
 		</blockquote>
 		<script type="text/javascript">
 		function tumblr(resp) {
 			var last_quote = resp.posts[0];
-			$('#tumblr-quotes').html('<p>'+last_quote['quote-text']+'</p><small>&mdash;'+last_quote['quote-source']+'</small>');
+			$('#tumblr-quotes').html('<p>'+last_quote['quote-text']+'</p><small>&mdash;<cite>'+last_quote['quote-source']+'</cite></small>');
 		}
 		</script>
 		<script src="http://gerwitz.tumblr.com/api/read/json?callback=tumblr&num=1&type=quote" type="text/javascript"></script>
+		</p>
 
 		<div class='tumblr-photos'><a id='tumblr-url-tumblphotos-1' href=''><img border='0' id='tumblr-photo-tumblphotos-1' class='tumblr-photo' src='' alt='' /></a><a id='tumblr-url-tumblphotos-2' href=''><img border='0' id='tumblr-photo-tumblphotos-2' class='tumblr-photo' src='' alt='' /></a><a id='tumblr-url-tumblphotos-3' href=''><img border='0' id='tumblr-photo-tumblphotos-3' class='tumblr-photo' src='' alt='' /></a><a id='tumblr-url-tumblphotos-4' href=''><img border='0' id='tumblr-photo-tumblphotos-4' class='tumblr-photo' src='' alt='' /></a><a id='tumblr-url-tumblphotos-5' href=''><img border='0' id='tumblr-photo-tumblphotos-5' class='tumblr-photo' src='' alt='' /></a>
 		</div>

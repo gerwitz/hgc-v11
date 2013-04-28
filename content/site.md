@@ -14,7 +14,9 @@ Both comments and search are provided by third parties, the former via [Disqus][
 [disqus]: http://gerwitz.disqus.com/community.html
 [tapir]: http://tapirgo.com/
 
-The current minimal style was iterated from [Simon Sigurdhsson](https://bitbucket.org/urdh/sigurdhsson-blog), who was kind enough to place his CSS in the public domain.
+The text-centric form was originally inspired by [Tom Preston-Warner](http://tom.preston-werner.com/) and [Scott Stevenson](http://theocacao.com/).
+
+Styling is seriously assisted by [Normalize.css](http://necolas.github.io/normalize.css/) and [Typeplate](http://typeplate.com/) with icons via [Font Awesome](http://gregoryloucas.github.io/Font-Awesome-More/).
 
 Hosting is provided by [Rackspace Cloud][] (née Slicehost) on an Ubuntu slice.
 

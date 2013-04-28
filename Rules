@@ -140,11 +140,13 @@ end
 
 compile '/assets/*' do
   case item[:extension]
-    when 'css'
-#      filter :rainpress
     when 'js'
 #      filter :jsmin
   end
+end
+
+compile '/style/*' do
+  filter :sass, syntax: :scss
 end
 
 compile '/archive/years/' do
@@ -234,7 +236,17 @@ end
 
 route '/fonts/*' do 
   # from static data source, so they already have extension in identifier
-  '/assets/' + item.identifier.chop
+  '/assets' + item.identifier.chop
+end
+
+# don't route underscore-prefixed, they are for includes
+route '/style/_*' do
+  nil
+end
+
+# put sass files in assets and change extension
+route '/style/*' do
+  '/assets' + item.identifier[6..-2] + '.css'
 end
 
 route '/assets/*' do

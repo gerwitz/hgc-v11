@@ -3,10 +3,10 @@
 			<%= yield %>
 		</div>
 
-		<ol class="article-list">
+		<ol>
 			<% @item[:months_by_year].each do |year, months| %>	
 			<li>
-				<%= year %>
+				<%= year %> (<%= months.map{|month, posts| posts.count}.reduce(:+) %>)
 				<ol>
 					<% months.each do |month, posts| %>
 					<li>
