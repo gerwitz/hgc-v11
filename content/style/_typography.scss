@@ -1,46 +1,63 @@
 html {
-    font-family: Georgia, Verdana, serif;
-    font-size: 100%;
-	line-height: 1.25rem;
-    word-wrap: break-word;
+    font-family:	Georgia, Verdana, serif;
+    font-size:		100%;
+	line-height:	1.25rem;
+    word-wrap:		break-word;
 }
 
-h1 { font-size: 1.500rem; line-height: 2.50rem; font-weight: normal;}
-h2 { font-size: 1.375rem; line-height: 2.50rem; font-weight: normal;}
-h3 { font-size: 1.250rem; line-height: 2.50rem; font-weight: normal;}
-h4 { font-size: 1.125rem; line-height: 1.25rem; font-weight: normal;}
-h5 { font-size: 1.000rem; line-height: 1.25rem; font-weight: normal;}
-h6 { font-size: 1.000rem; line-height: 1.25rem; font-weight: normal;}
-h1, h2, h3, h4, h5, h6 {
-    font-family: Helvetica, sans-serif;
+li {
+	margin:			0.5rem 0;
 }
-h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
-	font-weight: lighter;
-	font-size:	0.75rem;
+
+// TODO maybe pick a baseline number and stick with it: these aim for whole rems.
+h1 {
+	font-size: 2.62rem;
+	margin: { top: 7.38rem; bottom: 2rem; }
+	// total: 12rem
+	small { font-weight: lighter; font-size: 1.62rem; }
+}
+h2 {
+	font-size: 1.62rem;
+	margin: { top: 2.38rem; bottom: 1rem; }
+	// total: 5rem
+	small { font-weight: lighter; font-size: 1.00rem; }
+}
+h3, h4, h5, h6 {
+	font-size: 1.00rem;
+	margin: { top: 2rem; bottom: 1rem; }
+	// total: 4rem
+	small { font-weight: lighter; font-size: 0.62rem; }
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight:	bold;
+    font-family:	Helvetica, sans-serif;
 }
 
 #footer {
-    border-top: 1px solid #aaa;
-    margin-bottom: 20px;
+    border-top:		1px solid #aaa;
+    margin-bottom:	20px;
 }
 
 body>article>header time {
-    font-family: Helvetica, sans-serif;
-	font-size:	0.75rem;
+    font-family:	Helvetica, sans-serif;
+	font-size:		0.75rem;
 }
 
 .footnote {
-	font-size:	0.75rem;
+	font-size:		0.75rem;
 }
 
 .footnotes, .footnotes p {
-	font-size:	0.75rem;
+	font-size:		0.75rem;
+}
+.footnotes li {
+	margin:			0 0.25rem;
 }
 
 // backlink
 a.reversefootnote {
-	padding-left: 1rem;
-	text-decoration: none;
+	padding-left:	0.25rem;
+	text-decoration:none;
 }
 
 
@@ -49,40 +66,37 @@ pre, code { overflow: scroll; }
 pre { white-space: pre-wrap; }
 
 sup, sub {
-	height: 0;
-	line-height: 1;
-	vertical-align: baseline;
+	height:			0;
+	line-height:	1;
+	vertical-align:	baseline;
 }
-
-ul.bodytext, ol.bodytext {
-	list-style: none;
-	margin-left: 0;
-	padding-left: 0em;
-}
-
 
 p {
-	font-size: 1rem;
-	margin: 0;
-	text-align: left;
+	font-size:		1rem;
+	margin:			0;
+	text-align:		left;
 }
 
 // dropcap
-article .entry-content>p:first-child:first-letter { 
-	text-indent: 0;
-	font-size: 2.5rem;
-	line-height: 2.5rem;
-	font-weight: 400;
-	float: left;
-	margin: 0 0.107rem 0 0;
+article.post .entry-content>p:first-child:first-letter { 
+	text-indent:	0;
+	font-size:		2.5rem;
+	line-height:	2.5rem;
+	font-weight:	400;
+	float:			left;
+	margin:			0 0.107rem 0 0;
 }
-article .entry-content>p+p {
-	text-indent: 2.5rem;
+article.post .entry-content>p+p {
+	text-indent:	2.5rem;
+}
+
+article.page p+p {
+	margin-top:		0.5rem;
 }
 
 body>article>header time {
-    font-family: Helvetica, sans-serif;
-	font-size: 0.7956rem;
+    font-family:	Helvetica, sans-serif;
+	font-size:		0.7956rem;
 }
 
 
