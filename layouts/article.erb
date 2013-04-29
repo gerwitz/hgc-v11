@@ -11,21 +11,11 @@
 	  </div>
  
 	  <footer>
-
-		<% if @item[:comments] %>
-        <div id="disqus_thread" class="comments"></div>
-        <script type="text/javascript">
-            var disqus_shortname = 'gerwitz';
-            (function() {
-                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-            })();
-        </script>
-		<% else %>
-		<!-- comments disabled -->
-		<% end %>
-
+		<div class="comments">
+			<h3><i class="icon-comment"></i> What happened to comments?</h3>
+			<p>Sorry, commenting has been disabled. This site is a personal soliloquy, not a community.</p>
+			<p>Please feel free to <a href="/about.html">contact me</a> about anything you read here. If you really want to discuss it publicly, perhaps you should <a href="<%= tweet_intent_url(@item) %>">tweet about it</a>.
+		</div>
 	  </footer>
  
 	</article>

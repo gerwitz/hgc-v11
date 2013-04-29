@@ -1,5 +1,6 @@
 #!/usr/bin/ruby
 require 'rubygems'
+require 'cgi'
 include Posts
 include Nanoc3::Helpers::LinkTo
 include Nanoc3::Helpers::XMLSitemap
@@ -41,4 +42,12 @@ def filelike_identifier(item)
     # Write item with identifier /foo/ to /foo.html
     return item.identifier.chop + '.html'
   end
+end
+
+def tweet_intent_url(item)
+	tweet_url = 'https://twitter.com/intent/tweet'
+	tweet_url += '?url=' + CGI::escape(@site.config[:base_url] + item.path)
+	tweet_url += '&via=gerwitz'
+	tweet_url += '&related=gerwitz,shannonethomas'
+  return tweet_url
 end

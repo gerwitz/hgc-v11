@@ -3,10 +3,14 @@
 <head>
 	<meta charset="utf-8">
 	<title><%= @item[:title] %></title>
-    <meta name="generator" content="nanoc">
-	<link rel="alternate" type="application/rss+xml" href="/feed" title="All posts to hans.gerwitz.com">
+    <meta name="generator" content="nanoc" />
+	<link rel="author" href="https://plus.google.com/115369062315673853712" />
+
+	<link rel="alternate" type="application/rss+xml" href="/feed" title="All posts to hans.gerwitz.com" />
+
 	<!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 	<link rel="stylesheet" href="/assets/stylesheet.css" media="screen">
+
 	<link rel="openid.server" href="http://www.myopenid.com/server" />
 	<link rel="openid.delegate" href="http://gerwitz.myopenid.com/" />
 	<link rel="openid2.local_id" href="http://gerwitz.myopenid.com" />
@@ -14,6 +18,8 @@
 	<meta http-equiv="X-XRDS-Location" content="http://www.myopenid.com/xrds?username=gerwitz.myopenid.com" />
 	
 	<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js"></script>
+	
+	<script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
 </head>
 <body>
 	<header>
@@ -29,10 +35,10 @@
 			</li>
  -->
 			<li>
-				<a href="/about.html"><i class="icon-user"></i> About</a>
+				<a href="/about.html" rel="author" title="About Hans"><i class="icon-user"></i> About</a>
 			</li>
 			<li>
-				<a href="https://twitter.com/gerwitz"><i class="icon-twitter"></i> Twitter</a>
+				<a href="https://twitter.com/intent/user?user_id=521"><i class="icon-twitter"></i> Twitter</a>
 			</li>
 		</ul>
 	</header>
