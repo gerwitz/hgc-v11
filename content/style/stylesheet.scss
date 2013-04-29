@@ -36,6 +36,10 @@ a:hover {
 body>article, body>section {
 	width:			$width;
 	margin:			2rem auto;
+	
+	.home {
+		margin-top: 	4rem;
+	}
 }
 
 body>article>header {
