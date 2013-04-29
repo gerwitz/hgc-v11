@@ -33,13 +33,14 @@ p:hover a, li:hover a, dl:hover a, table:hover a {
 a:hover {
 	color:			#00E;
 }
-body>article, body>section {
+
+body>article {
 	width:			$width;
 	margin:			2rem auto;
-	
-	.home {
-		margin-top: 	4rem;
-	}
+}
+body>section {
+	width:			$width;
+	margin:			4rem auto;
 }
 
 body>article>header {
