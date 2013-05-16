@@ -5,6 +5,7 @@ include Posts
 include Nanoc3::Helpers::LinkTo
 include Nanoc3::Helpers::XMLSitemap
 
+# NOT IN USE
 # Is this item a child of another item?
 def this_is_child_of(rep)
   return false if rep.is_a?(String)
@@ -44,10 +45,27 @@ def filelike_identifier(item)
   end
 end
 
+def item_description(item)
+  type = item[:kind] || 'page'
+  description = item[:abstract] || "A #{type} on #{@site.config[:site_name]}"
+  return description
+end
+
 def tweet_intent_url(item)
 	tweet_url = 'https://twitter.com/intent/tweet'
 	tweet_url += '?url=' + CGI::escape(@site.config[:base_url] + item.path)
+  tweet_url += '&text=' + CGI::escape(item[:title])
 	tweet_url += '&via=gerwitz'
 	tweet_url += '&related=gerwitz,shannonethomas'
   return tweet_url
 end
+
+def facebook_share_url(item)
+	tweet_url = 'https://www.facebook.com/dialog/feed?app_id=138710993114'
+	tweet_url += '&link=' + CGI::escape(@site.config[:base_url] + item.path)
+	tweet_url += '&name=' + CGI::escape(item[:title])
+	tweet_url += '&description=' + CGI::escape(item_description(item))
+	tweet_url += '&redirect_uri=' + CGI::escape(@site.config[:base_url])
+  return tweet_url
+end
+

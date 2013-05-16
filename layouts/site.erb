@@ -1,22 +1,47 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
+	<meta charset="utf-8" />
 	<title><%= @item[:title] %></title>
     <meta name="generator" content="nanoc" />
-	<link rel="author" href="https://plus.google.com/117303083576651952409" />
 
-	<link rel="alternate" type="application/rss+xml" href="/feed" title="All posts to hans.gerwitz.com" />
+	<link rel="alternate" type="application/rss+xml" href="/feed" title="Posts to <%= @site.config[:site_name] %>" />
 
 	<!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-	<link rel="stylesheet" href="/assets/stylesheet.css" media="screen">
+	<link rel="stylesheet" href="/assets/stylesheet.css" media="screen" />
 
+	<!-- OpenID delegation -->
 	<link rel="openid.server" href="http://www.myopenid.com/server" />
 	<link rel="openid.delegate" href="http://gerwitz.myopenid.com/" />
 	<link rel="openid2.local_id" href="http://gerwitz.myopenid.com" />
 	<link rel="openid2.provider" href="http://www.myopenid.com/server" />
 	<meta http-equiv="X-XRDS-Location" content="http://www.myopenid.com/xrds?username=gerwitz.myopenid.com" />
 	
+	<!-- favicon -->
+	<link rel="icon" href="/assets/tree.png" type="image/x-icon" />
+	<link rel="shortcut icon" href="/assets/tree.png" type="image/x-icon" />
+
+	<!-- basic SEO -->
+	<meta name="keywords" content="gerwitz, hans gerwitz, <%= @item[:tags] %>" />
+	<meta name="description" content="<%= @item[:abstract] %>" />
+	
+	<!-- Google+ attribution for rich search snippets -->
+	<link rel="author" href="https://plus.google.com/117303083576651952409" />
+	
+	
+	<!-- Twitter summary card -->
+	<meta property="twitter:creator:id" content="521" />
+	<meta property="twitter:title" content="<%= @item[:title] %>" />
+	<meta property="twitter:description" content="<%= @item[:abstract] %>" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:site_name" property="<%= @site.config[:site_name] %>" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="<%= @site.config[:base_url] + item.path %>" />
+	<meta property="og:title" content="<%= @item[:title] %>" />
+	<meta property="og:description" content="<%= @item[:abstract] %>" />
+	<meta property="og:image" content="<%= @site.config[:base_url] + 'assets/tree.png' %>" />
+
 	<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js"></script>
 	
 	<script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>

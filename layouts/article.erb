@@ -1,6 +1,6 @@
 	<article class="hentry post">
 	  <header>
-	    <h1 class="entry-title"><%= @item[:title] %></h1>
+	    <h1 class="entry-title" title="<%= item_description(@item) %>"><%= @item[:title] %></h1>
 	    <time class="updated" datetime="<%= attribute_to_time(@item[:date]).strftime('%Y-%m-%d %H:%M:%S%z') %>" pubdate>
           <%= attribute_to_time(@item[:date]).localtime.format_as_date %>
 	    </time>
@@ -13,8 +13,8 @@
 	  <footer>
 		<div class="comments">
 			<h3><i class="icon-comment"></i> Comments?</h3>
-			<p>Sorry, commenting has been disabled. This site is a personal soliloquy, not a community.</p>
-			<p>Please feel free to <a href="/about.html">contact me</a> about anything you read here. If you really want to discuss it publicly, perhaps you should <a href="<%= tweet_intent_url(@item) %>">tweet about it</a>.
+			<p>Sorry, I have disabled commenting. This site is a personal soliloquy, not a community.</p>
+			<p>Please feel free to <a href="/about.html">contact me</a> about anything you read here. If you really want to discuss it publicly, perhaps you should <a href="<%= tweet_intent_url(@item) %>">tweet about it</a> or, if you must, <a href="<%= facebook_share_url(@item) %>">share on Facebook</a>.
 		</div>
 	  </footer>
  
