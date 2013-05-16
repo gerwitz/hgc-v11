@@ -9,7 +9,8 @@ tags:
 - video
 ---
 
-Bill Poser has asked ["Why the attention to Bush's language?"][1]  
+Bill Poser has asked ["Why the attention to Bush's language?"][1]
+
 For the comedy, of course.
 
 

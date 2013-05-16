@@ -56,7 +56,7 @@ module Posts
   				end
   			end
   		end
-  		buffer
+  		return buffer
   	end
     print(" done\n")
   end

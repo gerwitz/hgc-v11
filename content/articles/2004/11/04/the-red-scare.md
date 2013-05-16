@@ -7,10 +7,14 @@ tags:
 ---
 
 ![The monkey still has a gun!][1]
-The people of my city were powerless to stop the [destruction of their history][2], and just [turned down][3] a chance to [finally take fate into our own hands][4] because we were [told][5] change is [evil][6].  Pecuniae obediunt omnia.  
-My state, meanwhile, has chosen to [prioritize highway construction][7].  And most of my time zone participated in the red tide of ["values"][8] and fear that [saturated rural America][9].  
-So, we've failed to take the gun away from the monkey.  How best to handle the armed primate, then?  Run.  
-Short of a [marriage of convenience][10], though, it's quite [difficult to leave][11].  Even if I did, as [Barry Crimmins warns][12], I risk just becoming a victim of our foreign policy.  Furious George has a big gun.  
+The people of my city were powerless to stop the [destruction of their history][2], and just [turned down][3] a chance to [finally take fate into our own hands][4] because we were [told][5] change is [evil][6].  Pecuniae obediunt omnia.
+
+My state, meanwhile, has chosen to [prioritize highway construction][7].  And most of my time zone participated in the red tide of ["values"][8] and fear that [saturated rural America][9].
+
+So, we've failed to take the gun away from the monkey.  How best to handle the armed primate, then?  Run.
+
+Short of a [marriage of convenience][10], though, it's quite [difficult to leave][11].  Even if I did, as [Barry Crimmins warns][12], I risk just becoming a victim of our foreign policy.  Furious George has a big gun.
+
 I could just retreat to a more [like-minded][13] part of the country, but then I'm still buying the ammo and living under Ashcroftian principles.  At least until someone [redraws some borders][14].
 
    [1]: kid_sinister.jpg

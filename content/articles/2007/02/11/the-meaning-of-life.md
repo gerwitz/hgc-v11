@@ -19,7 +19,8 @@ tags:
 
    [1]: http://www.beliefnet.com/story/178/story_17876_1.html
 
-  
+
+
 I'f I'd know it'd end up in [print][2] I might've given more thought to that particular blog comment.
 
    [2]: http://www.amazon.com/exec/obidos/ASIN/1577315146/phobia-20

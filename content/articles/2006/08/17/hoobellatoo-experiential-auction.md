@@ -7,7 +7,8 @@ tags:
 - stlouis
 ---
 
-[Hoobellatoo's "Experiential Auction"][1]: best. fundraiser. ever.  
+[Hoobellatoo's "Experiential Auction"][1]: best. fundraiser. ever.
+
 (via [Steve Fitzpatrick Smith][2])
 
    [1]: http://www.hoobellatoo.org/experientialauction.cfm

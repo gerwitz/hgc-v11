@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<title><%= @item[:title] %></title>
     <meta name="generator" content="nanoc" />
-	<link rel="author" href="https://plus.google.com/115369062315673853712" />
+	<link rel="author" href="https://plus.google.com/117303083576651952409" />
 
 	<link rel="alternate" type="application/rss+xml" href="/feed" title="All posts to hans.gerwitz.com" />
 
@@ -22,7 +22,7 @@
 	<script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
 </head>
 <body>
-	<header>
+	<header id="masthead">
 		<% home = @items.find { |i| i.rep_named(:default).path == '/' } %>
 		<h1><%= link_to_unless_current(@site.config[:site_name], home) %></h1>
 		<ul class="nav">
@@ -70,6 +70,27 @@
 			</ul>
 		</nav>
 	</footer>
+
+<!-- header shadow-on-scroll -->
+<script type="text/javascript">
+	var handleScroll = function () {
+		var masthead = document.getElementById("masthead");
+		if (masthead) {
+			var offset = 0.0;
+			var distance = masthead.offsetHeight;
+		    var scrollPosition = window.pageYOffset;
+			if (scrollPosition < distance) {
+				offset = (distance - scrollPosition) / distance;
+			}
+			var opacity = 1.0 - (offset * 1.0);
+			masthead.style["boxShadow"] = "0px 6px 6px -6px rgba(50, 50, 50, " + opacity + ")";
+		}
+	}
+	if (window.addEventListener) {
+		window.addEventListener("scroll", handleScroll);
+		window.addEventListener("touchmove", handleScroll);
+	}
+</script>
 	
 <!-- Google Analytics (async) -->
 <script type="text/javascript">

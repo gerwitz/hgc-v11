@@ -36,7 +36,7 @@ a:hover {
 
 body>article {
 	width:			$width;
-	margin:			2rem auto;
+	margin:			5rem auto;
 }
 body>section {
 	width:			$width;
@@ -46,8 +46,13 @@ body>section {
 body>article>header {
 	margin-bottom:	1rem;
 }
+body>article>header>h1 {
+	margin-bottom: 0;
+}
 body>article>header time {
-	font-style:		italic;
+    font-family:	Helvetica, sans-serif;
+	font-size:		0.75rem;
+	color:			lighten($color, 50%);
 }
 
 // currently empty
@@ -70,7 +75,6 @@ body>header {
 
 	height:			2em;
 	padding-top:	1em;
-	border-bottom:	1px solid $color;
 	margin-bottom:	2em;
 	display:		block;
 	z-index:		1;
@@ -116,7 +120,7 @@ body>footer {
 
 	height:			1.5em;
 	margin:			0 auto;
-	margin-top:		5.75em;
+	margin-top:		2.0em;
 	display:		block;
 	overflow:		visible;
 	border-top:		1px solid $color;
@@ -177,12 +181,13 @@ article footer .comments {
 		margin-top:		0.5rem;
 		opacity:		0;
 		-webkit-transition: opacity 0.25s ease-out;
+		-webkit-transition-delay: 0.75s;
 	}
 }
 article footer .comments:hover {
 	p {
 		opacity:		1;
-		-webkit-transition-delay: 0.75s;
+		-webkit-transition-delay: 0;
 	}
 }
 
@@ -256,6 +261,15 @@ a:hover .favicon {
 	filter:			none;
 	-webkit-filter:	none;
 }
+
+
+img.float-left {
+	float:			left;
+}
+img.float-right {
+	float:			right;
+}
+
 
 .flickr-photos, .tumblr-photos {
 	text-align:		center;

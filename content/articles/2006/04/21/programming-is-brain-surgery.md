@@ -7,7 +7,8 @@ tags:
 - programming
 ---
 
-Eric Lippert has posted some good thoughts on why [writing code is more like brain surgery than rocket science][1], but by the looks of the [comment thread][2] (and those URLs) writing usable software is more difficult still.  Maybe Microsoft should follow [my example][3], put aside their prejudices, and configure WordPress with permalinks that end in .aspx.  
+Eric Lippert has posted some good thoughts on why [writing code is more like brain surgery than rocket science][1], but by the looks of the [comment thread][2] (and those URLs) writing usable software is more difficult still.  Maybe Microsoft should follow [my example][3], put aside their prejudices, and configure WordPress with permalinks that end in .aspx.
+
 (Via [David Weiss][4].)
 
 

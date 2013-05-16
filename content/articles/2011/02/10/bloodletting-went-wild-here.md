@@ -14,7 +14,8 @@ tags:
 > Medical analogies, applied to social organisms, are apt to be farfetched, and there is no point in mistaking mammalian chemistry for what occurs in a city. But analogies as to what goes on in the brains of earnest and learned men, dealing with complex phonemena [sic] they do not understand at all and trying to make do with a pseudoscience, do have point. As in the pseudoscience of bloodletting, just so in the pseudoscience of city rebuilding and planning, years of learning and a plethora of subtle and complicated dogma have arisen on a foundation of nonsense. The tools of technique have steadily been perfected. Naturally, in time, forceful and able men, admired administrators, having swallowed the initial fallacies and having been provisioned with tools and with public confidence, go on logically to the greatest destructive excesses, which prudence or mercy might previously have forbade. Bloodletting could heal only by accident or insofar as it broke the rules, until the time when it was abandoned in favor of the hard, complex business of assembling, using and testing, bit by bit, true descriptions of reality drawn not from how it ought to be, but from how it is. The pseudoscience of city planning and its companion, the art of city design, have not yet broken with the specious comfort of wishes, familiar superstitions, oversimplifications, and symbols, and have not yet embarked upon the adventure of probing the real world.
 
 
-[Jane Jacobs][1], [The Death and Life of Great American Cities][2], 1961 [Emphasis mine]  
+[Jane Jacobs][1], [The Death and Life of Great American Cities][2], 1961 [Emphasis mine]
+
 Shared as food for thought, not only for my friends at [Interaction 11][3].
 
    [1]: http://www.pps.org/articles/jjacobs-2/

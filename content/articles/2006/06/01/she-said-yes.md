@@ -20,9 +20,12 @@ I'm pretty sure that everyone who cares has already been told in person, so now 
 ### The plan
 
 
-Kristan's always wanted to visit Times Square for New Years, I once thought to follow up on some old contacts and try to get a proposal put up on one of the largest video screens some time when the networks would still be around to make a big brouhaha.  
-Then I remembered she's even more introverted than me, and embarrassment isn't romantic.  
-So this winter as we made plans to visit Europe for a post-tax-season holiday and narrowed the destination to London, I suggested it'd be a great chance to take the Chunnel train and briefly see Paris.  Ever since I visited in 2002 I've wanted to revisit the City of Light with her.  Meanwhile, I had already months saving and months more shopping for the right ring.  
+Kristan's always wanted to visit Times Square for New Years, I once thought to follow up on some old contacts and try to get a proposal put up on one of the largest video screens some time when the networks would still be around to make a big brouhaha.
+
+Then I remembered she's even more introverted than me, and embarrassment isn't romantic.
+
+So this winter as we made plans to visit Europe for a post-tax-season holiday and narrowed the destination to London, I suggested it'd be a great chance to take the Chunnel train and briefly see Paris.  Ever since I visited in 2002 I've wanted to revisit the City of Light with her.  Meanwhile, I had already months saving and months more shopping for the right ring.
+
 Keeping the secret was very difficult, not only logistically, but emotionally; my natural inclination is to share anything of importance with her, and this certainly is important.  I barely stopped myself from telling stories like [Amex][2] hunting for a street artist to capture the moment in Monmartre.  Trying not to look nervous carrying the ring through security checkpoints for several days and across two international borders wasn't easy, either.  
 
 
@@ -31,7 +34,8 @@ Keeping the secret was very difficult, not only logistically, but emotionally; m
 ### The event
 
 
-When we got to Sacre Coeur on [May 5th][3], it became clear that was not the best place after all.  The crowds would have meant either embarrassing her or trying to be subtle, and the aggressive nature of Monmartre's artists had her a bit frazzled.  So, I postponed.  
+When we got to Sacre Coeur on [May 5th][3], it became clear that was not the best place after all.  The crowds would have meant either embarrassing her or trying to be subtle, and the aggressive nature of Monmartre's artists had her a bit frazzled.  So, I postponed.
+
 Eventually we found ourselves by the Seine and Kristan agreed to by suggestion we descend from the bustle of the city and stroll along the right bank to a pedestrian bridge ([Pont des Arts][4]) to await the sunset.  
 
 
@@ -55,15 +59,18 @@ She said yes.
 
 
 
-  
+
+
 Some time later a couple strolled by and we asked them to take our picture.  
 
 
 ### The ring
 
 
-I stressed for months over selecting the perfect ring, without being able to ask for her opinion.  Despite a broad search and a lot of [education][6], I ended up going for elegant simplicity: a round solitaire in a classic platinum setting from [Tiffany & Co.][7]  (1.33/D/VVS1 for the stone geeks.)  
-A lot of people scoff at paying for Tiffany when similarly-graded stones are available [cheaper][8], but I was willing to pay for that beautiful setting, a [clean conscience][9], and yes, the cachet of the brand.  I wasn't making a financial investment (I won't be surprised if synthetic diamonds are available for future anniversary bands), but an emotional one.  
+I stressed for months over selecting the perfect ring, without being able to ask for her opinion.  Despite a broad search and a lot of [education][6], I ended up going for elegant simplicity: a round solitaire in a classic platinum setting from [Tiffany & Co.][7]  (1.33/D/VVS1 for the stone geeks.)
+
+A lot of people scoff at paying for Tiffany when similarly-graded stones are available [cheaper][8], but I was willing to pay for that beautiful setting, a [clean conscience][9], and yes, the cachet of the brand.  I wasn't making a financial investment (I won't be surprised if synthetic diamonds are available for future anniversary bands), but an emotional one.
+
 It all came together exactly as I hoped.  Thanks to [friends][10] for heroic efforts to keep the secret and a lot of luck.
 
    [6]: http://www.diamondtalk.com/

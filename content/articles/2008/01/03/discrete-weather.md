@@ -9,7 +9,8 @@ tags:
 - weather
 ---
 
-Yahoo forecasts a high temperature of 51° immediately followed by a low of 57°.  At no time this weekend will it be 52°–56°.  
+Yahoo forecasts a high temperature of 51° immediately followed by a low of 57°.  At no time this weekend will it be 52°–56°.
+
 ![][1]  
 
 

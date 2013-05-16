@@ -7,7 +7,8 @@ tags:
 ---
 
 ![Junior][1]
-The Zoo had to [euthanize my adopted animal][2] on Tuesday.  Kristan gave me [parentship][3] of [Junior][4] at Christmas with a plush orangutan that looks strikingly like him and hangs in my office.  
+The Zoo had to [euthanize my adopted animal][2] on Tuesday.  Kristan gave me [parentship][3] of [Junior][4] at Christmas with a plush orangutan that looks strikingly like him and hangs in my office.
+
 I've decided to celebrate Junior's life by joining the [Orangutan Foundation International][5].
 
    [1]: junior-zoo.jpg

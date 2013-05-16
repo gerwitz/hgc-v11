@@ -9,10 +9,14 @@ tags:
 - web
 ---
 
-[Sprout Commerce][1] has figured out how to commit suicide in the Web 2.0 ecosystem.  
-Immediately after [Pete Cashmore's glowing review in April][2] I began using [MyPickList][3] to manage my wishlists, rather than using the "buy" tag in del.icio.us as I had before (and limiting myself to items that have records on Amazon.com is so Web 1.0).  
-Imagine my surprise, then, when [my list][4] just became a 404 error and Sprout replaced the homepage with a notice that they are "undergoing reconstruction to better serve our customers" and impore me to "check back frequently to use our new and improved service when we reopen."  
-Yeah, right.  I'll be in line to trust you with my data right after you just ate it all.   Thanks for wasting my time and energy.  
+[Sprout Commerce][1] has figured out how to commit suicide in the Web 2.0 ecosystem.
+
+Immediately after [Pete Cashmore's glowing review in April][2] I began using [MyPickList][3] to manage my wishlists, rather than using the "buy" tag in del.icio.us as I had before (and limiting myself to items that have records on Amazon.com is so Web 1.0).
+
+Imagine my surprise, then, when [my list][4] just became a 404 error and Sprout replaced the homepage with a notice that they are "undergoing reconstruction to better serve our customers" and impore me to "check back frequently to use our new and improved service when we reopen."
+
+Yeah, right.  I'll be in line to trust you with my data right after you just ate it all.   Thanks for wasting my time and energy.
+
 If Sprout wants to find out what I'm interested in now, I guess they can go check out [my wists][5].
 
    [1]: http://www.sproutcommerce.com/

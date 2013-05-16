@@ -7,8 +7,10 @@ tags:
 - cluetrain
 ---
 
-In 2009 I did a fair amount of travel between Seattle and San Francisco on Virgin America's sexy Airbuses.  When I reached elite status on Alaska Airlines, though, they started upgrading me to first class.  Add a season spent in Europe followed by a reduced travel schedule, and I haven't flown Virgin for some time.  
-Last month I thought I might, again (for itinerary convenience) and visited [TripIt][1] to see if I had enough miles for an award flight, and saw I had 0 after a recent "Points expired by point expiration process."  
+In 2009 I did a fair amount of travel between Seattle and San Francisco on Virgin America's sexy Airbuses.  When I reached elite status on Alaska Airlines, though, they started upgrading me to first class.  Add a season spent in Europe followed by a reduced travel schedule, and I haven't flown Virgin for some time.
+
+Last month I thought I might, again (for itinerary convenience) and visited [TripIt][1] to see if I had enough miles for an award flight, and saw I had 0 after a recent "Points expired by point expiration process."
+
 I thought it odd I'd not been warned via email about this, which led to this exchange on Twitter:
 
 
@@ -38,5 +40,6 @@ I thought it odd I'd not been warned via email about this, which led to this exc
    [2]: http://twitter.com/gerwitz
    [3]: http://twitter.com/VirginAmerica
 
-  
+
+
 It's lovely how social media allows brands to add a personal touch.

@@ -6,8 +6,10 @@ tags:
 - me
 ---
 
-You would think that when a close friend has it [confirmed][1] that her father has inoperable cancer in a rare (read: poorly researched and effectively untreatable) form, that I'd have some sage "here's how I coped" advice.  
-[![fucked by mortality][2]][3]  
+You would think that when a close friend has it [confirmed][1] that her father has inoperable cancer in a rare (read: poorly researched and effectively untreatable) form, that I'd have some sage "here's how I coped" advice.
+
+[![fucked by mortality][2]][3]
+
 I really don't.
 
    [1]: http://www.louderplease.com/2007/01/03/a-haiku-about-finding-out-your-dad-is-dying/

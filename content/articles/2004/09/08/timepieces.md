@@ -6,7 +6,8 @@ tags:
 - tagless
 ---
 
-I really want a watch with a face reminiscent of the [Clock of the Long Now][1].  A full [astrolabe][2] is nice. but is a bit busy.  A [planisphere][3] face is beautiful, but they seem inexplicably rare.  Presently [Yes][4] makes my favorite display, but their watch bodies are thick (13 mm for the thin one!)  They tell me a titanium model is coming in October 2004, maybe that will have a less imposing profile.  
+I really want a watch with a face reminiscent of the [Clock of the Long Now][1].  A full [astrolabe][2] is nice. but is a bit busy.  A [planisphere][3] face is beautiful, but they seem inexplicably rare.  Presently [Yes][4] makes my favorite display, but their watch bodies are thick (13 mm for the thin one!)  They tell me a titanium model is coming in October 2004, maybe that will have a less imposing profile.
+
 Also neat:
 
 

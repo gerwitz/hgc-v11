@@ -5,8 +5,10 @@ categories:
 - travel
 ---
 
-In the ten months from mid-August 2009 to mid-July 2010, I travelled over 91,000 miles in [inter-city trips][1].  That's nearly 4 trips around Earth, and an average velocity of 20 mph during waking hours, mostly via aircraft.  
-In the three weeks since we returned from our European tour of duty, we're back to a comfortably urban 0.2 mph, almost all by foot.  
+In the ten months from mid-August 2009 to mid-July 2010, I travelled over 91,000 miles in [inter-city trips][1].  That's nearly 4 trips around Earth, and an average velocity of 20 mph during waking hours, mostly via aircraft.
+
+In the three weeks since we returned from our European tour of duty, we're back to a comfortably urban 0.2 mph, almost all by foot.
+
 ![][2]
 
    [1]: http://www.tripit.com/people/gerwitz

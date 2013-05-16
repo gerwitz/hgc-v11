@@ -8,7 +8,8 @@ tags:
 ---
 
 Via Justin Kodama and Shailendra Rao's work on "3D Portable Office" design, [Understanding Office Ecologies 
-][1], I found David Kirsh's [The Context of Work][2].  This paper is full of insightful models, but the simplest lessons are around the distinction between _neat_ and _scruffy_ office usage "personality types".  
+][1], I found David Kirsh's [The Context of Work][2].  This paper is full of insightful models, but the simplest lessons are around the distinction between _neat_ and _scruffy_ office usage "personality types".
+
 I am undeniably a scruffy, preferring to keep information accessible than organized.  Thank god for [Spotlight][3].
 
    [1]: http://adrenaline.ucsd.edu/external/multimedia/190kodama-rao.pdf

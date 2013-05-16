@@ -22,7 +22,8 @@ Paul Graham has posted his thoughts on [what went wrong at Yahoo][1].  As always
 > One obvious result of this practice was that when Yahoo built things, they often weren't very good.
 
 
-I expect Paul meant this as a condemnation of the waterfall, specify-and-build process, but it sounds like an attack on product managers and designers.  Perhaps it is, as he thinks very highly of programmers and I wouldn't be surprised if the designers at Yahoo were… yahoos.  
+I expect Paul meant this as a condemnation of the waterfall, specify-and-build process, but it sounds like an attack on product managers and designers.  Perhaps it is, as he thinks very highly of programmers and I wouldn't be surprised if the designers at Yahoo were… yahoos.
+
 But I do wish he'd be more explicit, here, because in [some places][2], everyone's a [hacker][3], even if they don't write code.
 
    [2]: http://www.frogdesign.com/

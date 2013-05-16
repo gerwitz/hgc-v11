@@ -12,7 +12,8 @@ tags:
 - work
 ---
 
-I was flipping through [Marc's][1] copy of [Tog on Software Design][2] and was intrigued by the "SunPad" in Tognazzini's description of [Sun's Starfire][3] film (which itself is very reminiscient of [Apple's Knowledge Navigator concept][4]):  
+I was flipping through [Marc's][1] copy of [Tog on Software Design][2] and was intrigued by the "SunPad" in Tognazzini's description of [Sun's Starfire][3] film (which itself is very reminiscient of [Apple's Knowledge Navigator concept][4]):
+
 ![][5]
 
 
@@ -24,7 +25,8 @@ I was flipping through [Marc's][1] copy of [Tog on Software Design][2] and was i
 
 > She looks at the SunPad display, which now has the camera controls slaved to it. It's as if the SunPad were a large camera viewfinder. She presses the button which turns on the pad, then zooms out using the zoom buttons as she begins to move the pad (and boom).
 
-  
+
+
 Today, we can readily produce a handheld screen with an [accelerometer][6] for position sensing.  As a bonus, we can even have a [camera][7] embedded on the backside.  So when do I get to use one to "scan" a scene or object and [package the imagery][8] for playback later (or elsewhere)?
 
    [6]: http://web.archive.org/web/20070813162601/http://www.alatto.com/blog/2007/01/iphone-overload-or-is-it-wii-killer-in.html

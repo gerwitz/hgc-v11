@@ -7,7 +7,8 @@ tags:
 - network
 ---
 
-Two weeks ago I had a hiccup with DNS (old zone got deactivated before the new one was live) and a few caches led to resolution problems.  Amazingly enough, [Feedburner][1] has problems with stuck DNS caches, so this resulted in more than a day of outage for my syndication feed.  
+Two weeks ago I had a hiccup with DNS (old zone got deactivated before the new one was live) and a few caches led to resolution problems.  Amazingly enough, [Feedburner][1] has problems with stuck DNS caches, so this resulted in more than a day of outage for my syndication feed.
+
 Interestingly, the traffic has still not recovered.  I guess some of the random people who'd subscribed got errors in their readers and unsubscribed.
 ![february-2007-feed-subscribers.gif][2]
 

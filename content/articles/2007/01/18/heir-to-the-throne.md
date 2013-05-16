@@ -10,7 +10,8 @@ tags:
 - funny
 ---
 
-With [As the Apple Turns][1] defunct for over a year, where is an unapologetic Apple fanboy supposed to get his regular dose of humorous zealotry?  
+With [As the Apple Turns][1] defunct for over a year, where is an unapologetic Apple fanboy supposed to get his regular dose of humorous zealotry?
+
 [Macalope][2] to the rescue:
 Is your wife there? Can you put her on the phone? Because... damn, woman.
 

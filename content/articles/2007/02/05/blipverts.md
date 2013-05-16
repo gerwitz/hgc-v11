@@ -7,11 +7,13 @@ tags:
 - mind
 ---
 
-[![Channel 23][1]][2]  
+[![Channel 23][1]][2]
+
 Lunch group brainstorm of the day:
 - Superbowl advertising is as much about hype as about the actual 30 seconds of actual exposure.
 - The Food Network may have actually sold [subliminal advertising to McDonald's][3].
-- Even though [popular belief][4] is largely debunked, there's enough [possibility][5] to convince advertisers that value exists.  
+- Even though [popular belief][4] is largely debunked, there's enough [possibility][5] to convince advertisers that value exists.
+
 So, someone needs to buy a very short Superbowl ad segment and sell each frame individually.  Probably a stunt that would only be profitable once, but who cares?  [Once made Alex Tew a millionaire.][6]
 
 

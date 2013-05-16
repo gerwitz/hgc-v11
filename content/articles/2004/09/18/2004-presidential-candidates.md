@@ -8,7 +8,8 @@ tags:
 - politics
 ---
 
-This is a fun one.  
+This is a fun one.
+
 My [SelectSmart.com][1] matches:
 
 
@@ -43,7 +44,8 @@ Republican
 Peroutka, Michael
 Constitution Party
 19%
-  
+
+
 But Kerry gets the vote I'm casting [against Bush][2], since we don't have [ranked voting][3] in Missouri.
 
    [2]: /2004/08/07/the-case-against-w.html

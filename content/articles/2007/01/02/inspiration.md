@@ -9,10 +9,13 @@ tags:
 ---
 
 The influence of Apple design on Nintendo is undeniable in this icon that appears upon successful registration of a product serial number on [my.nintendo.com][1].
-![my_nintendo.gif][2]  
+![my_nintendo.gif][2]
+
 Compare this to the user icon that I believe first appeared in System 7, but was prevalent in AppleShare and Mac OS 8.
-![8_user.gif][3]  
-And countless observers have commented on the [Ivian][4] feel to the DS lite.  Now if they'd just get more formal and let us play DS games on our iPod, or use the [Wii][5] as an ["iTV"][6].  
+![8_user.gif][3]
+
+And countless observers have commented on the [Ivian][4] feel to the DS lite.  Now if they'd just get more formal and let us play DS games on our iPod, or use the [Wii][5] as an ["iTV"][6].
+
 (I've tried to determine if the Apple icon was designed by [Susan Kare][7] but can find no history for it.)
 
    [1]: http://my.nintendo.com

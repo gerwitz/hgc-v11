@@ -7,9 +7,11 @@ tags:
 - media
 ---
 
-In February of 2007, when the "FAIL" meme was still fresh, I had a gift made for my [PM Director][1] so she could denote inadequate requirements documentation.  
+In February of 2007, when the "FAIL" meme was still fresh, I had a gift made for my [PM Director][1] so she could denote inadequate requirements documentation.
+
 ![][2]
-I eventually posted a [picture on flickr][3].  It was shortly used by [TechCrunch][4] and gradually found its way to dozens of sites, including [Grist][5], [GigaOm][6], [ZDNet][7], [Mother Jones][8], and [Lifehacker][9].  It even inspired Facebook groups from [Kansas][10] to [England][11].  
+I eventually posted a [picture on flickr][3].  It was shortly used by [TechCrunch][4] and gradually found its way to dozens of sites, including [Grist][5], [GigaOm][6], [ZDNet][7], [Mother Jones][8], and [Lifehacker][9].  It even inspired Facebook groups from [Kansas][10] to [England][11].
+
 Eventually a peddler of tchotchkes produced a [small, plastic version][12].  I recommend, however, a [classic wooden stamp][13] and big pad of ink.
 
    [1]: http://twitter.com/dobeedeux

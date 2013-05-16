@@ -13,8 +13,10 @@ tags:
 ---
 
 [Ryan][1] shared this technical video spoof:  
-  
-Rockwell's retro-encabulator is a refinement of the [turbo-encabulator][2], which Chrysler demonstrated to the world in a [1980s instructional video][3], although the design dates to at least [1946][4].  Apparently [work continues][5].  
+
+
+Rockwell's retro-encabulator is a refinement of the [turbo-encabulator][2], which Chrysler demonstrated to the world in a [1980s instructional video][3], although the design dates to at least [1946][4].  Apparently [work continues][5].
+
 Ryan asserted we should produce nonsense jargon-laden material like this to describe our work.  Indeed, it's odd that software engineering has little such [fictional self-deprecation][6], but maybe that's because our discipline is still immature enough that [our real work is worse than fiction][7].
 
    [1]: http://nopaper.net/

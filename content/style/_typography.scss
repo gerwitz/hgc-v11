@@ -1,7 +1,6 @@
 html {
     font-family:	Georgia, Verdana, serif;
     font-size:		100%;
-	line-height:	1.25rem;
     word-wrap:		break-word;
 }
 
@@ -38,11 +37,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom:	20px;
 }
 
-body>article>header time {
-    font-family:	Helvetica, sans-serif;
-	font-size:		0.75rem;
-}
-
 .footnote {
 	font-size:		0.75rem;
 }
@@ -71,12 +65,16 @@ sup, sub {
 	vertical-align:	baseline;
 }
 
-p {
+.entry-content {
 	font-size:		1rem;
-	margin:			0;
+	line-height:	1.25rem;
 }
 
-// dropcap
+p {
+	margin:			1.5rem 0 0 0;
+}
+
+// dropcap on posts
 article.post .entry-content>p:first-child:first-letter { 
 	text-indent:	0;
 	font-size:		2.5rem;
@@ -85,17 +83,3 @@ article.post .entry-content>p:first-child:first-letter {
 	float:			left;
 	margin:			0 0.107rem 0 0;
 }
-article.post .entry-content>p+p {
-	text-indent:	2.5rem;
-}
-
-article.page p+p {
-	margin-top:		0.5rem;
-}
-
-body>article>header time {
-    font-family:	Helvetica, sans-serif;
-	font-size:		0.7956rem;
-}
-
-

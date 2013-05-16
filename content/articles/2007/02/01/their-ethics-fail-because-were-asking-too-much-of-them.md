@@ -14,7 +14,8 @@ tags:
 
    [1]: http://www.pezcyclingnews.com/?pg=fullstory&id=943
 
-From the [RBR][2] newsletter, on a proposal to shorten the tours of France, Italy and Spain from three weeks to two. The theory is that easier tours will mean riders are less likely to resort to doping.  
+From the [RBR][2] newsletter, on a proposal to shorten the tours of France, Italy and Spain from three weeks to two. The theory is that easier tours will mean riders are less likely to resort to doping.
+
 I think Phil's engaging in a bit of hyperbole, but I agree with his point nonetheless.
 
    [2]: http://www.roadbikerider.com/

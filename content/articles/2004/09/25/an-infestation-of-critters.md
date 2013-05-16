@@ -6,7 +6,8 @@ tags:
 - tagless
 ---
 
-![CritterCritterCritterCritter][1]  
+![CritterCritterCritterCritter][1]
+
 Kristan's cat, Critter, decided to pose for a photoshop experiment.
 
 
