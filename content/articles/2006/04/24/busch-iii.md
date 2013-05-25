@@ -1,7 +1,7 @@
 ---
 title: Busch III
 categories:
-- Culture
+- culture
 tags:
 - stlouis
 - urban

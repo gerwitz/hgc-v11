@@ -2,7 +2,7 @@
 title: Disregard
 categories:
 - Business
-- Personal
+- personal
 tags:
 - cluetrain
 ---

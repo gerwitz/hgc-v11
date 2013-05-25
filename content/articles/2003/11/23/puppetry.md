@@ -1,7 +1,7 @@
 ---
 title: Puppetry
 categories:
-- Culture
+- culture
 tags:
 - driving
 - privacy

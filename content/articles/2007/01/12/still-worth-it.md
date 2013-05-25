@@ -1,7 +1,7 @@
 ---
 title: Still worth it
 categories:
-- Personal
+- personal
 tags:
 - me
 ---

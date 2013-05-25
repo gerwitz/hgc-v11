@@ -1,7 +1,7 @@
 ---
 title: Managing money, 2006 edition
 categories:
-- Personal
+- personal
 tags:
 - me
 ---

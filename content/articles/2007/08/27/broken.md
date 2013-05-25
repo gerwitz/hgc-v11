@@ -1,10 +1,10 @@
 ---
 title: Broken
 categories:
-- Personal
+- personal
 tags:
 - journal
-- Personal
+- personal
 ---
 
 By now, close friends and family are all aware, so I can "publish": I broke my engagement with Kristan on the 18th.

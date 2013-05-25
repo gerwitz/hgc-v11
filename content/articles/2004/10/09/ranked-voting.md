@@ -1,7 +1,7 @@
 ---
 title: ranked voting
 categories:
-- Culture
+- culture
 tags:
 - government
 - politics

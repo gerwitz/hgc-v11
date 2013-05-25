@@ -1,7 +1,7 @@
 ---
 title: Downsizing the Monkeysphere
 categories:
-- Personal
+- personal
 tags:
 - me
 ---

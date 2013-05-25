@@ -1,7 +1,7 @@
 ---
 title: RTFM
 categories:
-- Personal
+- personal
 tags:
 - Design
 - funny

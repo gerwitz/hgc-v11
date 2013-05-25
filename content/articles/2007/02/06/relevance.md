@@ -1,11 +1,11 @@
 ---
 title: Relevance
 categories:
-- Personal
+- personal
 tags:
 - me
 - media
-- Personal
+- personal
 ---
 
 Jim captures the essence of [why I stopped following local news][1]: it favors the trivial.  During college I ended up relying on NPR to keep abreast of things.

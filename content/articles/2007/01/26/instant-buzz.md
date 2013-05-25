@@ -1,7 +1,7 @@
 ---
 title: Instant buzz
 tags:
-- Culture
+- culture
 - idea
 - marketing
 - politics

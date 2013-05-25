@@ -1,7 +1,7 @@
 ---
 title: Fatherless
 categories:
-- Personal
+- personal
 tags:
 - tagless
 ---

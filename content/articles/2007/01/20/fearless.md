@@ -2,10 +2,10 @@
 title: Fearless
 categories:
 - meta
-- Personal
+- personal
 tags:
 - meta
-- Personal
+- personal
 ---
 
 In July of 1995, I finally got around to registering some domain names for myself.  I didn't even have my own servers, but I saw a sort of land grab taking shape and wanted to homestead.  Among others, I grabbed phobia.com, merely because I thought hostnames like agora.phobia.com for mail services and arachne.phobia.com for that new web thing would be fun.  (I didn't think to reserve my own name until much later.)

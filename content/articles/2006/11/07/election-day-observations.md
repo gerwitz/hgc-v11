@@ -1,7 +1,7 @@
 ---
 title: Election day observations
 categories:
-- Culture
+- culture
 tags:
 - Design
 - politics

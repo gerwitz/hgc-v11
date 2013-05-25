@@ -1,7 +1,7 @@
 ---
 title: Building monsters
 categories:
-- Work
+- work
 tags:
 - technology
 - code

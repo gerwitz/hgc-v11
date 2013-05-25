@@ -1,11 +1,11 @@
 ---
 title: Electric Oxygen
 categories:
-- Personal
+- personal
 tags:
-- Culture
+- culture
 - lepton
-- Personal
+- personal
 - scooter
 - shopping
 ---

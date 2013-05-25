@@ -10,6 +10,7 @@ tags:
 - religion
 - facebook
 - twitter
+- popular
 ---
 
 Recently at frog's Seattle studio we put to test the well-studied phenomenon of [images with eyes encouraging prosocial behavior][eyes]. Our office admins report a 90% reduction in dirty dishes left carelessly in or around the sink after placing a sign with faces exhorting us to behave like responsible adults. Previous text-only signs had led to no detectable improvement.

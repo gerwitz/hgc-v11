@@ -1,10 +1,10 @@
 ---
 title: Chat of the week
 categories:
-- Personal
+- personal
 tags:
 - funny
-- Personal
+- personal
 ---
 
 > 

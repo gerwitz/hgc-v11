@@ -1,7 +1,7 @@
 ---
 title: Cursed
 categories:
-- Personal
+- personal
 tags:
 - driving
 ---

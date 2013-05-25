@@ -1,9 +1,9 @@
 ---
 title: 20 Questions to a Better Relationship
 categories:
-- Personal
+- personal
 tags:
-- Personal
+- personal
 - personality
 - psychology
 ---

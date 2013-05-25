@@ -1,12 +1,12 @@
 ---
 title: Being erased
 categories:
-- Personal
+- personal
 tags:
 - history
 - me
 - net
-- Personal
+- personal
 - web
 ---
 

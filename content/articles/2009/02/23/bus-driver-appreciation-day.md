@@ -6,11 +6,11 @@ tags:
 - seattle
 - transportation
 - urban
+- popular
 abstract: Wherein I propose March 18th as Bus Driver Appreciation Day.
 ---
 
 Since moving to Seattle, [Shannon][1] and I have found public transportation suffices for most trips that cannot be walked.  We still use taxis to get the airport (until [Link][2] opens) and walk to work, but excursions more than 2 miles from home usually involve [Metro][3] or [Sound Transit][4] buses.  Two months after selling her car, we've only used [Zipcar][5] once.
-
 
 Even without rail (we never need the streetcar), it has been unexpectedly pleasant thanks to comprehensive routes, generally short headways, and [iPhone mapping][6].
 

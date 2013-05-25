@@ -1,8 +1,8 @@
 ---
 title: Ice-nine
 categories:
-- Culture
-- Personal
+- culture
+- personal
 tags:
 - politics
 ---

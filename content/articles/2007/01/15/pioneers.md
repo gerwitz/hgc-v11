@@ -1,7 +1,7 @@
 ---
 title: Pioneers
 categories:
-- Culture
+- culture
 tags:
 - stlouis
 - urban

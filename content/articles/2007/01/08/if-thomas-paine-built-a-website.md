@@ -1,7 +1,7 @@
 ---
 title: If Thomas Paine built a website
 categories:
-- Culture
+- culture
 tags:
 - politics
 ---

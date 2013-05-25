@@ -1,7 +1,7 @@
 ---
 title: Sinaisky in St. Louis
 categories:
-- Culture
+- culture
 tags:
 - music
 - review

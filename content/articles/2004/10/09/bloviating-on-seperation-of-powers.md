@@ -1,7 +1,7 @@
 ---
 title: Bloviating on separation of powers
 categories:
-- Culture
+- culture
 tags:
 - politics
 ---

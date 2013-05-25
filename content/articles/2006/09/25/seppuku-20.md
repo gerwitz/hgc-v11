@@ -2,7 +2,7 @@
 title: Seppuku 2.0
 categories:
 - Business
-- Personal
+- personal
 tags:
 - Business
 - me

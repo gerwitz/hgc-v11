@@ -1,7 +1,7 @@
 ---
 title: Terrorized by gullibility
 tags:
-- Culture
+- culture
 - funny
 - marketing
 - news

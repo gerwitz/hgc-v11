@@ -6,7 +6,7 @@ tags:
 - medicine
 - health
 - extropy
-excerpt: I experienced my first anesthetic in under the blinding glare of an operation lamp with a gruff old doctor taking a needle to my mouth while shouting German to his assistant.
+abstract: I experienced my first anesthetic in under the blinding glare of an operation lamp with a gruff old doctor taking a needle to my mouth while shouting German to his assistant.
 ---
 
 In 36 years, I've never been subject to medical modification.  I've suffered cuts and bruises, of course, but have never had a doctor use tools on me with even local anesthesia.  No cavities, operations, or even orthodontics.  All the usual suspect parts are still with me: appendix, tonsils, wisdom teeth.

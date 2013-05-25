@@ -1,7 +1,7 @@
 ---
 title: The abduction of Samual Gillham
 categories:
-- Personal
+- personal
 tags:
 - family
 - genealogy

@@ -1,11 +1,11 @@
 ---
 title: MBTI
 categories:
-- Personal
+- personal
 tags:
 - me
 - mind
-- Personal
+- personal
 - personality
 ---
 

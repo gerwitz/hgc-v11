@@ -1,9 +1,9 @@
 ---
 title: One holy, catholic, and apostolic…
 categories:
-- Culture
+- culture
 tags:
-- Culture
+- culture
 - globalism
 - religion
 ---

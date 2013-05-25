@@ -1,7 +1,7 @@
 ---
 title: Otis lives
 categories:
-- Personal
+- personal
 tags:
 - me
 ---

@@ -1,7 +1,7 @@
 ---
 title: Road unrage
 categories:
-- Culture
+- culture
 tags:
 - india
 - travel

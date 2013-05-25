@@ -1,7 +1,7 @@
 ---
 title: Catching fandom
 categories:
-- Personal
+- personal
 tags:
 - me
 ---

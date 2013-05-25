@@ -1,7 +1,7 @@
 ---
 title: Vocabularic performance
 categories:
-- Culture
+- culture
 tags:
 - language
 ---

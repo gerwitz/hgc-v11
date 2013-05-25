@@ -1,7 +1,7 @@
 ---
 title: Juror 842
 categories:
-- Personal
+- personal
 tags:
 - law
 - culture

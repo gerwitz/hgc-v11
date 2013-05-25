@@ -5,6 +5,8 @@ categories:
 tags:
 - politics
 - urban
+- ★
+- popular
 ---
 
 Today I've learned that NYC tried to implement [congestion pricing][1] but was foiled by their state government, and that Washington state is considering ["allowing" cities to set speed limits][2] on the roads that those cities build, maintain, and patrol.

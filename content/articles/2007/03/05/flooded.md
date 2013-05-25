@@ -1,7 +1,7 @@
 ---
 title: Flooded
 categories:
-- Personal
+- personal
 tags:
 - work
 ---

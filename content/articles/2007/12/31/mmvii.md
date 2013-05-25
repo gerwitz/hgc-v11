@@ -1,10 +1,10 @@
 ---
 title: 2007 in review
 categories:
-- Personal
+- personal
 tags:
 - journal
-- Personal
+- personal
 ---
 
 

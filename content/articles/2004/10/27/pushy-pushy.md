@@ -1,7 +1,7 @@
 ---
 title: Pushy, pushy
 categories:
-- Work
+- work
 tags:
 - technology
 - web

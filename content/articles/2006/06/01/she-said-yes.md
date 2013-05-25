@@ -1,7 +1,7 @@
 ---
 title: She said yes.
 categories:
-- Personal
+- personal
 tags:
 - me
 ---

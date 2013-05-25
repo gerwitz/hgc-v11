@@ -1,7 +1,7 @@
 ---
 title: Now 100 times slower
 categories:
-- Personal
+- personal
 - travel
 ---
 

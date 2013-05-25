@@ -2,7 +2,7 @@
 title: Checking Out
 abstract: Online retailers are making a mistake by keeping payment and gratification decoupled.
 categories:
-- Work
+- work
 tags:
 - design
 - commerce

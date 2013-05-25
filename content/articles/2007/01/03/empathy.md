@@ -1,7 +1,7 @@
 ---
 title: Empathy
 categories:
-- Personal
+- personal
 tags:
 - me
 ---

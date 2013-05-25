@@ -1,7 +1,7 @@
 ---
 title: Predictions
 categories:
-- Culture
+- culture
 tags:
 - politics
 ---

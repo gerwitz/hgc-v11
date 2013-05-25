@@ -1,9 +1,9 @@
 ---
 title: Midbland
 categories:
-- Personal
+- personal
 tags:
-- Culture
+- culture
 - language
 ---
 

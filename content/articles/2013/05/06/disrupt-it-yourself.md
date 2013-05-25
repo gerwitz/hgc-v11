@@ -2,7 +2,7 @@
 title: Disrupt It Yourself
 abstract: 3D printed guns are about guns, not printers.
 categories:
-- Culture
+- culture
 tags:
 - 3dp
 - law

@@ -3,7 +3,7 @@ title: Seattle 2007
 categories:
 - travel
 tags:
-- Personal
+- personal
 - travel
 ---
 

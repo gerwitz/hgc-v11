@@ -1,7 +1,7 @@
 ---
 title: Click Here
 categories:
-- Personal
+- personal
 tags:
 - marketing
 - me

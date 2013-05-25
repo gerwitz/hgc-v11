@@ -1,9 +1,9 @@
 ---
 title: Princesses
 categories:
-- Personal
+- personal
 tags:
-- Culture
+- culture
 - stlouis
 ---
 

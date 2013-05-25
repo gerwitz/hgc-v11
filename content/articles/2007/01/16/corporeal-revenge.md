@@ -1,7 +1,7 @@
 ---
 title: Corporeal Revenge
 categories:
-- Culture
+- culture
 tags:
 - history
 - politics

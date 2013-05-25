@@ -1,8 +1,8 @@
 ---
 title: Inevitability
 categories:
-- Personal
-- Culture
+- personal
+- culture
 tags:
 - philosophy
 - film

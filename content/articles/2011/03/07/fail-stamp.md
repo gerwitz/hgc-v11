@@ -1,10 +1,11 @@
 ---
 title: FAIL stamp
 categories:
-- Personal
+- personal
 tags:
 - FAIL
 - media
+- popular
 ---
 
 In February of 2007, when the "FAIL" meme was still fresh, I had a gift made for my [PM Director][1] so she could denote inadequate requirements documentation.

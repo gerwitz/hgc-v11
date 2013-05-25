@@ -2,7 +2,7 @@
 title: Time and Value
 abstract: A game for someone else.
 categories:
-- Culture
+- culture
 tags:
 - gaming
 - time

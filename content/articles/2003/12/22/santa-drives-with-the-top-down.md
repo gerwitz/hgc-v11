@@ -1,7 +1,7 @@
 ---
 title: Santa drives with the top down
 categories:
-- Personal
+- personal
 tags:
 - driving
 ---

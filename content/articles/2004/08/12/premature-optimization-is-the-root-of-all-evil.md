@@ -1,9 +1,13 @@
 ---
 title: Premature optimization is the root of all evil
 categories:
-- uncategorized
+- culture
+- work
 tags:
-- tagless
+- history
+- programming
+- popular
+abstract: The history of a popular quote seems to lead from Knuth to Hoare to Dijkstra. 
 ---
 
 "Premature optimization is the root of all evil." is a popular quote with mysterious origins.  It is widely attributed to Donald Knuth, who [apparently][1] [used it][2] in _[Structured Program with goto Statements][3]_ but later [credits][4] Tony Hoare.

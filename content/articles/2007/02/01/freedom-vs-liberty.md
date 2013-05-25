@@ -1,7 +1,7 @@
 ---
 title: Freedom v. Liberty
 categories:
-- Culture
+- culture
 tags:
 - language
 - politics

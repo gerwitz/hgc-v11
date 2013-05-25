@@ -1,11 +1,11 @@
 ---
 title: The Meaning of Life
 categories:
-- Personal
+- personal
 tags:
 - me
 - media
-- Personal
+- personal
 ---
 
 > 

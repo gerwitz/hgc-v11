@@ -1,7 +1,7 @@
 ---
 title: Open minds
 categories:
-- Culture
+- culture
 tags:
 - mind
 - memory

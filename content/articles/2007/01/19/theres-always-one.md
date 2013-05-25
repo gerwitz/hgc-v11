@@ -1,9 +1,9 @@
 ---
 title: There's always one
 categories:
-- Personal
+- personal
 tags:
-- Personal
+- personal
 - rant
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Grandpa Charles, King of the Franks
 categories:
-- Personal
+- personal
 tags:
 - family
 - genealogy

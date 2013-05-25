@@ -1,7 +1,7 @@
 ---
 title: Hyperfamiliarity
 categories:
-- Personal
+- personal
 tags:
 - me
 ---

@@ -2,7 +2,7 @@
 title: Seeds of assembly
 categories:
 - Design
-- Personal
+- personal
 tags:
 - emergence
 - nature

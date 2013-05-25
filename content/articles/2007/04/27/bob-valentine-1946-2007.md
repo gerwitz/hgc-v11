@@ -1,9 +1,9 @@
 ---
 title: Bob Valentine 1946-2007
 categories:
-- Personal
+- personal
 tags:
-- Personal
+- personal
 - personal-quotes
 ---
 

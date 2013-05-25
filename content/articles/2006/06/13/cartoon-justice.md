@@ -1,7 +1,7 @@
 ---
 title: Cartoon justice
 categories:
-- Culture
+- culture
 tags:
 - politics
 ---

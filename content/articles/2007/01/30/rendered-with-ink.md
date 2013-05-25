@@ -2,11 +2,11 @@
 title: Rendered with ink
 categories:
 - Business
-- Personal
+- personal
 tags:
 - Business
 - media
-- Personal
+- personal
 - thoughts
 ---
 

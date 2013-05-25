@@ -1,8 +1,8 @@
 ---
 title: Social Turing tests
 categories:
-- Culture
-- Personal
+- culture
+- personal
 tags:
 - idea
 - justice

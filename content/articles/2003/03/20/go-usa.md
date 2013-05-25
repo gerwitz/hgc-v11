@@ -5,6 +5,7 @@ categories:
 tags:
 - politics
 - war
+- ★
 abstract: Whither patriotism?
 ---
 

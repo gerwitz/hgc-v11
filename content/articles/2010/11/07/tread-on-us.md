@@ -1,7 +1,7 @@
 ---
 title: Tread on Us
 categories:
-- Culture
+- culture
 tags:
 - history
 - politics

@@ -2,7 +2,7 @@
 title: Verb Smear
 abstract: Which user was that?
 categories:
-- Work
+- work
 tags:
 - design
 - ui

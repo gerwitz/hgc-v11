@@ -1,10 +1,10 @@
 ---
 title: Monster Trucks
 categories:
-- Personal
+- personal
 tags:
-- Culture
-- Personal
+- culture
+- personal
 - stlouis
 ---
 

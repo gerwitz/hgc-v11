@@ -2,8 +2,8 @@
 title: Google's Mixed Incentives
 abstract: Advertising compromises search.
 categories:
-- Work
-- Culture
+- work
+- culture
 tags:
 - business
 - advertising

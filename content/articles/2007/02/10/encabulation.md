@@ -2,18 +2,19 @@
 title: Encabulation
 categories:
 - work
+- culture
 tags:
 - technology
-- Culture
 - funny
 - history
 - language
-- technology
-- Technology
+- ★
+abstract: We're not good enough at software to poke fun at ourselves yet.
 ---
 
 [Ryan][1] shared this technical video spoof:  
 
+<iframe width="420" height="315" src="http://www.youtube-nocookie.com/embed/TuhYd9L_d7w?rel=0" frameborder="0" allowfullscreen></iframe>
 
 Rockwell's retro-encabulator is a refinement of the [turbo-encabulator][2], which Chrysler demonstrated to the world in a [1980s instructional video][3], although the design dates to at least [1946][4].  Apparently [work continues][5].
 

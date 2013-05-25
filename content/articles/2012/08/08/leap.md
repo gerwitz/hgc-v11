@@ -2,7 +2,7 @@
 title: Leap Forward
 abstract: The Leap input device will enable casual gestures we haven't thought of yet.
 categories:
-- Work
+- work
 tags:
 - design
 - ui

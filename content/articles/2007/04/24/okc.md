@@ -3,7 +3,7 @@ title: OKC
 categories:
 - travel
 tags:
-- Personal
+- personal
 - travel
 ---
 

@@ -5,8 +5,9 @@ categories:
 tags:
 - design
 - apple
-- fave
-excerpt: You can't reach your TV, so you can't touch it.  Why would we expect touch-oriented UI to work?
+- ★
+- popular
+abstract: You can't reach your TV, so you can't touch it.  Why would we expect touch-oriented UI to work?
 ---
 
 By now it's generally agreed that [iTV is coming][1] on Wednesday and is likely to be iOS-based.
