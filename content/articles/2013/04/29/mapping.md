@@ -1,11 +1,13 @@
 ---
 title: Gerrymandering
-abstract: 
+abstract: An inventory of alternative US state boundaries.
 categories:
-- Culture
+- culture
 tags:
 - cartography
 - history
+edits:
+- 2013-05-25 added Jonathan Dowse and James Davenport's maps
 ---
 
 It's inevitable that we carve up geography to group people. Political borders are usually the result of negotiations between land-hungry powers, or politicians seeking to tweak group distribution.
@@ -42,4 +44,14 @@ Dirk Brockmann got a lot of attention mapping [areas of mobility](http://rocs.no
 Neil Freeman has drawn [fifty states of equal population](http://fakeisthenewreal.org/reform/).
 
 ![EPA ecoregions](ecoregions.png)
-Finally, I wouldn't be a proper citizen of [Cascadia](http://www.cascadianow.org/about-cascadia/) if I didn't include [ecoregions](http://www.epa.gov/wed/pages/ecoregions/na_eco.htm#Level%20I).
+I wouldn't be a proud citizen of [Cascadia](http://www.cascadianow.org/about-cascadia/) if I didn't include [ecoregions](http://www.epa.gov/wed/pages/ecoregions/na_eco.htm#Level%20I).
+
+![Constellations](constellations.png)
+With a [midnight mapping of star constellations](http://www.ifweassume.com/2013/01/mapping-constellations.html) to Earth's surface, Jim Davenport also finds a Cascadia in Corona Borealis.
+
+![Starbucks](starbucks.png)
+Davenport also cleverly uses Voronoi diagrams to define states based on [distance from Starbucks](http://www.ifweassume.com/2012/10/the-united-states-of-starbucks.html
+).
+
+![Capital Voronois](capitals.png)
+Jonathan Dowse also uses Voronoi cells, but choses [state capital cities](http://jbdowse.com/poib/all/voronoi-states) for the vertices.
