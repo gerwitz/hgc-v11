@@ -125,15 +125,12 @@ body>footer {
 	overflow:		visible;
 	border-top:		1px solid $color;
 	margin-bottom:	3em;
-	padding-top:	3px;
+	padding-top:	8px;
 	
 	@extend .meta;
 }
 body>footer a {
 	text-decoration:none;
-}
-body>footer form {
-	float:			left;
 }
 body>footer nav {
 	display:		inline;
@@ -148,13 +145,22 @@ body>footer nav ul {
 body>footer nav li {
 	display: 		inline-block;
 	margin:			0;
+	padding:		1px;
 }
 body>footer nav li+li {
-	padding-left:	2ex;
+	margin-left:	2ex;
 }
 
-
-input#search {
+// search
+body>footer form {
+	margin-top:		1px;
+	float:			left;
+}
+body>footer form label {
+	padding:		1px;
+}
+body>footer form input {
+	padding:		1px;
 	outline:		none;
 	border:			none;
 	color:			$color;
@@ -164,7 +170,8 @@ input#search {
 //    color: #999;
     font-weight:	normal;
 }
-input#search:focus {
+body>footer form input:focus {
+	padding:		0;
 	border:			1px solid $color;
 }
 // thanks http://stackoverflow.com/a/2610741
