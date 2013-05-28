@@ -23,7 +23,7 @@ Michael Baldwin's [Common Census](http://commoncensus.org/maps.php) is my modern
 [^city]: or that [I consider this a more valid method of grouping than states](/2011/10/20/city-rights.html).
 
 ![dialect](dialects.gif)
-Another favorite view is [Robert Delaney's dialect regions](hhttp://www.uta.fi/FAST/US1/REF/dial-map.html), or [Rick Aschmann's similar work](http://aschmann.net/AmEng/).
+Another favorite view is [Robert Delaney's dialect regions](http://www.uta.fi/FAST/US1/REF/dial-map.html), or [Rick Aschmann's similar work](http://aschmann.net/AmEng/).
 
 ![connections](connections.png)
 Also using communication, MIT, AT&T, IBM, and probably some other [TLAs](http://www.catb.org/jargon/html/T/TLA.html) have mapped [socially connected regions based on mobile phone calls](http://senseable.mit.edu/csa/visuals2.html). Then with Vincent Blondel (of [phone identification](http://mit.edu/newsoffice/2013/de-anonymize-cellphone-data-0327.html) fame) they [went meta](http://www.theatlanticcities.com/arts-and-lifestyle/2012/04/invisible-borders-define-american-culture/1839/).
