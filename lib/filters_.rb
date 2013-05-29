@@ -1,10 +1,10 @@
 #!/usr/bin/ruby
 require 'rubygems'
 
-include Nanoc3::Helpers::Rendering 
+include Nanoc::Helpers::Rendering 
 
 # Thumbnail filter
-class Thumbnail < Nanoc3::Filter
+class Thumbnail < Nanoc::Filter
   identifier :thumbnail
   type       :binary
   def run(filename, params={})

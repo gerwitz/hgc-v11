@@ -2,8 +2,9 @@
 require 'rubygems'
 require 'cgi'
 include Posts
-include Nanoc3::Helpers::LinkTo
-include Nanoc3::Helpers::XMLSitemap
+include Nanoc::Helpers::LinkTo
+include Nanoc::Helpers::Rendering
+include Nanoc::Helpers::XMLSitemap
 
 # NOT IN USE
 # Is this item a child of another item?
@@ -17,7 +18,7 @@ def this_is_child_of(rep)
 end
 
 # Improved link_to_unless_current
-module Nanoc3::Helpers::LinkTo
+module Nanoc::Helpers::LinkTo
   def link_to_unless_current(text, path_or_rep, attributes={})
     # Find path
     path = path_or_rep.is_a?(String) ? path_or_rep : path_or_rep.path
