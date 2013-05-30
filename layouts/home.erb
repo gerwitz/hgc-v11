@@ -29,7 +29,7 @@
 		    $('#last_tweet>small').html(tweet_link);
 		}
 		</script>
-		<script src="http://api.twitter.com/1/statuses/user_timeline.json?user_id=521&include_rts=false&exclude_replies=true&include_entities=true&trim_user=true&count=1&callback=twitter_callback_function"></script>
+		<script src="http://api.twitter.com/1/statuses/user_timeline.json?user_id=521&include_rts=false&exclude_replies=true&include_entities=true&trim_user=true&count=1&callback=twitter_callback_function" defer></script>
 		
 		<h2>Writings <small>posted elsewhere</small></h2>
 		<ol class="article-list">
@@ -53,7 +53,7 @@
 
 		<h2>Photographs <small>from <a href="http://www.flickr.com/photos/phobia/">Flickr</a></small></h2>
 		<div class="flickr-photos">
-		<script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=5&display=latest&size=s&layout=h&source=user&user=78928298%40N00"></script>
+		<script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=5&display=latest&size=s&layout=h&source=user&user=78928298%40N00" defer></script>
 		</div>
 
 		<h2>Journal Entries <small>in this soliloquy</small></h2>
@@ -73,15 +73,15 @@
 		<script type="text/javascript">
 		function tumblr(resp) {
 			var last_quote = resp.posts[0];
-			$('#tumblr-quotes').html('<p>'+last_quote['quote-text']+'</p><small>&mdash;<cite>'+last_quote['quote-source']+'</cite></small>');
+			$('#tumblr-quotes').html('<p>'+last_quote['quote-text']+'</p><cite>'+last_quote['quote-source']+'</cite>');
 		}
 		</script>
-		<script src="http://gerwitz.tumblr.com/api/read/json?callback=tumblr&num=1&type=quote" type="text/javascript"></script>
+		<script src="http://gerwitz.tumblr.com/api/read/json?callback=tumblr&num=1&type=quote" type="text/javascript" defer></script>
 		</p>
 
-		<div class='tumblr-photos'><a id='tumblr-url-tumblphotos-1' href=''><img border='0' id='tumblr-photo-tumblphotos-1' class='tumblr-photo' src='' alt='' /></a><a id='tumblr-url-tumblphotos-2' href=''><img border='0' id='tumblr-photo-tumblphotos-2' class='tumblr-photo' src='' alt='' /></a><a id='tumblr-url-tumblphotos-3' href=''><img border='0' id='tumblr-photo-tumblphotos-3' class='tumblr-photo' src='' alt='' /></a><a id='tumblr-url-tumblphotos-4' href=''><img border='0' id='tumblr-photo-tumblphotos-4' class='tumblr-photo' src='' alt='' /></a><a id='tumblr-url-tumblphotos-5' href=''><img border='0' id='tumblr-photo-tumblphotos-5' class='tumblr-photo' src='' alt='' /></a>
+		<div class='tumblr-photos'><a id='tumblr-url-tumblphotos-1' href=''><img border='0' id='tumblr-photo-tumblphotos-1' class='tumblr-photo' src='' alt='' width='75' height='75' /></a><a id='tumblr-url-tumblphotos-2' href=''><img border='0' id='tumblr-photo-tumblphotos-2' class='tumblr-photo' src='' alt='' width='75' height='75' /></a><a id='tumblr-url-tumblphotos-3' href=''><img border='0' id='tumblr-photo-tumblphotos-3' class='tumblr-photo' src='' alt='' width='75' height='75' /></a><a id='tumblr-url-tumblphotos-4' href=''><img border='0' id='tumblr-photo-tumblphotos-4' class='tumblr-photo' src='' alt='' width='75' height='75' /></a><a id='tumblr-url-tumblphotos-5' href=''><img border='0' id='tumblr-photo-tumblphotos-5' class='tumblr-photo' src='' alt='' width='75' height='75' /></a>
 		</div>
-		<script type='text/javascript' src='http://gerwitz.tumblr.com/api/read/json?number=5&type=photo'></script>
+		<script type='text/javascript' src='http://gerwitz.tumblr.com/api/read/json?number=5&type=photo' defer></script>
 		<script type='text/javascript'>
 		document.getElementById('tumblr-photo-tumblphotos-1').setAttribute('src', tumblr_api_read.posts[0]['photo-url-75']);
 		document.getElementById('tumblr-url-tumblphotos-1').setAttribute('href', tumblr_api_read.posts[0]['url-with-slug']);

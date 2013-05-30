@@ -5,19 +5,35 @@
 @import "typography";
 @import "font-awesome";
 
+@import "home";
+
 $width:			512px;
 $background:	#FFF;
 $color:			#222;
+
+$p-width:		960px;
+$p-background:	#000;
+$p-color:		#EEE;
 
 html {
 	background:		$background;
 	color:			$color;
 }
 
+
 body {
 	max-width:		$width;
 	margin-left:	auto;
 	margin-right:	auto;
+}
+
+html.project body {
+	max-width:		inherit;
+}
+
+html.project #content {
+	max-width:		$p-width;
+	margin:			0 auto;
 }
 
 a {
@@ -67,11 +83,12 @@ body>article>footer {
 	text-transform:	lowercase;
 }
 
-body>header {
+#masthead {
 	position:		fixed;
-	width:			$width;
 	background:		$background; 
 	top:			0;
+
+	width:			$width;
 
 	height:			2em;
 	padding-top:	1em;
@@ -81,11 +98,11 @@ body>header {
 
 	@extend .meta;
 }
-body>header a {
+#masthead a {
 	text-decoration:none;
 }
 
-body>header h1 {
+#masthead h1 {
 	font-size:		inherit;
 	font-family:	inherit;
 
@@ -100,7 +117,7 @@ body>header h1 {
 }
 
 
-body>header ul {
+#masthead ul {
 	float:			right;
 	list-style:		none;
 	margin:			0;
@@ -109,11 +126,68 @@ body>header ul {
 	font-size:		0.75rem;
 	line-height:	inherit;
 }
-body>header li {
+#masthead li {
 	display:		inline;
 	margin-left:	10px;
 }
 
+html.project {
+	font-family:	"Lucida Grande", Verdana, Arial, sans-serif;
+}
+
+html.project #masthead-wrapper {
+	width:			100%;
+	
+	margin:			0;
+	padding:		0;
+
+	color:			$p-color;
+	background-color: $p-background;
+}
+html.project #masthead {
+	background-color: inherit;
+	
+	position:		static;
+	width:			$p-width;
+	top:			0;
+	margin:			0 auto;
+
+	height:			2em;
+	display:		block;
+
+	@extend .meta;
+}
+html.project #masthead a {
+	text-decoration:none;
+}
+
+html.project #masthead h1 {
+	font-size:		inherit;
+	font-family:	inherit;
+
+	display:		inline;
+	line-height:	inherit;
+
+	font-weight:	bold;
+
+	margin-top:		0;
+	margin-bottom:	0;
+}
+
+html.project #content {
+	padding:		1em;
+	padding-bottom:	2em;
+}
+
+// dat.gui controls
+html.project #dg-controls {
+	position:		absolute;
+	top:			2em;
+	right:			20px;
+	li {
+		margin:			0px;
+	}
+}
 
 body>footer {
 	// width:		$width;
@@ -126,6 +200,8 @@ body>footer {
 	border-top:		1px solid $color;
 	margin-bottom:	3em;
 	padding-top:	8px;
+	padding-left:	1em;
+	padding-right:	1em;
 	
 	@extend .meta;
 }
@@ -259,16 +335,6 @@ ol.article-list .title:hover, ol.article-list .date:hover {
 	text-decoration:underline;
 }
 
-.favicon {
-	filter:			url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
-	filter:			gray; /* IE6-9 */
-	-webkit-filter:	grayscale(1) opacity(0.6) /* Chrome 19+ & Safari 6+ */
-}
-a:hover .favicon {
-	filter:			none;
-	-webkit-filter:	none;
-}
-
 
 img.float-left {
 	margin:			0;
@@ -279,27 +345,4 @@ img.float-right {
 	margin:			0;
 	margin-right:	0.5rem;
 	float:			right;
-}
-
-
-.flickr-photos, .tumblr-photos {
-	text-align:		center;
-}
-.flickr-photos a, .tumblr-photos a {
-	margin-left:	8px;
-	margin-right:	8px;
-}
-.flickr-photos img, .tumblr-photos img {
-	margin-left:	1px;
-	margin-right:	2px;
-	padding:		2px;
-
-	filter:			url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
-	filter:			gray; /* IE6-9 */
-	-webkit-filter:	grayscale(1) opacity(0.6) /* Chrome 19+ & Safari 6+ */
-}
-
-.flickr-photos a:hover img, .tumblr-photos a:hover img {
-	filter:			none;
-	-webkit-filter:	none;
 }

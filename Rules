@@ -37,6 +37,11 @@ preprocess do
       end
     end
   end
+  
+  # set project metadata based on filesystem path
+  @items.select { |i| i.identifier.start_with?('/projects/') and not i.binary? }.each do |page|
+    page[:kind] ||= 'project'
+  end
 
   # make RSS feed
   @items << Nanoc3::Item.new(
@@ -184,6 +189,16 @@ compile '/search' do
   layout 'site'
 end
 
+compile '/projects/*' do
+  unless item.binary?
+    case item[:extension]
+      when 'md'
+        filter :kramdown
+    end
+    layout 'project'
+  end
+end
+
 compile '/articles/*/', :rep => 'default' do
   unless item.binary? or item[:external]
     case item[:extension]
@@ -191,7 +206,7 @@ compile '/articles/*/', :rep => 'default' do
         filter :kramdown
     end
     layout 'article'
-    filter :erb
+    # filter :erb
     layout 'site'
   end
 end
@@ -208,7 +223,7 @@ end
 
 # all other pages
 compile '*', :rep => 'default' do
-  unless item.binary? or item[:external]
+  unless item.binary?
     case item[:extension]
       when 'md'
         filter :kramdown
@@ -266,6 +281,7 @@ route '*/htaccess' do
   dir[0,dir.rindex('/')] + '/.htaccess'
 end
 
+# strip "/articles" prefix
 route '/articles/*/' do
   filelike_identifier(item).partition('/articles')[2]
 end
@@ -283,6 +299,17 @@ route '/categories/*/' do
   filelike_identifier(item)
 end
 
+# map the projects directories more directly
+route '/projects/' do
+  '/projects/index.html'
+end
+route '/projects/*/' do
+  if item[:content_filename] =~ /\/index.*$/ 
+    item.identifier + 'index.html'
+  else
+    filelike_identifier(item)
+  end
+end
 
 route '*' do
   if item.binary?

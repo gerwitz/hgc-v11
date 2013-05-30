@@ -2,6 +2,7 @@
 require 'rubygems'
 require 'cgi'
 include Posts
+include Nanoc::Helpers::Breadcrumbs
 include Nanoc::Helpers::LinkTo
 include Nanoc::Helpers::Rendering
 include Nanoc::Helpers::XMLSitemap

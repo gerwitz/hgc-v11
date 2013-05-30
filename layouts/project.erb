@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html lang="en" class="project">
 <head>
 	<meta charset="utf-8" />
 	<title><%= @item[:title] %></title>
@@ -9,13 +9,6 @@
 
 	<!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 	<link rel="stylesheet" href="/assets/stylesheet.css" media="screen" />
-
-	<!-- OpenID delegation -->
-	<link rel="openid.server" href="http://www.myopenid.com/server" />
-	<link rel="openid.delegate" href="http://gerwitz.myopenid.com/" />
-	<link rel="openid2.local_id" href="http://gerwitz.myopenid.com" />
-	<link rel="openid2.provider" href="http://www.myopenid.com/server" />
-	<meta http-equiv="X-XRDS-Location" content="http://www.myopenid.com/xrds?username=gerwitz.myopenid.com" />
 	
 	<!-- favicon -->
 	<link rel="icon" href="/assets/tree.png" type="image/x-icon" />
@@ -47,78 +40,23 @@
 	<script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
 </head>
 <body class="<%= @item[:kind] %>">
-	<header id="masthead">
-		<h1><%= link_to_unless_current(@site.config[:site_name], '/') %></h1>
-		<ul class="nav">
-<!--
-			<li>
-				<a href="/library.html">Library</a>
-			</li>
-			<li>
-				<a href="/projects.html">Projects</a>
-			</li>
- -->
-			<li>
-				<%= link_to_unless_current(
-					'<i class="icon-user"></i> About</a>',
-					'/about.html',
-					{:title => 'About Hans', :rel => 'author'}
-				) %>
-			</li>
-			<li>
-				<a href="https://twitter.com/intent/user?user_id=521"><i class="icon-twitter"></i> Twitter</a>
-			</li>
-		</ul>
-	</header>
+	<div id="masthead-wrapper">
+		<header id="masthead">
+			<i class="icon-beaker"></i>
+<!--			<h1><%= link_to(@site.config[:site_name], '/') %></h1>
+-->	
+			<%= breadcrumbs_trail.map{ |crumb| link_to_unless_current(crumb[:title], crumb.reps.find { |r| r.name == :default }) }.join(' / ') %>
 
-	<%= yield %>
-
-	<footer>
-		<form method="get" action="/search.html">
-			<label for="search"><i class="icon-search"></i></label>
-			<input id = "search" type="search" placeholder="search posts" name="query" />
-		</form>
-		<nav>
-			<ul>
-				<li>
-					<a href="/archive.html">
-						<i class="icon-time"></i> Archives
-					</a>
-				</li>
-				<li>
-					<a href="/site.html">
-						<i class="icon-book"></i> Colophon
-					</a>
-				</li>
-				<li>
-					<a href="/feed" rel="alternate" type="application/rss+xml">
-						<i class="icon-rss"></i> Feed
-					</a>
-				</li>
-			</ul>
-		</nav>
-	</footer>
-
-<!-- header shadow-on-scroll -->
-<script type="text/javascript">
-	var handleScroll = function () {
-		var masthead = document.getElementById("masthead");
-		if (masthead) {
-			var offset = 0.0;
-			var distance = masthead.offsetHeight;
-		    var scrollPosition = window.pageYOffset;
-			if (scrollPosition < distance) {
-				offset = (distance - scrollPosition) / distance;
-			}
-			var opacity = 1.0 - (offset * 1.0);
-			masthead.style["boxShadow"] = "0px 6px 6px -6px rgba(50, 50, 50, " + opacity + ")";
-		}
-	}
-	if (window.addEventListener) {
-		window.addEventListener("scroll", handleScroll);
-		window.addEventListener("touchmove", handleScroll);
-	}
-</script>
+			<!--
+			/
+			<span><%= @item[:title] %></span>
+				-->
+		</header>
+	</div>
+	
+	<div id="content">
+		<%= yield %>
+	</div>
 	
 <!-- Google Analytics (async) -->
 <script type="text/javascript">

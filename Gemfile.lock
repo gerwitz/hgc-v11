@@ -1,7 +1,7 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    addressable (2.3.3)
+    addressable (2.3.4)
     builder (3.2.0)
     colored (1.2)
     cri (2.3.0)
@@ -13,15 +13,15 @@ GEM
       css_parser (~> 1.2.6)
       nokogiri
     erubis (2.7.0)
-    json (1.7.7)
-    kramdown (1.0.1)
-    nanoc (3.6.2)
+    json (1.8.0)
+    kramdown (1.0.2)
+    nanoc (3.6.4)
       cri (~> 2.3)
     nokogiri (1.5.9)
     rdoc (4.0.1)
       json (~> 1.4)
     rubypants (0.2.0)
-    sass (3.2.7)
+    sass (3.2.9)
     systemu (2.5.2)
     typogruby (1.0.15)
       rubypants

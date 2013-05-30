@@ -13,5 +13,5 @@ I recently decided to learn [Processing][1], a Java-based platform for rapid con
    [1]: http://processing.org/
    [2]: http://rmx.cz/monsters/
    [3]: http://www.shannonethomas.com/
-   [4]: /projects/fur.html
+   [4]: /projects/fur/
 
