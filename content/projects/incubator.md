@@ -34,6 +34,8 @@ Projects that may or may not ever see the light of day.
 	
   * pretension - smartypants that adds ligatures, makes "etc." into "&c.;"
 
+  * howdah - balances atop a large ball, exposing the top, and moves to keep an ant situated atop.
+
   
 ID.'&depth;=1'); ?>
 
