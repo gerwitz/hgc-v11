@@ -22,3 +22,4 @@ subtitle: People who inspire
 * Émile Baudot: inventor of digital communications
 * Tommy Flowers: inventor of purely-electronic "programmable" computing in the face of skepticism
 * [Edward Snowden](http://en.wikipedia.org/wiki/Edward_Snowden)
+* [Charles Marohn](http://www.strongtowns.org/journal/2010/11/22/confessions-of-a-recovering-engineer.html)
