@@ -8,6 +8,7 @@ tags:
 - history
 edits:
 - 2013-05-25 added Jonathan Dowse and James Davenport's maps
+- 2013-12-09 added Colin Woodard's 11 nations
 ---
 
 It's inevitable that we carve up geography to group people. Political borders are usually the result of negotiations between land-hungry powers, or politicians seeking to tweak group distribution.
@@ -55,3 +56,7 @@ Davenport also cleverly uses Voronoi diagrams to define states based on [distanc
 
 ![Capital Voronois](capitals.png)
 Jonathan Dowse also uses Voronoi cells, but choses [state capital cities](http://jbdowse.com/poib/all/voronoi-states) for the vertices.
+
+![Up in Arms](upinarms.jpg)
+Colin Woodard looks to history to inform [11 nations](http://www.tufts.edu/alumni/magazine/fall2013/features/up-in-arms.html) of distinct cultures.
+
