@@ -4,7 +4,7 @@ source :rubygems
 gem 'deadweight'
 
 # local web
-# gem 'adsf'
+gem 'adsf'
 # gem 'mime-types'
 # gem 'rack'
 
@@ -23,4 +23,3 @@ gem 'sass'
 # nanoc
 gem 'nanoc'
 gem 'systemu'
-
