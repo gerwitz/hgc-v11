@@ -7,6 +7,7 @@ tags:
 - race
 - christmas
 - amsterdam
+external: https://medium.com/p/9be771434f1e
 ---
 
 The Wild Hunt is a legend too old to date. Generally, it explains the winter storms of northern Europe as a hunting party of gods, led by Woden[^woden]. As the fearsome group traverses the sky and land, they gather the souls of the deceased and take with them anyone living and foolish enough to be caught in their path.
