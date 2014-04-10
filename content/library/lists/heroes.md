@@ -24,3 +24,4 @@ subtitle: People who inspire
 * [Edward Snowden](http://en.wikipedia.org/wiki/Edward_Snowden)
 * [Ida Tarbell](http://en.wikipedia.org/wiki/Ida_Tarbell): heroine of the fourth estate
 * Kurt Vonnegut
+* [John Muir](http://en.wikipedia.org/wiki/John_Muir): defender of wilderness
