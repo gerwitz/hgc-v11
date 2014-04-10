@@ -55,7 +55,10 @@ Davenport also cleverly uses Voronoi diagrams to define states based on [distanc
 ).
 
 ![Capital Voronois](capitals.png)
-Jonathan Dowse also uses Voronoi cells, but choses [state capital cities](http://jbdowse.com/poib/all/voronoi-states) for the vertices.
+Jonathan Dowse also uses Voronoi cells, but choses [existing state capital cities](http://jbdowse.com/poib/all/voronoi-states) for the vertices.
+
+![City Voronois](cities.svg)
+Jason Sundram uses Voronoi around each [existing state's largest city](http://viz.runningwithdata.com/states/). He also has capital and centroid models.
 
 ![Up in Arms](upinarms.jpg)
 Colin Woodard looks to history to inform [11 nations](http://www.tufts.edu/alumni/magazine/fall2013/features/up-in-arms.html) of distinct cultures.
