@@ -25,3 +25,4 @@ subtitle: People who inspire
 * [Ida Tarbell](http://en.wikipedia.org/wiki/Ida_Tarbell): heroine of the fourth estate
 * Kurt Vonnegut
 * [John Muir](http://en.wikipedia.org/wiki/John_Muir): defender of wilderness
+* [Ruth Bader Ginsburg](https://en.wikipedia.org/wiki/Ruth_Bader_Ginsburg): defender of civil liberty and advocate for open dialogue and diversity
