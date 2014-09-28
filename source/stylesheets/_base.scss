@@ -1,0 +1,339 @@
+$width:			512px;
+$background:	#FFF;
+$color:			#222;
+
+$p-width:		960px;
+$p-background:	#000;
+$p-color:		#EEE;
+
+html {
+	background:		$background;
+	color:			$color;
+}
+
+
+body {
+	max-width:		$width;
+	margin-left:	auto;
+	margin-right:	auto;
+}
+
+html.project body {
+	max-width:		inherit;
+}
+
+html.project #content {
+	max-width:		$p-width;
+	margin:			0 auto;
+}
+
+a {
+	text-decoration:underline;
+	color:			inherit;
+	transition:		color 0.5s 0;
+}
+
+p:hover a, li:hover a, dl:hover a, table:hover a {
+	color:			#1A1AC7;
+	transition:		color 1s 0.5s ease;
+}
+a:hover {
+	color:			#00E;
+}
+
+body>article {
+	width:			$width;
+	margin:			5rem auto;
+}
+body>section {
+	width:			$width;
+	margin:			4rem auto;
+}
+
+body>article>header {
+	margin-bottom:	1rem;
+}
+body>article>header>h1 {
+	margin-bottom: 0;
+}
+body>article>header time {
+    font-family:	Helvetica, sans-serif;
+	font-size:		0.75rem;
+	color:			lighten($color, 50%);
+}
+
+// currently empty
+body>article>footer {
+	margin-top:		1rem;
+	text-align:		right;
+}
+
+.meta {
+	font-family:	"Lucida Grande", Verdana, Arial, sans-serif;
+	font-size:		0.75rem;
+	text-transform:	lowercase;
+}
+
+#masthead {
+	position:		fixed;
+	background:		$background; 
+	top:			0;
+
+	width:			$width;
+
+	height:			2em;
+	padding-top:	1em;
+	margin-bottom:	2em;
+	display:		block;
+	z-index:		1;
+
+	@extend .meta;
+}
+#masthead a {
+	text-decoration:none;
+}
+
+#masthead h1 {
+	font-size:		inherit;
+	font-family:	inherit;
+
+	display:		inline;
+	line-height:	inherit;
+
+	font-weight:	bold;
+
+	float:			left;
+	margin-top:		0;
+	margin-bottom:	0;
+}
+
+
+#masthead ul {
+	float:			right;
+	list-style:		none;
+	margin:			0;
+	padding:		0;
+
+	font-size:		0.75rem;
+	line-height:	inherit;
+}
+#masthead li {
+	display:		inline;
+	margin-left:	10px;
+}
+
+html.project {
+	font-family:	"Lucida Grande", Verdana, Arial, sans-serif;
+}
+
+html.project #masthead-wrapper {
+	width:			100%;
+	
+	margin:			0;
+	padding:		0;
+
+	color:			$p-color;
+	background-color: $p-background;
+}
+html.project #masthead {
+	background-color: inherit;
+	
+	position:		static;
+	width:			$p-width;
+	top:			0;
+	margin:			0 auto;
+
+	height:			2em;
+	display:		block;
+
+	@extend .meta;
+}
+html.project #masthead a {
+	text-decoration:none;
+}
+
+html.project #masthead h1 {
+	font-size:		inherit;
+	font-family:	inherit;
+
+	display:		inline;
+	line-height:	inherit;
+
+	font-weight:	bold;
+
+	margin-top:		0;
+	margin-bottom:	0;
+}
+
+html.project #content {
+	padding:		1em;
+	padding-bottom:	2em;
+}
+
+// dat.gui controls
+html.project #dg-controls {
+	position:		absolute;
+	top:			2em;
+	right:			20px;
+	li {
+		margin:			0px;
+	}
+}
+
+body>footer {
+	// width:		$width;
+
+	height:			1.5em;
+	margin:			0 auto;
+	margin-top:		2.0em;
+	display:		block;
+	overflow:		visible;
+	border-top:		1px solid $color;
+	margin-bottom:	3em;
+	padding-top:	8px;
+	padding-left:	1em;
+	padding-right:	1em;
+	
+	@extend .meta;
+}
+body>footer a {
+	text-decoration:none;
+}
+body>footer nav {
+	display:		inline;
+	float:			right;
+}
+body>footer nav ul {
+	padding:		0;
+	display:		inline-block;
+	margin:			0;
+	list-style:		none;
+}
+body>footer nav li {
+	display: 		inline-block;
+	margin:			0;
+	padding:		1px;
+}
+body>footer nav li+li {
+	margin-left:	2ex;
+}
+
+// search
+body>footer form {
+	margin-top:		1px;
+	float:			left;
+}
+body>footer form label {
+	padding:		1px;
+}
+body>footer form input {
+	padding:		1px;
+	outline:		none;
+	border:			none;
+	color:			$color;
+//    height: 13px;
+//    padding: 2px 10px;
+//    width: 200px;
+//    color: #999;
+    font-weight:	normal;
+}
+body>footer form input:focus {
+	padding:		0;
+	border:			1px solid $color;
+}
+// thanks http://stackoverflow.com/a/2610741
+::-webkit-input-placeholder	{ color: $color; }
+:-moz-input-placeholder		{ color: $color; }
+::-moz-input-placeholder	{ color: $color; }
+:-ms-input-placeholder		{ color: $color; }
+
+
+article footer .comments {
+	h3 { @extend .meta; }
+	p {
+		font-size:		0.75rem;
+		margin-top:		0.5rem;
+		opacity:		0;
+		-webkit-transition: opacity 0.25s ease-out;
+		-webkit-transition-delay: 0.75s;
+	}
+}
+article footer .comments:hover {
+	p {
+		opacity:		1;
+		-webkit-transition-delay: 0;
+	}
+}
+
+
+article img, article video, article audio {
+	display: 		block;
+	margin:			1.75em auto;
+//	width:			$width;
+//	background:		#FAFAFA;
+	padding:		.5em;
+	position:		relative;
+	top:			-.25em;
+}
+
+blockquote {
+	width:			$width - (16px * 2) - 10px;
+	margin:			1rem 16px;
+	padding-left:	10px;
+	border-left:	5px solid #bbb;
+}
+
+blockquote p+p:last-child, blockquote small {
+	display:		block;
+	text-align:		right;
+	font-style:		normal;
+}
+blockquote p+p:last-child:before {
+	content:		'\2014 '; /* &mdash; */
+}
+
+// See http://www.w3.org/Style/Examples/007/leaders.en.html */
+ol.article-list {
+	width:			$width - 32px;
+	margin-left:	16px;
+    padding:		0;
+    overflow-x:		hidden;
+    list-style:		none
+}
+ol.article-list li:before {
+    float:			left;
+    width:			0;
+    white-space:	nowrap;
+    content:
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+}
+ol.article-list .title {
+    padding-right:	0.33em;
+}
+ol.article-list .date {
+    float:			right;
+    padding-left:	0.33em;
+}
+ol.article-list .title, ol.article-list .date {
+    background:		$background;
+	text-decoration:none;
+}
+ol.article-list .title:hover, ol.article-list .date:hover {
+    background:		$background;
+	text-decoration:underline;
+}
+
+
+img.float-left {
+	margin:			0;
+	margin-right:	0.5rem;
+	float:			left;
+}
+img.float-right {
+	margin:			0;
+	margin-right:	0.5rem;
+	float:			right;
+}

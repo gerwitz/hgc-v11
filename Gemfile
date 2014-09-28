@@ -1,25 +1,14 @@
-source :rubygems
+# If you have OpenSSL installed, we recommend updating
+# the following line to use "https"
+source 'http://rubygems.org'
 
-# rake tasks
-gem 'deadweight'
+gem "middleman", "~>3.3"
 
-# local web
-gem 'adsf'
-# gem 'mime-types'
-# gem 'rack'
+# Live-reloading plugin
+gem "middleman-livereload", "~> 3.1.0"
 
-# layouts (for footnotes)
-# gem 'nokogiri'
-
-# sitemap.xml, feeds
+# bloggity-blog
+gem 'middleman-blog'
+gem 'redcarpet'
+gem 'nokogiri'
 gem 'builder'
-
-# filters
-gem 'kramdown'
-gem 'erubis'
-gem 'typogruby'
-gem 'sass'
-
-# nanoc
-gem 'nanoc'
-gem 'systemu'

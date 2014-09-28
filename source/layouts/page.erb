@@ -1,0 +1,17 @@
+<% wrap_layout :site do %>
+  <article class="hentry page">
+    <header>
+      <h1 class="entry-title"><%= current_page.data.title %></h1>
+    <!--
+      <p class="byline author vcard">
+          By <span class="fn">Hans Gerwitz</span>
+      </p>
+    -->
+    </header>
+
+    <div class="entry-content">
+        <%= yield %>
+    </div>
+
+  </article>
+<% end %>
