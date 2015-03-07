@@ -56,7 +56,7 @@ set :images_dir, 'images'
 
 activate :blog do |blog|
   blog.prefix = ""
-  blog.sources = "/writing/{year}-{month}-{day}-{title}.html"
+  blog.sources = "/writing/{year}/{month}-{day}-{title}.html"
   blog.default_extension = ".md"
   blog.summary_separator = /READMORE/
   blog.summary_length = 250
