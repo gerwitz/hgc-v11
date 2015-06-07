@@ -9,7 +9,8 @@
       The raw source can be found at http://github.com/gerwitz/hans.gerwitz.com/
     -->
 
-    <meta name="generator" content="middleman" />
+    <meta name="generator" content="middleman">
+    <meta name="viewport" content="width=512">
 <%
   title = current_page.data.title || "hans.gerwitz.com"
   abstract = current_page.data.abstract || title
@@ -26,37 +27,37 @@
 	<link rel="openid2.local_id" href="https://openid.stackexchange.com/user/d6fc3e55-7717-4688-8e57-55fce40c106c">
 
     <!-- favicon -->
-	<link rel="icon" href="/assets/tree.png" type="image/x-icon" />
-	<link rel="shortcut icon" href="/assets/tree.png" type="image/x-icon" />
+	<link rel="icon" href="/assets/tree.png" type="image/x-icon">
+	<link rel="shortcut icon" href="/assets/tree.png" type="image/x-icon">
 
 	<!-- basic SEO -->
-	<meta name="keywords" content="<%= tags.join(', ') %>" />
-    <meta name="description" content="<%= abstract %>" />
+	<meta name="keywords" content="<%= tags.join(', ') %>">
+  <meta name="description" content="<%= abstract %>">
 
-  	<!-- Google+ attribution for rich search snippets -->
-	<link rel="author" href="https://plus.google.com/117303083576651952409" />
+	<!-- Google+ attribution for rich search snippets -->
+	<link rel="author" href="https://plus.google.com/117303083576651952409">
 
 	<!-- Twitter summary card -->
-	<meta property="twitter:creator:id" content="521" />
-	<meta property="twitter:title" content="<%= title %>" />
-	<meta property="twitter:description" content="<%= abstract %>" />
+	<meta property="twitter:creator:id" content="521">
+	<meta property="twitter:title" content="<%= title %>">
+	<meta property="twitter:description" content="<%= abstract %>">
 
-    <!-- Facebook OpenGraph -->
-	<meta property="og:site_name" content="hans.gerwitz.com" />
-	<meta property="og:type" content="article" />
-	<meta property="og:url" content="<%= current_page.url %>" />
-	<meta property="og:title" content="<%= title %>" />
-	<meta property="og:description" content="<%= abstract %>" />
-	<meta property="og:image" content="/assets/tree.png" />
+  <!-- Facebook OpenGraph -->
+	<meta property="og:site_name" content="hans.gerwitz.com">
+	<meta property="og:type" content="article">
+	<meta property="og:url" content="<%= current_page.url %>">
+	<meta property="og:title" content="<%= title %>">
+	<meta property="og:description" content="<%= abstract %>">
+	<meta property="og:image" content="/assets/tree.png">
 
-    <!-- RSS feed -->
-	<link rel="alternate" type="application/rss+xml" href="/feed" title="Writings of Hans Gerwitz" />
+  <!-- RSS feed -->
+	<link rel="alternate" type="application/atom+xml" href="/feed/atom.xml" title="Writings of Hans Gerwitz">
 
-    <!-- Always force latest IE rendering engine or request Chrome Frame -->
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <!-- Always force latest IE rendering engine or request Chrome Frame -->
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 
-    <%= stylesheet_link_tag "normalize", "all" %>
-    <%= javascript_include_tag  "all" %>
+  <%= stylesheet_link_tag "normalize", "all" %>
+  <%= javascript_include_tag  "all" %>
 	<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js"></script>
 	<script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
   </head>
@@ -64,22 +65,28 @@
   <body class="<%= page_classes %>">
 
 	<header id="masthead">
-		<h1><%= nav_link 'hans.gerwitz.com', '/' %></h1>
+		<h1><%= nav_link '<i class="icon-home"></i> hans.gerwitz.com', '/' %></h1>
 		<ul class="nav">
 <!--
-			<li>
-				<a href="/library.html">Library</a>
+      <li>
+        <%= nav_link(
+					'<i class="icon-floppy-o"></i> Conservatory</a>',
+					'/library/'
+        ) %>
 			</li>
-			<li>
-				<a href="/projects.html">Projects</a>
+      <li>
+        <%= nav_link(
+					'<i class="icon-flask"></i> Laboratory</a>',
+					'/projects/'
+        ) %>
 			</li>
- -->
+-->
 			<li>
-              <%= nav_link(
+        <%= nav_link(
 					'<i class="icon-user"></i> About</a>',
 					'/about/',
 					{title: 'About Hans', rel: 'author'}
-              ) %>
+        ) %>
 			</li>
 			<li>
 				<a href="https://twitter.com/intent/user?user_id=521"><i class="icon-twitter"></i> Twitter</a>
@@ -111,7 +118,7 @@
                   ) %>
 				</li>
 				<li>
-					<a href="/feed/" rel="alternate" type="application/rss+xml">
+					<a href="/feed/atom.xml" rel="alternate" type="application/atom+xml">
 						<i class="icon-rss"></i> Feed
 					</a>
 				</li>
