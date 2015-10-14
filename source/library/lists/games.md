@@ -2,49 +2,50 @@
 title: Games that have wasted my time
 ---
 
-* [Drop7](http://areacodeinc.com/projects/drop7/) (2009—2011, 2013)
-	Hardcore: 637,582
+*   Two Dots
 
-* Letter press (2012—2013)
+*   [Drop7](http://areacodeinc.com/projects/drop7/) (2009—2011, 2013)
+    Hardcore: 637,582
 
-* Railyard (2012)
+*   Letter press (2012—2013)
 
-* WordsWorth
+*   Railyard (2012)
 
-* [Tiny Tower](http://towers.nimblebit.com/9753128
+*   WordsWorth
+
+*   [Tiny Tower](http://towers.nimblebit.com/9753128
 ) (2011)
-	119 floors, 216 bitizens, 194 dream jobs
+    119 floors, 216 bitizens, 194 dream jobs
 
-* [Flood-It](http://labpixies.com/) (2009)
-	m-time: 27.6, m-board: 24
+*   [Flood-It](http://labpixies.com/) (2009)
+    m-time: 27.6, m-board: 24
 
-* [Galcon](http://www.galcon.com/) (2009)
+*   [Galcon](http://www.galcon.com/) (2009)
 
-* Sol Free (Klondike, Baker's Game, Demon, Spiderette)
+*   Sol Free (Klondike, Baker's Game, Demon, Spiderette)
 
-* Portal
+*   Portal
 
-* Katamari (1, 2)
+*   Katamari (1, 2)
 
-* [TanZen](http://www.littlewhitebearstudios.com/tanzen.html) (2008)
+*   [TanZen](http://www.littlewhitebearstudios.com/tanzen.html) (2008)
 
-* Nongrams: PalmOS?, PuzzleManiak (2008-2010), PicGrid (2010)
+*   Nongrams: PalmOS?, PuzzleManiak (2008-2010), PicGrid (2010)
 
-* TapDefense
+*   TapDefense
 
-* PalmOS solitare?
+*   PalmOS solitare?
 
-* Starcraft
+*   Starcraft
 
-* Warcraft II
+*   Warcraft II
 
-* Warcraft I
+*   Warcraft I
 
-* Risk (Mac System 6) (1988—1991)
+*   Risk (Mac System 6) (1988—1991)
 
-* WindsMARE
+*   WindsMARE
 
-* Metroid
+*   Metroid
 
-* Zelda (1, 2)
-
+*   Zelda (1, 2)
