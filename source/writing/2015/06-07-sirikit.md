@@ -10,6 +10,7 @@ tags:
 - agents
 external: http://theartificial.nl/blog/2015/06/07/sirikit.html
 ---
+
 Apple's been creeping towards privacy and encryption as a differentiator for some time, but [last week's address to EPIC](http://techcrunch.com/2015/06/02/apples-tim-cook-delivers-blistering-speech-on-encryption-privacy/) was explicit. Tim Cook accused their neighbors of "lulling their customers into complacency about their personal information" and the digerati have taken note.
 
 The result is some long-overdue public analysis of Google's learn-everything-and-personalize strategy versus Apple's. A false dilemma has emerged, driving concern that Apple will be obsessed with privacy at the [risk of product quality](http://daringfireball.net/linked/2015/06/03/ricker-apple-cloud). Dustin Curtis offers a [thoughtful example of this narrative](http://dcurt.is/privacy-vs-user-experience), where he has wisely reframed from privacy to security[^only] and pointed out that Google's explicit sale is of user attention rather then data. Representative of the zeitgeist, he worries about "vast improvements in user experience" that Google's aggregation of user data does or will enable.
