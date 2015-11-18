@@ -91,3 +91,15 @@ Events in life worth noting.  Perhaps most deserve a blog post?
 2009-08 buy house, marry Shannon!
 
 2010 4 months in Europe
+
+2012-10?
+Prinsengracht 880
+1017JL Amsterdam
+
+2013-01
+Nova Zemblastraat 12-A
+1013RK Amsterdam
+
+2013-10
+Prinseneiland 79-M
+1013LM Amsterdam
