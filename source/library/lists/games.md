@@ -2,50 +2,91 @@
 title: Games that have wasted my time
 ---
 
-*   Two Dots
+* Two Dots
+    Level 535
 
-*   [Drop7](http://areacodeinc.com/projects/drop7/) (2009—2011, 2013)
+* Bonza
+
+* [Drop7](http://areacodeinc.com/projects/drop7/) (2009—2011, 2013)
     Hardcore: 637,582
 
-*   Letter press (2012—2013)
+* Letterpress (2012—2013)
 
-*   Railyard (2012)
+* Railyard (2012)
 
-*   WordsWorth
+* WordsWorth
 
-*   [Tiny Tower](http://towers.nimblebit.com/9753128
+* Strategery
+
+* [Tiny Tower](http://towers.nimblebit.com/9753128
 ) (2011)
     119 floors, 216 bitizens, 194 dream jobs
 
-*   [Flood-It](http://labpixies.com/) (2009)
+* [Flood-It](http://labpixies.com/) (2009)
     m-time: 27.6, m-board: 24
 
-*   [Galcon](http://www.galcon.com/) (2009)
+* [Galcon](http://www.galcon.com/) (2009)
 
-*   Sol Free (Klondike, Baker's Game, Demon, Spiderette)
+* Sol Free (Klondike, Baker's Game, Demon, Spiderette)
 
-*   Portal
+* Portal
 
-*   Katamari (1, 2)
+* Katamari (1, 2)
 
-*   [TanZen](http://www.littlewhitebearstudios.com/tanzen.html) (2008)
+* [TanZen](http://www.littlewhitebearstudios.com/tanzen.html) (2008)
 
-*   Nongrams: PalmOS?, PuzzleManiak (2008-2010), PicGrid (2010)
+* Nongrams: PalmOS?, PuzzleManiak (2008-2010), PicGrid (2010)
 
-*   TapDefense
+* TapDefense
 
-*   PalmOS solitare?
+* PalmOS solitare?
 
-*   Starcraft
+* Starcraft
 
-*   Warcraft II
+* Warcraft II
 
-*   Warcraft I
+* Warcraft I
 
-*   Risk (Mac System 6) (1988—1991)
+* Risk (Mac System 6) (1988—1991)
 
-*   WindsMARE
+* [WindsMARE](http://www.winds.org/helptext/)
 
-*   Metroid
+* [Drugwars](http://breakintochat.com/wiki/Drugwars)
 
-*   Zelda (1, 2)
+* [Solar Realms Elite](http://breakintochat.com/wiki/Solar_Realms_Elite)
+
+* [Global War](http://breakintochat.com/wiki/Global_War)
+
+* Spy Hunter (NES)
+
+* RC Pro Am
+
+* Metroid
+
+* Zelda II
+
+* Zelda
+
+* Test Drive (Apple II)
+
+* California Games (Apple II)
+
+* [Airheart](https://www.mobygames.com/game/airheart)
+
+* Stellar 7 (Apple II)
+
+* Lode Runner
+
+* [Car Builder](https://archive.org/details/CarBuilder4amCrack)
+
+* [Pinball Construction Set](https://en.wikipedia.org/wiki/Pinball_Construction_Set)
+
+* [HHGTTG](https://www.mobygames.com/game/hitchhikers-guide-to-the-galaxy)
+
+* [Ghostbusters](https://en.wikipedia.org/wiki/List_of_Ghostbusters_video_games#Ghostbusters_.28Activision.29) (Apple II)
+
+* Choplifter (Apple II)
+
+* (Sabotage](https://en.wikipedia.org/wiki/Sabotage_(video_game))
+
+* Zork I
