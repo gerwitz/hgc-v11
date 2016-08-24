@@ -2,6 +2,13 @@
 title: Chronofile
 ---
 
+<blockquote>
+This volume does not aspire to the name of an autobiography. It relates a variety of isolated circumstances in which I have taken part—some of them arranged in the order of time, and others grouped together in separate chapters, from similarity of subject.
+
+The selection has been made in some cases from the importance of the matter. In others, from the celebrity of the persons concerned ; whilst several of them furnish interesting illustrations of human character.
+-- Charles Babbage, Preface to <a href="https://www.goodreads.com/book/show/2627810-passages-from-the-life-of-a-philosopher">Passages from the Life of a Philosopher</a>
+</blockquote>
+
 <ol class="article-list">
   <% page_articles.each_with_index do |article, i| %>
     <li><%= link_to article.title, article, class: 'title' %> <%= link_to article.date.strftime('%B %e, 0%Y'), article, class: 'date' %></li>
