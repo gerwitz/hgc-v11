@@ -56,6 +56,11 @@ set :images_dir, 'images'
 
 # set :relative_links, true
 
+set :markdown_engine, :redcarpet
+set :markdown, fenced_code_blocks: true, smartypants: true
+
+activate :automatic_image_sizes
+
 # assume HTML so we don't have to name source files with destination extensions
 ::Rack::Mime::MIME_TYPES[''] = 'text/html'
 
