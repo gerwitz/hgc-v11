@@ -54,6 +54,11 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
+# set :relative_links, true
+
+# assume HTML so we don't have to name source files with destination extensions
+::Rack::Mime::MIME_TYPES[''] = 'text/html'
+
 activate :blog do |blog|
   blog.prefix = ""
   blog.sources = "/writing/{year}/{month}-{day}-{title}"
@@ -65,6 +70,7 @@ activate :blog do |blog|
 
   blog.calendar_template = "writing/calendar.html"
 
+  # that MIME_TYPE trick above won't add a destination extension, so we will
   blog.permalink = "/{year}/{month}/{day}/{title}.html"
   blog.year_link = "/{year}/index.html"
   blog.month_link = "/{year}/{month}/index.html"
