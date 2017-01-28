@@ -84,8 +84,8 @@ activate :blog do |blog|
   }
 end
 
-page "/*/*", layout: :page
-page "/feed/*", layout: false
+# page "/*/*", layout: :page
+# page "/feed/*", layout: false
 page "/archive/*", layout: :page
 
 page "/about/*", layout: :page

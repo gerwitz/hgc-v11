@@ -2,19 +2,19 @@
 pageable: false
 ---
 <% wrap_layout :site do %>
-  <h1>Archive for
+  <h1>
     <% case page_type
        when 'day' %>
-      <%= Date.new(year, month, day).strftime('%B %e, 0%Y') %>
+      <%= Date.new(year, month, day).strftime('%B %e, %Y') %>
     <% when 'month' %>
-      <%= Date.new(year, month, 1).strftime('%B, 0%Y') %>
+      <%= Date.new(year, month, 1).strftime('%B, %Y') %>
     <% when 'year' %>
-      <%= Date.new(year, 1, 1).strftime('0%Y') %>
+      <%= Date.new(year, 1, 1).strftime('%Y') %>
     <% end %>
   </h1>
 
   <ol class="article-list">
-    <% page_articles.each_with_index do |article, i| %>
+    <% blog.articles.select{|a| !a.data.title.nil? }.each_with_index do |article, i| %>
       <li><%= link_to article.title, article, class: 'title' %> <%= link_to article.date.strftime('%B %e'), article, class: 'date' %></li>
     <% end %>
   </ol>

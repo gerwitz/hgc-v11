@@ -10,7 +10,7 @@ The selection has been made in some cases from the importance of the matter. In 
 </blockquote>
 
 <ol class="article-list">
-  <% page_articles.each_with_index do |article, i| %>
-    <li><%= link_to article.title, article, class: 'title' %> <%= link_to article.date.strftime('%B %e, 0%Y'), article, class: 'date' %></li>
+  <% blog.articles.select{|a| !a.data.title.nil? }.each_with_index do |article, i| %>
+    <li><%= link_to article.title, article, class: 'title' %> <%= link_to article.date.strftime('%B %e, %Y'), article, class: 'date' %></li>
   <% end %>
 </ol>
