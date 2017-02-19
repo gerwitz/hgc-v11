@@ -4,9 +4,9 @@ abstract: Details on how this site is built
 ---
 
 ## Toolset
-This site is generated as static HTML via [nanoc][], and [the source is available on GitHub][source]. The [site history page][] provides further background.
+This site is generated as static HTML via [middleman][], and [the source is available on GitHub][source]. The [site history page][] provides further background.
 
-[nanoc]: http://nanoc.ws/
+[nanoc]: https://middlemanapp.com/
 [source]: https://github.com/gerwitz/hans.gerwitz.com/
 [site history page]: /site/history.html
 
