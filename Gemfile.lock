@@ -18,7 +18,7 @@ GEM
       sass (>= 3.2, < 3.5)
     concurrent-ruby (1.0.4)
     contracts (0.13.0)
-    dotenv (2.1.2)
+    dotenv (2.2.0)
     erubis (2.7.0)
     execjs (2.7.0)
     fast_blank (1.0.0)
@@ -29,7 +29,7 @@ GEM
       tilt
     hamster (3.0.0)
       concurrent-ruby (~> 1.0)
-    hashie (3.4.6)
+    hashie (3.5.3)
     i18n (0.7.0)
     kramdown (1.13.2)
     listen (3.0.8)
@@ -111,4 +111,4 @@ DEPENDENCIES
   redcarpet
 
 BUNDLED WITH
-   1.11.2
+   1.14.4
