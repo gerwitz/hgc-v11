@@ -4,7 +4,7 @@ title: Professional Experience
 
 I am a geek enamored of technology's possibilities, but I thrive on working together with smart and empathetic people to contribute to human culture.
 
-The details are at [<i class="icon-linkedin-sign"></i> LinkedIn](http://www.linkedin.com/in/gerwitz), but here's the story.
+The details are at [LinkedIn](http://www.linkedin.com/in/gerwitz), but here's the story.
 
 Last century, my university studies included Computer Science and Psychology, which seemed natural only to me. I've been weaving the complexity of technology and engineering with human and creative pursuits ever since.
 
