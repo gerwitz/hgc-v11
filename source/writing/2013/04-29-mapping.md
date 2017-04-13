@@ -62,8 +62,14 @@ Jason Sundram uses Voronoi around each [existing state's largest city](http://vi
 ![Up in Arms](04-29-mapping/upinarms.jpg)
 Colin Woodard looks to history to inform [11 nations](http://www.tufts.edu/alumni/magazine/fall2013/features/up-in-arms.html) of distinct cultures.
 
+![Democrats](04-29-mapping/democrats.jpg)
+Neil Freeman generated a fictional [states map](https://twitter.com/fitnr/status/799757798716346368) that would award Democrats the presidency every time this century.
+
 ![Clinton Electoral](04-29-mapping/clinton.png)
-Kevin Hayes Wilson built a [tool to redraw the states](http://kevinhayeswilson.com/redraw/) for speculative electoral outcomes for the 2016 presidential election. With it, he discovered [very small tweaks](https://medium.com/@khayeswilson/clinton-would-have-won-if-the-united-states-looked-like-this-7b9c844b76a9) like subtle shifts to the Wisconsin-Illinois and Florida-Alabama borders would have tipped the scales to Hillary Clinton.
+Kevin Hayes Wilson built a more nuanced [tool to redraw the states](http://kevinhayeswilson.com/redraw/) for speculative electoral outcomes for the 2016 presidential election. With it, he discovered [very small tweaks](https://medium.com/@khayeswilson/clinton-would-have-won-if-the-united-states-looked-like-this-7b9c844b76a9) like subtle shifts to the Wisconsin-Illinois and Florida-Alabama borders would have tipped the scales to Hillary Clinton.
 
 ![Commuter](04-29-mapping/commuter.png)
 Alasdair Rae and Garrett Nelson studied [commuter patterns](http://www.sheffield.ac.uk/usp/news/commuter-data-reveals-us-megaregions-1.665740) which suggest megaregion partitions.
+
+![California](04-29-mapping/california.jpg)
+Rob Beschizza shows us what 8 states of [populations equal to California](http://boingboing.net/2017/03/02/america-divided-into-states-th.html) would look like.
