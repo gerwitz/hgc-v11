@@ -10,7 +10,7 @@ subtitle: The tools I have used to access cyberspace
 - 486 FreeBSD (generic)
 - Mac SE/30
 - PM 7500
-- PB Duo 2300c (SLU)
+- PB Duo 2300c (SLU) 1996-09
 - PB 2400 (SLU)
 - [Titanium PowerBook G4](https://en.wikipedia.org/wiki/PowerBook_G4#Titanium_PowerBook_G4)
 - [12" PowerBook G4](https://en.wikipedia.org/wiki/PowerBook_G4#Aluminum_PowerBook_G4)
@@ -20,3 +20,6 @@ subtitle: The tools I have used to access cyberspace
 - [MacBook Air](https://en.wikipedia.org/wiki/MacBook_Air) (frog - HDD)
 - [MacBook Pro 13"](https://en.wikipedia.org/wiki/MacBook_Pro#2nd_generation_.28unibody.29) (frog)
 - [MacBook Pro 13" (late 2013)](https://en.wikipedia.org/wiki/MacBook_Pro#3rd_generation_.28Retina.29) (The Artificial)
+
+(Seattle: iMac, 11" MacBook)
+(Amsterdam: 13" touchbar MacBook)
