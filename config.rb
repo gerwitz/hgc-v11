@@ -21,7 +21,7 @@ set :markdown, fenced_code_blocks: true,
                smartypants: true
 
 # assume HTML so we don't have to name source files with destination extensions
-::Rack::Mime::MIME_TYPES[''] = 'text/html'
+# ::Rack::Mime::MIME_TYPES[''] = 'text/html'
 
 activate :blog do |blog|
   blog.prefix = ""
@@ -34,8 +34,7 @@ activate :blog do |blog|
 
   blog.calendar_template = "writing/calendar.html"
 
-  # that MIME_TYPE trick above won't add a destination extension, so we will
-  blog.permalink = "/{year}/{month}/{day}/{title}.html"
+  blog.permalink = "/{year}/{month}/{day}/{title}"
   blog.year_link = "/{year}/index.html"
   blog.month_link = "/{year}/{month}/index.html"
   blog.day_link = "/{year}/{month}/{day}/index.html"
