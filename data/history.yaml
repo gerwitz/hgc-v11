@@ -5,7 +5,7 @@ events:
     geo: [38.63295, -90.31108] # St. Mary's Hospital
     type: life
     links: 
-      - genealogy: https://www.wikitree.com/genealogy/Gerwitz-Family-Tree-222
+      genealogy: https://www.wikitree.com/genealogy/Gerwitz-Family-Tree-222
     text:
       Born
   -
@@ -25,7 +25,8 @@ events:
     type: travel
     geo: [36.04664, -95.73914] # Broken Arrow OK
     text:
-      Flew to Oklahoma with mom to visit Diane W
+      Flew to Oklahoma with mom
+      # visiting Diane W
   -
     date: 1978
     type: school
@@ -47,26 +48,29 @@ events:
     type: travel
     geo: [29.78598, -95.82440] # Katy, TX
     text:
-      Flew to Houston, TX with mom and Kurt to see Diane W.
+      Flew to Houston, TX with mom and Kurt
+      # visiting Diane W
   -
     date: 1979
     type: school
     geo: [38.749066, -90.298306] # 140 North Elizabeth
     links:
-      - church: https://www.pinterest.com/pin/520236194428927724/
+      church: https://www.pinterest.com/pin/520236194428927724/
     text:
       Started kindergarten at Sts. John and James
   -
     date: 1980
     type: life
     text:
-      Started first grade without friend Zachary
+      Started first grade
+      # without friend Zachary
   -
     date: 1980
     type: life
     geo: [38.716432, -90.241466] # Riverview Dr. (needs review)
     text:
-      Dad sold Riverview Pharmacy and started work in financial services
+      Dad sold Riverview Pharmacy
+      # and started work in financial services
   -
     date: 1983-05
     type: travel
@@ -91,14 +95,15 @@ events:
     date: 1985
     type: geek
     text:
-      Family bought Apple IIe (enhanced! with color display!)
+      Family bought Apple IIe
+      # enhanced! with color display!
   -
     date: 1986-03
     type: geek
     links:
-      - tony: http://hans.gerwitz.com/2015/04/21/mad-tony.html
+      tony: http://hans.gerwitz.com/2015/04/21/mad-tony.html
     text:
-      Started using BBSes after Uncle "Mad" Tony gifted me with a 1200bps modem
+      Uncle "Mad" Tony gifted me with a 1200bps modem, started using BBSes
   -
     date: 1986
     confidence: low
@@ -119,13 +124,14 @@ events:
     type: school
     geo: [38.628274, -90.266872]
     text:
-      Upward Bound summer school at SLUH, befriended Juniors
-      # Played a lot of chess with John Alan?
+      Upward Bound summer school at SLUH
+      # befriended Juniors (Gabe?), played a lot of chess with John Alan?
   -
     date: 1987-11
     type: life
     text:
-      Grandparents (maternal) accident, grandma dies shortly after
+      Grandparents (maternal) accident
+      # grandma died shortly after
   -
     date: 1988-03
     type: travel
@@ -200,7 +206,7 @@ events:
     type: home
     geo: [38.644896, -90.254460] # 4433 Pershing
     text:
-      Moved into terrible crack house apartments in CWE
+      Moved into crack house apartments in CWE
   -
     date: 1992
     type: life
@@ -211,14 +217,14 @@ events:
     date: 1992
     type: life
     text:
-      Parents separate
+      Parents separated
       # slowly
   -
     date: 1992-07
     type: home
     geo: [38.649619, -90.269483] # Westminster
     text:
-      Dramaticly evicted from CWE crack house, stayed with mom
+      Evicted from apartment, stayed with mom
       # moved into Westminster with Colleen, hiding from dad
   -
     date: 1992
@@ -258,14 +264,14 @@ events:
     type: work
     geo: [38.630660, -90.236414]
     text:
-      Start work at SJI
+      Started work at SJI
       # carrying bike down the stairs to count coupons
   -
     date: 1993
     type: school
     geo: [38.636046, -90.232697] # Ritter Hall
     text:
-      Begin classes at SLU
+      Began classes at SLU
       # no entrence exam, only SAT scores
   -
     date: 1993
@@ -385,7 +391,8 @@ events:
     date: 1999-01
     type: work
     text:
-      Closed phobia, transfered accounts
+      Stopped consulting and hosting
+      # transfered accounts
   -
     date: 1999-03
     type: work
@@ -430,9 +437,10 @@ events:
   -
     date: 2002-05
     type: home
-    geo: [38.4, -90.6] # way out west
+    geo: [38.330187, -90.806966] # 338 Wild Turkey Ln, Robertsville
     text:
-      Sold house, moved to friend's
+      Sold house, moved to friend's "spare" house
+      # Andrew Hoog
   -
     date: 2002
     type: travel
@@ -449,7 +457,7 @@ events:
     date: 2003-12
     type: life
     links:
-      - lemond: http://hans.gerwitz.com/library/stuff/lemond.html
+      lemond: http://hans.gerwitz.com/library/things/lemond.html
     text:
       Bought road bike
   -
@@ -496,7 +504,7 @@ events:
     type: travel
     geo: [47.629150, -122.341899] # 1100 Dexter Ave N
     text:
-      Intervied with frog design in Seattle
+      Interviewed with frog design in Seattle
   -
     date: 2008-06
     type: home
@@ -509,12 +517,13 @@ events:
     type: work
     geo: [47.611281, -122.336521] # 413 Pine St
     text:
-      Started at frog design (moved Downtown shortly after)
+      Started at frog design
+      # initially on Dexter, but moved Downtown shortly after
   -
     date: 2009-03
     type: life
     links:
-      - busday: http://hans.gerwitz.com/2009/02/23/bus-driver-appreciation-day.html
+      busday: http://hans.gerwitz.com/2009/02/23/bus-driver-appreciation-day.html
     text:
       Declared Bus/Transit Driver Appreciation Day
   -
@@ -546,7 +555,8 @@ events:
     type: travel
     geo: [51.516525, -0.176628] # Paddington Station
     text:
-      Lots of travel from Munich to London and US, with side trips to Vienna, Amsterdam, Prague, Hamburg
+      Lots of travel from Munich to London, US, and around Europe
+      # side trips to Vienna, Amsterdam, Prague, Hamburg
   -
     date: 2010-11
     type: travel
@@ -574,18 +584,21 @@ events:
     date: 2013-03
     type: work
     text:
-      Frog downsizes, we leave rather than return to US
+      Left frog
+      # downsizes, we leave rather than return to US
   -
     date: 2013-04
     type: work
     text:
-      Registered The Artificial with Shannon as technique to get residency
+      Registered The Artificial
+      # as technique to get Dutch residency with Shannon
   -
     date: 2013-06
     type: work
     geo: [52.366023, 4.890183] # Herengract 477
     text:
-      Started working at AKQA as freelance strategist
+      Started working at AKQA
+      # as freelance strategist
   -
     date: 2013-10
     type: home
@@ -597,7 +610,8 @@ events:
     type: work
     geo: [52.386926, 4.883070] # Houtmankade 70-hs
     text:
-      Stopped consulting and joined The Artificial full time
+      Joined The Artificial full time
+      # turned down long-term work at AKQA
   -
     date: 2015-05
     type: work
