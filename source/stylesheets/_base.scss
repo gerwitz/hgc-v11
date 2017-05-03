@@ -74,7 +74,7 @@ body>article>footer {
 	text-align:		right;
 }
 
-.meta {
+.pagemeta {
 	font-family:	"Lucida Grande", Verdana, Arial, sans-serif;
 	font-size:		0.75rem;
 	text-transform:	lowercase;
@@ -93,7 +93,7 @@ body>article>footer {
 	display:		block;
 	z-index:		1;
 
-	@extend .meta;
+	@extend .pagemeta;
 }
 #masthead a {
 	text-decoration:none;
@@ -152,7 +152,7 @@ html.project #masthead {
 	height:			2em;
 	display:		block;
 
-	@extend .meta;
+	@extend .pagemeta;
 }
 html.project #masthead a {
 	text-decoration:none;
@@ -200,7 +200,7 @@ body>footer {
 	padding-left:	1em;
 	padding-right:	1em;
 
-	@extend .meta;
+	@extend .pagemeta;
 }
 body>footer a {
 	text-decoration:none;
@@ -255,7 +255,7 @@ body>footer form input:focus {
 
 
 article footer .comments {
-	h3 { @extend .meta; }
+	h3 { @extend .pagemeta; }
 	p {
 		font-size:		0.75rem;
 		margin-top:		0.5rem;
