@@ -43,7 +43,7 @@ layout: site
   <script type="text/javascript" src="http://api.twitter.com/1/statuses/user_timeline.json?user_id=521&include_rts=false&exclude_replies=true&include_entities=true&trim_user=true&count=1&callback=twitter_callback_function"></script>
   -->
 
-  <h2>Writings</h2>
+  <h2><a href="/archive/">Writings</a></h2>
   <ol class="article-list">
     <% blog.articles.select{|a| !a.data.title.nil? }[0...5].each_with_index do |article, i| %>
       <li><% link_to article do %>
