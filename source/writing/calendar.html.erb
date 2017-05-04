@@ -3,18 +3,29 @@ pageable: false
 ---
 <% wrap_layout :site do %>
   <h1>
-    <% case page_type
-       when 'day' %>
-      <%= Date.new(year, month, day).strftime('%B %e, %Y') %>
-    <% when 'month' %>
-      <%= Date.new(year, month, 1).strftime('%B, %Y') %>
-    <% when 'year' %>
+    <%
+      case page_type
+        when 'day'
+    %>
+      <%= link_to Date.new(year, month, day).strftime('%B'), blog_month_path(year, month) %>
+      <%= Date.new(year, month, day).strftime('%e') %>,
+      <%= link_to Date.new(year, month, day).strftime('%Y'), blog_year_path(year) %>
+    <%
+        when 'month'
+    %>
+      <%= Date.new(year, month, 1).strftime('%B') %>,
+      <%= link_to Date.new(year, month, 1).strftime('%Y'), blog_year_path(year) %>
+    <%
+        when 'year'
+    %>
       <%= Date.new(year, 1, 1).strftime('%Y') %>
-    <% end %>
+    <%
+      end
+    %>
   </h1>
 
   <ol class="article-list">
-    <% blog.articles.select{|a| !a.data.title.nil? }.each_with_index do |article, i| %>
+    <% page_articles.select{|a| !a.data.title.nil? }.each_with_index do |article, i| %>
       <li><%= link_to article.title, article, class: 'title' %> <%= link_to article.date.strftime('%B %e'), article, class: 'date' %></li>
     <% end %>
   </ol>

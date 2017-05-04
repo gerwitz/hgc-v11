@@ -20,9 +20,6 @@ set :markdown, fenced_code_blocks: true,
                autolink: true,
                smartypants: true
 
-# assume HTML so we don't have to name source files with destination extensions
-# ::Rack::Mime::MIME_TYPES[''] = 'text/html'
-
 activate :blog do |blog|
   blog.prefix = ""
   blog.sources = "/writing/{year}/{month}-{day}-{title}"
