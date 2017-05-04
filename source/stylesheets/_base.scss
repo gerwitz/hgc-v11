@@ -128,64 +128,6 @@ body>article>footer {
 	margin-left:	10px;
 }
 
-html.project {
-	font-family:	"Lucida Grande", Verdana, Arial, sans-serif;
-}
-
-html.project #masthead-wrapper {
-	width:			100%;
-
-	margin:			0;
-	padding:		0;
-
-	color:			$p-color;
-	background-color: $p-background;
-}
-html.project #masthead {
-	background-color: inherit;
-
-	position:		static;
-	width:			$p-width;
-	top:			0;
-	margin:			0 auto;
-
-	height:			2em;
-	display:		block;
-
-	@extend .pagemeta;
-}
-html.project #masthead a {
-	text-decoration:none;
-}
-
-html.project #masthead h1 {
-	font-size:		inherit;
-	font-family:	inherit;
-
-	display:		inline;
-	line-height:	inherit;
-
-	font-weight:	bold;
-
-	margin-top:		0;
-	margin-bottom:	0;
-}
-
-html.project #content {
-	padding:		1em;
-	padding-bottom:	2em;
-}
-
-// dat.gui controls
-html.project #dg-controls {
-	position:		absolute;
-	top:			2em;
-	right:			20px;
-	li {
-		margin:			0px;
-	}
-}
-
 body>footer {
 	// width:		$width;
 
@@ -304,32 +246,36 @@ ol.article-list {
 	margin-left:	16px;
     padding:		0;
     overflow-x:		hidden;
-    list-style:		none
-}
-ol.article-list li:before {
-    float:			left;
-    width:			0;
-    white-space:	nowrap;
-    content:
+    list-style:		none;
+
+	a:before {
+		float:			left;
+		width:			0;
+		white-space:	nowrap;
+		pointer-events: all;
+		content:
  ". . . . . . . . . . . . . . . . . . . . "
  ". . . . . . . . . . . . . . . . . . . . "
  ". . . . . . . . . . . . . . . . . . . . "
  ". . . . . . . . . . . . . . . . . . . . "
-}
-ol.article-list .title {
-    padding-right:	0.33em;
-}
-ol.article-list .date {
-    float:			right;
-    padding-left:	0.33em;
-}
-ol.article-list .title, ol.article-list .date {
-    background:		$background;
-	text-decoration:none;
-}
-ol.article-list .title:hover, ol.article-list .date:hover {
-    background:		$background;
-	text-decoration:underline;
+	}
+	a {
+		text-decoration: none;
+		span {
+			background:		$background;
+		}
+		.title {
+			padding-right:	0.33em;
+		}
+		.date {
+			float:			right;
+			padding-left:	0.33em;
+			background:		$background;
+		}
+	}
+	a:hover span {
+		text-decoration: underline;
+	}
 }
 
 

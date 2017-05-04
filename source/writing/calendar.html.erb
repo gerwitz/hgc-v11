@@ -26,7 +26,11 @@ pageable: false
 
   <ol class="article-list">
     <% page_articles.select{|a| !a.data.title.nil? }.each_with_index do |article, i| %>
-      <li><%= link_to article.title, article, class: 'title' %> <%= link_to article.date.strftime('%B %e'), article, class: 'date' %></li>
+      <li><% link_to article do %>
+        <span class="title"><%= article.title %></span>
+        <span class="date"><%= article.date.strftime('%B %e') %></span>
+      <% end %>
+       </li>
     <% end %>
   </ol>
 <% end %>

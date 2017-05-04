@@ -45,9 +45,13 @@ layout: site
 
   <h2>Writings</h2>
   <ol class="article-list">
-  <% blog.articles.select{|a| !a.data.title.nil? }[0...5].each_with_index do |article, i| %>
-    <li><%= link_to article.title, article, class: 'title' %> <%= link_to article.date.strftime('%B %e, %Y'), article, class: 'date' %></li>
-  <% end %>
+    <% blog.articles.select{|a| !a.data.title.nil? }[0...5].each_with_index do |article, i| %>
+      <li><% link_to article do %>
+        <span class="title"><%= article.title %></span>
+        <span class="date"><%= article.date.strftime('%B %e') %></span>
+      <% end %>
+       </li>
+    <% end %>
   </ol>
 
   <h2><a href="http://www.flickr.com/photos/phobia/" title="from Flickr">Photographs</a></h2>
