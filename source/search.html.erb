@@ -48,7 +48,7 @@ layout: site
 	        var list = $('<ol class="article-list">');
 			$.each(data, function(key, val) {
 				var pub = new Date(val.published_on);
-	            list.append('<li><a class="title" href="' + val.link + '">' + val.title + '<\/a><a class="date" href="' + val.link + '">' + monthName(pub.getMonth()) + ' ' + ordinal(pub.getDate()) + ', ' + pub.getFullYear() + '<\/a><\/li>');
+	            list.append('<li><a href="' + val.link + '"><span class="title">' + val.title + '<\/span><span class="date" href="' + val.link + '">' + monthName(pub.getMonth()) + ' ' + ordinal(pub.getDate()) + ', ' + pub.getFullYear() + '<\/span><\/a><\/li>');
 			});
 			if (data.length > 0) {
 				el.html(''); // clear loading indicator

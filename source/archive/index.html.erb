@@ -13,7 +13,7 @@ The selection has been made in some cases from the importance of the matter. In 
   <% blog.articles.select{|a| !a.data.title.nil? }.each_with_index do |article, i| %>
       <li><% link_to article do %>
         <span class="title"><%= article.title %></span>
-        <span class="date"><%= article.date.strftime('%B %e') %></span>
+        <span class="date"><%= article.date.strftime('%B %e, %Y') %></span>
       <% end %></li>
   <% end %>
 </ol>
