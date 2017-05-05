@@ -32,7 +32,7 @@ events:
     type: school
     geo: [38.727461, -90.305067] # Cool Valley
     text:
-      Preschool tutoring
+      Began preschool tutoring
   -
     date: 1978-10
     type: life
@@ -110,14 +110,14 @@ events:
     type: travel
     geo: [37.997042, -79.830362]
     text:
-      Conference at Homestead, Virginia and trip to Williamsburg
+      Road trip to conference at Homestead, Virginia and trip to Williamsburg
   -
     date: 1986
     confidence: low
     type: travel
     geo: [38.888122, -77.019912]
     text:
-      Trip onward to Washington DC, stayed with Kuhlman relatives
+      Drove onward to Washington DC, stayed with Kuhlman relatives
       # Ron and Ann
   -
     date: 1987
@@ -137,7 +137,7 @@ events:
     type: travel
     geo: [28.304563, -81.416071] # Kissimmee
     text:
-      Disney World and Daytona Beach
+      Visited Disney World and Daytona Beach
       # Pulled out of school early because why not?
   -
     date: 1988-08
@@ -173,7 +173,7 @@ events:
     type: travel
     geo: [29.232936, -81.009580]
     text:
-      Daytona Beach with dad and Kurt
+      Flew to Daytona Beach with dad and Kurt
   -
     date: 1991-04
     confidence: low
@@ -623,7 +623,7 @@ events:
     type: home
     geo: [52.366203, 4.871753] # Bilderdijkkade 97-4V
     text:
-      Moved into our house
+      Moved into our house on Bilderdijkkade
   -
     date: 2017-01
     type: life

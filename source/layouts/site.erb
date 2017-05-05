@@ -15,108 +15,110 @@
     <title><%= title %></title>
 
     <!-- OpenID delegation -->
-	<link rel="openid2.provider" href="https://openid.stackexchange.com/openid/provider">
-	<link rel="openid2.local_id" href="https://openid.stackexchange.com/user/d6fc3e55-7717-4688-8e57-55fce40c106c">
+  <link rel="openid2.provider" href="https://openid.stackexchange.com/openid/provider">
+  <link rel="openid2.local_id" href="https://openid.stackexchange.com/user/d6fc3e55-7717-4688-8e57-55fce40c106c">
 
     <!-- favicon -->
-	<link rel="icon" href="/assets/tree.png" type="image/x-icon">
-	<link rel="shortcut icon" href="/assets/tree.png" type="image/x-icon">
+  <link rel="icon" href="/assets/tree.png" type="image/x-icon">
+  <link rel="shortcut icon" href="/assets/tree.png" type="image/x-icon">
 
-	<!-- basic SEO -->
-	<meta name="keywords" content="<%= tags.join(', ') %>">
+  <!-- basic SEO -->
+  <meta name="keywords" content="<%= tags.join(', ') %>">
   <meta name="description" content="<%= abstract %>">
 
-	<!-- Google+ attribution for rich search snippets -->
-	<link rel="author" href="https://plus.google.com/117303083576651952409">
+  <!-- Google+ attribution for rich search snippets -->
+  <link rel="author" href="https://plus.google.com/117303083576651952409">
 
-	<!-- Twitter summary card -->
-	<meta property="twitter:creator:id" content="521">
-	<meta property="twitter:title" content="<%= title %>">
-	<meta property="twitter:description" content="<%= abstract %>">
+  <!-- Twitter summary card -->
+  <meta property="twitter:creator:id" content="521">
+  <meta property="twitter:title" content="<%= title %>">
+  <meta property="twitter:description" content="<%= abstract %>">
 
   <!-- Facebook OpenGraph -->
-	<meta property="og:site_name" content="hans.gerwitz.com">
-	<meta property="og:type" content="article">
-	<meta property="og:url" content="<%= current_page.url %>">
-	<meta property="og:title" content="<%= title %>">
-	<meta property="og:description" content="<%= abstract %>">
-	<meta property="og:image" content="/assets/tree.png">
+  <meta property="og:site_name" content="hans.gerwitz.com">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="<%= current_page.url %>">
+  <meta property="og:title" content="<%= title %>">
+  <meta property="og:description" content="<%= abstract %>">
+  <meta property="og:image" content="/assets/tree.png">
 
   <!-- RSS feed -->
-	<link rel="alternate" type="application/atom+xml" href="/feed/atom.xml" title="Writings of Hans Gerwitz">
+  <link rel="alternate" type="application/atom+xml" href="/feed/atom.xml" title="Writings of Hans Gerwitz">
 
   <!-- Always force latest IE rendering engine or request Chrome Frame -->
   <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 
   <%= stylesheet_link_tag "all" %>
   <%= javascript_include_tag  "all" %>
-	<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js"></script>
-	<script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+  <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
   </head>
 
   <body class="<%= page_classes %>">
 
-	<header id="masthead">
-		<h1><%= nav_link '<i class="icon-home"></i> hans.gerwitz.com', '/' %></h1>
-		<ul class="nav">
+  <header id="masthead">
+    <h1><%= nav_link 'hans.gerwitz.com', '/' %></h1>
+    <ul class="nav">
 <!--
       <li>
         <%= nav_link(
-					'<i class="icon-floppy-o"></i> Conservatory</a>',
-					'/library/'
+          '<i class="icon-floppy-o"></i> Conservatory</a>',
+          '/library/'
         ) %>
-			</li>
+      </li>
       <li>
         <%= nav_link(
-					'<i class="icon-flask"></i> Laboratory</a>',
-					'/projects/'
+          '<i class="icon-flask"></i> Laboratory</a>',
+          '/projects/'
         ) %>
-			</li>
+      </li>
 -->
-			<li>
+      <li>
         <%= nav_link(
-					'<i class="icon-user"></i> About',
-					'/library/me.html',
-					{title: 'About Hans', rel: 'author'}
+          '<i class="icon-user"></i> About',
+          '/library/me.html',
+          {title: 'About Hans', rel: 'author'}
         ) %>
-			</li>
-			<li>
-				<a href="https://twitter.com/intent/user?user_id=521"><i class="icon-twitter"></i> Twitter</a>
-			</li>
-		</ul>
-	</header>
+      </li>
+      <li>
+        <a href="https://twitter.com/intent/user?user_id=521"><i class="icon-twitter"></i> Twitter</a>
+      </li>
+    </ul>
+  </header>
 
     <%= yield %>
 
-	<footer>
-        <form method="get" action="/search.html">
-			<label for="search"><i class="icon-search"></i></label>
-			<input id = "search" type="search" placeholder="search posts" name="query" />
-		</form>
-        <nav>
-			<ul>
+  <footer>
+    <form method="get" action="/search.html">
+      <label for="search"><i class="icon-search"></i></label>
+      <input id = "search" type="search" placeholder="search posts" name="query" />
+    </form>
+    <nav>
+      <ul>
+<!--
                 <li>
                   <%= nav_link(
                         '<i class="icon-time"></i> Archives',
                         '/archive/',
                         title: 'All writings'
                   ) %>
-				</li>
-				<li>
+        </li>
+-->
+        <li>
                   <%= nav_link(
                         '<i class="icon-book"></i> Colophon',
                         '/site/',
                         title: 'About this site'
                   ) %>
-				</li>
-				<li>
-					<a href="/feed/atom.xml" rel="alternate" type="application/atom+xml">
-						<i class="icon-rss"></i> Feed
-					</a>
-				</li>
-			</ul>
-		</nav>
-	</footer>
+        </li>
+        <li>
+          <a href="/feed/atom.xml" rel="alternate" type="application/atom+xml">
+            <i class="icon-rss"></i> Feed
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </footer>
 
     <!-- header shadow-on-scroll -->
     <script type="text/javascript">
