@@ -16,27 +16,20 @@ I could use Apache mod_rewrite rules to similar affect, but that's another layer
 
 So I'd like to use client scripting.  Faruk Ateş has offered [DiggBar killer JavaScript][4], which is still Digg-specific and [too nice][5].
 
-Perhaps we should refine the typical frame-busting approach (detect when the page is framed and reload the window directly to the page) and take a frame-embracing stance (reload the page with their frame):  
+[1]: http://daringfireball.net/2009/04/how_to_block_the_diggbar
+[2]: http://extrafuture.com/projects/diggbarred/
+[3]: http://ocaoimh.ie/wp-super-cache/
+[4]: http://farukat.es/journal/2009/04/225-javascript-diggbar-killer-not-blocker
+[5]: http://daringfireball.net/linked/2009/04/11/faruk-diggbar
 
-    
-       [1]: http://daringfireball.net/2009/04/how_to_block_the_diggbar
-   [2]: http://extrafuture.com/projects/diggbarred/
-   [3]: http://ocaoimh.ie/wp-super-cache/
-   [4]: http://farukat.es/journal/2009/04/225-javascript-diggbar-killer-not-blocker
-   [5]: http://daringfireball.net/linked/2009/04/11/faruk-diggbar
+Perhaps we should refine the typical frame-busting approach (detect when the page is framed and reload the window directly to the page) and take a frame-embracing stance (reload the page with their frame):
 
-
-    <script>
+  <script>
     if (top !== self) {
       self.location.replace(document.referrer);
     }
-    </script>
-    
-
-
+  </script>
 
 I've put that code here for testing, which can be seen by viewing this post's Digg URL: [http://digg.com/u1mst][6].
-  
 
-
-   [6]: http://digg.com/u1mst
+[6]: http://digg.com/u1mst
