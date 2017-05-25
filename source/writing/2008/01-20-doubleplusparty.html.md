@@ -6,7 +6,7 @@ tags:
 - party
 ---
 
-![balloons](2008-01-20-doubleplusparty/balloons.jpg)
+![balloons](01-20-doubleplusparty/balloons.jpg)
 
 Yesterday, [shannon][2] & friends celebrated her birthday and all things 1984 at the loft with music and video from the eighties and [glowing helium balloons][3].
 

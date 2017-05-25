@@ -12,7 +12,7 @@ tags:
 
 How to create an advertising sensation with a low budget:
 
-![Beautiful Agony](2007-01-26-instant-buzz/k0116.jpg)
+![Beautiful Agony](01-26-instant-buzz/k0116.jpg)
 
   1. Buy cheap TV spots on major network affiliates during, say, daytime soaps.
 
