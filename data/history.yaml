@@ -1,7 +1,7 @@
 events:
-# categories: [life, home, travel, school, geek, work, car]
+# types: [life, home, school, geek, work, car]
   -
-    date: 1974-03
+    date: 1974-03 #09
     geo: [38.63295, -90.31108] # St. Mary's Hospital
     type: life
     links: 
@@ -20,21 +20,13 @@ events:
     text:
       First word was "clock"
   -
-    date: 1976
-    confidence: low
-    type: travel
-    geo: [36.04664, -95.73914] # Broken Arrow OK
-    text:
-      Flew to Oklahoma with mom
-      # visiting Diane W
-  -
     date: 1978
     type: school
     geo: [38.727461, -90.305067] # Cool Valley
     text:
       Began preschool tutoring
   -
-    date: 1978-10
+    date: 1978-10 #09
     type: life
     text:
       Brother Kurt born
@@ -43,13 +35,6 @@ events:
     type: life
     text:
       Started wearing glasses and eye patches to treat amblyopia
-  -
-    date: 1979
-    type: travel
-    geo: [29.78598, -95.82440] # Katy, TX
-    text:
-      Flew to Houston, TX with mom and Kurt
-      # visiting Diane W
   -
     date: 1979
     type: school
@@ -72,20 +57,6 @@ events:
       Dad sold Riverview Pharmacy
       # and started work in financial services
   -
-    date: 1983-05
-    type: travel
-    geo: [39.60699, -105.97649]
-    text:
-      Conference in Keystone, Colorado then camping, then Boulder to meet uncle Jim
-      # MetLife conference, camping in Rocky Mtn Park. Saved some guy while boating in a cold lake, very proud to have caught the trout for dinner. Then to Boulder to meet uncle Jim.
-  -
-    date: 1984
-    type: travel
-    geo: [29.944444,-90.06250]
-    text:
-      New Orleans for World Expo
-      # stayed with Butch and Charmaine, saw space shuttle
-  -
     date: 1985
     type: school
     geo: [38.79315, -89.99792]
@@ -105,21 +76,6 @@ events:
     text:
       Uncle "Mad" Tony gifted me with a 1200bps modem, started using BBSes
   -
-    date: 1986
-    confidence: low
-    type: travel
-    geo: [37.997042, -79.830362]
-    text:
-      Road trip to conference at Homestead, Virginia and trip to Williamsburg
-  -
-    date: 1986
-    confidence: low
-    type: travel
-    geo: [38.888122, -77.019912]
-    text:
-      Drove onward to Washington DC, stayed with Kuhlman relatives
-      # Ron and Ann
-  -
     date: 1987
     type: school
     geo: [38.628274, -90.266872]
@@ -132,13 +88,6 @@ events:
     text:
       Grandparents (maternal) accident
       # grandma died shortly after
-  -
-    date: 1988-03
-    type: travel
-    geo: [28.304563, -81.416071] # Kissimmee
-    text:
-      Visited Disney World and Daytona Beach
-      # Pulled out of school early because why not?
   -
     date: 1988-08
     type: school
@@ -158,22 +107,10 @@ events:
     text:
       Started first job at Mail Boxes, Etc.
   -
-    date: 1989
-    type: travel
-    geo: [38.889441, -77.035168]
-    text:
-      Washington DC "Close Up" program with classmates
-  -
     date: 1990
     type: geek
     text:
       Established first internet email address "wupost.wustl.edu!sempco!hgerwitz"
-  -
-    date: 1990-08
-    type: travel
-    geo: [29.232936, -81.009580]
-    text:
-      Flew to Daytona Beach with dad and Kurt
   -
     date: 1991-04
     confidence: low
@@ -280,7 +217,7 @@ events:
       Bought 1983 Buick Skyhawk
       # white, under $1000
   -
-    date: 1993-10 # 1993-10-01
+    date: 1993-10 #01
     type: life
     geo: [38.642466, -90.257940] # Lindell and Taylor
     text:
@@ -408,12 +345,12 @@ events:
       Bought house
       # using loan program that encouraged middle class purchase in poor census tracts
   -
-    date: 2000-06 # 2000-06-25
+    date: 2000-06 #25
     type: life
     text:
       Got serious about cycling, first Tour de Cure team
   -
-    date: 2002-02
+    date: 2002-02 #08
     type: life
     text:
       Colleen leaves
@@ -435,18 +372,12 @@ events:
     text:
       Finalized divorce
   -
-    date: 2002-05
+    date: 2002-07 #14
     type: home
     geo: [38.330187, -90.806966] # 338 Wild Turkey Ln, Robertsville
     text:
-      Sold house, moved to friend's "spare" house
+      Moved to friend's "spare" house (after selling mine)
       # Andrew Hoog
-  -
-    date: 2002
-    type: travel
-    geo: [50.107466, 8.899447] # Klaus Gerwitz, Hanau
-    text:
-      Visited German Gerwitzes and Paris with dad and Kurt
   -
     date: 2002-10
     type: home
@@ -461,11 +392,10 @@ events:
     text:
       Bought road bike
   -
-    date: 2004
-    type: travel
-    geo: [43.352025, 11.360608] # siena ish
+    date: 2005-07 #11
+    type: life
     text:
-      Venice, Florance, and Rome with Kurt and dad
+      Dad died
   -
     date: 2005-11
     type: work
@@ -477,12 +407,6 @@ events:
     type: car
     text:
       sold Miata to Kurt
-  -
-    date: 2006
-    type: travel
-    geo: [48.8487, 2.3100] # rough estimate
-    text:
-      Took Kristan to London and Paris to propose
   -
     date: 2007
     type: life
@@ -499,12 +423,6 @@ events:
     text:
       Bought 2006 Mazda Miata
       # black, "Selene"
-  -
-    date: 2008-04
-    type: travel
-    geo: [47.629150, -122.341899] # 1100 Dexter Ave N
-    text:
-      Interviewed with frog design in Seattle
   -
     date: 2008-06
     type: home
@@ -533,36 +451,17 @@ events:
     text:
       Bought house
   - 
-    date: 2009-08
+    date: 2009-08 #23
     type: life
     geo: [47.602003, -122.331738] # Smith Tower
     text:
       Married Shannon 
   -
-    date: 2009-09
-    type: travel
-    geo: [37.852588, 27.528529] # Magnesia
-    text:
-      Honeymoon from Venice through Rome to cruise Italy, Greece, and Turkey
-  -
-    date: 2010
+    date: 2010-03 #30
     type: home
     geo: [48.161610, 11.568313] # Hohenzollernplatz
     text:
       4 months living in Munich for frog
-  -
-    date: 2010
-    type: travel
-    geo: [51.516525, -0.176628] # Paddington Station
-    text:
-      Lots of travel from Munich to London, US, and around Europe
-      # side trips to Vienna, Amsterdam, Prague, Hamburg
-  -
-    date: 2010-11
-    type: travel
-    geo: [12.938195, 77.692606] # Aricent Bengalore
-    text:
-      First trip to India (Dehli and Bangalore)
   -
     date: 2012-11
     type: home
@@ -625,7 +524,13 @@ events:
     text:
       Moved into our house on Bilderdijkkade
   -
-    date: 2017-01
+    date: 2017-01 #24
     type: life
     text:
       Shea died
+  -
+    date: 2017-05 #13
+    type: life
+    text:
+      Thunder moved in
+

@@ -1,0 +1,365 @@
+trips:
+# modes: car, air, ship, train, bus
+  -
+    date: 1976
+    modes: [air]
+    geo: [36.04664, -95.73914] # Broken Arrow OK
+    description:
+      Oklahoma with Mom
+      # visiting Diane W
+  -
+    date: 1979
+    modes: [air]
+    geo: [29.78598, -95.82440] # Katy, TX
+    description:
+      Flew to Houston, TX with Mom and Kurt
+      # visiting Diane W
+  -
+    date: 1983-05
+    modes: [car]
+    geo: [39.60699, -105.97649]
+    description:
+      Conference in Keystone, Colorado then camping, then Boulder to meet uncle Jim
+      # MetLife conference, camping in Rocky Mtn Park. Saved some guy while boating in a cold lake, very proud to have caught the trout for dinner. Then to Boulder to meet uncle Jim.
+  -
+    date: 1984
+    modes: [car]
+    geo: [29.944444,-90.06250]
+    description:
+      New Orleans for World Expo
+      # stayed with Butch and Charmaine, saw space shuttle
+  -
+    date: 1986
+    modes: [car]
+    geo: [37.997042, -79.830362]
+    description:
+      Road trip to conference at Homestead, Virginia and trip to Williamsburg
+  -
+    date: 1986
+    modes: [car]
+    geo: [38.888122, -77.019912]
+    description:
+      Drove onward to Washington DC, stayed with Kuhlman relatives
+      # Ron and Ann
+  -
+    date: 1988-03
+    modes: [air]
+    geo: [28.304563, -81.416071] # Kissimmee
+    description:
+      Visited Disney World and Daytona Beach with family
+      # Pulled out of school early because why not?
+  -
+    date: 1989
+    modes: [air]
+    geo: [38.889441, -77.035168]
+    description:
+      Washington DC "Close Up" program with classmates
+  -
+    date: 1990-08
+    modes: [air]
+    geo: [29.232936, -81.009580]
+    description:
+      Flew to Daytona Beach with dad and Kurt
+  -
+    date: 1996-07 #05
+    nights: 1
+    modes: [car]
+    description:
+      Jefferson City and Ha Ha Tonka State Park
+  -
+    date: 1997-01 #29
+    nights: 4
+    modes: [air, car]
+    description:
+      Baltimore and Washington, D.C.
+      # with Colleen
+  -
+    date: 1997-06 #15
+    nights: 2
+    modes: [car]
+    description:
+      Chicago road trip, Blue Man Group
+  -
+    date: 2000-12 #15
+    nights: 9
+    modes: [air, car]
+    description:
+      Fort Myers, via Orlando, to visit Mom for Christmas
+      # with Colleen
+  -
+    date: 2002-03 #28
+    nights: 5
+    modes: [air, car]
+    description:
+      Trip to Mom\'s (via Tampa) to regroup
+      # met Kurt in Tampa, drove to Ft. Myers
+  -
+    date: 2002-06 #14
+    modes: [air, train, car, bus]
+    description:
+      Weekend in Chicago, train to Milwaukee, car to Racine for a week, bus to Chicago…
+      # Kristan joined for two nights in Chicago
+  -
+    date: 2002-06 #26
+#    nights: 2
+    description:
+      NYC to screen ad agencies
+      # dinners: Canteen (SOHO), Park Avalon (Union Square), The Coffee Shop (Union Square), Tribeca Grill (Tribeca)
+  -
+    date: 2002-07 #25
+    nights: 6
+    modes: [air]
+    geo: [50.107466, 8.899447] # Klaus Gerwitz, Hanau
+    description:
+      Visited German Gerwitzes with Dad and Kurt
+  -
+    date: 2002-08 #01
+    nights: 4
+    modes: [train, air]
+    description:
+      Continued to Paris with Dad and Kurt
+      # rendevoux with Kurt gf
+  -
+    date: 2002-09 #21
+    nights: 8
+    modes: [air, car]
+    description:
+      Disney World and Kennedy Space Center with Kristan
+  -
+    date: 2002-10 #21
+    nights: 2
+    modes: [air]
+    description:
+      NYC for agency pitches
+  -
+    date: 2002-11 #11
+    nights: 3
+    modes: [air]
+    description:
+      Raleigh, NC for work
+      # The Washington Duke Inn
+  -
+    date: 2003
+    modes: [air]
+    description:
+      Milwaukee business trip (consulting to infuz)
+  -
+    date: 2003-04 #29
+    nights: 8
+    modes: [air]
+    description:
+      Fort Myers to visit Mom
+      # with Kristan
+  -
+    date: 2003-08 #11
+    nights: 1
+    modes: [car]
+    description:
+      A night at the Peabody Memphis
+  -
+    date: 2003-09 #16
+    nights: 5
+    modes: [air]
+    description:
+      Seattle for AIA summit
+  -
+    date: 2003-11 #06
+    nights: 1
+    modes: [air]
+    description:
+      Portland business trip
+  -
+    date: 2003-11 #18
+    nights: 2
+    modes: [air]
+    description:
+      Dallas business trip
+  -
+    date: 2004-04 #17
+    nights: 9
+    modes: [air, train]
+    description:
+      Baltimore and Washington, D.C.
+      # with Kristan
+  -
+    date: 2004-05 #27
+    nights: 6
+    modes: [car]
+    description:
+      New Orleans with Dad to pick up Kurt
+  -
+    date: 2004-06 #05
+    nights: 1
+    modes: [car]
+    description:
+      Grand Theft Auto trip to Colorado Springs to steal a car
+  -
+    date: 2004-12 #11
+    nights: 8
+    modes: [air, bus]
+    geo: [43.352025, 11.360608] # siena ish
+    description:
+      Venice, Florance, and Rome with Kurt and Dad
+  -
+    date: 2004-11 #21
+    nights: 10
+    modes: [air, car]
+    description:
+      Fort Myers and Key West for Mom\'s birthday
+      # and Busch Gardens, with Kristan
+  -
+    date: 2005-03 #04
+    nights: 4
+    modes: [car]
+    description:
+      Western Louisiana and New Orleans with Dad
+  -
+    date: 2005-04 #23
+    nights: 8
+    modes: [air, train]
+    description:
+      Seattle, Victoria, and Vancouver
+  -
+    date: 2005-10 #21
+    nights: 2
+    modes: [air]
+    description:
+      Group trip to Chicago, Blue Man Group
+      # kristan, ryan, kelly, will?, gina?
+  -
+    date: 2005-12 #20
+    nights: 6
+    modes: [air, car]
+    description:
+      Orlando (Sea World, Disney World) and Fort Myers for Christmas with Mom
+      # with Kristan and then Kurt
+  -
+    date: 2006-02 #28
+    nights: 6
+    modes: [air]
+    description:
+      New Orleans to visit Kurt for Mardi Gras
+  -
+    date: 2006-04 #28
+    nights: 10
+    modes: [air, train]
+    geo: [48.8487, 2.3100] # rough estimate
+    description:
+      Took Kristan to London and Paris to propose
+  -
+    date: 2006-10 #09
+    nights: 2
+    modes: [air]
+    description:
+      Chicago weekend
+  -
+    date: 2007-03 #26
+    nights: 2
+    modes: [air]
+    description:
+      Boulder for small social web conference
+      # met @ev
+  -
+    date: 2007-04 #20
+    nights: 3
+    modes: [air]
+    description:
+      Oklahoma City to visit Kristan\'s sister
+  -
+    date: 2007-06 #13
+    nights: 4
+    modes: [air]
+    description:
+      Seattle group trip
+      # Kristan, Ryan, Kelly, Will, Gina
+  -
+    date: 2007-07 #21
+    nights: 1
+    modes: [car] # guessing
+    description:
+      Springfield, MO for a wedding
+  -
+    date: 2007-11 #02
+    nights: 2
+    modes: [air]
+    description:
+      Chicago with Shannon, Blue Man Group
+      # bedfruit!
+  -
+    date: 2007-12 #14
+    nights: 3
+    modes: [air]
+    description:
+      Fort Myers to visit Mom
+      # alone
+  -
+    tripit: 864140
+    date: 2008-02 #09
+    nights: 1
+    modes: [air, train]
+    description:
+      Kansas City with Shannon
+      # missed outbound train, so took a plane
+  -
+    tripit: 845746
+    date: 2008-03 #19
+    nights: 0
+    modes: [air]
+    description:
+      Chicago to speak at IAB
+  -
+    tripit: 845413
+    date: 2008-04 #06
+    nights: 1
+    modes: [air]
+    geo: [47.629150, -122.341899] # 1100 Dexter Ave N
+    description:
+      Interviewed with frog design in Seattle
+  -
+    tripit: 842418
+    date: 2008-04 #11
+    nights: 3
+    modes: [air]
+    description:
+      Washington D.C. with Shannon
+      # to meet Will & Gina
+  -
+    tripit: 856785
+    date: 2009-04
+    nights: 0
+    modes: [air]
+    description:
+      Austin, TX for final frog interview
+  -
+    tripit: 842689
+    date: 2009-05 #01
+    nights: 3
+    modes: [air]
+    description:
+      Las Vegas for Blue Man Group
+  -
+    tripit: 870177
+    date: 2008-06 #02
+    nights: 5
+    modes: [car]
+    description:
+      Trip to Seattle with stops at Kansas City, Boulder, Salt Lake City, Boise, and Portland 
+  -
+    date: 2009-09
+    modes: [air, bus, train, ship]
+    geo: [37.852588, 27.528529] # Magnesia
+    text:
+      Honeymoon from Venice through Rome to cruise Italy, Greece, and Turkey
+  -
+    date: 2010-04
+    modes: [air, train]
+    geo: [51.516525, -0.176628] # Paddington Station
+    description:
+      Lots of travel from Munich to London, US, and around Europe
+      # side trips to Vienna, Amsterdam, Prague, Hamburg
+  -
+    date: 2010-11
+    modes: [air]
+    geo: [12.938195, 77.692606] # Aricent Bengalore
+    description:
+      First trip to India (Dehli and Bangalore)
