@@ -338,6 +338,11 @@ events:
       Started at Quatrix as developer, quickly promoted to tech director
       # learned ASP from a book the week before starting
   -
+    date: 1999-05
+    type: life
+    text:
+      "Hard drive crash with insufficient backup: history before this is less clear"
+  -
     date: 1999-11
     type: home
     geo: [38.606751, -90.235772] # 2623 Virginia

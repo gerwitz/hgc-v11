@@ -1,5 +1,8 @@
 trips:
 # modes: car, air, ship, train, bus
+# each trip should be a single city
+# evntually a "from" should allow linking
+# 1991–2002 is hardest to account for, I know I'm missing Memphis, Nashville, Chicago'
   -
     date: 1976
     modes: [air]
@@ -68,10 +71,17 @@ trips:
       Jefferson City and Ha Ha Tonka State Park
   -
     date: 1997-01 #29
-    nights: 4
-    modes: [air, car]
+    nights: 1
+    modes: [air]
     description:
-      Baltimore and Washington, D.C.
+      Baltimore
+      # with Colleen
+  -
+    date: 1997-01 #29
+    nights: 1
+    modes: [car, air]
+    description:
+      Washington, D.C.
       # with Colleen
   -
     date: 1997-06 #15
@@ -86,6 +96,13 @@ trips:
     description:
       Fort Myers, via Orlando, to visit Mom for Christmas
       # with Colleen
+  -
+    date: 2001-05 #18
+    nights: 1
+    modes: [air]
+    description:
+      "New Orleans for Kurt's graduation"
+      # with Colleen. Not happy family time.
   -
     date: 2002-03 #28
     nights: 5
@@ -155,7 +172,14 @@ trips:
     nights: 1
     modes: [car]
     description:
-      A night at the Peabody Memphis
+      Memphis Zoo to see pandas
+  -
+    date: 2003-08 #12
+    nights: 2
+    modes: [car]
+    description:
+      New Orleans to see Kurt off to Jesuits
+      # with Kristan
   -
     date: 2003-09 #16
     nights: 5
