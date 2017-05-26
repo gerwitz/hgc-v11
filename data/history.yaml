@@ -57,6 +57,11 @@ events:
       Dad sold Riverview Pharmacy
       # and started work in financial services
   -
+    date: 1982-03 #01
+    type: life
+    text:
+      Got to stop wearing glasses (for now)
+  -
     date: 1985
     type: school
     geo: [38.79315, -89.99792]
@@ -83,7 +88,7 @@ events:
       Upward Bound summer school at SLUH
       # befriended Juniors (Gabe?), played a lot of chess with John Alan?
   -
-    date: 1987-11
+    date: 1987-11 #26
     type: life
     text:
       Grandparents (maternal) accident
@@ -106,6 +111,11 @@ events:
     geo: [38.640384, -90.261517] # 4579 Laclede
     text:
       Started first job at Mail Boxes, Etc.
+  -
+    date: 1989
+    type: life
+    text:
+      Back to wearing glasses (this time near-sighted)
   -
     date: 1990
     type: geek
@@ -538,4 +548,3 @@ events:
     type: life
     text:
       Thunder moved in
-
