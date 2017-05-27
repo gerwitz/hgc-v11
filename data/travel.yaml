@@ -1,5 +1,5 @@
 trips:
-# modes: car, air, ship, train, bus
+# modes: car, air, boat, train, bus
 # evntually a "from" should allow linking from explicit "home"
 # 1991–2002 is hardest to account for, I know I'm missing Hannibal, Nashville, Chicago
   -
@@ -61,44 +61,42 @@ trips:
     modes: [air]
     geo: [29.232936, -81.009580]
     description:
-      Flew to Daytona Beach with dad and Kurt
+      Flew to Daytona Beach # with Dad and Kurt
   -
     date: 1996-07 #05
     nights: 1
     modes: [car]
     description:
-      Jefferson City and Ha Ha Tonka State Park
+      Jefferson City and Ha Ha Tonka State Park # with Colleen
   -
     date: 1997-01 #29
     nights: 1
     modes: [air]
     description:
-      Baltimore
-      # with Colleen
+      Baltimore # with Colleen
   -
     date: 1997-01 #29
     nights: 1
     modes: [car, air]
     description:
-      Washington, D.C.
-      # with Colleen
+      Washington, D.C. # with Colleen
   -
     date: 1997-06 #15
     nights: 2
     modes: [car]
     description:
-      Chicago road trip, Blue Man Group
+      Chicago road trip, Blue Man Group # with Colleen
   -
     date: 2000-12 #15
     nights: 9
     modes: [air, car]
     description:
-      Florida to visit Mom for Christmas
-      # with Colleen
+      Florida to visit Mom for Christmas # with Colleen
     parts:
       -
         description: Flew to Orlando
       -
+        geo: [26.5537,-81.8393] # Fort Myers
         description: Drove to Fort Myers
   -
     date: 2001-05 #18
@@ -119,11 +117,11 @@ trips:
     modes: [air, car]
     description:
       Regrouping with Mom
-      # met Kurt in Tampa, drove to Ft. Myers
     parts:
       -
         description: Met Kurt in Tampa
       -
+        geo: [26.5537,-81.8393] # Fort Myers
         description: Drove to Fort Myers
   -
     date: 2002-06 #14
@@ -162,7 +160,7 @@ trips:
     nights: 8
     modes: [air, car]
     description:
-      Disney World and Kennedy Space Center with Kristan
+      Disney World and Kennedy Space Center # with Kristan
   -
     date: 2002-10 #21
     nights: 2
@@ -185,6 +183,7 @@ trips:
     date: 2003-04 #29
     nights: 8
     modes: [air]
+    geo: [26.5537,-81.8393] # Fort Myers
     description:
       Fort Myers to visit Mom
       # with Kristan
@@ -237,19 +236,39 @@ trips:
     description:
       Grand Theft Auto trip to Colorado Springs to steal a car
   -
+    date: 2004-09 #11
+    nights: 1
+    modes: [car]
+    geo: [38.95864,-92.29002] # Holiday Inn Express
+    description:
+      Columbia, MO for MS 150 ride
+  -
     date: 2004-12 #11
     nights: 8
     modes: [air, bus]
     geo: [43.352025, 11.360608] # siena ish
     description:
-      Venice, Florance, and Rome with Kurt and Dad
+      Italy with Kurt and Dad
+    parts:
+      -
+        description: Venice
+      -
+        description: Florence
+      -
+        description: Rome
   -
     date: 2004-11 #21
     nights: 10
     modes: [air, car]
     description:
-      Fort Myers and Key West for Mom\'s birthday
+      "Florida for Mom's birthday"
       # and Busch Gardens, with Kristan
+    parts:
+      -
+        geo: [26.5537,-81.8393] # Fort Myers
+        description: Fort Myers
+      -
+        description: Key West
   -
     date: 2005-03 #04
     nights: 4
@@ -263,6 +282,13 @@ trips:
     description:
       Seattle, Victoria, and Vancouver # with Kristan
   -
+    date: 2005-09 #10
+    nights: 1
+    modes: [car]
+    geo: [38.97072,-92.33514] # Red Roof Inn
+    description:
+      Columbia, MO for MS 150 ride
+  -
     date: 2005-10 #21
     nights: 2
     modes: [air]
@@ -274,8 +300,14 @@ trips:
     nights: 6
     modes: [air, car]
     description:
-      Orlando (Sea World, Disney World) and Fort Myers for Christmas with Mom
-      # with Kristan and then Kurt
+      Florida for Christmas with Mom
+      # with Kristan
+    parts:
+      -
+        description: Orlando (Sea World, Disney World)
+      -
+        geo: [26.5537,-81.8393] # Fort Myers
+        description: Fort Myers # with Kurt
   -
     date: 2006-02 #28
     nights: 6
@@ -288,7 +320,25 @@ trips:
     modes: [air, train]
     geo: [48.8487, 2.3100] # rough estimate
     description:
-      Took Kristan to London then Paris to propose
+      Europe to propose # with Kristan
+    parts:
+      -
+        nights: 6
+        geo: [51.4986115,-0.137778] # Crowne Plaza
+        description:
+          London
+      -
+        nights: 3
+        geo: [48.86645,2.33568] # Hôtel Louvre Sainte Anne
+        description:
+          Paris
+  -
+    date: 2006-09 #08
+    nights: 1
+    modes: [car]
+    geo: [38.96622,-92.35423] # Comfort Suites
+    description:
+      Columbia, MO for MS 150 ride # with Kristan
   -
     date: 2006-10 #09
     nights: 2
@@ -306,7 +356,7 @@ trips:
     nights: 3
     modes: [air]
     description:
-      Oklahoma City to visit Kristan\'s sister
+      Oklahoma City to visit Stephanie # with Kristan
   -
     date: 2007-06 #13
     nights: 4
@@ -321,6 +371,13 @@ trips:
     description:
       Springfield, MO for a wedding
   -
+    date: 2007-09 #08
+    nights: 1
+    modes: [car]
+    geo: [38.96622,-92.35423] # Comfort Suites
+    description:
+      Columbia, MO for MS 150 ride # with Pete Williams
+  -
     date: 2007-11 #02
     nights: 2
     modes: [air]
@@ -331,6 +388,7 @@ trips:
     date: 2007-12 #14
     nights: 3
     modes: [air]
+    geo: [26.5537,-81.8393] # Fort Myers
     description:
       Fort Myers to visit Mom
       # alone
@@ -482,7 +540,7 @@ trips:
     date: 2008-10 #06
     nights: 1
     modes: [air]
-    geo: [33.8444,-84.3686] Embassy Suites Buckhead
+    geo: [33.8444,-84.3686] # Embassy Suites Buckhead
     description:
       Atlanta for work
   -
@@ -621,7 +679,7 @@ trips:
     tripit: 1704375
     date: 2009-09 #12
     nights: 17
-    modes: [air, bus, train, ship]
+    modes: [air, bus, train, boat]
     geo: [37.852588, 27.528529] # Magnesia
     description:
       Honeymoon!
@@ -801,4 +859,559 @@ trips:
     geo: [48.16163,11.56886] # PHohenzollernplatz 7
     description:
       Transfer to Munich
- # London, US returns, Vienna, Amsterdam, Prague, Hamburg, and the return
+  -
+    tripit: 5550369
+    date: 2010-04 #12
+    nights: 9
+    modes: [air]
+    geo: [51.5064201,-0.12721] # The Royal Park
+    description:
+      London for work # with Shannon
+  -
+    tripit: 5991449
+    date: 2010-04 #29
+    nights: 1
+    modes: [air]
+    geo: [51.5141563,-0.181693] # Park Grand Paddington
+    description:
+      London for work
+  -
+    tripit: 6234973
+    date: 2010-05 #10
+    nights: 0
+    modes: [air]
+    geo: [51.5064201,-0.12721] # Vodafone Paddington
+    description:
+      London for work
+  -
+    tripit: 6255865
+    date: 2010-05 #14
+    nights: 2
+    modes: [air]
+    geo: [48.20196,16.37898] # InterContinental
+    description:
+      Vienna # with Shannon
+  -
+    tripit: 5344357
+    date: 2010-05 #19
+    nights: 3
+    modes: [air]
+    geo: [30.26807,-97.74168] # Driskill Hotel
+    description:
+      Austin, TX for work
+  -
+    tripit: 5887311
+    date: 2010-05 #26
+    nights: 5
+    modes: [air]
+    geo: [38.7985,-89.9533] # Edwardsville
+    description:
+      "St. Louis for Kurt's wedding" # with Shannon
+  -
+    tripit: 6853795
+    date: 2010-06 #12
+    nights: 3
+    modes: [air]
+    geo: [52.3726238,4.8833701] # Hotel Pulitzer
+    description:
+      Amsterdam # with Shannon
+  -
+    tripit: 7064845
+    date: 2010-06 #17
+    nights: 2
+    modes: [air]
+    geo: [51.5064201,-0.12721] # Thistle Marble ARch
+    description:
+      London for work # with Shannon
+  -
+    tripit: 6857175
+    date: 2010-06 #25
+    nights: 2
+    modes: [air]
+    geo: [50.08843,14.39383] # Domus Henrici
+    description:
+      Prague # with Shannon
+  -
+    tripit: 6857247
+    date: 2010-07 #03
+    nights: 2
+    modes: [air]
+    geo: [53.55847,10.00774] # Le Royal Méridien Hamburg
+    description:
+      Hamburg with Birgit # with Shannon
+  -
+    tripit: 7493199
+    date: 2010-07 #12
+    nights: 6
+    modes: [air, train]
+    geo: [47.62615,-122.32282] # 737A Harvard Ave E
+    description:
+      Back to Seattle # with Shannon
+    parts:
+      -
+        nights: 3
+        geo: [48.85037,2.29822] # Hôtel Ares Eiffel
+        description:
+          Paris for the Louvre
+      -
+        nights: 1
+        geo: [41.38708,2.19657] # Arts Barcelona
+        description:
+          Barcelona for some Gaudi
+      -
+        nights: 2
+        geo: [40.43541,-3.6396] # Room Mate Oscar
+        description:
+          Madrid for some Goya
+  -
+    tripit: 9913715
+    date: 2010-10 #13
+    nights: 0
+    modes: [air]
+    geo: [37.77909,-122.39364] # frog SF
+    description:
+      San Francisco for work
+  -
+    tripit: 9064013
+    date: 2010-10 #22
+    nights: 2
+    modes: [air]
+    geo: [38.7985,-89.9533] # Edwardsville
+    description:
+      St. Louis family visit # with Shannon
+  -
+    tripit: 10469093
+    date: 2010-11 #02
+    nights: 0
+    modes: [air]
+    geo: [37.77909,-122.39364] # frog SF
+    description:
+      San Francisco for work
+  -
+    tripit: 9912475
+    date: 2010-11 #13
+    nights: 7
+    modes: [air]
+    description:
+      India for work
+    parts:
+      -
+        nights: 3
+        geo: [28.504287, 77.097421] # Hotel Leela
+        description: Gurgaon (Delhi)
+      -
+        nights: 4
+        geo: [12.960713, 77.648480] # The Leela Palace
+        description: Bangelore
+  -
+    tripit: 10802127
+    date: 2010-12 #21
+    nights: 9
+    modes: [air, car]
+    description:
+      Christmas family visits # with Shannon
+    parts:
+      -
+        nights: 5
+        geo: [40.507734,-88.959926] # Bloomington-Normal
+        description: Pontiac (via Chicago) to visit Lames
+      -
+        nights: 4
+        geo: [26.5537,-81.8393] # Fort Myers
+        description: Fort Myers
+  -
+    tripit: 12217212
+    nights: 2
+    date: 2011-01 #08
+    modes: [air]
+    geo: [37.78652,-122.4031] # Westin Market St
+    description:
+      San Francisco for weekend before work # with Shannon
+      # pitched to Apple on campus
+  -
+    tripit: 11545029
+    date: 2011-01 #22
+    nights: 3
+    modes: [air]
+    geo: [34.06305,-118.44096] # W
+    description:
+      "Los Angeles for Shannon's birthday" # wth Shannon
+      # rented mustang convertible for pacific coast drive
+  -
+    tripit: 14734611
+    date: 2011-03 #20
+    nights: 3
+    modes: [air]
+    geo: [40.79797,-74.45891] # Westin Governor Morris
+    description:
+      New Jersey
+      # took Dan Provost to hospital on the way back to JFK
+  -
+    tripit: 15177811
+    date: 2011-04 #22
+    nights: 2
+    modes: [air]
+    geo: [38.7985,-89.9533] # Edwardsville
+    description:
+      St. Louis for Easter with family # with Shannon
+  -
+    tripit: 14036707
+    date: 2011-05 #07
+    nights: 2
+    modes: [air]
+    geo: [40.77708,-73.91139] # Ace Hotel
+    description:
+      New York for fun # with Shannon
+  -
+    tripit: 16714651
+    date: 2011-05 #30
+    nights: 3
+    modes: [air]
+    geo: [48.8632889,2.366508] # Murano Resort
+    description:
+      Paris for work
+  -
+    tripit: 13387335
+    date: 2011-06 #26
+    nights: 4
+    modes: [air]
+    geo: [44.9741,-93.22949] # Raddison University
+    description:
+      Minneapolis for Eyeo # with Shannon
+  -
+    tripit: 18536481
+    date: 2011-07 #01
+    nights: 0
+    modes: [air]
+    geo: [37.77909,-122.39364] # frog SF
+    description:
+      San Francisco for work
+  -
+    tripit: 18995389
+    date: 2011-07 #11
+    nights: 3
+    modes: [air]
+    geo: [33.2892776,-111.8916833] # Courtyard Fashion Center
+    description:
+      Phoenix for work
+  -
+    tripit: 20708627
+    date: 2011-08 #19
+    nights: 3
+    modes: [boat]
+    geo: [48.42163,-123.36837] # Fairmont Empress
+    description:
+      Victoria for 2nd anniversary # with Shannon
+  -
+    tripit: 21266783
+    date: 2011-08 #24
+    nights: 1
+    modes: [air]
+    geo: [33.2892776,-111.8916833] # Courtyard Fashion Center
+    description:
+      Phoenix for work
+  -
+    tripit: 20538487
+    date: 2011-08 #26
+    nights: 2
+    modes: [air]
+    geo: [38.7985,-89.9533] # Edwardsville
+    description:
+      "St. Louis for Frank's birthday" # with Shannon
+  -
+    tripit: 22480163
+    date: 2011-09 #19
+    nights: 0
+    modes: [air]
+    geo: [33.310970, -111.932351] # Intel
+    description:
+      Phoenix for work
+  -
+    tripit: 22923007
+    date: 2011-10 #10
+    nights: 0
+    modes: [air]
+    geo: [33.310970, -111.932351] # Intel
+    description:
+      Phoenix for work
+  -
+    tripit: 23371811
+    date: 2011-10 #12
+    nights: 5
+    modes: [air]
+    geo: [40.73665,-73.98869] # W Union Square
+    description:
+      NYC for Comicon # with Shannon
+  -
+    tripit: 22923101
+    date: 2011-10 #24
+    nights: 1
+    modes: [air]
+    geo: [33.2892776,-111.8916833] # Courtyard Fashion Center
+    description:
+      Phoenix for work
+  -
+    tripit: 22918943
+    date: 2011-10 #28
+    nights: 3
+    modes: [air]
+    geo: [26.5537,-81.8393] # Fort Myers
+    description:
+      "Fort Myers for Lou's birthday" # with Shannon
+  -
+    tripit: 22926175
+    date: 2011-11 #04
+    nights: 2
+    modes: [air]
+    geo: [36.109823,-115.176047] # The Cosmopolitan
+    description:
+      "Las Vegas for friends' wedding" # with Shannon
+  -
+    tripit: 25179649
+    date: 2011-11 #23
+    nights: 4
+    modes: [air, car]
+    description:
+      St. Louis for Thanksgiving # with Shannon
+    parts:
+      -
+        nights: 3
+        geo: [38.7985,-89.9533] # Edwardsville
+        description: St. Louis
+      -
+        nights: 1
+        geo: [40.87455,-88.66412] # Quality Inn
+        description: Pontiac, IL
+  -
+    tripit: 26180687
+    date: 2011-11 #29
+    nights: 1
+    modes: [air]
+    geo: [37.33215,-121.88805] # Four Points by Sheraton
+    description:
+      San Jose for work # with Shannon
+  -
+    tripit: 26179529
+    date: 2011-12 #01
+    nights: 1
+    modes: [air]
+    geo: [33.413698,-111.925685] # Four Points by Sheraton
+    description:
+      Phoenix for work
+  -
+    tripit: 26901365
+    date: 2011-12 #14
+    nights: 1
+    modes: [air]
+    geo: [33.43474,-111.92431] # Aloft
+    description:
+      Phoenix for work
+  -
+    tripit: 27733299
+    date: 2011-01 #03
+    nights: 1
+    modes: [air]
+    geo: [33.43474,-111.92431] # Aloft
+    description:
+      Phoenix for work
+  -
+    tripit: 28030731
+    date: 2012-01 #09
+    nights: 0
+    modes: [air]
+    geo: [37.3886,-121.9634277] # Intel
+    description:
+      San Jose for work # with Shannon
+  -
+    tripit: 26886381
+    date: 2012-01 #14
+    nights: 2
+    modes: [air]
+    geo: [38.62371,-90.19503] # Westin
+    description:
+      St. Louis for family visit # with Shannon
+  -
+    tripit: 29345629
+    date: 2012-01 #25
+    nights: 2
+    modes: [air]
+    geo: [33.847186,-118.395375] # Portofino
+    description:
+      Los Angeles for work # with Shannon
+  -
+    tripit: 30420305
+    date: 2012-02 #09
+    nights: 1
+    modes: [air]
+    geo: [37.40269,-121.91112] # Sheraton
+    description:
+      San Jose for work
+  -
+    tripit: 30664887
+    date: 2012-02 #21
+    nights: 3
+    modes: [air]
+    geo: [44.97443,-93.27179] # W Foshay
+    description:
+      Minneapolis for work # with Shannon
+  -
+    tripit: 26284535
+    date: 2012-03 #08
+    nights: 8
+    modes: [air, car]
+    description:
+      Hawaii (big island) with Lames # with Shannon
+    parts:
+      -
+        nights: 4
+        geo: [19.43368,-155.24212] # Rainforest Chalet
+        description: Kilauea
+      -
+        nights: 4
+        geo: [19.56563,-155.96616] # Outrigger Kanaloa
+        description: Kona
+  -
+    tripit: 33468669
+    date: 2012-03 #21
+    nights: 1
+    modes: [air]
+    geo: [44.97443,-93.27179] # W Foshay
+    description:
+      Minneapolis for work # alone
+  -
+    tripit: 33793875
+    date: 2012-04 #16
+    nights: 3
+    modes: [air]
+    geo: [44.97772,-93.27021] # Westin
+    description:
+      Minneapolis for work # with Shannon
+  -
+    tripit: 35641887
+    date: 2012-05 #02
+    nights: 2
+    modes: [air]
+    geo: [37.78652,-122.4031] # Westin Market St
+    description:
+      San Francisco for work
+  -
+    tripit: 33867543
+    date: 2012-05 #04
+    nights: 2
+    modes: [air]
+    geo: [38.62371,-90.19503] # Westin
+    description:
+      St Louis family visits # with Shannon
+  -
+    tripit: 35910441
+    date: 2012-05 #08
+    nights: 2
+    modes: [air]
+    geo: [44.97443,-93.27179] # W Foshay
+    description:
+      Minneapolis for work # with Shannon
+  -
+    tripit: 30328369
+    date: 2012-06 #04
+    nights: 5
+    modes: [air]
+    geo: [44.97443,-93.27179] # W Foshay
+    description:
+      Minneapolis for work # with Shannon
+  -
+    tripit: 39282729
+    date: 2012-06 #18
+    nights: 2
+    modes: [air]
+    geo: [33.266495,-111.9926509] # Sheraton
+    description:
+      Phoenix for work # with Dan
+  -
+    tripit: 39344853
+    date: 2012-06 #18
+    nights: 4
+    modes: [air]
+    geo: [44.97698,-93.27353] # Radisson Plaza
+    description:
+      Minneapolis for work # with Shannon
+  -
+    tripit: 41176023
+    date: 2012-07 #16
+    nights: 2
+    modes: [air]
+    geo: [37.7876416,-122.4083227] # Westin St. Francis
+    description:
+      San Francisco for work # alone
+  -
+    tripit: 41371979
+    date: 2012-07 #24
+    nights: 0
+    modes: [air]
+    geo: [44.974041, -93.275503] # Target
+    description:
+      Minneapolis for work # alone
+  -
+    tripit: 43756384
+    date: 2012-08 #15
+    nights: 2
+    modes: [air]
+    geo: [44.97772,-93.27021] # Westin
+    description:
+      Minneapolis for work # alone
+  -
+    tripit: 42120366
+    date: 2012-08 #25
+    nights: 2
+    modes: [air]
+    geo: [38.62371,-90.19503] # Westin
+    description:
+      "St. Louis for Frank's birthday"
+  -
+    tripit: 44758034
+    date: 2012-08 #29
+    nights: 1
+    modes: [air]
+    geo: [44.97604,-93.27691] # Le Méridien 
+    description:
+      Minneapolis for work # alone
+  -
+    tripit: 43909638
+    date: 2012-09 #07
+    nights: 2
+    modes: [air]
+    geo: [48.46593,-122.34408] # Holiday Inn
+    description:
+      Burlington, WA for MS ride # with Shannon
+  -
+    tripit: 41835168
+    date: 2012-09 #10
+    nights: 3
+    modes: [air]
+    geo: [44.97657,-93.255] # Aloft
+    description:
+      Minneapolis for work # alone
+  -
+    tripit: 47011541
+    date: 2012-09 #18
+    nights: 2
+    modes: [air]
+    geo: [44.97772,-93.27021] # Westin
+    description:
+      Minneapolis for work # alone
+  -
+    tripit: 53445499
+    date: 2012-11 #08
+    nights: 0
+    modes: [air]
+    geo: [45.546901, -122.912347] # Intel Hillsboro
+    description:
+      Portland for work # alone
+  -
+    tripit: 54034108
+    date: 2012-11 #15
+    nights: 0
+    modes: [air]
+    geo: [52.3657899,4.89326] # The Albus
+    description:
+      Moving to Amsterdam # with Shannon
+
