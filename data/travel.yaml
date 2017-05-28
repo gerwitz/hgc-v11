@@ -1,5 +1,5 @@
 trips:
-# modes: car, air, boat, train, bus
+# modes: car, air, boat, rail, bus, foot
 # evntually a "from" should allow linking from explicit "home"
 # 1991–2002 is hardest to account for, I know I'm missing Hannibal, Nashville, Chicago
   -
@@ -92,7 +92,7 @@ trips:
     modes: [air, car]
     description:
       Florida to visit Mom for Christmas # with Colleen
-    parts:
+    segments:
       -
         description: Flew to Orlando
       -
@@ -117,7 +117,7 @@ trips:
     modes: [air, car]
     description:
       Regrouping with Mom
-    parts:
+    segments:
       -
         description: Met Kurt in Tampa
       -
@@ -125,14 +125,14 @@ trips:
         description: Drove to Fort Myers
   -
     date: 2002-06 #14
-    modes: [air, train, car, bus]
+    modes: [air, rail, car, bus]
     description:
       Chicago trip coopted by a business trip to Wisconsin
-    parts:
+    segments:
       -
         description: Weekend in Chicago # with Kristan
       -
-        description: Train to Milwaukee
+        description: rail to Milwaukee
       -
         description: Drive with work colleagues to Racine for a week
       -
@@ -150,7 +150,7 @@ trips:
     geo: [50.107466, 8.899447] # Klaus Gerwitz, Hanau
     description:
       Cancer Sucks tour with Dad and Kurt
-    parts:
+    segments:
       -
         description: 6 nights in Hanau to visit Gerwitzes
       -
@@ -193,7 +193,7 @@ trips:
     modes: [car]
     description:
       New Orleans road trip # with Kristan
-    parts:
+    segments:
       -
         description: One night at the Peabody Memphis to see pandas at the zoo
       -
@@ -219,7 +219,7 @@ trips:
   -
     date: 2004-04 #17
     nights: 9
-    modes: [air, train]
+    modes: [air, rail]
     description:
       Baltimore and Washington, D.C.
       # with Kristan
@@ -249,7 +249,7 @@ trips:
     geo: [43.352025, 11.360608] # siena ish
     description:
       Italy with Kurt and Dad
-    parts:
+    segments:
       -
         description: Venice
       -
@@ -263,7 +263,7 @@ trips:
     description:
       "Florida for Mom's birthday"
       # and Busch Gardens, with Kristan
-    parts:
+    segments:
       -
         geo: [26.5537,-81.8393] # Fort Myers
         description: Fort Myers
@@ -278,7 +278,7 @@ trips:
   -
     date: 2005-04 #23
     nights: 8
-    modes: [air, train]
+    modes: [air, rail]
     description:
       Seattle, Victoria, and Vancouver # with Kristan
   -
@@ -302,7 +302,7 @@ trips:
     description:
       Florida for Christmas with Mom
       # with Kristan
-    parts:
+    segments:
       -
         description: Orlando (Sea World, Disney World)
       -
@@ -317,11 +317,11 @@ trips:
   -
     date: 2006-04 #28
     nights: 10
-    modes: [air, train]
+    modes: [air, rail]
     geo: [48.8487, 2.3100] # rough estimate
     description:
       Europe to propose # with Kristan
-    parts:
+    segments:
       -
         nights: 6
         geo: [51.4986115,-0.137778] # Crowne Plaza
@@ -381,6 +381,7 @@ trips:
     date: 2007-11 #02
     nights: 2
     modes: [air]
+    geo: [41.87973,-87.63314] # W Loop
     description:
       Chicago with Shannon to see Blue Man Group
       # bedfruit!
@@ -396,11 +397,11 @@ trips:
     tripit: 864140
     date: 2008-02 #09
     nights: 1
-    modes: [air, train]
+    modes: [air, rail]
     geo: [39.0833964, -94.5829858]
     description:
       Kansas City with Shannon
-      # missed outbound train, so took a plane
+      # missed outbound rail, so took a plane
   -
     tripit: 845746
     date: 2008-03 #19
@@ -450,7 +451,7 @@ trips:
     geo: [47.61967,-122.32165] # 130 Harvard Ave E
     description:
       Moving to Seattle
-    parts:
+    segments:
       -
         geo: [39.00278,-94.78572] # Mariott Courtyard
         description:
@@ -550,7 +551,7 @@ trips:
     modes: [air, car]
     description:
       Christmas rounds
-    parts:
+    segments:
       -
         nights: 4
         geo: [38.7985,-89.9533] # Edwardsville
@@ -679,11 +680,11 @@ trips:
     tripit: 1704375
     date: 2009-09 #12
     nights: 17
-    modes: [air, bus, train, boat]
+    modes: [air, bus, rail, boat]
     geo: [37.852588, 27.528529] # Magnesia
     description:
       Honeymoon!
-    parts:
+    segments:
       -
         nights: 1
         geo: [45.44214,12.32348] # Hotel Principe
@@ -849,7 +850,7 @@ trips:
     date: 2010-03 #11
     nights: 5
     modes: [air]
-    geo: [30.2598,-97.70613] # AirBnB
+    geo: [30.2598,-97.70613] # house
     description:
       SxSW # with Shannon, David Philips
   -
@@ -943,11 +944,11 @@ trips:
     tripit: 7493199
     date: 2010-07 #12
     nights: 6
-    modes: [air, train]
+    modes: [air, rail]
     geo: [47.62615,-122.32282] # 737A Harvard Ave E
     description:
       Back to Seattle # with Shannon
-    parts:
+    segments:
       -
         nights: 3
         geo: [48.85037,2.29822] # Hôtel Ares Eiffel
@@ -994,7 +995,7 @@ trips:
     modes: [air]
     description:
       India for work
-    parts:
+    segments:
       -
         nights: 3
         geo: [28.504287, 77.097421] # Hotel Leela
@@ -1010,7 +1011,7 @@ trips:
     modes: [air, car]
     description:
       Christmas family visits # with Shannon
-    parts:
+    segments:
       -
         nights: 5
         geo: [40.507734,-88.959926] # Bloomington-Normal Marriott
@@ -1061,7 +1062,7 @@ trips:
     modes: [air]
     geo: [40.77708,-73.91139] # Ace Hotel
     description:
-      New York for fun # with Shannon
+      NYC for holiday # with Shannon
   -
     tripit: 16714651
     date: 2011-05 #30
@@ -1173,7 +1174,7 @@ trips:
     modes: [air, car]
     description:
       St. Louis for Thanksgiving # with Shannon
-    parts:
+    segments:
       -
         nights: 3
         geo: [38.7985,-89.9533] # Edwardsville
@@ -1261,7 +1262,7 @@ trips:
     modes: [air, car]
     description:
       Hawaii (big island) with Lames # with Shannon
-    parts:
+    segments:
       -
         nights: 4
         geo: [19.43368,-155.24212] # Rainforest Chalet
@@ -1434,10 +1435,10 @@ trips:
     tripit: 56593534
     date: 2012-12 #21
     nights: 10
-    modes: [air. train, car]
+    modes: [air. rail, car]
     description:
       Christmas family visits
-    parts:
+    segments:
       -
         nights: 4
         geo: [38.7985,-89.9533] # Edwardsville
@@ -1490,7 +1491,7 @@ trips:
     modes: [air]
     description:
       US visits # with Shannon
-    parts:
+    segments:
       -
         nights: 5
         geo: [47.62615,-122.32282] # 737A Harvard Ave E
@@ -1519,7 +1520,7 @@ trips:
     tripit: 74107055
     date: 2013-05 #09
     nights: 5
-    modes: [train]
+    modes: [rail]
     geo: [52.51663,13.48126] # Birgit
     description:
       Berlin # with Shannon
@@ -1535,10 +1536,10 @@ trips:
     tripit: 65389786
     date: 2013-06 #28
     nights: 
-    modes: [air, train]
+    modes: [air, rail]
     description:
       US family visits # with Shannon
-    parts:
+    segments:
       -
         nights: 4
         geo: [38.6242,-90.20206] # Sheraton
@@ -1559,7 +1560,7 @@ trips:
     tripit: 80516233
     date: 2013-07 #09
     nights: 2
-    modes: [train]
+    modes: [rail]
     geo: [48.77407,9.18423] # Der Zauberlehrling
     description:
       Stuttgart for work # with Shannon
@@ -1584,7 +1585,7 @@ trips:
     date: 2013-10 #04
     nights: 3
     modes: [air]
-    geo: [32.4397697,35.0482903] # AirBnB
+    geo: [32.4397697,35.0482903] # apartment
     description:
       "Berlin for friends' birthdays" # with Shannon
   -
@@ -1595,3 +1596,378 @@ trips:
     geo: [35.7061005,139.7838287] # Hotel MyStays
     description:
       Tokyo for Halloween # with Shannon and Gwenny
+  -
+    tripit: 77866150
+    date: 2013-11 #27
+    nights: 8
+    modes: [air, rail]
+    description:
+      US for Thanksgiving # with Shannon
+    segments:
+      -
+        nights: 1
+        geo: [41.87973,-87.63314] # W Loop
+        description: Chicago
+      -
+        nights: 1
+        geo: [40.507734,-88.959926] # Bloomington-Normal Marriott
+        description: Pontiac, IL
+      -
+        nights: 3
+        geo: [38.7985,-89.9533] # Edwardsville
+        description: Edwardsville, IL
+      -
+        nights: 3
+        geo: [47.62615,-122.32282] # 737A Harvard Ave E
+        description: Seattle
+  -
+    tripit: 103759303
+    date: 2013-12 #27
+    nights: 2
+    modes: [air]
+    geo: [38.73113,-9.14389] # DoubleTree
+    description:
+      Lisbon holiday # with Shannon
+  -
+    tripit: 106395210
+    date: 2014-02 #21
+    nights: 7
+    modes: [air, rail]
+    description:
+      "US for Betty's 90th"
+    segments:
+      -
+        nights: 1
+        geo: [41.87973,-87.63314] # W Loop
+        description: Chicago
+      -
+        nights: 1
+        geo: [40.8867, -88.6264] # Betty
+        description: Pontiac, IL
+      -
+        nights: 4
+        geo: [38.6306439,-90.1903326] # Embassy Suites
+        description: St. Louis
+      -
+        nights: 1
+        geo: [41.87973,-87.63314] # W Loop
+        description: Chicago        
+  -
+    tripit: 104508973
+    date: 2014-04 #02
+    nights: 4
+    modes: [air]
+    geo: [44.2329712,20.7979584] # apartment
+    description:
+      Belgrade for Resonate # with Shannon, Jo, Carol
+  -
+    tripit: 119184315
+    date: 2014-04 #23
+    nights: 1
+    modes: [rail]
+    geo: [51.4402721,5.4738373] # Art Hotel
+    description:
+      Eindhoven for work # with Shannon
+  -
+    tripit: 120160511
+    date: 2014-05 #05
+    nights: 5
+    modes: [air]
+    geo: [47.7926923,-122.2156468] # Hilton Garden Inn
+    description:
+      Seattle for work # alone
+  -
+    tripit: 122736768
+    date: 2014-06 #01
+    nights: 4
+    modes: [air]
+    geo: [47.7926923,-122.2156468] # Hilton Garden Inn
+    description:
+      Seattle for work # alone
+  -
+    tripit: 116809787
+    date: 2014-06 #13
+    nights: 2
+    modes: [air]
+    geo: [52.49578,13.40007] # Hotel Johann
+    description:
+      Berlin for bachelor party # with Guus, et al
+  -
+    tripit: 131991399
+    date: 2014-08 #22
+    nights: 2
+    modes: [rail]
+    geo: [51.05278,3.72612] # Ibis
+    description:
+      Gent for Jan van Eyck # with Shannon
+  -
+    tripit: 127671241
+    date: 2014-08 #28
+    nights: 5
+    modes: [air, rail]
+    description:
+      "St. Louis for Frank's 90th birthday" # with Shannon
+    segments:
+      -
+        nights: 1
+        geo: [41.87973,-87.63314] # W Loop
+        description: Chicago
+      -
+        nights: 2
+        geo: [38.7985,-89.9533] # Edwardsville
+        description: Edwardsville, IL
+      -
+        nights: 1
+        geo: [41.87973,-87.63314] # W Loop
+        description: Chicago        
+  -
+    tripit: 133246561
+    date: 2014-09 #04
+    nights: 3
+    modes: [air]
+    geo: [50.8248672,-0.138943] # myhotel
+    description:
+      Brighton for dConstruct # with Shannon
+  -
+    tripit: 142007220
+    date: 2014-11 #24
+    nights: 1
+    modes: [air]
+    geo: [60.38833,5.33122] # Scandic Ørnen
+    description:
+      Bergen, Norway for work # alone
+  -
+    tripit: 137864435
+    date: 2014-12 #
+    nights: 14
+    modes: [air, car]
+    description:
+      US for Christmas # with Shannon
+    segments:
+      -
+        nights: 6
+        geo: [38.7985,-89.9533] # Edwardsville
+        description: Edwardsville, IL to visit Lames
+      -
+        nights: 1
+        geo: [41.87973,-87.63314] # W Loop
+        description: Chicago
+      -
+        nights: 3
+        geo: [26.5537,-81.8393] # Fort Myers
+        description: Fort Myers, FL to visit Mom
+      -
+        nights: 3
+        geo: [29.94883,-90.06616] # Le Méridien
+        description: New Orleans to visit Kurt
+  -
+    tripit: 146229698
+    date: 2015-01 #23
+    nights: 2
+    modes: [rail]
+    geo: [49.61146,6.1335499] # Hotel Par Beaux-Arts
+    description:
+      "Luxmbourg for Shannon's birthday" # with Shannon
+  -
+    tripit: 149958876
+    date: 2015-05 #27
+    nights: 4
+    modes: [air]
+    geo: [41.38786,2.16662] # apartment
+    description:
+      Barcelona for OFFF # with Shannon, Carol, Susana, Ariane
+  -
+    tripit: 152674527
+    date: 2015-05 #27
+    nights: 3
+    modes: [air]
+    geo: [55.67537,12.5728] # First Hotel Twentyseven
+    description:
+      Copenhagen and Malmö with the Lames
+  -
+    tripit: 154789022
+    date: 2015-08 #02
+    nights: 11
+    modes: [air, rail]
+    description:
+      US for family and holiday
+    segments:
+      -
+        nights: 1
+        geo: [41.87973,-87.63314] # W Loop
+        description: Chicago
+      -
+        nights: 5
+        geo: [38.630032,-90.192163] # Magnolia Hotel
+        description: St. Louis
+      -
+        nights: 4
+        geo: [40.726037, -73.991624] # Bowery Hotel
+        description: NYC for holiday
+  -
+    tripit: 159989539
+    date: 2015-10 #14
+    nights: 4
+    modes: [air]
+    geo: [45.47885,9.1988] # Westin
+    description:
+      Milan for World Expo
+  -
+    tripit: 164260690
+    date: 2015-12 #05
+    nights: 8
+    modes: [air]
+    geo: [47.7926923,-122.2156468] # Hilton Garden Inn
+    description:
+      Seattle for work # with Shannon
+  -
+    tripit: 165609561
+    date: 2015-12 #31
+    nights: 3
+    modes: [rail]
+    geo: [48.86571,2.32748] # Westin
+    description:
+      "Paris for New Year's Eve" # with Shannon
+  -
+    tripit: 166496235
+    date: 2016-03 #25
+    nights: 14
+    modes: [air, rail]
+    description:
+      US for family and holiday
+    segments:
+      -
+        nights: 1
+        geo: [41.87973,-87.63314] # W Loop
+        description: Chicago for pizza
+      -
+        nights: 1
+        geo: [40.8867, -88.6264] # Betty
+        description: Pontiac, IL to visit Betty
+      -
+        nights: 3
+        geo: [38.7985,-89.9533] # Edwardsville
+        description: Edwardsville, IL to visit Lames
+      -
+        nights: 3
+        geo: [26.5537,-81.8393] # Fort Myers
+        description: Fort Myers, FL to visit Mom
+      -
+        nights: 5
+        geo: [18.1069927,-63.0579185] # Bleu Emeraude
+        description: Saint Martin to relax
+  -
+    tripit: 172532563
+    date: 2016-05 #03
+    nights: 8
+    modes: [air]
+    geo: [47.61369,-122.33819] # Westin
+    description:
+      Seattle for work # with Shannon, Carol, Susana, Ariane
+  -
+    tripit: 176354652
+    date: 2016-06 #14
+    nights: 7
+    modes: [air]
+    geo: [38.7985,-89.9533] # Edwardsville
+    description:
+      St. Louis to celebrate Frank # with Shannon
+  -
+    tripit: 177927734
+    date: 2016-08 #24
+    nights: 4
+    modes: [air]
+    geo: [47.4838499,19.0526899] # Danubius Hotel Gellért 
+    description:
+      Budapest holiday # with Shannon
+  -
+    tripit: 173579266
+    date: 2016-10 #22
+    nights: 13
+    modes: [air, car, foot]
+    description:
+      Nepal # with Shannon, Birgit, et al
+    segments:
+      -
+        date: 2016-10-23
+        nights: 1
+        geo: [28.555091,77.084419] # Holiday Inn Express
+        description: Slept in airport hotel, stuck in security limbo
+      -
+        date: 2016-10-24
+        nights: 1
+        geo: [27.722946,85.361879] # Happiness Guest House
+        description: Kathmandu to visit orphanage
+      -
+        date: 2016-10-25
+        nights: 1
+        geo: [28.39843,83.82558] # Kalpana Guest House
+        description: New Bridge # flew to Pokhara, drove to Siwai
+      -
+        date: 2016-10-26
+        nights: 1
+        geo: [28.43550,83.83860] # Sherpa Guest House
+        description: Sinuwa
+      -
+        date: 2016-10-27
+        nights: 1
+        geo: [28.49723,83.89808] # Dream Lodge
+        description: Deurali
+      -
+        date: 2016-10-28
+        nights: 1
+        geo: [28.530705,83.878109] # ABC
+        description: Annapurna Base Camp
+      -
+        date: 2016-10-29
+        nights: 1
+        geo: [28.45682,83.85678] # 
+        description: Bamboo
+      -
+        date: 2016-10-30
+        nights: 1
+        geo: [28.40896,83.82424] # Nameste Hotel
+        description: Jhinu
+      -
+        date: 2016-10-31
+        nights: 2
+        geo: [28.204372,83.962713] # Mount Kailash Resort
+        description: 
+      -
+        date: 2016-11-02
+        nights: 1
+        geo: [27.722946,85.361879] # Happiness Guest House
+        description: Kathmandu and orphanage
+  -
+    tripit: 
+    date: 2016- #
+    nights: 
+    modes: [air]
+    geo: [] # 
+    description:
+      
+  -
+    tripit: 
+    date: 2016- #
+    nights: 
+    modes: [air]
+    geo: [] # 
+    description:
+      
+  -
+    tripit: 
+    date: 2016- #
+    nights: 
+    modes: [air]
+    geo: [] # 
+    description:
+      
+  -
+    tripit: 
+    date: 2016- #
+    nights: 
+    modes: [air]
+    geo: [] # 
+    description:
+      
+
