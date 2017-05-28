@@ -30,7 +30,16 @@ title: Travelogue
       <%= year if year > last_year %>
       <%#= monthname if monthname.present? %>
     </time>
-    <p><%= t.description %></p>
+    <p><%= t.title %></p>
+    <%
+      if t.destinations
+        t.destinations.each do |d|
+    %>
+    
+    <%
+        end
+      end
+    %>
     <%
       if t.geo
         lat = t.geo[0]
@@ -50,3 +59,7 @@ title: Travelogue
   %>
 </ol>
 </section>
+
+<p>
+  Trips logged include when I spent the night away from home (not including camping trips to Perry County, too many to count) or took an airplane. Daytrips by train or car don't count.
+</p>
