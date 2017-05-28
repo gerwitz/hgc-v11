@@ -87,6 +87,16 @@ trips:
     description:
       Chicago road trip, Blue Man Group # with Colleen
   -
+    date: 2000-05
+    nights: 1
+    modes: [car]
+    geo: [] # Lower Rock Creek
+    description:
+      Camping trip # with Colleen et al
+      # part of Belden C. Lane's class based on his book "Landscapes of the Sacred"
+      # https://sites.google.com/a/slu.edu/beldenlane/
+      # https://www.alltrails.com/trail/us/missouri/lower-rock-creek-trail
+  -
     date: 2000-12 #15
     nights: 9
     modes: [air, car]
@@ -1939,35 +1949,54 @@ trips:
         geo: [27.722946,85.361879] # Happiness Guest House
         description: Kathmandu and orphanage
   -
-    tripit: 
-    date: 2016- #
-    nights: 
+    tripit: 180892146
+    date: 2016-11 #06
+    nights: 7
     modes: [air]
-    geo: [] # 
+    geo: [38.7244699,-9.14775] # apartment
     description:
-      
+      Lisbon for Web Summit # with Shannon, Carol, Ariane, Natalia, Parizad
   -
-    tripit: 
-    date: 2016- #
-    nights: 
+    tripit: 174521460
+    date: 2016-11 #06
+    nights: 19
     modes: [air]
-    geo: [] # 
     description:
-      
+      US for work and family # with Shannon
+    segments:
+      -
+        nights: 9
+        geo: [47.60739,-122.33363] # W
+        description: Seattle for work and holiday
+      -
+        nights: 6
+        geo: [38.7985,-89.9533] # Edwardsville
+        description: Edwardsville, IL for Christmas
+      -
+        nights: 3
+        geo: [41.87973,-87.63314] # W Loop
+        description: Chicago to relax
   -
-    tripit: 
-    date: 2016- #
-    nights: 
+    tripit: 194191653
+    date: 2017-04 #18
+    nights: 5
     modes: [air]
-    geo: [] # 
+    geo: [44.80688,20.4737699] # Metropol Palace
     description:
-      
+      Belgrade for Resonate # with Shannon, Carol, Ariane, Natalia, Parizad
   -
-    tripit: 
-    date: 2016- #
-    nights: 
-    modes: [air]
-    geo: [] # 
+    tripit: 194191653
+    date: 2017-05 #06
+    nights: 7
+    modes: [air, rail, boat, bus]
     description:
-      
-
+      Norway holiday
+    segments:
+      -
+        nights: 2
+        geo: [59.91375,10.73948] # Grand Hotel
+        description: Oslo for Munch
+      -
+        nights: 5
+        geo: [60.39575,5.3192] # Clarion Hotel Admiral
+        description: Bergen for fjords and hiking
