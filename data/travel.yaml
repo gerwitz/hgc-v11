@@ -551,18 +551,18 @@ trips:
     description:
       Christmas rounds
     parts:
-    -
-      nights: 4
-      geo: [38.7985,-89.9533] # Edwardsville
-      description: St. Louis
-    -
-      nights: 2
-      geo: [40.87455,-88.66412] # Holiday Inn
-      description: Drive to Pontiac to visit Betty, then on to Chicago for airport
-    -
-      nights: 4
-      geo: [26.5537,-81.8393] # Fort Myers
-      description: Fort Myers for Mom
+      -
+        nights: 4
+        geo: [38.7985,-89.9533] # Edwardsville
+        description: Edwardsville, IL
+      -
+        nights: 2
+        geo: [40.87455,-88.66412] # Holiday Inn
+        description: Drive to Pontiac to visit Betty, then on to Chicago for airport
+      -
+        nights: 4
+        geo: [26.5537,-81.8393] # Fort Myers
+        description: Fort Myers for Mom
   -
     tripit: 1155515
     date: 2009-01 #13
@@ -1013,7 +1013,7 @@ trips:
     parts:
       -
         nights: 5
-        geo: [40.507734,-88.959926] # Bloomington-Normal
+        geo: [40.507734,-88.959926] # Bloomington-Normal Marriott
         description: Pontiac (via Chicago) to visit Lames
       -
         nights: 4
@@ -1177,7 +1177,7 @@ trips:
       -
         nights: 3
         geo: [38.7985,-89.9533] # Edwardsville
-        description: St. Louis
+        description: Edwardsville, IL
       -
         nights: 1
         geo: [40.87455,-88.66412] # Quality Inn
@@ -1317,7 +1317,7 @@ trips:
     modes: [air]
     geo: [44.97443,-93.27179] # W Foshay
     description:
-      Minneapolis for work # with Shannon
+      Minneapolis for Eyeo and work # with Shannon
   -
     tripit: 39282729
     date: 2012-06 #18
@@ -1378,7 +1378,7 @@ trips:
     tripit: 43909638
     date: 2012-09 #07
     nights: 2
-    modes: [air]
+    modes: [car]
     geo: [48.46593,-122.34408] # Holiday Inn
     description:
       Burlington, WA for MS ride # with Shannon
@@ -1414,4 +1414,184 @@ trips:
     geo: [52.3657899,4.89326] # The Albus
     description:
       Moving to Amsterdam # with Shannon
-
+  -
+    tripit: 54385231
+    date: 2012-11 #17
+    nights: 15
+    modes: [air]
+    geo: [19.134402, 72.901250] # Renaissance
+    description:
+      Mumbai for work
+  -
+    tripit: 56399296
+    date: 2012-12 #10
+    nights: 5
+    modes: [air]
+    geo: [48.15939,11.58356] # H'Otello
+    description:
+      Munich for work # with Shannon
+  -
+    tripit: 56593534
+    date: 2012-12 #21
+    nights: 10
+    modes: [air. train, car]
+    description:
+      Christmas family visits
+    parts:
+      -
+        nights: 4
+        geo: [38.7985,-89.9533] # Edwardsville
+        description: Edwardsville, IL
+      -
+        nights: 1
+        geo: [40.507734,-88.959926] # Bloomington-Normal Marriott
+        description: Pontiac, IL
+      -
+        nights: 1
+        geo: [41.63925,-88.11266] # somewhere near Charlie's sister
+        description: Romeoville, IL
+      -
+        nights: 1
+        geo: [42.24416,-83.34703] # Four Points by Sheraton
+        description: Detroit delay
+      -
+        nights: 3
+        geo: [26.5537,-81.8393] # Fort Myers
+        description:
+          Fort Myers (via car service from Tampa)
+  -
+    tripit: 60918851
+    date: 2013-01 #24
+    nights: 0
+    modes: [air]
+    geo: [48.16128,11.58532] # frog MU
+    description:
+      Munich for work # alone
+  -
+    tripit: 62569802
+    date: 2013-02 #04
+    nights: 4
+    modes: [air]
+    geo: [19.134402, 72.901250] # Renaissance
+    description:
+      Mumbai for work
+  -
+    tripit: 64219888
+    date: 2013-02 #18
+    nights: 5
+    modes: [air]
+    geo: [19.134402, 72.901250] # Renaissance
+    description:
+      Mumbai for work
+  -
+    tripit: 54041473
+    date: 2013-03 #01
+    nights: 9
+    modes: [air]
+    description:
+      US visits # with Shannon
+    parts:
+      -
+        nights: 5
+        geo: [47.62615,-122.32282] # 737A Harvard Ave E
+        description: Seattle # finish packing
+      -
+        nights: 3
+        geo: [38.62371,-90.19503] # Westin
+        description: St. Louis
+  -
+    tripit: 67032135
+    date: 2013-03 #13
+    nights: 3
+    modes: [air]
+    geo: [19.134402, 72.901250] # Renaissance
+    description:
+      Mumbai for work
+  -
+    tripit: 56952540
+    date: 2013-03 #21
+    nights: 3
+    modes: [air]
+    geo: [44.80688,20.4737699] # Metropol Palace
+    description:
+      Belgrade for Resonate # with Shannon
+  -
+    tripit: 74107055
+    date: 2013-05 #09
+    nights: 5
+    modes: [train]
+    geo: [52.51663,13.48126] # Birgit
+    description:
+      Berlin # with Shannon
+  -
+    tripit: 79369306
+    date: 2013-06 #
+    nights: 0
+    modes: [air]
+    geo: [51.7536011,-0.3373] # humanLearning
+    description:
+      London-ish for work # with Shannon
+  -
+    tripit: 65389786
+    date: 2013-06 #28
+    nights: 
+    modes: [air, train]
+    description:
+      US family visits # with Shannon
+    parts:
+      -
+        nights: 4
+        geo: [38.6242,-90.20206] # Sheraton
+        description: St. Louis
+      -
+        nights: 1
+        geo: [38.7985,-89.9533] # Edwardsville
+        description: Edwardsville, IL
+      -
+        nights: 1
+        geo: [40.8867, -88.6264] # Betty
+        description: Pontiac, IL
+      -
+        nights: 1
+        geo: [41.8939,-87.61563] # W Lakeshore
+        description: Chicago, IL
+  -
+    tripit: 80516233
+    date: 2013-07 #09
+    nights: 2
+    modes: [train]
+    geo: [48.77407,9.18423] # Der Zauberlehrling
+    description:
+      Stuttgart for work # with Shannon
+  -
+    tripit: 84312369
+    date: 2013-07 #25
+    nights: 0
+    modes: [air]
+    geo: [50.132122, 8.577382] # DT
+    description:
+      Frankfurt for work # alone
+  -
+    tripit: 90056783
+    date: 2013-09 #10
+    nights: 6
+    modes: [air]
+    geo: [34.94489,-80.9683] # Holiday Inn
+    description:
+      Rock Hill, SC for work # with Shannon
+  -
+    tripit: 92347652
+    date: 2013-10 #04
+    nights: 3
+    modes: [air]
+    geo: [32.4397697,35.0482903] # AirBnB
+    description:
+      "Berlin for friends' birthdays" # with Shannon
+  -
+    tripit: 88848788
+    date: 2013-10 #24
+    nights: 6
+    modes: [air]
+    geo: [35.7061005,139.7838287] # Hotel MyStays
+    description:
+      Tokyo for Halloween # with Shannon and Gwenny
