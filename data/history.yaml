@@ -112,6 +112,11 @@ events:
     text:
       Started first job at Mail Boxes, Etc.
   -
+    date: 1989-06
+    type: life
+    text:
+      Jesuit summer camp with survival training
+  -
     date: 1989
     type: life
     text:
@@ -140,7 +145,7 @@ events:
     type: life
     geo: [38.506229, -90.384860] # Hyland Center at St. Anthony's
     text:
-      Involuntarily admited to psych center with some really troubled "peers"
+      Involuntarily admitted to psych center with some really troubled "peers"
   -
     date: 1991
     type: home

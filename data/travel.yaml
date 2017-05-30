@@ -56,7 +56,14 @@ trips:
       Visited Disney World and Daytona Beach with family
       # Pulled out of school early because why not?
   -
-    date: 1989
+    date: 1989-06 # ?
+    nights: 12 # ish
+    modes: [air, bus]
+    geo: [45.214418, -79.729897] # Camp Ekon
+    title:
+      Jesuit scouting summer camp 
+  -
+    date: 1990-05 # ?
     modes: [air]
     geo: [38.889441, -77.035168]
     title:
