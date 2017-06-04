@@ -53,6 +53,18 @@ page "/library/*", layout: :page
 page "/projects/*", layout: :page
 page "/site/*", layout: :page
 
+activate :search do |search|
+  search.resources = ['writing/', 'library/', 'projects/', 'site/']
+  search.index_path = 'search/lunr-index.json'
+  search.fields = {
+    title:   {boost: 100, store: true, required: true},
+    date:    {index: false, store: true},
+    content: {boost: 50},
+    url:     {index: false, store: true}
+  }
+end
+
+activate :sprockets
 
 # Build-specific configuration
 configure :build do
