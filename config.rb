@@ -59,6 +59,7 @@ activate :search do |search|
   search.fields = {
     title:   {boost: 100, store: true, required: true},
     path:    {index: false, store: true},
+    tags:    {boost: 100},
     content: {boost: 50},
     url:     {index: false, store: true}
   }
