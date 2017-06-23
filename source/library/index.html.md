@@ -1,8 +1,8 @@
 ---
-title: Library
+title: Conservatory
 ---
 
-This is my conservatory for reference. There isn't much here yet.
+This is my personal library for reference.
 
 - [Public Records](records/)
 - [Travelogue](travel.html)

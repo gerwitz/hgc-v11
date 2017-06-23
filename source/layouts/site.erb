@@ -59,29 +59,29 @@
   <header id="masthead">
     <h1><%= nav_link 'hans.gerwitz.com', '/' %></h1>
     <ul class="nav">
-<!--
       <li>
         <%= nav_link(
-          '<i class="icon-floppy-o"></i> Conservatory</a>',
+          'Conservatory</a>',
           '/library/'
         ) %>
       </li>
+<!--
       <li>
         <%= nav_link(
-          '<i class="icon-flask"></i> Laboratory</a>',
+          'Laboratory</a>',
           '/projects/'
         ) %>
       </li>
 -->
       <li>
         <%= nav_link(
-          '<i class="icon-user"></i> About',
+          'About',
           '/library/me.html',
           {title: 'About Hans', rel: 'author'}
         ) %>
       </li>
       <li>
-        <a href="https://twitter.com/intent/user?user_id=521"><i class="icon-twitter"></i> Twitter</a>
+        <a href="https://twitter.com/intent/user?user_id=521">Twitter</a>
       </li>
     </ul>
   </header>
@@ -90,7 +90,7 @@
 
   <footer>
     <form method="get" action="/search.html">
-      <label for="search"><i class="icon-search"></i></label>
+      <label for="search"></label>
       <input id = "search" type="search" placeholder="search posts" name="query" />
     </form>
     <nav>
@@ -98,7 +98,7 @@
 <!--
                 <li>
                   <%= nav_link(
-                        '<i class="icon-time"></i> Archives',
+                        'Archives',
                         '/archive/',
                         title: 'All writings'
                   ) %>
@@ -106,14 +106,14 @@
 -->
         <li>
                   <%= nav_link(
-                        '<i class="icon-book"></i> Colophon',
+                        'Colophon',
                         '/site/',
                         title: 'About this site'
                   ) %>
         </li>
         <li>
           <a href="/feed/atom.xml" rel="alternate" type="application/atom+xml">
-            <i class="icon-rss"></i> Feed
+            Feed
           </a>
         </li>
       </ul>
