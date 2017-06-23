@@ -2,14 +2,18 @@
 layout: page
 title: Chronology
 ---
-<%# see data/history.yaml for contents %>
+<%# see data/events.yaml for contents %>
 
-Events worth noting, so far:
+<blockquote>
+<p>This volume does not aspire to the name of an autobiography.…</p>
+<p>The selection has been made in some cases from the importance of the matter. In others, from the celebrity of the persons concerned; whilst several of them furnish interesting illustrations of human character.</p>
+<footer>— Charles Babbage, preface to <a href="https://www.goodreads.com/book/show/2627810-passages-from-the-life-of-a-philosopher"><cite>Passages from the Life of a Philosopher</cite></a></footer>
+</blockquote>
 
 <section class="timeline">
 <ol>
   <%
-    events = data.history.events
+    events = data.events
     last_year = 0
     events.each do |e|
       if (e.date.to_s.length > 4)
@@ -59,5 +63,3 @@ Events worth noting, so far:
   %>
 </ol>
 </section>
-
-<i>TODO: add travel records using photo library and tripit, add other car records, integrate rest of site</i>

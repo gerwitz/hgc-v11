@@ -2,18 +2,17 @@
 layout: page
 title: Travelogue
 ---
-<%# see data/travel.yaml for contents %>
+<%# see data/trips.yaml for contents %>
 
 <blockquote>
-  Broad, wholesome, charitable views of men and things cannot be acquired by vegetating in one little corner of the earth all one's lifetime.
-
-  —Mark Twain <!-- , <a href="https://www.goodreads.com/book/show/307844"><cite>The Innocents Abroad/Roughing It</cite></a> -->
+  <p>Broad, wholesome, charitable views of men and things cannot be acquired by vegetating in one little corner of the earth all one's lifetime.</p>
+  <footer>—Mark Twain, <a href="https://www.goodreads.com/book/show/307844"><cite>The Innocents Abroad/Roughing It</cite></a></footer>
 </blockquote>
 
 <section class="timeline">
 <ol>
   <%
-    trips = data.travel.trips
+    trips = data.trips
     last_year = 0
     trips.each do |t|
       if (t.date.to_s.length > 4)
