@@ -9,3 +9,6 @@ gem 'middleman-blog'
 gem 'redcarpet'
 gem 'nokogiri'
 gem 'builder'
+
+gem 'middleman-search'
+gem 'middleman-sprockets'

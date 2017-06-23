@@ -22,7 +22,7 @@ set :markdown, fenced_code_blocks: true,
 
 activate :blog do |blog|
   blog.prefix = ""
-  blog.sources = "/writing/{year}/{month}-{day}-{title}"
+  blog.sources = "/writing/{year}/{month}-{day}-{title}" # if this changes, adjust search below
   blog.default_extension = ".md"
   blog.summary_separator = /READMORE/
   blog.summary_length = 250
@@ -53,6 +53,30 @@ page "/library/*", layout: :page
 page "/projects/*", layout: :page
 page "/site/*", layout: :page
 
+activate :search do |search|
+  search.resources = ['writing/', 'library/', 'projects/', 'site/']
+  search.index_path = 'search.json'
+  search.fields = {
+    title:   {boost: 100, store: true, required: true},
+    path:    {index: false, store: true},
+    tags:    {boost: 100},
+    content: {boost: 50},
+    url:     {index: false, store: true}
+  }
+  search.before_index = Proc.new do |to_index, to_store, resource|
+    path = resource.path
+    to_store[:path] = path
+    path_split = path.split('/',2)
+    section = path_split.first
+    to_store[:section] = section
+    if section == 'writing'
+      date_parts = path_split[1].match(/(\d{4})\/(\d{2})-(\d{2})/) # must match blog.sources
+      to_store[:date] = Date.parse(date_parts.to_s)
+    end
+  end
+end
+
+activate :sprockets
 
 # Build-specific configuration
 configure :build do
