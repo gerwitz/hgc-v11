@@ -66,9 +66,11 @@
         ) %>
       </li>
       <li>
-        <a href="https://twitter.com/intent/user?user_id=521">Twitter</a>
-      </li>
-<!--
+        <%= nav_link(
+          'About',
+          '/about.html'
+        ) %>
+      </li><!--
       <li>
         <%= nav_link(
           'Laboratory</a>',
@@ -83,8 +85,7 @@
 
   <footer>
     <form method="get" action="/search.html">
-      <label for="search"></label>
-      <input id = "search" type="search" placeholder="search posts" name="query" />
+      <input id = "search" type="search" placeholder="search" name="query" />
     </form>
     <nav>
       <ul>
