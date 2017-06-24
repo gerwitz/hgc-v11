@@ -2,6 +2,13 @@
 title: Chronofile
 ---
 
+<blockquote>
+  <p>I hate to think that all my current experiences will someday become stories with no point.</p>
+  <footer>
+    Bill Watterson, <cite><a href="http://www.gocomics.com/calvinandhobbes/1995/05/25/">Calvin and Hobbes</a></cite>, May 25, 1995
+  </footer>
+</blockquote>
+
 <ol class="article-list">
   <% blog.articles.select{|a| !a.data.title.nil? }.each_with_index do |article, i| %>
       <li><% link_to article do %>
