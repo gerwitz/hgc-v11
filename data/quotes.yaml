@@ -227,3 +227,12 @@
   quote: "I object to doing things that computers can do."
   who: Olin Shivers
   who-url: http://www.paulgraham.com/quotes.html
+-
+  quote: "People on a design team must be as happy to be wrong as right. If their ideas hold up under strong (but fair) criticism, then great, they can proceed with confidence. If their ideas are rejected with good rationale, then they have learned something. A healthy team is made up of people who have the attitude that it is better to learn something new than to be right."
+  who: Bill Buxton
+  source: Sketching User Experiences
+  tags: [design]
+-
+  quote: "Without aesthetic, design is either the humdrum repetition of familiar clichés or a wild scramble for novelty. Without the aesthetic, the computer is but a mindless speed machine, producing effects without substance. Form without relevant content, or content without meaningful form."
+  who: Paul Rand
+  tags: [design]

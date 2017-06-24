@@ -17,7 +17,7 @@ title: Quotes
     <blockquote>
       <p><%= escape_html(q.quote) %></p><%# TODO: render Markdown %>
       <footer>
-        <%= "#{q.who}, " if q.who %>
+        <%= "#{q.who}" if q.who %><%= ", " if q.who && q.source %>
         <% if q.source %>
           <cite><%= escape_html(q.source) %></cite>
         <% end %>
