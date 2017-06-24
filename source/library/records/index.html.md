@@ -1,9 +1,12 @@
 ---
-date: '2011-11-10 00:56:48'
 layout: page
 old_url: http://hans.gerwitz.com/library/records.html
-slug: records
 title: Proceedings
 ---
 
-2008 iAB Chicago: http://featuresblogs.chicagotribune.com/eric2_0/2008/03/social-networki.html
+- 2008: [iAB Chicago](http://featuresblogs.chicagotribune.com/eric2_0/2008/03/social-networki.html)
+- 2011: [Seattle Interactive Conference](sic-2011.html)
+- 2011: [MobileNorthwest](http://www.infoworld.com/article/2621680/html5/html5-not-yet-solving-mobile-dev-issues.html) (where I was apparently ["exceptionally intelligent and insightful"](http://whatsyourideaoftomorrow.blogspot.nl/2011/05/mobile-norhwest-conf-teleca-presented.html))
+- 2017: [Let's Fix Things podcast](http://www.stitcher.com/podcast/raft-collective/lets-fix-things/e/lets-fix-things-33-were-still-paranoid-but-thats-ok-with-49320407)
+- 2017: [KBCS interview](http://kbcs.fm/2017/03/17/un-mute-the-commute-transit-driver-appreciation-day/) about [#tdad](https://transitdriverday.org/)
+- 2017: [Let's Fix Things podcast](http://www.stitcher.com/podcast/raft-collective/lets-fix-things/e/lets-fix-things-36-walking-into-the-burning-building-of-convenience-49563906)

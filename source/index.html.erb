@@ -9,7 +9,7 @@ layout: site
   <script type="text/javascript" src="/assets/moment.min.js"></script>
 
   <p>
-      Welcome to the narcissistic home of <a href="/library/me.html" rel="me">Hans Gerwitz</a>.
+      This site is a narcissistic archive of my online activities. You are probably here to figure out <a href="about.html" rel="me">who I am</a> or <a href="https://twitter.com/intent/user?user_id=521">be my friend</a>.
   </p>
 
   <!--
@@ -19,7 +19,7 @@ layout: site
 
   <h2>Latest Tweet <small>from <a href="https://twitter.com/gerwitz">@gerwitz</a></small></h2>
   <blockquote id="last_tweet">
-      <p><i class="icon-refresh icon-spin"></i> Loading…</p>
+      <p><i class="refresh spin"></i> Loading…</p>
       <small></small>
   </blockquote>
   <script>
@@ -43,7 +43,7 @@ layout: site
   <script type="text/javascript" src="http://api.twitter.com/1/statuses/user_timeline.json?user_id=521&include_rts=false&exclude_replies=true&include_entities=true&trim_user=true&count=1&callback=twitter_callback_function"></script>
   -->
 
-  <h2><a href="/archive/">Writings</a></h2>
+  <h2><a href="/archive/">Writing</a></h2>
   <ol class="article-list">
     <% blog.articles.select{|a| !a.data.title.nil? }[0...5].each_with_index do |article, i| %>
       <li><% link_to article do %>
@@ -63,7 +63,7 @@ layout: site
   <h2><a href="http://tumblr.gerwitz.com/" title="From the Wunderkammer">Findings</a></h2>
 
   <blockquote id="tumblr-quotes">
-      <i class="icon-refresh icon-spin"></i> Loading&hellip;
+      Loading&hellip;
   </blockquote>
   <script type="text/javascript">
   function tumblr(resp) {

@@ -2,9 +2,7 @@
 title: Laboratory
 ---
 
-Welcome to my laboratory, home to the finest [braincrack][] including:
+Welcome to my laboratory, home to the finest [braincrack](https://www.youtube.com/watch?v=0sHCQWjTrJ8) including:
 
 * [Monsters](/projects/fur/)
 * [Eurovision](/projects/eurovision-2013/)
-
-   [braincrack]: http://www.zefrank.com/theshow/archives/2006/07/071106.html

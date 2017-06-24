@@ -49,7 +49,7 @@ a:hover {
 
 body>article {
 	width:			$width;
-	margin:			5rem auto;
+	margin:			3rem auto 0; // need more than #masthead's height
 }
 body>section {
 	width:			$width;
@@ -126,6 +126,14 @@ body>article>footer {
 #masthead li {
 	display:		inline;
 	margin-left:	10px;
+}
+
+.parents {
+	font-family:	"Lucida Grande", Verdana, Arial, sans-serif;
+	font-size:		0.75rem;
+	a {
+		text-decoration: none;
+	}
 }
 
 body>footer {
