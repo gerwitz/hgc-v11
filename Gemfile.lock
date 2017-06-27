@@ -1,3 +1,13 @@
+GIT
+  remote: https://github.com/sn3p/middleman-search.git
+  revision: 6077d7b76d010ade046a32711536cab3601e4910
+  branch: update-lunr
+  specs:
+    middleman-search (0.10.0)
+      middleman-core (>= 3.2)
+      nokogiri (~> 1.6)
+      therubyracer (~> 0.12.2)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -74,10 +84,6 @@ GEM
       servolux
       tilt (~> 2.0)
       uglifier (~> 3.0)
-    middleman-search (0.10.0)
-      middleman-core (>= 3.2)
-      nokogiri (~> 1.6)
-      therubyracer (~> 0.12.2)
     middleman-sprockets (4.1.0)
       middleman-core (~> 4.0)
       sprockets (>= 3.0)
@@ -122,7 +128,7 @@ DEPENDENCIES
   builder
   middleman (~> 4.0)
   middleman-blog
-  middleman-search
+  middleman-search!
   middleman-sprockets
   nokogiri
   redcarpet
