@@ -12,9 +12,8 @@ As I don't believe in Descartes ghost in the machine, this makes me naturally pr
 
    [1]: personhood
 
-> 
-That some people (whether for religious or non-religious reasons) tend to take a more expansive view of what is a human than some scientists desire is not a bad thing even if those people are wrong. Would you rather live in a society where the populace tends to draw too small a circle around what is human? Or would you rather live in a society where people err in the direction of greater protection? 
-[Randall Parker][2]
+> That some people (whether for religious or non-religious reasons) tend to take a more expansive view of what is a human than some scientists desire is not a bad thing even if those people are wrong. Would you rather live in a society where the populace tends to draw too small a circle around what is human? Or would you rather live in a society where people err in the direction of greater protection? 
+> <footer>[Randall Parker][2]</footer>
 
    [2]: http://www.futurepundit.com/archives/002411.html
 

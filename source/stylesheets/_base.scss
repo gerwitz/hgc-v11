@@ -237,15 +237,13 @@ blockquote {
 	margin:			1rem 16px;
 	padding-left:	10px;
 	border-left:	5px solid #bbb;
-}
-
-blockquote p+p:last-child, blockquote small {
-	display:		block;
-	text-align:		right;
-	font-style:		normal;
-}
-blockquote p+p:last-child:before {
-	content:		'\2014 '; /* &mdash; */
+	footer {
+		margin-top: 1rem;
+		text-align: right;
+		&:before {
+			content:		'\2014 '; /* &mdash; */
+		}
+	}
 }
 
 // See http://www.w3.org/Style/Examples/007/leaders.en.html */

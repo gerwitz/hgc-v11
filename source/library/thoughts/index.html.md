@@ -6,6 +6,4 @@ slug: thoughts
 title: Principia
 ---
 
-I like to pretend my thoughts on important things are themselves important.  
-ID.'&depth;=1'); ?>  
-
+I like to pretend my thoughts on important things are themselves important.

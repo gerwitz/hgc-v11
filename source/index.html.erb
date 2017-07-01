@@ -68,7 +68,7 @@ layout: site
   <script type="text/javascript">
   function tumblr(resp) {
       var last_quote = resp.posts[0];
-      $('#tumblr-quotes').html('<p>'+last_quote['quote-text']+'<\/p><cite>'+last_quote['quote-source']+'<\/cite>');
+      $('#tumblr-quotes').html('<p>'+last_quote['quote-text']+'<\/p><footer><cite>'+last_quote['quote-source']+'<\/cite><\/footer>');
   }
   </script>
   <script type="text/javascript" src="http://gerwitz.tumblr.com/api/read/json?callback=tumblr&amp;num=1&amp;type=quote"></script>

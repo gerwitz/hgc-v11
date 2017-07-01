@@ -10,8 +10,7 @@ tags:
 ---
 
 > The limits of my language are the limits of my mind. All I know is what I have words for.
-
-[Ludwig Wittgenstein][1], [Tractatus Logico-Philosophicus][2], 1921
+> <footer>[Ludwig Wittgenstein][1], <cite>[Tractatus Logico-Philosophicus][2]</cite>, 1921</footer>
 
 Guy Deutscher has upset linguistic anthropologists[^1] with his recent NYT Magazine piece, [Does Your Language Shape How You Think?][5] for misrepresenting the state of linguistic relativity research and, specifically, [Benjamin Lee Whorf’s hypothesis][6].
 
