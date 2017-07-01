@@ -15,10 +15,12 @@ set :images_dir, 'images'
 
 # set :relative_links, true
 
-set :markdown_engine, :kramdown
-set :markdown, fenced_code_blocks: true,
-               autolink: true,
-               smartypants: true
+set :markdown_engine, :redcarpet
+set :markdown,  fenced_code_blocks: true,
+                tables: true,
+                autolink: true,
+                smartypants: true,
+                footnotes: true
 
 activate :blog do |blog|
   blog.prefix = ""
