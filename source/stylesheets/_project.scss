@@ -1,59 +1,59 @@
 @import "_base";
 
 html.project {
-	font-family:	"Lucida Grande", Verdana, Arial, sans-serif;
+  font-family: "Lucida Grande", Verdana, Arial, sans-serif;
 }
 
 html.project #masthead-wrapper {
-	width:			100%;
+  width: 100%;
 
-	margin:			0;
-	padding:		0;
+  margin: 0;
+  padding: 0;
 
-	color:			$p-color;
-	background-color: $p-background;
+  color: $p-color;
+  background-color: $p-background;
 }
 html.project #masthead {
-	background-color: inherit;
+  background-color: inherit;
 
-	position:		static;
-	width:			$p-width;
-	top:			0;
-	margin:			0 auto;
+  position: static;
+  width: $p-width;
+  top: 0;
+  margin: 0 auto;
 
-	height:			2em;
-	display:		block;
+  height: 2em;
+  display: block;
 
-	@extend .pagemeta;
+  @extend .pagemeta;
 }
 html.project #masthead a {
-	text-decoration:none;
+  text-decoration: none;
 }
 
 html.project #masthead h1 {
-	font-size:		inherit;
-	font-family:	inherit;
+  font-size: inherit;
+  font-family: inherit;
 
-	display:		inline;
-	line-height:	inherit;
+  display: inline;
+  line-height: inherit;
 
-	font-weight:	bold;
+  font-weight: bold;
 
-	margin-top:		0;
-	margin-bottom:	0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 html.project #content {
-	padding:		1em;
-	padding-bottom:	2em;
+  padding: 1em;
+  padding-bottom: 2em;
 }
 
 // dat.gui controls
 html.project #dg-controls {
-	position:		absolute;
-	top:			2em;
-	right:			20px;
-	li {
-		margin:			0px;
-	}
+  position: absolute;
+  top: 2em;
+  right: 20px;
+  li {
+    margin: 0px;
+  }
 }

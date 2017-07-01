@@ -1,297 +1,297 @@
-$eigengrau:		#05131D; // LEGO black
-$lightgrau:		#9BA19D; // LEGO grey
-$green:				#00852B; // LEGO green
-$darkgreen:		#00270c; // just a nice dark shade
-$blue:				#1E5AA8; // LEGO blue
+$eigengrau: #05131D; // LEGO black
+$lightgrau: #9BA19D; // LEGO grey
+$green: #00852B; // LEGO green
+$darkgreen: #00270c; // just a nice dark shade
+$blue: #1E5AA8; // LEGO blue
 
-$width:			512px;
-$background:	#FFF;
-$color:			#222;
+$width: 512px;
+$background: #FFF;
+$color: #222;
 
-$p-width:		960px;
-$p-background:	#000;
-$p-color:		#EEE;
+$p-width: 960px;
+$p-background: #000;
+$p-color: #EEE;
 
 html {
-	background:		$background;
-	color:			$color;
+  background: $background;
+  color: $color;
 }
 
 
 body {
-	max-width:		$width;
-	margin-left:	auto;
-	margin-right:	auto;
+  max-width: $width;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 html.project body {
-	max-width:		inherit;
+  max-width: inherit;
 }
 
 html.project #content {
-	max-width:		$p-width;
-	margin:			0 auto;
+  max-width: $p-width;
+  margin: 0 auto;
 }
 
 a {
-	text-decoration:underline;
-	color:			inherit;
-	transition:		color 0.5s 0;
+  text-decoration:underline;
+  color: inherit;
+  transition: color 0.5s 0;
 }
 
 p:hover a, li:hover a, dl:hover a, table:hover a {
-	color:			#1A1AC7;
-	transition:		color 1s 0.5s ease;
+  color: #1A1AC7;
+  transition: color 1s 0.5s ease;
 }
 a:hover {
-	color:			#00E;
+  color: #00E;
 }
 
 body>article {
-	width:			$width;
-	margin:			3rem auto 0; // need more than #masthead's height
+  width: $width;
+  margin: 3rem auto 0; // need more than #masthead's height
 }
 body>section {
-	width:			$width;
-	margin:			4rem auto;
+  width: $width;
+  margin: 4rem auto;
 }
 
 body>article>header {
-	margin-bottom:	1rem;
+  margin-bottom: 1rem;
 }
 body>article>header>h1 {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 body>article>header time {
-    font-family:	Helvetica, sans-serif;
-	font-size:		0.75rem;
-	color:			lighten($color, 50%);
+    font-family: Helvetica, sans-serif;
+  font-size: 0.75rem;
+  color: lighten($color, 50%);
 }
 
 // currently empty
 body>article>footer {
-	margin-top:		1rem;
-	text-align:		right;
+  margin-top: 1rem;
+  text-align: right;
 }
 
 .pagemeta {
-	font-family:	"Lucida Grande", Verdana, Arial, sans-serif;
-	font-size:		0.75rem;
-	text-transform:	lowercase;
+  font-family: "Lucida Grande", Verdana, Arial, sans-serif;
+  font-size: 0.75rem;
+  text-transform: lowercase;
 }
 
 #masthead {
-	position:		fixed;
-	background:		$background;
-	top:			0;
+  position: fixed;
+  background: $background;
+  top: 0;
 
-	width:			$width;
+  width: $width;
 
-	height:			2em;
-	padding-top:	1em;
-	margin-bottom:	2em;
-	display:		block;
-	z-index:		1;
+  height: 2em;
+  padding-top: 1em;
+  margin-bottom: 2em;
+  display: block;
+  z-index: 1;
 
-	@extend .pagemeta;
+  @extend .pagemeta;
 }
 #masthead a {
-	text-decoration:none;
+  text-decoration:none;
 }
 
 #masthead h1 {
-	font-size:		inherit;
-	font-family:	inherit;
+  font-size: inherit;
+  font-family: inherit;
 
-	display:		inline;
-	line-height:	inherit;
+  display: inline;
+  line-height: inherit;
 
-	font-weight:	bold;
+  font-weight: bold;
 
-	float:			left;
-	margin-top:		0;
-	margin-bottom:	0;
+  float: left;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 
 #masthead ul {
-	float:			right;
-	list-style:		none;
-	margin:			0;
-	padding:		0;
+  float: right;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 
-	font-size:		0.75rem;
-	line-height:	inherit;
+  font-size: 0.75rem;
+  line-height: inherit;
 }
 #masthead li {
-	display:		inline;
-	margin-left:	10px;
+  display: inline;
+  margin-left: 10px;
 }
 
 .parents {
-	font-family:	"Lucida Grande", Verdana, Arial, sans-serif;
-	font-size:		0.75rem;
-	a {
-		text-decoration: none;
-	}
+  font-family: "Lucida Grande", Verdana, Arial, sans-serif;
+  font-size: 0.75rem;
+  a {
+    text-decoration: none;
+  }
 }
 
 body>footer {
-	// width:		$width;
+  // width: $width;
 
-	height:			1.5em;
-	margin:			0 auto;
-	margin-top:		2.0em;
-	display:		block;
-	overflow:		visible;
-	border-top:		1px solid $color;
-	margin-bottom:	3em;
-	padding-top:	8px;
-	padding-left:	1em;
-	padding-right:	1em;
+  height: 1.5em;
+  margin: 0 auto;
+  margin-top: 2.0em;
+  display: block;
+  overflow: visible;
+  border-top: 1px solid $color;
+  margin-bottom: 3em;
+  padding-top: 8px;
+  padding-left: 1em;
+  padding-right: 1em;
 
-	@extend .pagemeta;
+  @extend .pagemeta;
 }
 body>footer a {
-	text-decoration:none;
+  text-decoration:none;
 }
 body>footer nav {
-	display:		inline;
-	float:			right;
+  display: inline;
+  float: right;
 }
 body>footer nav ul {
-	padding:		0;
-	display:		inline-block;
-	margin:			0;
-	list-style:		none;
+  padding: 0;
+  display: inline-block;
+  margin: 0;
+  list-style: none;
 }
 body>footer nav li {
-	display: 		inline-block;
-	margin:			0;
-	padding:		1px;
+  display: inline-block;
+  margin: 0;
+  padding: 1px;
 }
 body>footer nav li+li {
-	margin-left:	2ex;
+  margin-left: 2ex;
 }
 
 // search
 body>footer form {
-	margin-top:		1px;
-	float:			left;
+  margin-top: 1px;
+  float: left;
 }
 body>footer form label {
-	padding:		1px;
+  padding: 1px;
 }
 body>footer form input {
-	padding:		1px;
-	outline:		none;
-	border:			none;
-	color:			$color;
-//    height: 13px;
-//    padding: 2px 10px;
-//    width: 200px;
-//    color: #999;
-    font-weight:	normal;
+  padding: 1px;
+  outline: none;
+  border: none;
+  color: $color;
+  // height: 13px;
+  // padding: 2px 10px;
+  // width: 200px;
+  // color: #999;
+    font-weight: normal;
 }
 body>footer form input:focus {
-	padding:		0;
-	border:			1px solid $color;
+  padding: 0;
+  border: 1px solid $color;
 }
 // thanks http://stackoverflow.com/a/2610741
-::-webkit-input-placeholder	{ color: $color; }
-:-moz-input-placeholder		{ color: $color; }
-::-moz-input-placeholder	{ color: $color; }
-:-ms-input-placeholder		{ color: $color; }
+::-webkit-input-placeholder { color: $color; }
+:-moz-input-placeholder { color: $color; }
+::-moz-input-placeholder { color: $color; }
+:-ms-input-placeholder { color: $color; }
 
 
 article footer .comments {
-	h3 { @extend .pagemeta; }
-	p {
-		font-size:		0.75rem;
-		margin-top:		0.5rem;
-		opacity:		0;
-		-webkit-transition: opacity 0.25s ease-out;
-		-webkit-transition-delay: 0.75s;
-	}
+  h3 { @extend .pagemeta; }
+  p {
+    font-size: 0.75rem;
+    margin-top: 0.5rem;
+    opacity: 0;
+    -webkit-transition: opacity 0.25s ease-out;
+    -webkit-transition-delay: 0.75s;
+  }
 }
 article footer .comments:hover {
-	p {
-		opacity:		1;
-		-webkit-transition-delay: 0;
-	}
+  p {
+    opacity: 1;
+    -webkit-transition-delay: 0;
+  }
 }
 
 
 article img, article video, article audio {
-	display: 		block;
-	margin:			1.75em auto;
-//	width:			$width;
-//	background:		#FAFAFA;
-	padding:		.5em;
-	position:		relative;
-	top:			-.25em;
+  display: block;
+  margin: 1.75em auto;
+// width: $width;
+// background: #FAFAFA;
+  padding: .5em;
+  position: relative;
+  top: -.25em;
 }
 
 blockquote {
-	width:			$width - (16px * 2) - 10px;
-	margin:			1rem 16px;
-	padding-left:	10px;
-	border-left:	5px solid #bbb;
-	footer {
-		margin-top: 1rem;
-		text-align: right;
-		&:before {
-			content:		'\2014 '; /* &mdash; */
-		}
-	}
+  width: $width - (16px * 2) - 10px;
+  margin: 1rem 16px;
+  padding-left: 10px;
+  border-left: 5px solid #bbb;
+  footer {
+    margin-top: 1rem;
+    text-align: right;
+    &:before {
+      content: '\2014 '; /* &mdash; */
+    }
+  }
 }
 
 // See http://www.w3.org/Style/Examples/007/leaders.en.html */
 ol.article-list {
-	width:			$width - 32px;
-	margin-left:	16px;
-    padding:		0;
-    overflow-x:		hidden;
-    list-style:		none;
+  width: $width - 32px;
+  margin-left: 16px;
+    padding: 0;
+    overflow-x: hidden;
+    list-style: none;
 
-	a:before {
-		float:			left;
-		width:			0;
-		white-space:	nowrap;
-		pointer-events: all;
-		content:
+  a:before {
+    float: left;
+    width: 0;
+    white-space: nowrap;
+    pointer-events: all;
+    content:
  ". . . . . . . . . . . . . . . . . . . . "
  ". . . . . . . . . . . . . . . . . . . . "
  ". . . . . . . . . . . . . . . . . . . . "
  ". . . . . . . . . . . . . . . . . . . . "
-	}
-	a {
-		text-decoration: none;
-		span {
-			background:		$background;
-		}
-		.title {
-			padding-right:	0.33em;
-		}
-		.date, .location {
-			float:			right;
-			padding-left:	0.33em;
-			background:		$background;
-		}
-	}
-	a:hover span {
-		text-decoration: underline;
-	}
+  }
+  a {
+    text-decoration: none;
+    span {
+      background: $background;
+    }
+    .title {
+      padding-right: 0.33em;
+    }
+    .date, .location {
+      float: right;
+      padding-left: 0.33em;
+      background: $background;
+    }
+  }
+  a:hover span {
+    text-decoration: underline;
+  }
 }
 
 
 img.float-left {
-	margin:			0;
-	margin-right:	0.5rem;
-	float:			left;
+  margin: 0;
+  margin-right: 0.5rem;
+  float: left;
 }
 img.float-right {
-	margin:			0;
-	margin-right:	0.5rem;
-	float:			right;
+  margin: 0;
+  margin-right: 0.5rem;
+  float: right;
 }
