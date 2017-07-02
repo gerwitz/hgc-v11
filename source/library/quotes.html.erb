@@ -9,13 +9,13 @@ title: Quotes
     quotes.each do |q|
   %>
     <blockquote>
-      <p><%= escape_html(q.quote) %></p><%# TODO: render Markdown %>
+      <%= Tilt['markdown'].new {q.quote}.render %><%# will wrap in P %>
       <footer>
         <%= "#{q.who}" if q.who %><%= ", " if q.who && q.source %>
         <% if q.source %>
           <cite><%= escape_html(q.source) %></cite>
         <% end %>
-        <%= ", #{q.date}" if q.date %>
+        <%#= ", #{q.date}" if q.date %>
       </footer>
     </blockquote>
   <% end %>

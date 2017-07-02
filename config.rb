@@ -1,10 +1,10 @@
 # Methods defined in the helpers block are available in templates
 helpers do
-    def nav_link(link_text, url, options = {})
-      options[:class] ||= ""
-      options[:class] << " current" if current_resource.url.start_with?(url)
-      link_to(link_text, url, options)
-    end
+  def nav_link(link_text, url, options = {})
+    options[:class] ||= ""
+    options[:class] << " current" if current_resource.url.start_with?(url)
+    link_to(link_text, url, options)
+  end
 end
 
 set :css_dir, 'stylesheets'
