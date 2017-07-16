@@ -24,7 +24,7 @@ set :markdown,  fenced_code_blocks: true,
 
 activate :blog do |blog|
   blog.prefix = ""
-  blog.sources = "/writing/{year}/{month}-{day}-{title}" # if this changes, adjust search below
+  blog.sources = "/writing/{year}/{month}-{day}-{title}.html" # if this changes, adjust search below
   blog.default_extension = ".md"
   blog.summary_separator = /READMORE/
   blog.summary_length = 250
@@ -33,7 +33,7 @@ activate :blog do |blog|
 
   blog.calendar_template = "writing/calendar.html"
 
-  blog.permalink = "/{year}/{month}/{day}/{title}"
+  blog.permalink = "/{year}/{month}/{day}/{title}.html"
   blog.year_link = "/{year}/index.html"
   blog.month_link = "/{year}/{month}/index.html"
   blog.day_link = "/{year}/{month}/{day}/index.html"
