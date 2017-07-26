@@ -38,11 +38,6 @@ layout: site
 
     $('.entry-title').html('Pages containing “' + query + '”');
 
-    console.log('Requesting Lunr file');
-    $('#results p').append('.');
-
-    console.time('bleep');
-
     $.ajax({
       dataType: "json",
       url: '/search.json',
@@ -50,15 +45,11 @@ layout: site
         var xhr = new window.XMLHttpRequest();
         //Download progress
         xhr.addEventListener("progress", function(evt){
-          $('#results').append('.');
+          el.append('.');
         }, false);
         return xhr;
       },
       success: function(data) {
-
-        console.timeEnd('bleep');
-        $('#results').append('.');
-        console.time('bloop');
 
         lunrIndex = lunr.Index.load(data.index);
         lunrMap = data.docs;
@@ -67,9 +58,7 @@ layout: site
 
         var list = $('<ol class="article-list">');
         $.each(results, function(index, result) {
-//          console.log('Result ' + index, result);
           page = lunrMap[result.ref];
-//          console.log('Page: ', page);
 
           var section = page.section;
           var where = 'unknown';

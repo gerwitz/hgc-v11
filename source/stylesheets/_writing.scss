@@ -19,6 +19,10 @@
 
 .content {
   clear: both;
+
+  img {
+    width: 480px;
+  }
 }
 
 .promo {
@@ -27,6 +31,3 @@
   font-style: italic;
 }
 
-img {
-  width: 480px;
-}
