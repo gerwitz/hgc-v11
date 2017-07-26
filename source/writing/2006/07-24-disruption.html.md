@@ -1,8 +1,9 @@
 ---
 title: Disruption
 categories:
-- Business
+- work
 tags:
+- business
 - marketing
 - web
 ---

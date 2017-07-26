@@ -1,10 +1,9 @@
 ---
 title: Seppuku 2.0
 categories:
-- Business
 - personal
 tags:
-- Business
+- business
 - me
 - web
 ---

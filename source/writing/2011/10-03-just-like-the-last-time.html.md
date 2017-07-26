@@ -1,8 +1,9 @@
 ---
 title: Just like the last time
 categories:
-- Business
+- work
 tags:
+- business
 - apple
 - mobile
 - future

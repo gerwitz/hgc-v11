@@ -1,10 +1,8 @@
 ---
 title: Arlington
 categories:
-- travel
-- uncategorized
+- personal
 tags:
-- tagless
 - travel
 ---
 

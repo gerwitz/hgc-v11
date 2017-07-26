@@ -1,9 +1,9 @@
 ---
 title: How Marketing Will Save Itself
 categories:
-- Business
+- work
 tags:
-- Business
+- business
 - marketing
 - media
 ---

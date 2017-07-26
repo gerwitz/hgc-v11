@@ -1,10 +1,8 @@
 ---
 title: Udvar-Hazy Center
 categories:
-- travel
-- uncategorized
+- personal
 tags:
-- tagless
 - travel
 ---
 

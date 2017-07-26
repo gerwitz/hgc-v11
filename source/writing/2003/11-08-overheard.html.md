@@ -1,7 +1,7 @@
 ---
 title: Overheard
 categories:
-- travel
+- personal
 tags:
 - travel
 ---

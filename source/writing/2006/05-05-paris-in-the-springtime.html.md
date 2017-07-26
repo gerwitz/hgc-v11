@@ -1,7 +1,7 @@
 ---
 title: Paris in the springtime
 categories:
-- travel
+- personal
 tags:
 - travel
 ---

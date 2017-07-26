@@ -1,7 +1,7 @@
 ---
 title: Baltimore 2004
 categories:
-- travel
+- personal
 tags:
 - travel
 ---

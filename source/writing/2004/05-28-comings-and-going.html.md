@@ -1,7 +1,7 @@
 ---
 title: Comings and Going
 categories:
-- travel
+- personal
 tags:
 - travel
 ---

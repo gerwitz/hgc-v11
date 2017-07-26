@@ -1,9 +1,10 @@
 ---
 title: A more realistic desktop metaphor
 categories:
-- Design
-- Technology
+- work
 tags:
+- design
+- technology
 - apple
 - memories
 - photography

@@ -1,7 +1,7 @@
 ---
 title: Southern anachronisms
 categories:
-- travel
+- personal
 tags:
 - travel
 ---

@@ -1,7 +1,7 @@
 ---
 title: Coming of age
 categories:
-- travel
+- personal
 tags:
 - travel
 ---

@@ -1,10 +1,10 @@
 ---
 title: Expert Panel
 categories:
-- Business
-- Technology
+- work
 tags:
-- Business
+- business
+- technology
 - java
 ---
 

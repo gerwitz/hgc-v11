@@ -1,10 +1,9 @@
 ---
 title: Rendered with ink
 categories:
-- Business
 - personal
 tags:
-- Business
+- business
 - media
 - personal
 - thoughts

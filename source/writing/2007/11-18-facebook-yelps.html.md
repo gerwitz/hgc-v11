@@ -1,9 +1,10 @@
 ---
 title: Facebook Yelps
 categories:
-- Business
-- Technology
+- work
 tags:
+- business
+- technology
 - marketing
 - web
 ---

@@ -1,7 +1,7 @@
 ---
 title: Rayne and New Orleans
 categories:
-- travel
+- personal
 tags:
 - travel
 ---

@@ -1,7 +1,7 @@
 ---
 title: Sunday in London
 categories:
-- travel
+- personal
 tags:
 - travel
 ---

@@ -1,7 +1,7 @@
 ---
 title: Portland
 categories:
-- travel
+- personal
 tags:
 - travel
 ---

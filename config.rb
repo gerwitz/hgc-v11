@@ -39,8 +39,8 @@ activate :blog do |blog|
   blog.day_link = "/{year}/{month}/{day}/index.html"
 
   blog.custom_collections = {
-    category: {
-      link: '/archive/{category}.html',
+    categories: {
+      link: '/archive/{categories}.html',
       template: 'writing/category.html'
     }
   }

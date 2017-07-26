@@ -1,12 +1,12 @@
 ---
 title: Hacker mind
 categories:
-- Business
-- Design
-- Technology
+- work
 tags:
 - code
-- Design
+- business
+- design
+- technology
 ---
 
 Paul Graham has posted his thoughts on [what went wrong at Yahoo][1].  As always, his thoughts are cogent and presented as a dense but accessible story.  One of his statements, though, deserves some inspection:

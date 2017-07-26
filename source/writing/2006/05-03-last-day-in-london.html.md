@@ -1,7 +1,7 @@
 ---
 title: Last day in London
 categories:
-- travel
+- personal
 tags:
 - travel
 ---
