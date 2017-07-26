@@ -1,7 +1,6 @@
 ---
 layout: page
-old_url: http://hans.gerwitz.com/library/records.html
-title: Proceedings
+title: Appearances
 ---
 
 - 2008: [iAB Chicago](http://featuresblogs.chicagotribune.com/eric2_0/2008/03/social-networki.html)
