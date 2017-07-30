@@ -5,6 +5,17 @@ helpers do
     options[:class] << " current" if current_resource.url.start_with?(url)
     link_to(link_text, url, options)
   end
+
+  def list_pages(pages)
+    output = "<ul>"
+    pages.each do |p|
+      output << "<li>"
+      output << "<div>#{link_to(p.data.title, p.url)}</div>"
+      output << "<div>#{p.data.subtitle}</div>" if p.data.subtitle
+      output << "</li>"
+    end
+    output << "</ul>"
+  end
 end
 
 set :css_dir, 'stylesheets'

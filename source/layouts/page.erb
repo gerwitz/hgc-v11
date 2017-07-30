@@ -2,6 +2,9 @@
   <article class="hentry page">
     <div>
       <h1 class="entry-title"><%= current_page.data.title %></h1>
+      <% if current_page.data.subtitle %>
+        <h2 class="entry-title"><%= current_page.data.subtitle %></h2>
+      <% end %>
     </div>
 
     <div class="entry-content">
