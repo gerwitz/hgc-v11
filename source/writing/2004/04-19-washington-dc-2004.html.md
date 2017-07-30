@@ -1,7 +1,7 @@
 ---
 title: Washington DC 2004
 categories:
-- travel
+- personal
 tags:
 - travel
 ---

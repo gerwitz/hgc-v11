@@ -1,10 +1,8 @@
 ---
 title: Washington National Cathedral
 categories:
-- travel
-- uncategorized
+- personal
 tags:
-- tagless
 - travel
 ---
 

@@ -1,9 +1,10 @@
 ---
 title: Seeds of assembly
 categories:
-- design
 - personal
+- culture
 tags:
+- design
 - emergence
 - nature
 - fave

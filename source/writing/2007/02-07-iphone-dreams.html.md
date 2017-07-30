@@ -1,14 +1,14 @@
 ---
 title: iPhone dreams
 categories:
-- Design
-- Technology
+- work
 tags:
+- design
+- technology
 - apple
 - idea
 - iphone
 - ui
-- uncategorized
 - usability
 - work
 ---

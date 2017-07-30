@@ -1,10 +1,11 @@
 ---
 title: Disregard
 categories:
-- Business
-- personal
+- work
 tags:
 - cluetrain
+- business
+- personal
 ---
 
 In 2009 I did a fair amount of travel between Seattle and San Francisco on Virgin America's sexy Airbuses.  When I reached elite status on Alaska Airlines, though, they started upgrading me to first class.  Add a season spent in Europe followed by a reduced travel schedule, and I haven't flown Virgin for some time.

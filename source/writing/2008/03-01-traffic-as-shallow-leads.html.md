@@ -1,7 +1,9 @@
 ---
 title: Traffic as shallow leads
 categories:
-- Business
+- work
+tags:
+- business
 ---
 
 A brief observation from the IAB [performance marketing forum][1]: the interactive advertising industry seems to consist of people from the direct marketing world, who think in terms of leads, and from media agencies, who think in terms of exposure and traffic.

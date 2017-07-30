@@ -1,7 +1,7 @@
 ---
 title: On to the Continent
 categories:
-- travel
+- personal
 tags:
 - travel
 ---

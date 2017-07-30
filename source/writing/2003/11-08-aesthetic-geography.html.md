@@ -1,7 +1,7 @@
 ---
 title: Aesthetic geography
 categories:
-- travel
+- personal
 tags:
 - travel
 ---

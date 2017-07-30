@@ -1,7 +1,7 @@
 ---
 title: Bank Holiday
 categories:
-- travel
+- personal
 tags:
 - travel
 ---

@@ -1,7 +1,7 @@
 ---
 title: Cults
 categories:
-- travel
+- personal
 tags:
 - travel
 ---

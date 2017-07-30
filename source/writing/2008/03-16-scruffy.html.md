@@ -1,8 +1,9 @@
 ---
 title: Scruffy
 categories:
-- Business
+- work
 tags:
+- business
 - personality
 - psychology
 ---

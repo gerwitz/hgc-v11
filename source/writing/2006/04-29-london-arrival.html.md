@@ -1,7 +1,7 @@
 ---
 title: London arrival
 categories:
-- travel
+- personal
 tags:
 - travel
 ---

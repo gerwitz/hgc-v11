@@ -1,7 +1,7 @@
 ---
 title: Disney World 2005
 categories:
-- travel
+- personal
 tags:
 - travel
 ---

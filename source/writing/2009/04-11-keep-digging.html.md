@@ -1,10 +1,11 @@
 ---
 title: Keep Digging
 categories:
-- Business
-- Technology
+- work
 tags:
 - code
+- business
+- technology
 ---
 
 John Gruber has [called attention][1] to Digg's shameful revival of site framing, and I share his disgust.  Though I've no expectation of Digg traffic to my little blog, on principle I feel compelled to participate and block the DiggBarr from obscuring my URLs.

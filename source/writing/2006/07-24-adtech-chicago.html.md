@@ -1,8 +1,9 @@
 ---
 title: ad:tech Chicago
 categories:
-- Business
+- work
 tags:
+- business
 - marketing
 - web
 ---

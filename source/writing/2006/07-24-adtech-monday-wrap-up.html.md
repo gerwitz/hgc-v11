@@ -1,8 +1,9 @@
 ---
 title: ad:tech Monday wrap-??up
 categories:
-- Business
+- work
 tags:
+- business
 - marketing
 - web
 ---

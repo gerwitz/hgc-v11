@@ -1,7 +1,7 @@
 ---
 title: Yippee Kai Aye
 categories:
-- travel
+- personal
 tags:
 - travel
 ---

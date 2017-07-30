@@ -1,11 +1,11 @@
 ---
 title: Design fanboy
 categories:
-- Design
-- Technology
+- work
 tags:
 - apple
-- Design
+- technology
+- design
 - work
 ---
 

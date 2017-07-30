@@ -1,7 +1,7 @@
 ---
 title: Paris at week's end
 categories:
-- travel
+- personal
 tags:
 - travel
 ---

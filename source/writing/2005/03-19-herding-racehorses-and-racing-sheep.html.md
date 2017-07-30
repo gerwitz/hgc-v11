@@ -1,9 +1,9 @@
 ---
 title: Herding Racehorses and Racing Sheep
 categories:
-- Business
+- work
 tags:
-- Business
+- business
 - mind
 - programming
 ---

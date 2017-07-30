@@ -1,7 +1,7 @@
 ---
 title: A London (and Oxford) Weekday
 categories:
-- travel
+- personal
 tags:
 - travel
 ---

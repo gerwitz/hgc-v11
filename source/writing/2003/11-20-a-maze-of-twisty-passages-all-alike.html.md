@@ -1,7 +1,7 @@
 ---
 title: A maze of twisty passages, all alike-
 categories:
-- travel
+- personal
 tags:
 - travel
 ---
