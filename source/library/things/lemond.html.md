@@ -1,9 +1,7 @@
 ---
-date: '2006-04-19 02:28:41'
-layout: page
-old_url: http://hans.gerwitz.com/library/stuff/lemond.html
-slug: lemond
 title: 2002 LeMond Tete de Course
+old_url: http://hans.gerwitz.com/library/stuff/lemond.html
+date: '2006-04-19 02:28:41'
 ---
 
 For Christmas 2003 I got my first road bike, a lightly-used 53 cm [2002 Tete de Course][2] from [LeMond][3].  (LeMond is part of the Trek family, but remains an independent shop, a boutique of sorts that seems to have an unusual amount of cred in St. Louis.)

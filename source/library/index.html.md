@@ -1,11 +1,9 @@
 ---
-title: Conservatory
+title: Library
+subtitle: A personal reference conservatory
 ---
 
-This is my personal library for reference.
-
-- [Public Records](records/)
+- [Public Appearances](records/)
 - [Travelogue](travel.html)
-- [Personal timeline](history.html)
-- [Genealogy](genealogy.html)
-- [Winners](lists/heroes.html) and [Losers](lists/bozos.html)
+- [Personal Timeline](history.html)
+- [The Museum](things/)
