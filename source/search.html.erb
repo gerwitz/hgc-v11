@@ -4,9 +4,7 @@ layout: site
 ---
 
 <section class="search-results">
-  <header>
-    <h1 class="entry-title">Search results</h1>
-  </header>
+  <h1 class="entry-title">Search results</h1>
   <div id="results">
       Searching..
   </div>
@@ -36,7 +34,7 @@ layout: site
   function lunrSearch(el) {
     var query = paramValue('query');
 
-    $('.entry-title').html('Pages containing “' + query + '”');
+    $('.entry-title').html('Search for “' + query + '”');
 
     $.ajax({
       dataType: "json",
