@@ -56,12 +56,23 @@
 
   <body class="<%= page_classes %>">
 
-  <header id="masthead">
-    <h1><%= nav_link 'hans.gerwitz.com', '/' %></h1>
+  <header>
+    <div id="dickbar">
+      <h1><%= nav_link 'hans.gerwitz.com', '/' %></h1>
+      <form method="get" action="/search.html" class="search">
+        <input id = "search" type="search" placeholder="search" name="query" />
+      </form>
+    </div>
     <ul class="nav">
       <li>
         <%= nav_link(
-          'Conservatory',
+          'Home',
+          '/'
+        ) %>
+      </li>
+      <li>
+        <%= nav_link(
+          'Library',
           '/library/'
         ) %>
       </li>
@@ -81,12 +92,9 @@
     </ul>
   </header>
 
-    <%= yield %>
+  <%= yield %>
 
   <footer>
-    <form method="get" action="/search.html">
-      <input id = "search" type="search" placeholder="search" name="query" />
-    </form>
     <nav>
       <ul>
 <!--
@@ -116,17 +124,20 @@
 
     <!-- header shadow-on-scroll -->
     <script type="text/javascript">
+        var dickbar = document.getElementById("dickbar");
+        var distance = dickbar.offsetHeight-10;
         var handleScroll = function () {
-            var masthead = document.getElementById("masthead");
-            if (masthead) {
+            if (dickbar) {
                 var offset = 0.0;
-                var distance = masthead.offsetHeight;
                 var scrollPosition = window.pageYOffset;
                 if (scrollPosition < distance) {
                     offset = (distance - scrollPosition) / distance;
+                    var opacity = 1.0 - (offset * 1.0);
+                    dickbar.style["border-bottom"] = "none";
+                    dickbar.style["boxShadow"] = "0px 4px 4px -4px rgba(50, 50, 50, " + opacity + ")";
+                } else {
+                    dickbar.style["border-bottom"] = "solid 2px black";
                 }
-                var opacity = 1.0 - (offset * 1.0);
-                masthead.style["boxShadow"] = "0px 6px 6px -6px rgba(50, 50, 50, " + opacity + ")";
             }
         }
         if (window.addEventListener) {

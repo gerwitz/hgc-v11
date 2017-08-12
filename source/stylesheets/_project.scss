@@ -1,4 +1,4 @@
-@import "_base";
+@import "_variables";
 
 html.project {
   font-family: "Lucida Grande", Verdana, Arial, sans-serif;
@@ -24,7 +24,7 @@ html.project #masthead {
   height: 2em;
   display: block;
 
-  @extend .pagemeta;
+  // @extend .pagemeta;
 }
 html.project #masthead a {
   text-decoration: none;

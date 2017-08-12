@@ -1,16 +1,4 @@
-$eigengrau: #05131D; // LEGO black
-$lightgrau: #9BA19D; // LEGO grey
-$green: #00852B; // LEGO green
-$darkgreen: #00270c; // just a nice dark shade
-$blue: #1E5AA8; // LEGO blue
-
-$width: 512px;
-$background: #FFF;
-$color: #222;
-
-$p-width: 960px;
-$p-background: #000;
-$p-color: #EEE;
+@import "_variables";
 
 html {
   background: $background;
@@ -49,11 +37,10 @@ a:hover {
 
 body>article {
   width: $width;
-  margin: 3rem auto 0; // need more than #masthead's height
 }
 body>section {
   width: $width;
-  margin: 4rem auto;
+  // margin: 4rem auto;
 }
 
 body>article>header {
@@ -80,59 +67,101 @@ body>article>footer {
   text-transform: lowercase;
 }
 
-#masthead {
-  position: fixed;
-  background: $background;
-  top: 0;
-
-  width: $width;
-
-  height: 2em;
-  padding-top: 1em;
-  margin-bottom: 2em;
-  display: block;
-  z-index: 1;
+header {
 
   @extend .pagemeta;
-}
-#masthead a {
-  text-decoration:none;
-}
 
-#masthead h1 {
-  font-size: inherit;
-  font-family: inherit;
+  #dickbar {
+    position: fixed;
+    background: $background;
+    top: 0;
 
-  display: inline;
-  line-height: inherit;
+    width: $width;
 
-  font-weight: bold;
-
-  float: left;
-  margin-top: 0;
-  margin-bottom: 0;
-}
+    height: 2em;
+    padding-top: 1em;
+    display: block;
+    z-index: 1;
 
 
-#masthead ul {
-  float: right;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+    a {
+      text-decoration:none;
+    }
 
-  font-size: 0.75rem;
-  line-height: inherit;
-}
-#masthead li {
-  display: inline;
-  margin-left: 10px;
-}
+    h1 {
+      font-size: 16px;
+      font-family: inherit;
 
-.parents {
-  font-family: "Lucida Grande", Verdana, Arial, sans-serif;
-  font-size: 0.75rem;
-  a {
-    text-decoration: none;
+      display: inline;
+      line-height: inherit;
+
+      font-weight: bold;
+
+      float: left;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    // search
+    form.search {
+      // margin-top: 1px;
+      float: right;
+      label {
+        padding: 1px;
+      }
+      input {
+        padding: 1px 6px;
+        outline: none;
+        color: $color;
+        // height: 13px;
+        // padding: 2px 10px;
+        // width: 200px;
+        // color: #999;
+        font-weight: normal;
+        text-align: right; 
+
+        border-radius: 8px;
+        border: solid 1px;
+        border-color: transparent;
+      }
+      input:focus {
+        border-color: $lightgrau;
+        &::-webkit-input-placeholder { color: transparent; }
+        &:-moz-placeholder { color: transparent; }
+        &::-moz-input-placeholder { color: transparent; }
+        &:-ms-input-placeholder { color: transparent; }
+        &::-ms-input-placeholder { color: transparent; }
+      }
+      input {
+        // thanks http://stackoverflow.com/a/2610741
+        &::-webkit-input-placeholder { color: $color; }
+        &:-moz-placeholder { color: $color; }
+        &::-moz-input-placeholder { color: $color; opacity: 1; }
+        &:-ms-input-placeholder { color: $color; }
+        &::-ms-input-placeholder { color: $color; }
+      }
+    }
+
+  }
+
+  ul.nav {
+    margin: 32px auto 0; // need more than #dickbar's height
+
+    list-style: none;
+    padding: 8px 1px;
+
+    font-size: 0.75rem;
+    line-height: inherit;
+
+    border-bottom: solid 3px $color;
+
+    li {
+      display: inline;
+      margin-right: 10px;
+    }
+    a {
+      text-decoration: none;
+    }
   }
 }
 
@@ -147,8 +176,6 @@ body>footer {
   border-top: 1px solid $color;
   margin-bottom: 3em;
   padding-top: 8px;
-  padding-left: 1em;
-  padding-right: 1em;
 
   @extend .pagemeta;
 }
@@ -157,7 +184,7 @@ body>footer a {
 }
 body>footer nav {
   display: inline;
-  float: right;
+  float: left;
 }
 body>footer nav ul {
   padding: 0;
@@ -173,36 +200,6 @@ body>footer nav li {
 body>footer nav li+li {
   margin-left: 2ex;
 }
-
-// search
-body>footer form {
-  margin-top: 1px;
-  float: left;
-}
-body>footer form label {
-  padding: 1px;
-}
-body>footer form input {
-  padding: 1px;
-  outline: none;
-  border: none;
-  color: $color;
-  // height: 13px;
-  // padding: 2px 10px;
-  // width: 200px;
-  // color: #999;
-    font-weight: normal;
-}
-body>footer form input:focus {
-  padding: 0;
-  border: 1px solid $color;
-}
-// thanks http://stackoverflow.com/a/2610741
-::-webkit-input-placeholder { color: $color; }
-:-moz-input-placeholder { color: $color; }
-::-moz-input-placeholder { color: $color; }
-:-ms-input-placeholder { color: $color; }
-
 
 article footer .comments {
   h3 { @extend .pagemeta; }
