@@ -2,7 +2,11 @@
 helpers do
   def nav_link(link_text, url, options = {})
     options[:class] ||= ""
-    options[:class] << " current" if current_resource.url.start_with?(url)
+    if url != "/"
+      options[:class] << " current" if current_resource.url.start_with?(url)
+    elsif current_resource.url == "/"
+      options[:class] << " current"
+    end
     link_to(link_text, url, options)
   end
 

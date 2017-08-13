@@ -59,37 +59,39 @@
   <header>
     <div id="dickbar">
       <h1><%= nav_link 'hans.gerwitz.com', '/' %></h1>
+    </div>
+    <div class="nav">
+      <ul>
+        <li>
+          <%= nav_link(
+            'Home',
+            '/'
+          ) %>
+        </li>
+        <li>
+          <%= nav_link(
+            'Library',
+            '/library/'
+          ) %>
+        </li>
+        <li>
+          <%= nav_link(
+            'About',
+            '/about.html'
+          ) %>
+        </li><!--
+        <li>
+          <%= nav_link(
+            'Laboratory</a>',
+            '/projects/'
+          ) %>
+        </li>
+  -->
+      </ul>
       <form method="get" action="/search.html" class="search">
         <input id = "search" type="search" placeholder="search" name="query" />
       </form>
     </div>
-    <ul class="nav">
-      <li>
-        <%= nav_link(
-          'Home',
-          '/'
-        ) %>
-      </li>
-      <li>
-        <%= nav_link(
-          'Library',
-          '/library/'
-        ) %>
-      </li>
-      <li>
-        <%= nav_link(
-          'About',
-          '/about.html'
-        ) %>
-      </li><!--
-      <li>
-        <%= nav_link(
-          'Laboratory</a>',
-          '/projects/'
-        ) %>
-      </li>
--->
-    </ul>
   </header>
 
   <%= yield %>
