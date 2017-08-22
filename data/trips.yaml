@@ -48,6 +48,12 @@
     Drove onward to Washington DC, stayed with Kuhlman relatives
     # Ron and Ann
 -
+  date: 1987
+  modes: [car]
+  geo: [36.667047, -93.339071]
+  title:
+    Branson, MO for Silver Dollar City with family
+-
   date: 1988-03
   modes: [air]
   geo: [28.304563, -81.416071] # Kissimmee
