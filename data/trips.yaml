@@ -2017,3 +2017,37 @@
       nights: 5
       geo: [60.39575,5.3192] # Clarion Hotel Admiral
       title: Bergen for fjords and hiking
+-
+  date: 2017-08 #05
+  nights: 1
+  modes: [rail]
+  title:
+    Rotterdam to find the in-laws
+-
+  date: 2017-09 #23
+  nights: 7
+  modes: [air]
+  title:
+    Seattle for work # with Shannon, Natalia
+-
+  date: 2017-10 #15
+  nights: 26
+  modes: [air, car]
+  title:
+    Around the world
+  destinations:
+    -
+      nights: 6
+      title: Mumbai
+    -
+      nights: 6
+      title: Hong Kong
+    -
+      nights: 6
+      title: Seattle
+   -
+      nights: 1
+      title: Somewhere, Missouri
+    -
+      nights: 5
+      title: Edwardsville (and rail to pontiac)
