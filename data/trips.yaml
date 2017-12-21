@@ -66,7 +66,7 @@
   modes: [air, bus]
   geo: [45.214418, -79.729897] # Camp Ekon
   title:
-    Jesuit scouting summer camp 
+    Jesuit scouting summer camp
 -
   date: 1990-05 # ?
   modes: [air]
@@ -678,7 +678,7 @@
   modes: [air]
   geo: [37.77909,-122.39364] # frog SF
   title:
-    San Francisco for work      
+    San Francisco for work
 -
   tripit: 1791520
   date: 2009-06 #30
@@ -686,7 +686,7 @@
   modes: [air]
   geo: [37.78794,-122.40193] # Palace Hotel
   title:
-    San Francisco for work      
+    San Francisco for work
 -
   tripit: 1830262
   date: 2009-07 #05
@@ -1399,7 +1399,7 @@
   date: 2012-08 #29
   nights: 1
   modes: [air]
-  geo: [44.97604,-93.27691] # Le Méridien 
+  geo: [44.97604,-93.27691] # Le Méridien
   title:
     Minneapolis for work # alone
 -
@@ -1562,7 +1562,7 @@
 -
   tripit: 65389786
   date: 2013-06 #28
-  nights: 
+  nights:
   modes: [air, rail]
   title:
     US family visits # with Shannon
@@ -1678,7 +1678,7 @@
     -
       nights: 1
       geo: [41.87973,-87.63314] # W Loop
-      title: Chicago        
+      title: Chicago
 -
   tripit: 104508973
   date: 2014-04 #02
@@ -1746,7 +1746,7 @@
     -
       nights: 1
       geo: [41.87973,-87.63314] # W Loop
-      title: Chicago        
+      title: Chicago
 -
   tripit: 133246561
   date: 2014-09 #04
@@ -1904,7 +1904,7 @@
   date: 2016-08 #24
   nights: 4
   modes: [air]
-  geo: [47.4838499,19.0526899] # Danubius Hotel Gellért 
+  geo: [47.4838499,19.0526899] # Danubius Hotel Gellért
   title:
     Budapest holiday # with Shannon
 -
@@ -1948,7 +1948,7 @@
     -
       date: 2016-10-29
       nights: 1
-      geo: [28.45682,83.85678] # 
+      geo: [28.45682,83.85678] #
       title: Bamboo
     -
       date: 2016-10-30
@@ -1959,7 +1959,7 @@
       date: 2016-10-31
       nights: 2
       geo: [28.204372,83.962713] # Mount Kailash Resort
-      title: 
+      title:
     -
       date: 2016-11-02
       nights: 1
@@ -2007,7 +2007,7 @@
   nights: 7
   modes: [air, rail, boat, bus]
   title:
-    Norway holiday
+    Norway holiday # with Shannon
   destinations:
     -
       nights: 2
@@ -2022,7 +2022,7 @@
   nights: 1
   modes: [rail]
   title:
-    Rotterdam to find the in-laws
+    Rotterdam to find the in-laws # with Shannon, Joan, Charles
 -
   date: 2017-09 #23
   nights: 7
@@ -2045,9 +2045,33 @@
     -
       nights: 6
       title: Seattle
-   -
+    -
       nights: 1
-      title: Somewhere, Missouri
+      title: "Somewhere, Missouri"
     -
       nights: 5
-      title: Edwardsville (and rail to pontiac)
+      title: "Edwardsville (and Pontiac)"
+-
+  date: 2017-12 #07
+  nights: 2
+  modes: [rail]
+  geo: [48.866787, 2.276541]
+  title:
+    Disneyland Paris for office party # with Shannon, Ariane, Natalia, Natalie, Kamila, Manjari
+-
+  date: 2017-12 #30
+  nights: 2
+  modes: [air, rail, car]
+  title:
+    A Southern NYE # with Shannon, Gina, Will, Bobby, Allison
+  destinations:
+    -
+      nights: 1
+      geo: [51.899458, 0.891116] # city center, but really Haus Reinhardt
+      title:
+        Colchester
+    -
+      nights: 1
+      geo: [51.509747, -0.196728] # The Laslett
+      title:
+        London
