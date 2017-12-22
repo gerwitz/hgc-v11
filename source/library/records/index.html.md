@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Appearances
+subtitle: Clues for where to go Hansspotting
 ---
 
 - 2008: [iAB Chicago](http://featuresblogs.chicagotribune.com/eric2_0/2008/03/social-networki.html)
@@ -9,5 +10,5 @@ title: Appearances
 - 2014: [Knowit Experienceit](https://www.knowit.no/events/?eventtype=11858): mini-keynote on balancing Brand and UX
 - 2017: [Let's Fix Things podcast](https://raftcollective.com/podcast/) episodes on [data fears] (http://www.stitcher.com/podcast/raft-collective/lets-fix-things/e/lets-fix-things-33-were-still-paranoid-but-thats-ok-with-49320407) and [amusing ourselves to death](http://www.stitcher.com/podcast/raft-collective/lets-fix-things/e/lets-fix-things-36-walking-into-the-burning-building-of-convenience-49563906)
 - 2017: [KBCS interview](http://kbcs.fm/2017/03/17/un-mute-the-commute-transit-driver-appreciation-day/) about [#tdad](https://transitdriverday.org/)
-- 2017: [DarkSide of Design podcast](https://www.raftcollective.com/thinking/dark-side-of-design/) episodes on death and blockchains
+- 2017: [DarkSide of Design podcast](https://www.raftcollective.com/thinking/dark-side-of-design/) episodes on [death](https://www.stitcher.com/podcast/raft-collective/dark-side-of-design/e/52143426) and [the blockchain](https://www.stitcher.com/podcast/raft-collective/dark-side-of-design/e/52260789)
 - 2017: [ThingsCon](https://www.thingscon.nl/sessions/ring-ring-whos/): 15 minutes on the design challenges of connected devices in the home
