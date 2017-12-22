@@ -1,5 +1,5 @@
 ---
-title: frog
+title: Looking back at frog
 abstract: A year later
 categories:
 - work
@@ -19,13 +19,13 @@ Naturally, the creative intellectual elite that differentiate the organization a
 
 There is a disconnect, then, between the mythos of the designers and the goals of the owners. This causes a social stratification where management must speak a language of commodity hours upwards, and a language of creative idealism downward. It is no surprise that I spent most of my energy as a member of management advocating for more transparency and open decision making. I hoped a healthy dialogue could result, with a hybrid organization arising that generated the margins required financially with due respect to the unique needs and costs of a creative firm.
 
-In the end, though, I fell prey to the forces I was resisting.
+In the end, though, I fell prey to the forces I was trying to reform.
 
 After a lengthy period of requesting overseas assignment, and a few near misses, I finally had the opportunity to join the Amsterdam studio, with frequent travel to Mumbai to work with a client there. There was a lot of false starts, but eventually the client signed and on two days notice in November of 2012 we left Seattle. I went straight to Mumbai for two weeks, and Shannon settled in Amsterdam. Our formal agreement was to stay through March of 2013, though we had been asked to commit to 18-24 months to be eligible for this opportunity.
 
 As time went on, it was clear we were happy working in the Amsterdam studio, and so in January I warned our leaders I intended to stay. A plan was made (verbally, unfortunately) to put another "CRA" in place through June and to formalize a transfer by then. This was easy to agree to; under CRA we had additional benefits, and a few months gave plenty of time to negotiate a fair arrangement for Europe.
 
-Less than two weeks before the end of March, though, everything melted down and Shannon and I were both terminated after asking for time off to postpone returning to the US. Every person of every rank has been very clear that we were both highly valued, even high-ranking executives have expressed anger over the situation, and it was made clear we will be highly welcome if there's enough work to hire, but the math is clear: we cost too much and the next quarter would not keep me, at least, billable. It's just easier to let go of US workers.[^1]
+Less than two weeks before the end of March, though, everything melted down and Shannon and I were both terminated after asking for time off to postpone returning to the US. Every person of every rank has been very clear that we were both highly valued, even high-ranking executives have expressed anger over the situation, and it was made clear we will be highly welcome if there's enough work to hire. But the math is clear: we cost too much and the next quarter would not keep me, at least, billable. It's just easier to let go of US workers.[^1]
 
 [^1]: It's not clear, though, why having us on PTO or unpaid sabbatical was not an option. Maybe there's a reason, but neither of us was invited into any discussion.
 
