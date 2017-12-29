@@ -1,6 +1,7 @@
 html {
   font-family:	Georgia, Verdana, serif;
   font-size:		100%;
+  line-height:  1.5;
   word-wrap:		break-word;
 }
 
@@ -72,14 +73,4 @@ sup, sub {
 
 p, section {
   margin:			1.5rem 0 0 0;
-}
-
-// dropcap on posts
-article.post .entry-content>p:first-child:first-letter { 
-  text-indent:	0;
-  font-size:		2.5rem;
-  line-height:	2.5rem;
-  font-weight:	400;
-  float:			left;
-  margin:			0 0.107rem 0 0;
 }
