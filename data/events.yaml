@@ -3,7 +3,7 @@
   date: 1974-03 #09
   geo: [38.63295, -90.31108] # St. Mary's Hospital
   type: life
-  links: 
+  links:
     genealogy: https://www.wikitree.com/genealogy/Gerwitz-Family-Tree-222
   text:
     Born
@@ -98,7 +98,7 @@
   geo: [38.628274, -90.266872]
   text:
     Started school at SLUH
-- 
+-
   date: 1988
   type: home
   geo: [38.649619, -90.269483] # 5154 Westminster
@@ -435,7 +435,7 @@
   date: 2007-08
   type: life
   text:
-    Started dating Shannon 😍 
+    Started dating Shannon 😍
 -
   date: 2007
   type: care
@@ -469,12 +469,12 @@
   geo: [47.626132, -122.322781] # 737A Harvard Ave E
   text:
     Bought house
-- 
+-
   date: 2009-08 #23
   type: life
   geo: [47.602003, -122.331738] # Smith Tower
   text:
-    Married Shannon 
+    Married Shannon
 -
   date: 2010-03 #30
   type: home
@@ -552,3 +552,8 @@
   type: life
   text:
     Thunder moved in
+-
+  date: 2017-11 #19
+  type: life
+  text:
+    Fog moved in
