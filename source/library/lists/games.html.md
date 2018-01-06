@@ -1,11 +1,15 @@
 ---
-title: Games that have wasted my time
+title: Timepass
+subtitle: A hall of fame for games that have wasted substantial time
 ---
 
 * Two Dots
-    Level 535
+    2018-01-06: level 1360, 3632 stars, 89 treasures, 21 badges
 
 * Bonza
+
+* Threes
+    28,035
 
 * [Drop7](http://areacodeinc.com/projects/drop7/) (2009—2011, 2013)
     Hardcore: 637,582
@@ -14,12 +18,9 @@ title: Games that have wasted my time
 
 * Railyard (2012)
 
-* WordsWorth
-
 * Strategery
 
-* [Tiny Tower](http://towers.nimblebit.com/9753128
-) (2011)
+* [Tiny Tower](http://towers.nimblebit.com/9753128) (2011)
     119 floors, 216 bitizens, 194 dream jobs
 
 * [Flood-It](http://labpixies.com/) (2009)
@@ -39,7 +40,7 @@ title: Games that have wasted my time
 
 * TapDefense
 
-* PalmOS solitare?
+* PalmOS solitare (or some sort)
 
 * Starcraft
 
