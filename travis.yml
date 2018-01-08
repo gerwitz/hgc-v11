@@ -1,8 +1,6 @@
 language: ruby
-rvm: 2.1
+rvm:
+  - 2.2.4
 before_install:
   - gem update --system
   - gem update bundler
-install: bundle install
-before_script: bundle exec rspec
-script: bundle exec middleman build
