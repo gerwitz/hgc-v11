@@ -58,7 +58,7 @@
   who-url: http://tim.oreilly.com/
   source: The Oracle of Silicon Valley, Inc. Magazine
   source-url: http://www.inc.com/magazine/20100501/the-oracle-of-silicon-valley.html
-  date: 2010-05-01  
+  date: 2010-05-01
 -
   quote: "Upon this, one has to remark that men ought either to be well treated or crushed, because they can avenge themselves of lighter injuries, of more serious ones they cannot; therefore the injury that is to be done to a man ought to be of such a kind that one does not stand in fear of revenge."
   who: Niccolò Machiavelli
@@ -71,10 +71,10 @@
   who-url: http://genealogy.math.ndsu.nodak.edu/id.php?id=42226
   source: Empirical Model-Building and Response Surfaces
   soruce-url: http://www.goodreads.com/book/show/2195902
-  date: 1987  
+  date: 1987
 -
   quote: "It's easier to act your way into a new way of thinking than to think your way into a new way of acting."
-  who: Millard Fuller  
+  who: Millard Fuller
 -
   quote: "Humans seldom value what they cannot name."
   who: Elaine Brooks
@@ -132,7 +132,7 @@
   quote: "My definition of a free society is a society where it is safe to be unpopular."
   who: Adlai Stevenson II
   who-url: http://www.adlaitoday.org/
-  source: Detroit campaign speech, 1952)
+  source: Detroit campaign speech, 1952
 -
   quote: "If you are able to state a problem, it can be solved."
   who: Edwin H. Land
@@ -181,7 +181,7 @@
 -
   quote: "Ignorance more frequently begets confidence than does knowledge: it is those who know little, and not those who know much, who so positively assert that this or that problem will never be solved by science."
   who: Charles Darwin
-  source: Introduction to The Descent of Man 
+  source: Introduction to The Descent of Man
   date: 1871
 -
   quote: "The question of whether computers can think is like the question of whether submarines can swim."
@@ -247,3 +247,8 @@
   source: Negotiations, 1972-1990
   source-url: https://www.goodreads.com/book/show/154326.Negotiations_1972_1990
   tags: [silence, communication]
+-
+  quote: "The amount of energy needed to refute bullshit is an order of magnitude bigger than to produce it."
+  who: Alberto Brandolini
+  source: Twitter, 11 Jan 2013
+  source-url: https://twitter.com/ziobrando/status/289635060758507521
