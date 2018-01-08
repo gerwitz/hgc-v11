@@ -13,6 +13,9 @@ gem 'builder'
 gem 'middleman-search', git: 'https://github.com/sn3p/middleman-search.git', branch: 'update-lunr'
 gem 'middleman-sprockets'
 
-# for testing (post-build)
-gem 'rspec'
-gem 'capybara'
+# also used by Travis CI
+group :development do
+  gem 'rake', '~> 10.4'
+  gem 'rspec', '~> 3.4'
+  gem 'capybara', '~> 2.5'
+end
