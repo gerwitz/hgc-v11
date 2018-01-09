@@ -4,6 +4,8 @@ rvm:
 before_install:
 - gem update --system
 - gem update bundler
+branches:
+  only: deploy
 deploy:
   provider: s3
   access_key_id: AKIAI4M4TOJATIDGYORQ
