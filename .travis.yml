@@ -1,11 +1,15 @@
 language: ruby
 rvm:
 - 2.2.4
+branches:
+  only: deploy
 before_install:
 - gem update --system
 - gem update bundler
-branches:
-  only: deploy
+before_script:
+- bundle exec rspec
+script:
+- bundle exec middleman build
 deploy:
   provider: s3
   access_key_id: AKIAI4M4TOJATIDGYORQ
