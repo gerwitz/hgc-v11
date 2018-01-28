@@ -256,6 +256,12 @@
     Started working at SLU (student lab manager)
 -
   date: 1994
+  type: car
+  text:
+    Bought 1984 Honda Accord from dad
+    # the car I had learned to drive in
+-
+  date: 1994
   confidence: low
   type: home
   geo: [38.627213, -90.261645] # 11xx S. Taylor
