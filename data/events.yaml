@@ -3,8 +3,7 @@
   date: 1974-03 #09
   geo: [38.63295, -90.31108] # St. Mary's Hospital
   type: life
-  links:
-    genealogy: https://www.wikitree.com/genealogy/Gerwitz-Family-Tree-222
+  link: https://www.wikitree.com/genealogy/Gerwitz-Family-Tree-222
   text:
     Born
 -
@@ -38,8 +37,7 @@
   date: 1979
   type: school
   geo: [38.749066, -90.298306] # 140 North Elizabeth
-  links:
-    church: https://www.pinterest.com/pin/520236194428927724/
+  link: https://www.pinterest.com/pin/520236194428927724/
   text:
     Started kindergarten at Sts. John and James
 -
@@ -75,10 +73,10 @@
 -
   date: 1986-03
   type: geek
-  links:
-    tony: https://hans.gerwitz.com/2015/04/21/mad-tony.html
+  link: https://hans.gerwitz.com/2015/04/21/mad-tony.html
   text:
     Uncle "Mad" Tony gifted me with a 1200bps modem, started using BBSes
+    # initially with pseudonym "Maxwell Smart", soon switched to "SAMHAIN NIVHWVS"
 -
   date: 1987
   type: school
@@ -124,14 +122,15 @@
   date: 1990
   type: geek
   text:
-    Established first internet email address "wupost.wustl.edu!sempco!hgerwitz"
+    Established first internet email address
+    # "wupost.wustl.edu!sempco!hgerwitz"
 -
   date: 1991-04
   confidence: low
   type: home
   geo: [38.589677, -90.251807]
   text:
-    Moved out of home and into Colleen's apartment in South City
+    Moved in with Colleen in South City
 -
   date: 1991
   type: school
@@ -149,7 +148,7 @@
   date: 1991
   type: home
   text:
-    Lived out of Colleen's car
+    Moved into Colleen's car
     # K-wagon
 -
   date: 1992
@@ -175,7 +174,7 @@
   type: home
   geo: [38.649619, -90.269483] # Westminster
   text:
-    Evicted from apartment, stayed with mom
+    Evicted, moved in with mom
     # moved into Westminster with Colleen, hiding from dad
 -
   date: 1992
@@ -198,14 +197,17 @@
   type: home
   geo: [38.707371, -90.363589] # Midland Blvd
   text:
-    Started living out of Airstream trailer at Colleen's parents in Overland
-    # Mom sold house, moved to Creve Coeur
+    Moved into Airstream trailer
+    # at Colleen's parents in Overland
+    # Because Mom sold the house, moved to Creve Coeur
 -
   date: 1993
+  type: work
   text:
     Good temp stint in marketing analysis at SBC
 -
   date: 1993
+  type: home
   geo: [38.603409, -90.248333] # Arsenal
   text:
     Moved into Tower Grove apartment
@@ -264,7 +266,8 @@
   date: 1995
   type: geek
   text:
-    First webpage posted (http://www.nyx.net/~hgerwitz/)
+    Posted first webpage
+  link: http://www.nyx.net/~hgerwitz/
 -
   date: 1995
   type: work
@@ -278,7 +281,7 @@
   type: home
   geo: [38.644844, -90.257619] # 327 N Taylor
   text:
-    Moved to nice apartment in CWE
+    Moved into nice apartment in CWE
 -
   date: 1995-08
   type: work
@@ -297,6 +300,7 @@
   type: work
   text:
     Started web development consulting (phobia)
+  link: https://web.archive.org/web/19961219154047/http://phobia.com/
     # $75 for a three-page site, then $30/month for hosting
     # and email to fax gateway with a fancy modem
 -
@@ -355,13 +359,13 @@
   date: 1999-05
   type: life
   text:
-    "Hard drive crash with insufficient backup: history before this is less clear"
+    "Hard drive crash with insufficient backups: history before this is less clear"
 -
   date: 1999-11
   type: home
   geo: [38.606751, -90.235772] # 2623 Virginia
   text:
-    Bought house
+    Bought house and moved to Tower Grove South
     # using loan program that encouraged middle class purchase in poor census tracts
 -
   date: 2000-06 #25
@@ -402,12 +406,11 @@
   type: home
   geo: [38.632606, -90.197337] # 703 N 13th St
   text:
-    Moved to Downtown loft
+    Bought loft and moved to Downtown
 -
   date: 2003-12
   type: life
-  links:
-    lemond: https://hans.gerwitz.com/library/things/lemond.html
+  link: https://hans.gerwitz.com/library/things/lemond.html
   text:
     Bought road bike
 -
@@ -425,7 +428,7 @@
   date: 2006
   type: car
   text:
-    sold Miata to Kurt
+    Sold Miata to Kurt
 -
   date: 2007
   type: life
@@ -438,7 +441,7 @@
     Started dating Shannon 😍
 -
   date: 2007
-  type: care
+  type: car
   text:
     Bought 2006 Mazda Miata
     # black, "Selene"
@@ -459,8 +462,7 @@
 -
   date: 2009-03
   type: life
-  links:
-    busday: https://hans.gerwitz.com/2009/02/23/bus-driver-appreciation-day.html
+  link: https://hans.gerwitz.com/2009/02/23/bus-driver-appreciation-day.html
   text:
     Declared Bus/Transit Driver Appreciation Day
 -
@@ -468,7 +470,7 @@
   type: home
   geo: [47.626132, -122.322781] # 737A Harvard Ave E
   text:
-    Bought house
+    Bought house and moved to Capitol Hill
 -
   date: 2009-08 #23
   type: life
@@ -480,7 +482,7 @@
   type: home
   geo: [48.161610, 11.568313] # Hohenzollernplatz
   text:
-    4 months living in Munich for frog
+    Moved to Munich for 4 months
 -
   date: 2012-11
   type: home
@@ -502,13 +504,13 @@
   date: 2013-03
   type: work
   text:
-    Left frog
+    Left frog to stay in Amsterdam
     # downsizes, we leave rather than return to US
 -
   date: 2013-04
   type: work
   text:
-    Registered The Artificial
+    Registered The Artificial with Shannon
     # as technique to get Dutch residency with Shannon
 -
   date: 2013-06
@@ -541,12 +543,13 @@
   type: home
   geo: [52.366203, 4.871753] # Bilderdijkkade 97-4V
   text:
-    Moved into our house on Bilderdijkkade
+    Bought house and moved to Oud West
 -
   date: 2017-01 #24
   type: life
   text:
     Shea died
+  link: https://hans.gerwitz.com/2017/01/26/shea.html
 -
   date: 2017-05 #13
   type: life
