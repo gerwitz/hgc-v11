@@ -31,5 +31,5 @@ But I'm quite pleased to have followed one line so far back as to count everyone
    [5]: http://en.wikipedia.org/wiki/John_Russell%2C_1st_Earl_of_Bedford
    [6]: http://worldconnect.rootsweb.com/cgi-bin/igm.cgi?op=PED&db=jhmjr&id=I14036
    [7]: http://www.newadvent.org/cathen/03610c.htm
-   [8]: http://hans.gerwitz.com/2007/01/01/grandpa-charles.html
+   [8]: https://hans.gerwitz.com/2007/01/01/grandpa-charles.html
    [9]: http://www.geocities.com/missourimule_2000/priamtoadam.html#Family:%20Adam

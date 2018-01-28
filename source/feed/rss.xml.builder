@@ -1,6 +1,6 @@
 xml.instruct!
 xml.rss "version" => "2.0", "xmlns:atom" => "http://www.w3.org/2005/Atom" do
-  site_url = "http://hans.gerwitz.com/"
+  site_url = "https://hans.gerwitz.com/"
   xml.channel do
     xml.title "hans.gerwitz.com"
     xml.description "Blog posts"

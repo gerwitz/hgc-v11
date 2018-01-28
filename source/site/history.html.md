@@ -10,7 +10,7 @@ That same year, I started using [iBlog](/2003/04/21/iblog.html) to publish in a 
 
 Ringing in 2007, I sold the domain name and [moved to a new hostname](/2007/01/20/fearless.html).[^si] Wordpress served me well enough, but when I was [fireballed](http://daringfireball.net/linked/2010/08/31/gerwitz) in 2010 it just couldn't handle the load (on memory) and my site spent most of the day unable to respond.
 
-Caching and optimizing made me comfortable for a while, but that Ruby itch finally got too strong. So in 2012 I [switched to nanoc](/2012/02/20/reset.html) and later to [Middleman](http://www.middlemanapp.com/), which has a stronger community and is in heavy use at [work](http://theartificial.nl/).
+Caching and optimizing made me comfortable for a while, but that Ruby itch finally got too strong. So in 2012 I [switched to nanoc](/2012/02/20/reset.html) and later to [Middleman](http://www.middlemanapp.com/), which has a stronger community and is in heavy use at [work](https://theartificial.com/).
 
 <!-- Even more information about the history of this site might be found in [meta posts](/archive/categories/meta.html). -->
 

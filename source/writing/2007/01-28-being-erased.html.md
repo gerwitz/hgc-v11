@@ -17,6 +17,6 @@ Last time I [researched myself][2], Google found many of my Usenet posts from 19
 Curse you, Google!  You may deny my content but you'll never erase me!
 
    [1]: http://catb.org/esr/jargon/html/S/September-that-never-ended.html
-   [2]: http://hans.gerwitz.com/2003/07/25/vintage-hans.html
+   [2]: https://hans.gerwitz.com/2003/07/25/vintage-hans.html
    [3]: http://groups.google.com/group/alt.bbs.internet/browse_thread/thread/844833c5539f35b4/ce2e9197a8b33850?rnum=528#ce2e9197a8b33850
    [4]: http://groups.google.com/group/news.announce.newgroups/msg/f033b05626e5c28d

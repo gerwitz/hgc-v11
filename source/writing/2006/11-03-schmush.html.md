@@ -10,5 +10,5 @@ Thanks to [an entry on RSS replacing email marketing][1], I presently rank numbe
 
 (Interestingly, my personalized search results place a different page of my site about 40th.  Google doesn't seem to think I'd find myself interesting.)
 
-   [1]: http://hans.gerwitz.com/2006/03/31/push-schmush.html
+   [1]: https://hans.gerwitz.com/2006/03/31/push-schmush.html
    [2]: http://www.google.com/search?q=schmush

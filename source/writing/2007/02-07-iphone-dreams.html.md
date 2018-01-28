@@ -31,7 +31,7 @@ I could play not just [touchscreen microgames][8] but [serious games and puzzles
 
 Maybe I underestimate what will be possible with Safari alone, especially if it includes Flash.  It's already amazing how many of my "desktop" tools actually run in Safari or largely render via WebKit.  If the iPhone is half as successful as it's poised to be, it will quickly vault Safari to the ranks of browsers you cannot afford to ignore.  I'd be surprised if Microsoft isn't already talking to Apple about [WPF/E][10].
 
-   [1]: http://hans.gerwitz.com/2007/01/10/my-thoughts-on-the-iphone.html
+   [1]: https://hans.gerwitz.com/2007/01/10/my-thoughts-on-the-iphone.html
    [2]: http://www.gerwitz.com/genealogy/
    [3]: http://www.radio-electronics.com/info/cellulartelecomms/location_services/assisted_gps.php
    [4]: http://www.plazes.com/

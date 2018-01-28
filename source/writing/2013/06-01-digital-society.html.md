@@ -20,7 +20,7 @@ Today we lament the loss of that era's breathless optimism, and its poster child
 
 Anil Dash blames us for [not trying hard enough](http://dashes.com/anil/2013/04/harvard.html).
 
-He also wishes digital service companies would be less efficient, so we might keep people employed. Douglas Rushkoff, meanwhile, suggests we need to [let go of jobs](http://www.hyperink.com/Last-Day-Of-Workdouglas-Rushkoff-b7682E0EABFa11). But perhaps the robots will continue finding reasons to [use us](http://hans.gerwitz.com/2006/08/25/meat-based-web-services.html).
+He also wishes digital service companies would be less efficient, so we might keep people employed. Douglas Rushkoff, meanwhile, suggests we need to [let go of jobs](http://www.hyperink.com/Last-Day-Of-Workdouglas-Rushkoff-b7682E0EABFa11). But perhaps the robots will continue finding reasons to [use us](https://hans.gerwitz.com/2006/08/25/meat-based-web-services.html).
 
 All of our hand-wringing over the failure of technology to usher in grand social change even as it threatens our current balance is just a digital-age iteration of an ancient struggle. The problems of how to include everyone in society while still progressing technology forward are as old as civilization.
 
