@@ -36,10 +36,9 @@ title: Chronology
       # year = time.strftime("%Y").to_i
       # month = (e.date.to_s.length > 4) ? time.strftime("%B") : ""
   %>
-  <li class="timeline-entry" data-year="<%= year %>" data-type="<%= e.type %>">
-    <time datetime="<%= e.date %>">
-      <%= year if year > last_year %>
-      <%#= monthname if monthname.present? %>
+  <li class="timeline-entry shown" data-year="<%= year %>" data-type="<%= e.type %>">
+    <time datetime="<%= e.date %>" data-year="<%= year %>" class="year<%= " first" if (year > last_year) %>">
+      <%= year %>
     </time>
     <p><%= e.url ? link_to(e.text, e.url) : e.text %></p>
     <%
@@ -65,12 +64,32 @@ title: Chronology
     $('.toggles input').change(function() {
       var type = $(this).attr('data-type');
       var $entries = $('.timeline-entry[data-type="'+type+'"]');
-      console.log(type, $(this).is('checked'));
       if (this.checked) {
+        $entries.addClass('shown');
         $entries.slideDown();
       } else {
         $entries.slideUp();
+        $entries.removeClass('shown');
       }
+      updateYears();
+      $entries.not('.shown').slideUp();
+      $entries.filter('.shown').slideDown();
     });
   });
+
+  function updateYears() {
+    $times = $('li.shown .year');
+    lastYear = 0;
+    $times.each(function() {
+      console.log(this);
+      $this = $(this);
+      thisYear = $this.data('year');
+      if (thisYear != lastYear) {
+        $this.addClass("first");
+      } else {
+        $this.removeClass("first");
+      }
+      lastYear = thisYear;
+    });
+  }
 </script>

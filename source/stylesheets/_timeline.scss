@@ -37,6 +37,12 @@ $timelinePadding: 25px;
 
         text-align: right;
         padding-right: $timelinePadding;
+
+        opacity: 0.0;
+        transition: opacity .5s ease-in;
+        &.first {
+          opacity: 1.0;
+        }
       }
 
       &:before {
