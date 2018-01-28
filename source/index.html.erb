@@ -3,6 +3,14 @@ title: hans.gerwitz.com
 abstract: The online soliloquy of Hans Gerwitz
 layout: site
 ---
+<% content_for :head_content do %>
+  <!-- OpenID delegation -->
+  <link rel="openid2.provider" href="https://openid.stackexchange.com/openid/provider">
+  <link rel="openid2.local_id" href="https://openid.stackexchange.com/user/d6fc3e55-7717-4688-8e57-55fce40c106c">
+
+  <!-- Micro.blog -->
+  <link href="https://micro.blog/gerwitz" rel="me" />
+<% end %>
 
 <section class="home">
 
