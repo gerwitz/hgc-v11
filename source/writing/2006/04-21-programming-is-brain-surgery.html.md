@@ -14,5 +14,5 @@ Eric Lippert has posted some good thoughts on why [writing code is more like bra
 
    [1]: http://blogs.msdn.com/ericlippert/archive/2006/04/10/571098.aspx
    [2]: http://blogs.msdn.com/ericlippert/archive/2006/04/10/571098.aspx#_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl7_NameLink
-   [3]: http://hans.gerwitz.com/2006/04/09/wordpress-it-is.html
+   [3]: https://hans.gerwitz.com/2006/04/09/wordpress-it-is.html
    [4]: http://davidweiss.blogspot.com/

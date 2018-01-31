@@ -16,4 +16,4 @@ In the nascent world of interactive marketing, I arguably wasted some years in t
 
 Since 2008, I've enjoyed leading teams and projects in leadership roles across disciplines, finding patterns of success in disparate industries throughout the world. The tools of designing for futures both near and far have become second nature.
 
-Most recently, I've shifted scale dramatically downward in favor of focus and passion with [The Artificial](http://theartificial.nl/).
+Most recently, I've shifted scale dramatically downward in favor of focus and passion with [The Artificial](https://theartificial.com/).

@@ -7,7 +7,7 @@ tags:
 - gaming
 - business
 - microsoft
-external: http://theartificial.nl/blog/2014/09/15/microcraft.html
+external: https://theartificial.com/blog/2014/09/15/microcraft.html
 ---
 
 Minecraft is a ridiculously popular game that blends exploration and creation. READMORE It would be difficult to overstate its cultural importance, particularly among young players.

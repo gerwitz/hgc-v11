@@ -85,7 +85,7 @@ header {
 
 
     a {
-      text-decoration:none;
+      text-decoration: none;
     }
 
     h1 {
@@ -102,9 +102,44 @@ header {
       margin-bottom: 0;
     }
 
-    // search
+
+
+  }
+
+  .nav {
+    margin: 32px auto 0; // need more than #dickbar's height
+
+    height: 24px;
+
+    border-bottom: solid 3px $color;
+
+    padding: 0;
+    padding-top: 8px;
+
+    ul {
+      list-style: none;
+
+      padding: 0;
+      margin-top: 3px;
+
+      font-size: 0.75rem;
+      line-height: inherit;
+
+      float: left;
+
+      li {
+        display: inline;
+        margin-right: 10px;
+      }
+      a {
+        text-decoration: none;
+      }
+      a.current {
+        text-decoration: underline;
+      }
+    }
     form.search {
-      // margin-top: 1px;
+      margin-top: 1px;
       float: right;
       label {
         padding: 1px;
@@ -141,27 +176,6 @@ header {
         &::-ms-input-placeholder { color: $color; }
       }
     }
-
-  }
-
-  ul.nav {
-    margin: 32px auto 0; // need more than #dickbar's height
-
-    list-style: none;
-    padding: 8px 1px;
-
-    font-size: 0.75rem;
-    line-height: inherit;
-
-    border-bottom: solid 3px $color;
-
-    li {
-      display: inline;
-      margin-right: 10px;
-    }
-    a {
-      text-decoration: none;
-    }
   }
 }
 
@@ -184,7 +198,7 @@ body>footer a {
 }
 body>footer nav {
   display: inline;
-  float: left;
+  float: right;
 }
 body>footer nav ul {
   padding: 0;

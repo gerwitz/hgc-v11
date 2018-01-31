@@ -2018,9 +2018,11 @@
       geo: [60.39575,5.3192] # Clarion Hotel Admiral
       title: Bergen for fjords and hiking
 -
+  tripit: 197279377
   date: 2017-08 #05
   nights: 1
   modes: [rail]
+  geo: [51.910911,4.497103] # Pincoffs
   title:
     Rotterdam to find the in-laws # with Shannon, Joan, Charles
 -

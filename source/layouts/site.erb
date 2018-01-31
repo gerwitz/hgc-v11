@@ -14,18 +14,14 @@
 %>
     <title><%= title %></title>
 
-    <!-- Always force latest IE rendering engine or request Chrome Frame -->
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-
-    <!-- OpenID delegation -->
-    <link rel="openid2.provider" href="https://openid.stackexchange.com/openid/provider">
-    <link rel="openid2.local_id" href="https://openid.stackexchange.com/user/d6fc3e55-7717-4688-8e57-55fce40c106c">
-
     <!-- favicon -->
     <link rel="icon" href="/assets/tree.png" type="image/x-icon">
     <link rel="shortcut icon" href="/assets/tree.png" type="image/x-icon">
 
-    <!-- basic SEO -->
+    <!-- webmentions -->
+    <link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
+
+    <!-- basics -->
     <meta name="keywords" content="<%= tags.join(', ') %>">
     <meta name="description" content="<%= abstract %>">
 
@@ -50,8 +46,16 @@
 
     <%= stylesheet_link_tag "all" %>
     <%= javascript_include_tag  "all" %>
+<<<<<<< HEAD
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://platform.twitter.com/widgets.js"></script>
+=======
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://platform.twitter.com/widgets.js"></script>
+
+    <!-- modified <%= File.mtime(current_page.source_file).iso8601 %> -->
+    <%= yield_content :head_content %>
+>>>>>>> 3f6d137e2065e5834851c343ecc6951442bd2a46
   </head>
 
   <body class="<%= page_classes %>">
@@ -59,37 +63,39 @@
   <header>
     <div id="dickbar">
       <h1><%= nav_link 'hans.gerwitz.com', '/' %></h1>
+    </div>
+    <div class="nav">
+      <ul>
+        <li>
+          <%= nav_link(
+            'Home',
+            '/'
+          ) %>
+        </li>
+        <li>
+          <%= nav_link(
+            'Library',
+            '/library/'
+          ) %>
+        </li>
+        <li>
+          <%= nav_link(
+            'About',
+            '/about/'
+          ) %>
+        </li><!--
+        <li>
+          <%= nav_link(
+            'Laboratory</a>',
+            '/projects/'
+          ) %>
+        </li>
+  -->
+      </ul>
       <form method="get" action="/search.html" class="search">
         <input id = "search" type="search" placeholder="search" name="query" />
       </form>
     </div>
-    <ul class="nav">
-      <li>
-        <%= nav_link(
-          'Home',
-          '/'
-        ) %>
-      </li>
-      <li>
-        <%= nav_link(
-          'Library',
-          '/library/'
-        ) %>
-      </li>
-      <li>
-        <%= nav_link(
-          'About',
-          '/about.html'
-        ) %>
-      </li><!--
-      <li>
-        <%= nav_link(
-          'Laboratory</a>',
-          '/projects/'
-        ) %>
-      </li>
--->
-    </ul>
   </header>
 
   <%= yield %>

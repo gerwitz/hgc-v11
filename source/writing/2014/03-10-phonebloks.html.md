@@ -17,4 +17,4 @@ But that same week, Google Motorola (no slouch of engineering) announced [Projec
 
 I still shudder at the visually realistic but engineering-ridiculous Phonebloks renderings, and admit being a curmudgeon about the attention they receive, but now my Dunning-Kruger alarm is tickled, and I am trying to keep my skepticism in check. As [David Dunning would have it](http://arstechnica.com/science/2012/05/revisiting-why-incompetents-think-theyre-awesome/), "one should pause to worry about one’s own certainty."
 
-(Full disclosure: [3D Systems is a client](http://theartificial.nl/3dsystems.html), but aside from some early clues about the Motorola relationship, I have had no inside knowledge of Ara.)
+(Full disclosure: [3D Systems is a client](https://theartificial.com/work/3DSystems-consumer.html), but aside from some early clues about the Motorola relationship, I have had no inside knowledge of Ara.)

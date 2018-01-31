@@ -50,7 +50,7 @@ Not the best year…
 
 …but clearly looking up.
 
-   [1]: http://hans.gerwitz.com/2007/03/05/flooded.html
+   [1]: https://hans.gerwitz.com/2007/03/05/flooded.html
    [2]: http://skippyhawk.com/2007/04/27/shuffle-up-and-deal.html
    [3]: http://anotherdaywith-eetman.blogspot.com/2007/07/last-day.html
    [4]: /2007/08/27/broken.html

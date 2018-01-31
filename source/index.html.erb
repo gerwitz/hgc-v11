@@ -3,13 +3,25 @@ title: hans.gerwitz.com
 abstract: The online soliloquy of Hans Gerwitz
 layout: site
 ---
+<% content_for :head_content do %>
+  <!-- OpenID delegation -->
+  <link rel="openid2.provider" href="https://openid.stackexchange.com/openid/provider">
+  <link rel="openid2.local_id" href="https://openid.stackexchange.com/user/d6fc3e55-7717-4688-8e57-55fce40c106c">
+
+  <!-- distributed identity -->
+  <link href="https://micro.blog/gerwitz" rel="me">
+  <link href="https://twitter.com/gerwitz" rel="me">
+  <link href="https://github.com/gerwitz" rel="me">
+  <link href="https://www.linkedin.com/in/gerwitz" rel="me">
+  <link href="https://www.facebook.com/gerwitz" rel="me">
+<% end %>
 
 <section class="home">
 
   <script type="text/javascript" src="/assets/moment.min.js"></script>
 
   <p>
-      This site is a narcissistic archive of my online activities. You are probably here to figure out <a href="about.html" rel="me">who I am</a> or <a href="https://twitter.com/intent/user?user_id=521">follow me</a>.
+      This site is a narcissistic archive of my online activities. You are probably here to figure out <a href="/about/" rel="me">who I am</a> or <a href="https://twitter.com/intent/user?user_id=521">be my friend</a>.
   </p>
 
   <!--
@@ -34,13 +46,13 @@ layout: site
       var tweet_date = moment(this_tweet.created_at).format('MMMM Do, YYYY');
       $('#last_tweet>p').html(tweet_msg);
       var tweet_link = $('<a/>');
-      var tweet_url = 'http://twitter.com/gerwitz/status/'+this_tweet.id;
+      var tweet_url = 'https://twitter.com/gerwitz/status/'+this_tweet.id;
       tweet_link.attr('href', tweet_url);
       tweet_link.html('<date>'+tweet_date+'</date>');
       $('#last_tweet>small').html(tweet_link);
   }
   </script>
-  <script type="text/javascript" src="http://api.twitter.com/1/statuses/user_timeline.json?user_id=521&include_rts=false&exclude_replies=true&include_entities=true&trim_user=true&count=1&callback=twitter_callback_function"></script>
+  <script type="text/javascript" src="https://api.twitter.com/1/statuses/user_timeline.json?user_id=521&include_rts=false&exclude_replies=true&include_entities=true&trim_user=true&count=1&callback=twitter_callback_function"></script>
   -->
 
   <h2><a href="/archive/">Writing</a></h2>
