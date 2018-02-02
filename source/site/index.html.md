@@ -1,6 +1,5 @@
 ---
 title: About This Site
-abstract: Details on how this site is built
 ---
 
 ## Toolset
