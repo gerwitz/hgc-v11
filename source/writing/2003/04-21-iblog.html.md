@@ -11,8 +11,7 @@ tags:
 
 I have finally chosen a blog management tool.
 
-Choosing a dynamic server is too fraught with complications these days, and frankly, I'm just not motivated to deal with it.  The ASP models, though, leave me fearful that my data can be held hostage, none provide an export that pleases me.  So, I've chosen to stay client-side with [iBlog][1].  The author assures me that the only weakness I've seen in the export will be addressed, so when I get around to my own [Movable
-Type][2] or [Roller][3] installation [or even my fantasy [Cocoon][4]-based SuperBlog], I will be able to script the migration.
+Choosing a dynamic server is too fraught with complications these days, and frankly, I'm just not motivated to deal with it.  The ASP models, though, leave me fearful that my data can be held hostage, none provide an export that pleases me.  So, I've chosen to stay client-side with [iBlog][1].  The author assures me that the only weakness I've seen in the export will be addressed, so when I get around to my own [Movable Type][2] or [Roller][3] installation [or even my fantasy [Cocoon][4]-based SuperBlog], I will be able to script the migration.
 
    [1]: http://www.lifli.com/Products/iBlog/main.htm
    [2]: http://movabletype.org/

@@ -12,7 +12,7 @@ Ringing in 2007, I sold the domain name and [moved to a new hostname](/2007/01/2
 
 Caching and optimizing made me comfortable for a while, but that Ruby itch finally got too strong. So in 2012 I [switched to nanoc](/2012/02/20/reset.html) and later to [Middleman](http://www.middlemanapp.com/), which has a stronger community and is in heavy use at [work](https://theartificial.com/).
 
-<!-- Even more information about the history of this site might be found in [meta posts](/archive/categories/meta.html). -->
+<!-- Even more information about the history of this site might be found in [meta posts](/writing/categories/meta.html). -->
 
   [^phobia]: Inspired by [Philip Greenspun](http://philip.greenspun.com/panda/server-programming) on photo.net, I had picked up [PHP/FI](http://www.php.net/manual/en/history.php.php) and built sites in the late 1990s. My favorite client was [Crown Candy](http://crowncandykitchen.net/), who bartered for meals and chocolate.
 
