@@ -153,7 +153,7 @@ header {
         // width: 200px;
         // color: #999;
         font-weight: normal;
-        text-align: right; 
+        text-align: right;
 
         border-radius: 8px;
         border: solid 1px;
@@ -258,12 +258,8 @@ blockquote {
 }
 
 // See http://www.w3.org/Style/Examples/007/leaders.en.html */
-ol.article-list {
-  width: $width - 32px;
-  margin-left: 16px;
-    padding: 0;
-    overflow-x: hidden;
-    list-style: none;
+@mixin list_leaders {
+  overflow-x: hidden;
 
   a:before {
     float: left;
@@ -290,11 +286,20 @@ ol.article-list {
       background: $background;
     }
   }
+}
+
+ol.article-list {
+  width: $width - 32px;
+  margin-left: 16px;
+  padding: 0;
+  list-style: none;
+
+  @include list-leaders;
+
   a:hover span {
     text-decoration: underline;
   }
 }
-
 
 img.float-left {
   margin: 0;

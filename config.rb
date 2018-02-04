@@ -23,9 +23,7 @@ helpers do
 end
 
 set :css_dir, 'stylesheets'
-
 set :js_dir, 'javascripts'
-
 set :images_dir, 'images'
 
 # set :relative_links, true
@@ -47,7 +45,7 @@ activate :blog do |blog|
 
   blog.layout = "writing"
 
-  blog.calendar_template = "writing/calendar.html"
+  blog.calendar_template = "writing/calendar_template.html"
 
   blog.permalink = "/{year}/{month}/{day}/{title}.html"
   blog.year_link = "/{year}/index.html"
@@ -56,8 +54,8 @@ activate :blog do |blog|
 
   blog.custom_collections = {
     categories: {
-      link: '/archive/{categories}.html',
-      template: 'writing/category.html'
+      link: '/writing/{categories}.html',
+      template: 'writing/category_template.html'
     }
   }
 end
@@ -68,11 +66,13 @@ activate :blog do |blog|
   blog.sources = "/notes/{year}/{month}/{day}-{slug}.html" # if this changes, adjust search below
   blog.default_extension = ".md"
 
+  blog.paginate = true
+
   blog.layout = "note"
 
-  # blog.calendar_template = "writing/calendar.html"
+  # blog.calendar_template = "writing/calendar_template.html"
 
-  # blog.permalink = "/{year}/{month}/{day}/{slug}.html"
+  blog.permalink = "/{year}/{month}/{day}/{slug}.html"
   # blog.year_link = "/{year}/index.html"
   # blog.month_link = "/{year}/{month}/index.html"
   # blog.day_link = "/{year}/{month}/{day}/index.html"
@@ -80,10 +80,11 @@ end
 
 # page "/*/*", layout: :page
 # page "/feed/*", layout: false
-page "/archive/*", layout: :page
+# page "/writing/*", layout: :page
 
 page "/about/*", layout: :page
 page "/library/*", layout: :page
+page "/history/*", layout: :page
 page "/projects/*", layout: :page
 page "/site/*", layout: :page
 

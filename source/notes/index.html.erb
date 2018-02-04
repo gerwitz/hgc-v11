@@ -1,0 +1,22 @@
+---
+title: Notes
+layout: page
+pageable: true
+---
+
+<ol class="notes-list">
+  <% blog('notes').articles.each_with_index do |note, i| %>
+    <li>
+      <div class="note">
+        <div class="content">
+          <%= note.body %>
+        </div>
+        <div class="meta">
+          <% link_to note do %>
+            <span class="date"><%= note.date.strftime('%B %e, %Y, %k:%M') %></span>
+          <% end %>
+        </div>
+      </div>
+    </li>
+    <% end %>
+</ol>

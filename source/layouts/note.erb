@@ -8,12 +8,12 @@
       end
     end
   %>
-  <article>
+  <article class="note">
   <% if current_page.data.title %>
     <h1><%= current_page.data.title %></h1>
   <% end %>
   <div class="meta">
-    <time datetime="<%= current_page.date.strftime("%F") %>"><%= current_page.date.strftime("%B %d, %Y") %></time>
+    <time datetime="<%= current_page.date.strftime("%F") %>"><%= current_page.date.strftime("%B %e, %Y, %k:%M") %></time>
     <% if current_page.data.abstract %>
       <!-- <%= current_page.data.abstract %> -->
     <% end %>
@@ -37,8 +37,10 @@
 <% end %>
     <%= yield %>
   </div>
+<!--
   <div class="promo">
     This site is an archive of several sources. If you'd like to keep up, <a href="https://twitter.com/intent/user?user_id=521">follow me on Twitter</a>.
   </div>
+-->
   </article>
 <% end %>
