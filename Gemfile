@@ -13,6 +13,8 @@ gem 'builder'
 gem 'middleman-search', git: 'https://github.com/sn3p/middleman-search.git', branch: 'update-lunr'
 gem 'middleman-sprockets'
 
+gem 's3_website'
+
 # also used by Travis CI
 group :development do
   gem 'rake', '~> 10.4'
