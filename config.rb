@@ -88,8 +88,6 @@ page "/history/*", layout: :page
 page "/projects/*", layout: :page
 page "/site/*", layout: :page
 
-redirect "/feed/rss.xml", to: "/feed/writing.rss"
-
 activate :search do |search|
   search.resources = ['writing/', 'notes/', 'library/', 'projects/', 'site/', 'about/']
   search.index_path = 'search.json'
@@ -102,13 +100,14 @@ activate :search do |search|
   }
   search.before_index = Proc.new do |to_index, to_store, resource|
     path = resource.path
+# puts("Indexing #{path}")
     to_store[:path] = path
     path_split = path.split('/',2)
     section = path_split.first
     to_store[:section] = section
     if section == 'writing'
-      date_parts = path_split[1].match(/(\d{4})\/(\d{2})-(\d{2})/) # must match blog.sources
-      to_store[:date] = Date.parse(date_parts.to_s)
+      throw(:skip) unless resource.is_a?( ::Middleman::Blog::BlogArticle )
+      to_store[:date] = resource.date
     end
   end
 end
