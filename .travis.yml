@@ -10,17 +10,19 @@ before_script:
 - bundle exec rspec
 script:
 - bundle exec middleman build
-deploy:
-  on:
-    branch: master
-  provider: s3
-  access_key_id: AKIAI4M4TOJATIDGYORQ
-  secret_access_key:
-    secure: eQeSJhrXtF60VUYfP+6LhyoPGGuGjpRS9dYxiFafaOBbQji+8QivJOxeqMrsNTXb233htNsE6O4ET/hcLEpUtgDdDbkxXvTYX9PTHzFzzPEWG7DiAWMxdnCqpLfEQtKCPJC1nI+RzplrxOWdXakWMZUPK2jFVPPpXz0X/IAx7cUkxg8NFPWRCO9KX7uGkS2YJ4SzNYXuPXBeQtm/XjfzNj/hjYgmtsw/VLTpcOsn88dSOTpP7/HwOTWay5yP512i6KFWwtFCzsAhh0GpI6Z21fQD4CWDQ26NvKJ2etDpFvRF3oE5OOISGMD0JuEUxxg7tAHZZLm7Y/E+tluOySwgn/dGlba2/FZA1ywIzsCrrGZuIEbn3jfBu+hG1cRb8ItYlDJIFmDZBjfVuAQPtGr4ijoIdSNwzlKKpqA2Mu7l8KinhSO2A6YEAdJL1IFsc1WjjPx/CYxp9DnUqTMYff+sgKAMP52ydfxNOGa7xEUtJxGzg24FdogVk3WU8Kr9OIak0HJ37L8eVzFEqlwmsbkwdHeQkpIp2s1gfjXdmMDmXkD27UpPakFkT+DPswyHsE1pcFTCLB3LCDsSjaaFORKBUn0XRFqkaQ//fuzJD+ItEYGJ9nLTW5xtIVBycpvWKjKsC8wtC487x3AxvgDkD9WcmNqGRXNX0gKgePKjbwuCW10=
-  bucket: "hans.gerwitz.com"
-  region: eu-west-1
-  local-dir: build
-  skip_cleanup: true
-after_deploy:
-  - aws configure set preview.cloudfront true
-  - aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths "/*"
+after_success:
+  - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "deploy" && bundle exec s3_website push
+# deploy:
+#   on:
+#     branch: master
+#   provider: s3
+#   access_key_id: AKIAI4M4TOJATIDGYORQ
+#   secret_access_key:
+#     secure: eQeSJhrXtF60VUYfP+6LhyoPGGuGjpRS9dYxiFafaOBbQji+8QivJOxeqMrsNTXb233htNsE6O4ET/hcLEpUtgDdDbkxXvTYX9PTHzFzzPEWG7DiAWMxdnCqpLfEQtKCPJC1nI+RzplrxOWdXakWMZUPK2jFVPPpXz0X/IAx7cUkxg8NFPWRCO9KX7uGkS2YJ4SzNYXuPXBeQtm/XjfzNj/hjYgmtsw/VLTpcOsn88dSOTpP7/HwOTWay5yP512i6KFWwtFCzsAhh0GpI6Z21fQD4CWDQ26NvKJ2etDpFvRF3oE5OOISGMD0JuEUxxg7tAHZZLm7Y/E+tluOySwgn/dGlba2/FZA1ywIzsCrrGZuIEbn3jfBu+hG1cRb8ItYlDJIFmDZBjfVuAQPtGr4ijoIdSNwzlKKpqA2Mu7l8KinhSO2A6YEAdJL1IFsc1WjjPx/CYxp9DnUqTMYff+sgKAMP52ydfxNOGa7xEUtJxGzg24FdogVk3WU8Kr9OIak0HJ37L8eVzFEqlwmsbkwdHeQkpIp2s1gfjXdmMDmXkD27UpPakFkT+DPswyHsE1pcFTCLB3LCDsSjaaFORKBUn0XRFqkaQ//fuzJD+ItEYGJ9nLTW5xtIVBycpvWKjKsC8wtC487x3AxvgDkD9WcmNqGRXNX0gKgePKjbwuCW10=
+#   bucket: "hans.gerwitz.com"
+#   region: eu-west-1
+#   local-dir: build
+#   skip_cleanup: true
+# after_deploy:
+#   - aws configure set preview.cloudfront true
+#   - aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths "/*"
