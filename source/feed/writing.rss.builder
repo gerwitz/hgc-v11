@@ -1,9 +1,12 @@
+---
+blog: writing
+---
 xml.instruct!
 xml.rss "version" => "2.0", "xmlns:atom" => "http://www.w3.org/2005/Atom" do
   site_url = "https://hans.gerwitz.com/"
   xml.channel do
     xml.title "hans.gerwitz.com"
-    xml.description "Blog posts"
+    xml.description "Writing"
     xml.link site_url
     xml.tag! 'atom:link', "href" => URI.join(site_url, current_page.path), "rel" => "self", "type" => "application/rss+xml"
     blog.articles.select{|a| !a.data.title.nil? }[0..10].each do |article|

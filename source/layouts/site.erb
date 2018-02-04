@@ -8,7 +8,7 @@
   title = current_page.data.title || "hans.gerwitz.com"
   abstract = current_page.data.abstract || title
   tags = ['gerwitz', 'hans gerwitz']
-  if current_page.data.tags
+  if current_page.data.tags && current_page.data.tags.kind_of?(Array)
     tags += current_page.data.tags
   end
 %>
@@ -42,7 +42,8 @@
     <meta property="og:image" content="/assets/tree.png">
 
     <!-- RSS feed -->
-    <link rel="alternate" type="application/atom+xml" href="/feed/atom.xml" title="Writings of Hans Gerwitz">
+    <link rel="alternate" type="application/rss+xml" href="/feed/microblog.rss" title="Notes from Hans Gerwitz">
+    <link rel="alternate" type="application/rss+xml" href="/feed/writing.rss" title="Writings of Hans Gerwitz">
 
     <%= stylesheet_link_tag "all" %>
     <%= javascript_include_tag  "all" %>

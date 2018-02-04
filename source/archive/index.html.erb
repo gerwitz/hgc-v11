@@ -10,7 +10,7 @@ title: Chronofile
 </blockquote>
 
 <ol class="article-list">
-  <% blog.articles.select{|a| !a.data.title.nil? }.each_with_index do |article, i| %>
+  <% blog('writing').articles.select{|a| !a.data.title.nil? }.each_with_index do |article, i| %>
       <li><% link_to article do %>
         <span class="title"><%= article.title %></span>
         <span class="date"><%= article.date.strftime('%B %e, %Y') %></span>

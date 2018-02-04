@@ -1,0 +1,15 @@
+---
+title: Notes
+---
+
+<ol class="article-list">
+  <% blog('notes').articles.select{|a| !a.data.title.nil? }.each_with_index do |article, i| %>
+    <li>
+      <div class="note">
+        <%= article.body %>
+      </div>
+      <span class="meta">
+        <% link_to article do %><span class="date"><%= article.date.strftime('%B %e, %Y') %></span><% end %>
+    </li>
+    <% end %>
+</ol>

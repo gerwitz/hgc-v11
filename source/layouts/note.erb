@@ -1,0 +1,44 @@
+<% wrap_layout :site do %>
+  <%
+    if current_page.data.external.present?
+      content_for :head_content do
+  %>
+        <link rel="canonical" href="<%= current_page.data.external %>" />
+  <%
+      end
+    end
+  %>
+  <article>
+  <% if current_page.data.title %>
+    <h1><%= current_page.data.title %></h1>
+  <% end %>
+  <div class="meta">
+    <time datetime="<%= current_page.date.strftime("%F") %>"><%= current_page.date.strftime("%B %d, %Y") %></time>
+    <% if current_page.data.abstract %>
+      <!-- <%= current_page.data.abstract %> -->
+    <% end %>
+    <% if current_page.data.categories %>
+      <!-- categories: <%= current_page.data.categories.join(', ') %> -->
+    <% end %>
+<%
+  if current_page.data.external.present?
+    host = URI.parse(current_page.data.external).host.downcase
+    host = host.start_with?('www.') ? host[4..-1] : host
+%>
+    <span class="external">
+      <img src="https://plus.google.com/_/favicon?domain=<%= host %>" height="12" width="12" class="favicon" />
+      published at <%= link_to host, current_page.data.external %>
+    </span>
+  </div>
+  <div class="content republished">
+<% else %>
+  </div>
+  <div class="content">
+<% end %>
+    <%= yield %>
+  </div>
+  <div class="promo">
+    This site is an archive of several sources. If you'd like to keep up, <a href="https://twitter.com/intent/user?user_id=521">follow me on Twitter</a>.
+  </div>
+  </article>
+<% end %>

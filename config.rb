@@ -38,6 +38,7 @@ set :markdown,  fenced_code_blocks: true,
                 footnotes: true
 
 activate :blog do |blog|
+  blog.name = "writing"
   blog.prefix = ""
   blog.sources = "/writing/{year}/{month}-{day}-{title}.html" # if this changes, adjust search below
   blog.default_extension = ".md"
@@ -61,6 +62,22 @@ activate :blog do |blog|
   }
 end
 
+activate :blog do |blog|
+  blog.name = "notes"
+  blog.prefix = ""
+  blog.sources = "/notes/{year}/{month}/{day}-{slug}.html" # if this changes, adjust search below
+  blog.default_extension = ".md"
+
+  blog.layout = "note"
+
+  # blog.calendar_template = "writing/calendar.html"
+
+  # blog.permalink = "/{year}/{month}/{day}/{slug}.html"
+  # blog.year_link = "/{year}/index.html"
+  # blog.month_link = "/{year}/{month}/index.html"
+  # blog.day_link = "/{year}/{month}/{day}/index.html"
+end
+
 # page "/*/*", layout: :page
 # page "/feed/*", layout: false
 page "/archive/*", layout: :page
@@ -70,8 +87,10 @@ page "/library/*", layout: :page
 page "/projects/*", layout: :page
 page "/site/*", layout: :page
 
+redirect "/feed/rss.xml", to: "/feed/writing.rss"
+
 activate :search do |search|
-  search.resources = ['writing/', 'library/', 'projects/', 'site/']
+  search.resources = ['writing/', 'notes/', 'library/', 'projects/', 'site/', 'about/']
   search.index_path = 'search.json'
   search.fields = {
     title:   {boost: 100, store: true, required: true},
