@@ -6,6 +6,7 @@ pageable: true
 
 <ol class="notes-list">
   <% blog('notes').articles.each_with_index do |note, i| %>
+    <% next if note.body.empty? %>
     <li>
       <div class="note">
         <div class="content">

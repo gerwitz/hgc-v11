@@ -9,7 +9,7 @@ xml.rss "version" => "2.0", "xmlns:atom" => "http://www.w3.org/2005/Atom" do
     xml.description "Microblog"
     xml.link site_url
     xml.tag! 'atom:link', "href" => URI.join(site_url, current_page.path), "rel" => "self", "type" => "application/rss+xml"
-    blog.articles.select{|a| !a.data.title.nil? }[0..10].each do |article|
+    blog.articles.select{|a| !a.body.empty? }[0..10].each do |article|
       xml.item do
         xml.title article.title
         xml.link URI.join(site_url, article.url)
