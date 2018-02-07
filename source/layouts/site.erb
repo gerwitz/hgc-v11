@@ -41,7 +41,7 @@
     <meta property="og:description" content="<%= abstract %>">
     <meta property="og:image" content="/assets/tree.png">
 
-    <!-- RSS feed -->
+    <!-- RSS feeds -->
     <link rel="alternate" type="application/rss+xml" href="/feed/microblog.rss" title="Notes from Hans Gerwitz">
     <link rel="alternate" type="application/rss+xml" href="/feed/writing.rss" title="Writings of Hans Gerwitz">
 
@@ -50,7 +50,15 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://platform.twitter.com/widgets.js"></script>
 
-    <!-- modified <%= File.mtime(current_page.source_file).iso8601 %> -->
+    <% if current_page.data.noindex == true %>
+    <meta name="robots" content="noindex">
+    <% end %>
+    <% if current_page.data.external.present? %>
+    <link rel="canonical" href="<%= current_page.data.external %>" />
+    <% else # http://www.thesempost.com/using-rel-canonical-on-all-pages-for-duplicate-content-protection/ %>
+    <link rel="canonical" href="<%= current_page.url %>" />
+    <% end %>
+    <meta http-equiv="last-modifed" content="<%= File.mtime(current_page.source_file).iso8601 %>">
     <%= yield_content :head_content %>
   </head>
 
