@@ -1,0 +1,24 @@
+.pagination {
+  height: 24px;
+  font-size: 18px;
+  line-height: 24px;
+
+  text-transform: lowercase;
+
+  .prev, .next {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+
+  .prev {
+    float: left;
+  }
+  .next {
+    float: right;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}

@@ -1,12 +1,23 @@
 ---
 title: Notes
-layout: page
-pageable: true
+layout: site
 noindex: true
+blog: notes
+pageable: true
+per_page: 12
 ---
 
+<h2>Notes</h2>
+
+<% if paginate && prev_page %>
+<div class="pagination">
+<!--  <p>Page <%= page_number %> of <%= num_pages %></p> -->
+  <span class="prev"><%= link_to '← Newer', prev_page %></span>
+</div>
+<% end %>
+
 <ol class="notes-list">
-  <% blog('notes').articles.each_with_index do |note, i| %>
+  <% page_articles.each_with_index do |note, i| %>
     <% next if note.body.empty? %>
     <li>
       <div class="note">
@@ -15,10 +26,16 @@ noindex: true
         </div>
         <div class="meta">
           <% link_to note do %>
-            <span class="date"><%= note.date.strftime('%B %e, %Y, %k:%M') %></span>
+            <span class="date">&mdash;&nbsp;<%= note.date.strftime('%B %e, %Y, %k:%M') %></span>
           <% end %>
         </div>
       </div>
     </li>
     <% end %>
 </ol>
+
+<% if paginate && next_page %>
+<div class="pagination">
+  <span class="next"><%= link_to 'Older →', next_page %></span>
+</div>
+<% end %>
