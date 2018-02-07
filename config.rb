@@ -131,8 +131,3 @@ configure :build do
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
 end
-
-configure :development do
-  require 'lib/rack_validate'
-  use ::Rack::Validate
-end
