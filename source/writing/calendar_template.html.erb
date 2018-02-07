@@ -4,19 +4,19 @@ blog: writing
 noindex: true
 ---
 <% wrap_layout :site do %>
-  <h1>
+  <h2>
     <%
       case page_type
         when 'day'
     %>
-      <%= link_to Date.new(year, month, day).strftime('%B'), blog_month_path(year, month) %>
-      <%= Date.new(year, month, day).strftime('%e') %>,
       <%= link_to Date.new(year, month, day).strftime('%Y'), blog_year_path(year) %>
+      <%= link_to Date.new(year, month, day).strftime('%B'), blog_month_path(year, month) %>
+      <%= Date.new(year, month, day).strftime('%e') %>
     <%
         when 'month'
     %>
-      <%= Date.new(year, month, 1).strftime('%B') %>,
       <%= link_to Date.new(year, month, 1).strftime('%Y'), blog_year_path(year) %>
+      <%= Date.new(year, month, 1).strftime('%B') %>,
     <%
         when 'year'
     %>
@@ -24,7 +24,7 @@ noindex: true
     <%
       end
     %>
-  </h1>
+  </h2>
 
   <ol class="article-list">
     <% page_articles.select{|a| !a.data.title.nil? }.each_with_index do |article, i| %>
