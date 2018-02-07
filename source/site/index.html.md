@@ -1,14 +1,15 @@
 ---
-title: About This Site
+title: Colophon
 ---
+
+The [site history page](history.html) provides further background.
 
 ## Toolset
 
-This site is generated as static HTML via [Middleman][], and [the source is available on GitHub][source]. The [site history page][] provides further background.
+This site is generated as static HTML via [Middleman][], and [the source is available on GitHub][source].
 
 [middleman]: https://middlemanapp.com/
 [source]: https://github.com/gerwitz/hans.gerwitz.com/
-[site history page]: history.html
 
 Search is kept local thanks to [lunr][].
 
