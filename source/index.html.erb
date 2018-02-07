@@ -29,36 +29,18 @@ layout: site
       This site is a narcissistic archive of my online activities. You are probably here to figure out <a href="/about/" rel="me">who I am</a> or <a href="https://twitter.com/intent/user?user_id=521">be my friend</a>.
   </p>
 
-  <!--
-  Newsletter:
-  <form style="display:inline;" action="https://tinyletter.com/gerwitz" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/gerwitz', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><input type="text" name="email" id="tlemail" /><input type="hidden" value="1" name="embed"/><input type="submit" value="Subscribe" /></form>
-
-
-  <h2>Latest Tweet <small>from <a href="https://twitter.com/gerwitz">@gerwitz</a></small></h2>
-  <blockquote id="last_tweet">
-      <p><i class="refresh spin"></i> Loading…</p>
-      <small></small>
-  </blockquote>
-  <script>
-  function twitter_callback_function( tweets ) {
-      var this_tweet = tweets[0];
-      var tweet_msg = this_tweet.text;
-      for (var i=0; i<this_tweet.entities.urls.length; i++) {
-          var this_url = this_tweet.entities.urls[i];
-          var this_anchor = '<a href="'+this_url.expanded_url+'">'+this_url.display_url+'</a>';
-          tweet_msg = tweet_msg.replace(this_url.url, this_anchor);
-      }
-      var tweet_date = moment(this_tweet.created_at).format('MMMM Do, YYYY');
-      $('#last_tweet>p').html(tweet_msg);
-      var tweet_link = $('<a/>');
-      var tweet_url = 'https://twitter.com/gerwitz/status/'+this_tweet.id;
-      tweet_link.attr('href', tweet_url);
-      tweet_link.html('<date>'+tweet_date+'</date>');
-      $('#last_tweet>small').html(tweet_link);
-  }
-  </script>
-  <script type="text/javascript" src="https://api.twitter.com/1/statuses/user_timeline.json?user_id=521&include_rts=false&exclude_replies=true&include_entities=true&trim_user=true&count=1&callback=twitter_callback_function"></script>
-  -->
+  <h2><a href="/notes/">Notes</a></h2>
+  <% note = blog('notes').articles.first %>
+  <div class="note">
+    <div class="content">
+      <%= note.body.html_safe %>
+    </div>
+    <div class="meta">
+      <% link_to note do %>
+        <span class="date">&mdash;&nbsp;<%= note.date.strftime('%B %e, %Y, %k:%M') %></span>
+      <% end %>
+    </div>
+  </div>
 
   <h2><a href="/writing/">Writing</a></h2>
   <ol class="article-list">
@@ -75,39 +57,5 @@ layout: site
   <div class="flickr-photos">
   <script type="text/javascript" src="https://www.flickr.com/badge_code_v2.gne?count=5&amp;display=latest&amp;size=s&amp;layout=h&amp;source=user&amp;user=78928298%40N00"></script>
   </div>
-
-
-  <h2><a href="https://tumblr.gerwitz.com/" title="From the Wunderkammer">Findings</a></h2>
-
-  <blockquote id="tumblr-quotes">
-      Loading&hellip;
-  </blockquote>
-  <script type="text/javascript">
-  function tumblr(resp) {
-      var last_quote = resp.posts[0];
-      $('#tumblr-quotes').html('<p>'+last_quote['quote-text']+'<\/p><footer><cite>'+last_quote['quote-source']+'<\/cite><\/footer>');
-  }
-  </script>
-  <script type="text/javascript" src="https://gerwitz.tumblr.com/api/read/json?callback=tumblr&amp;num=1&amp;type=quote"></script>
-
-  <div class='tumblr-photos'><a id='tumblr-url-1' href=''><img border='0' id='tumblr-photo-1' class='tumblr-photo' src='' alt='' width='75' height='75' /></a><a id='tumblr-url-2' href=''><img border='0' id='tumblr-photo-2' class='tumblr-photo' src='' alt='' width='75' height='75' /></a><a id='tumblr-url-3' href=''><img border='0' id='tumblr-photo-3' class='tumblr-photo' src='' alt='' width='75' height='75' /></a><a id='tumblr-url-4' href=''><img border='0' id='tumblr-photo-4' class='tumblr-photo' src='' alt='' width='75' height='75' /></a><a id='tumblr-url-5' href=''><img border='0' id='tumblr-photo-5' class='tumblr-photo' src='' alt='' width='75' height='75' /></a>
-  </div>
-  <script type="text/javascript">
-  function tumblrPhotos(response) {
-      $('#tumblr-photo-1').attr('src', response.posts[0]['photo-url-75'] );
-      $('#tumblr-url-1').attr('href', response.posts[0]['url-with-slug'] );
-      $('#tumblr-photo-2').attr('src', response.posts[1]['photo-url-75'] );
-      $('#tumblr-url-2').attr('href', response.posts[1]['url-with-slug'] );
-      $('#tumblr-photo-3').attr('src', response.posts[2]['photo-url-75'] );
-      $('#tumblr-url-3').attr('href', response.posts[2]['url-with-slug'] );
-      $('#tumblr-photo-4').attr('src', response.posts[3]['photo-url-75'] );
-      $('#tumblr-url-4').attr('href', response.posts[3]['url-with-slug'] );
-      $('#tumblr-photo-5').attr('src', response.posts[4]['photo-url-75'] );
-      $('#tumblr-url-5').attr('href', response.posts[4]['url-with-slug'] );
-  }
-  </script>
-  <script type="text/javascript" src="https://gerwitz.tumblr.com/api/read/json?callback=tumblrPhotos&amp;num=5&amp;type=photo"></script>
-
-  <!-- Hypomnemata: Pinboard -->
 
 </section>

@@ -23,13 +23,12 @@ When I publish to a specific git branch, [Travis CI][travis] builds the site and
 ![listener](site/rat-mic.png)
 [Google Analytics][goog] is used for usage tracking and may drop a cookie on you. I've set my account to [not share tracking data][ua], but you have no way to validate that and I have no way to confirm that Google honors this setting.
 
-Other external resources are referenced, including [Twitter's][twttr] scripts for explicit pop-ups and jQuery from [their CDN][jquery]. On the [homepage](/) a few extras are loaded: JSON and assets from [Tumblr][] and a [Flickr][] script which insists on loading a Yahoo geolocation script as well as requested assets. None of these should be using this to track you, but my control is limited so YMMV.
+Other external resources are referenced, including [Twitter's][twttr] scripts for explicit pop-ups and jQuery from [their CDN][jquery]. On the [homepage](/) a [Flickr][] script is loaded which insists on loading a Yahoo geolocation script as well as requested assets. None of these should be using this to track you, but my control is limited so YMMV.
 
 [goog]: http://www.google.com/analytics/
 [ua]: https://support.google.com/analytics/answer/1011397?hl=en
 [twttr]: https://dev.twitter.com/docs/intents
 [jquery]: https://code.jquery.com/
-[tumblr]: http://www.tumblr.com/api
 [flickr]: http://www.flickr.com/badge.gne
 
 ## &c.

@@ -9,6 +9,21 @@ a:hover .favicon {
   -webkit-filter: none;
 }
 
+.home {
+  .note {
+    .content {
+      padding-top: 0;
+      padding-bottom: 12px;
+    }
+    .meta .date {
+      float: right;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
 .flickr-photos, .tumblr-photos {
   text-align: center;
 }
