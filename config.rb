@@ -1,3 +1,20 @@
+set :css_dir, "assets/stylesheets"
+# set :fonts_dir, "assets/fonts"
+set :images_dir, "assets/images"
+set :js_dir, "assets/javascripts"
+
+# set :relative_links, true
+
+set :markdown_engine, :redcarpet
+set :markdown,
+  no_intra_emphasis: true,
+  fenced_code_blocks: true,
+  tables: true,
+  autolink: true,
+  smartypants: true,
+  space_after_headers: true,
+  footnotes: true
+
 # Methods defined in the helpers block are available in templates
 helpers do
   def nav_link(link_text, url, options = {})
@@ -21,19 +38,6 @@ helpers do
     output << "</ul>"
   end
 end
-
-set :css_dir, 'stylesheets'
-set :js_dir, 'javascripts'
-set :images_dir, 'images'
-
-# set :relative_links, true
-
-set :markdown_engine, :redcarpet
-set :markdown,  fenced_code_blocks: true,
-                tables: true,
-                autolink: true,
-                smartypants: true,
-                footnotes: true
 
 activate :blog do |blog|
   blog.name = "writing"
@@ -111,8 +115,6 @@ activate :search do |search|
     end
   end
 end
-
-activate :sprockets
 
 # Build-specific configuration
 configure :build do
