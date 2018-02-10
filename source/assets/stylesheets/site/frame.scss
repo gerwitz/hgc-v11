@@ -1,47 +1,4 @@
-@import "_variables";
-
-html {
-  background: $background;
-  color: $color;
-}
-
-
-body {
-  max-width: $width;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-html.project body {
-  max-width: inherit;
-}
-
-html.project #content {
-  max-width: $p-width;
-  margin: 0 auto;
-}
-
-a {
-  text-decoration:underline;
-  color: inherit;
-  transition: color 0.5s 0;
-}
-
-p:hover a, li:hover a, dl:hover a, table:hover a {
-  color: #1A1AC7;
-  transition: color 1s 0.5s ease;
-}
-a:hover {
-  color: #00E;
-}
-
-body>article {
-  width: $width;
-}
-body>section {
-  width: $width;
-  // margin: 4rem auto;
-}
+@import "../_variables";
 
 body>article>header {
   margin-bottom: 1rem;
@@ -50,7 +7,6 @@ body>article>header>h1 {
   margin-bottom: 0;
 }
 body>article>header time {
-    font-family: Helvetica, sans-serif;
   font-size: 0.75rem;
   color: lighten($color, 50%);
 }
@@ -61,15 +17,7 @@ body>article>footer {
   text-align: right;
 }
 
-.pagemeta {
-  font-family: "Lucida Grande", Verdana, Arial, sans-serif;
-  font-size: 0.75rem;
-  text-transform: lowercase;
-}
-
-header {
-
-  @extend .pagemeta;
+header.site {
 
   #dickbar {
     position: fixed;
@@ -102,8 +50,6 @@ header {
       margin-bottom: 0;
     }
 
-
-
   }
 
   .nav {
@@ -115,6 +61,7 @@ header {
 
     padding: 0;
     padding-top: 8px;
+    padding-bottom: 4px;
 
     ul {
       list-style: none;
@@ -122,7 +69,7 @@ header {
       padding: 0;
       margin-top: 3px;
 
-      font-size: 0.75rem;
+      // font-size: 0.75rem;
       line-height: inherit;
 
       float: left;
@@ -155,17 +102,40 @@ header {
         font-weight: normal;
         text-align: right;
 
-        border-radius: 8px;
-        border: solid 1px;
+        // border-radius: 8px;
+        // border: solid 1px;
         border-color: transparent;
+
+        -webkit-appearance: textfield;
+        -webkit-box-sizing: content-box;
+        &::-webkit-search-decoration, &::-webkit-search-cancel-button {
+          display: none;
+        }
+        // &::-webkit-search-decoration { display: none; }
+
+        // See more at: http://geek.michaelgrace.org/2011/06/webkit-search-input-styling/
+
       }
       input:focus {
-        border-color: $lightgrau;
+        // border-color: $lightgrau;
         &::-webkit-input-placeholder { color: transparent; }
         &:-moz-placeholder { color: transparent; }
         &::-moz-input-placeholder { color: transparent; }
         &:-ms-input-placeholder { color: transparent; }
         &::-ms-input-placeholder { color: transparent; }
+        -webkit-appearance: textfield;
+        -webkit-box-sizing: content-box;
+        &::-webkit-search-decoration {
+          display: none;
+        }
+        &::-webkit-search-cancel-button {
+          display: inherit;
+          font-size: 4px;
+          // line-height: 5px;
+          // height: 6px;
+        }
+        -webkit-appearance: textfield;
+        -webkit-box-sizing: content-box;
       }
       input {
         // thanks http://stackoverflow.com/a/2610741
@@ -191,7 +161,6 @@ body>footer {
   margin-bottom: 3em;
   padding-top: 8px;
 
-  @extend .pagemeta;
 }
 body>footer a {
   text-decoration:none;
@@ -215,99 +184,7 @@ body>footer nav li+li {
   margin-left: 2ex;
 }
 
-article footer .comments {
-  h3 { @extend .pagemeta; }
-  p {
-    font-size: 0.75rem;
-    margin-top: 0.5rem;
-    opacity: 0;
-    -webkit-transition: opacity 0.25s ease-out;
-    -webkit-transition-delay: 0.75s;
-  }
-}
-article footer .comments:hover {
-  p {
-    opacity: 1;
-    -webkit-transition-delay: 0;
-  }
-}
-
-
-article img, article video, article audio {
-  display: block;
-  margin: 1.75em auto;
-// width: $width;
-// background: #FAFAFA;
-  padding: .5em;
-  position: relative;
-  top: -.25em;
-}
-
-blockquote {
-  width: $width - (16px * 2) - 10px;
-  margin: 1rem 16px;
-  padding-left: 10px;
-  border-left: 5px solid #bbb;
-  footer {
-    margin-top: 1rem;
-    text-align: right;
-    &:before {
-      content: '\2014 '; /* &mdash; */
-    }
-  }
-}
-
-// See http://www.w3.org/Style/Examples/007/leaders.en.html */
-@mixin list_leaders {
-  overflow-x: hidden;
-
-  a:before {
-    float: left;
-    width: 0;
-    white-space: nowrap;
-    pointer-events: all;
-    content:
- ". . . . . . . . . . . . . . . . . . . . "
- ". . . . . . . . . . . . . . . . . . . . "
- ". . . . . . . . . . . . . . . . . . . . "
- ". . . . . . . . . . . . . . . . . . . . "
-  }
-  a {
-    text-decoration: none;
-    span {
-      background: $background;
-    }
-    .title {
-      padding-right: 0.33em;
-    }
-    .date, .location {
-      float: right;
-      padding-left: 0.33em;
-      background: $background;
-    }
-  }
-}
-
-ol.article-list {
-  width: $width - 32px;
-  margin-left: 16px;
-  padding: 0;
-  list-style: none;
-
-  @include list-leaders;
-
-  a:hover span {
-    text-decoration: underline;
-  }
-}
-
-img.float-left {
-  margin: 0;
-  margin-right: 0.5rem;
-  float: left;
-}
-img.float-right {
-  margin: 0;
-  margin-right: 0.5rem;
-  float: right;
+#footer {
+  border-top:		1px solid #aaa;
+  margin-bottom:	20px;
 }

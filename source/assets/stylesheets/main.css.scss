@@ -1,7 +1,10 @@
-@import "_normalize";
-@import "_base";
-@import "_typography";
-@import " _home";
+@import "base/reset.css";
+@import "base/typography.css";
+
+@import "site/base";
+@import "site/frame";
+
+@import "_home";
 @import "_project";
 @import "_timeline";
 @import "_writing";

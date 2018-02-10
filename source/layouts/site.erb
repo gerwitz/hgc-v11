@@ -5,7 +5,7 @@
     <meta name="generator" content="middleman">
     <meta name="viewport" content="width=device-width">
 <%
-  title = current_page.data.title || "hans.gerwitz.com"
+  title = current_page.data.title || "&#11820; Hans Gerwitz"
   abstract = current_page.data.abstract || title
   tags = ['gerwitz', 'hans gerwitz']
   if current_page.data.tags && current_page.data.tags.kind_of?(Array)
@@ -64,27 +64,39 @@
 
   <body class="<%= page_classes %>">
 
-  <header>
+  <header class="site">
     <div id="dickbar">
-      <h1><%= nav_link 'hans.gerwitz.com', '/' %></h1>
+      <h1><%= nav_link '⸬ Hans Gerwitz', '/' %></h1>
     </div>
     <div class="nav">
       <ul>
         <li>
           <%= nav_link(
-            'About',
+            '/about',
             '/about/'
           ) %>
         </li>
         <li>
           <%= nav_link(
-            'Library',
+            '/writing',
+            '/writing/'
+          ) %>
+        </li>
+        <li>
+          <%= nav_link(
+            '/notes',
+            '/notes/'
+          ) %>
+        </li>
+        <li>
+          <%= nav_link(
+            '/library',
             '/library/'
           ) %>
         </li>
       </ul>
       <form method="get" action="/search.html" class="search">
-        <input id = "search" type="search" placeholder="search" name="query" />
+        <input id="search" type="search" autosave="site-search" placeholder="search" name="query" />
       </form>
     </div>
   </header>
@@ -114,6 +126,9 @@
           <a href="/feed/atom.xml" rel="alternate" type="application/atom+xml">
             Feed
           </a>
+        </li>
+        <li>
+          &#11820;
         </li>
       </ul>
     </nav>

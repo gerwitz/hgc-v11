@@ -1,0 +1,97 @@
+@import "../_variables";
+
+html {
+  background: $background;
+  color: $color;
+}
+
+body {
+  max-width: $width;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  text-decoration:underline;
+  color: inherit;
+  transition: color 0.5s 0;
+}
+
+p:hover a, li:hover a, dl:hover a, table:hover a {
+  color: #1A1AC7;
+  transition: color 1s 0.5s ease;
+}
+a:hover {
+  color: #00E;
+}
+
+article img, article video, article audio {
+  display: block;
+  margin: 1.75em auto;
+// width: $width;
+// background: #FAFAFA;
+  padding: .5em;
+  position: relative;
+  top: -.25em;
+}
+
+// See http://www.w3.org/Style/Examples/007/leaders.en.html */
+@mixin list-leaders {
+  overflow-x: hidden;
+
+  a:before {
+    float: left;
+    width: 0;
+    white-space: nowrap;
+    pointer-events: all;
+    content:
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+  }
+  a {
+    text-decoration: none;
+    span {
+      background: $background;
+    }
+    .title {
+      padding-right: 0.33em;
+    }
+    .date, .location {
+      float: right;
+      padding-left: 0.33em;
+      background: $background;
+
+      font-style: italic;
+    }
+  }
+}
+
+ol.article-list {
+  // width: $width - 32px;
+  // margin-left: 16px;
+  padding: 0;
+  list-style: none;
+
+  @include list-leaders;
+
+  li {
+    margin-bottom: 6px;
+  }
+
+  a:hover span {
+    text-decoration: underline;
+  }
+}
+
+img.float-left {
+  margin: 0;
+  margin-right: 0.5rem;
+  float: left;
+}
+img.float-right {
+  margin: 0;
+  margin-right: 0.5rem;
+  float: right;
+}

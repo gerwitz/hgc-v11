@@ -1,7 +1,12 @@
 @import "_variables";
 
-html.project {
-  font-family: "Lucida Grande", Verdana, Arial, sans-serif;
+html.project body {
+  max-width: inherit;
+}
+
+html.project #content {
+  max-width: $p-width;
+  margin: 0 auto;
 }
 
 html.project #masthead-wrapper {
