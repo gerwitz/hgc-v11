@@ -3,6 +3,7 @@ title: Library
 subtitle: A personal reference conservatory
 ---
 
-- [lists](lists/)
-- [quotes](quotes/)
+- [Lists](lists/)
+- [Quotes](quotes/)
 - [The Museum](things/)
+- [Stickers](brands.html)

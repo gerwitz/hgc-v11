@@ -1,9 +1,10 @@
 ---
-date: '2006-04-19 16:54:15'
-layout: page
+title: Going
 old_url: http://hans.gerwitz.com/library/go.html
-slug: go
-title: Go
+categories:
+- personal
+tags:
+- go
 ---
 
 Go is a strategy game, arguably the oldest played by humans.  
@@ -18,4 +19,3 @@ Will and Steve have long since surpassed me, and I hover around 24 kyu on [Drago
    [6]: http://www.dragongoserver.net/userinfo.php?uid=1952
    [7]: http://www.pandanet.co.jp/English/
    [8]: http://goproblems.com/
-

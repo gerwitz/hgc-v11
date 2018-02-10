@@ -1,35 +1,14 @@
 @import "../_variables";
 
-body>article>header {
-  margin-bottom: 1rem;
-}
-body>article>header>h1 {
-  margin-bottom: 0;
-}
-body>article>header time {
-  font-size: 0.75rem;
-  color: lighten($color, 50%);
-}
-
-// currently empty
-body>article>footer {
-  margin-top: 1rem;
-  text-align: right;
-}
-
 header.site {
 
   #dickbar {
-    position: fixed;
-    background: $background;
-    top: 0;
-
     width: $width;
 
-    height: 2em;
+    // height: 2em;
     padding-top: 1em;
     display: block;
-    z-index: 1;
+    // z-index: 1;
 
 
     a {
@@ -45,22 +24,22 @@ header.site {
 
       font-weight: bold;
 
-      float: left;
-      margin-top: 0;
-      margin-bottom: 0;
+      // float: left;
+      // margin-top: 0;
+      // margin-bottom: 0;
     }
 
   }
 
   .nav {
-    margin: 32px auto 0; // need more than #dickbar's height
+    // margin: 32px auto 0; // need more than #dickbar's height
 
     height: 24px;
 
     border-bottom: solid 3px $color;
 
     padding: 0;
-    padding-top: 8px;
+    // padding-top: 8px;
     padding-bottom: 4px;
 
     ul {
@@ -85,72 +64,10 @@ header.site {
         text-decoration: underline;
       }
     }
-    form.search {
-      margin-top: 1px;
-      float: right;
-      label {
-        padding: 1px;
-      }
-      input {
-        padding: 1px 6px;
-        outline: none;
-        color: $color;
-        // height: 13px;
-        // padding: 2px 10px;
-        // width: 200px;
-        // color: #999;
-        font-weight: normal;
-        text-align: right;
-
-        // border-radius: 8px;
-        // border: solid 1px;
-        border-color: transparent;
-
-        -webkit-appearance: textfield;
-        -webkit-box-sizing: content-box;
-        &::-webkit-search-decoration, &::-webkit-search-cancel-button {
-          display: none;
-        }
-        // &::-webkit-search-decoration { display: none; }
-
-        // See more at: http://geek.michaelgrace.org/2011/06/webkit-search-input-styling/
-
-      }
-      input:focus {
-        // border-color: $lightgrau;
-        &::-webkit-input-placeholder { color: transparent; }
-        &:-moz-placeholder { color: transparent; }
-        &::-moz-input-placeholder { color: transparent; }
-        &:-ms-input-placeholder { color: transparent; }
-        &::-ms-input-placeholder { color: transparent; }
-        -webkit-appearance: textfield;
-        -webkit-box-sizing: content-box;
-        &::-webkit-search-decoration {
-          display: none;
-        }
-        &::-webkit-search-cancel-button {
-          display: inherit;
-          font-size: 4px;
-          // line-height: 5px;
-          // height: 6px;
-        }
-        -webkit-appearance: textfield;
-        -webkit-box-sizing: content-box;
-      }
-      input {
-        // thanks http://stackoverflow.com/a/2610741
-        &::-webkit-input-placeholder { color: $color; }
-        &:-moz-placeholder { color: $color; }
-        &::-moz-input-placeholder { color: $color; opacity: 1; }
-        &:-ms-input-placeholder { color: $color; }
-        &::-ms-input-placeholder { color: $color; }
-      }
-    }
   }
 }
 
 body>footer {
-  // width: $width;
 
   height: 1.5em;
   margin: 0 auto;
@@ -161,30 +78,110 @@ body>footer {
   margin-bottom: 3em;
   padding-top: 8px;
 
-}
-body>footer a {
-  text-decoration:none;
-}
-body>footer nav {
-  display: inline;
-  float: right;
-}
-body>footer nav ul {
-  padding: 0;
-  display: inline-block;
-  margin: 0;
-  list-style: none;
-}
-body>footer nav li {
-  display: inline-block;
-  margin: 0;
-  padding: 1px;
-}
-body>footer nav li+li {
-  margin-left: 2ex;
+  a {
+    text-decoration:none;
+  }
+
+  nav {
+    display: inline;
+    float: right;
+
+    ul {
+      padding: 0;
+      display: inline-block;
+      margin: 0;
+      list-style: none;
+    }
+    li {
+      display: inline-block;
+      margin: 0;
+      padding: 1px;
+    }
+    li+li {
+      margin-left: 2ex;
+    }
+  }
+
+  form.search {
+    display: inline;
+    margin-top: 1px;
+    label {
+      padding: 1px;
+    }
+    input {
+      padding: 1px 6px;
+      outline: none;
+      color: $color;
+      // height: 13px;
+      // padding: 2px 10px;
+      // width: 200px;
+      // color: #999;
+      font-weight: normal;
+      // text-align: right;
+
+      // border-radius: 8px;
+      // border: solid 1px;
+      border-color: transparent;
+
+      -webkit-appearance: textfield;
+      -webkit-box-sizing: content-box;
+      &::-webkit-search-decoration, &::-webkit-search-cancel-button {
+        display: none;
+      }
+      // &::-webkit-search-decoration { display: none; }
+
+      // See more at: http://geek.michaelgrace.org/2011/06/webkit-search-input-styling/
+
+    }
+    input:focus {
+      // border-color: $lightgrau;
+      &::-webkit-input-placeholder { color: transparent; }
+      &:-moz-placeholder { color: transparent; }
+      &::-moz-input-placeholder { color: transparent; }
+      &:-ms-input-placeholder { color: transparent; }
+      &::-ms-input-placeholder { color: transparent; }
+      -webkit-appearance: textfield;
+      -webkit-box-sizing: content-box;
+      &::-webkit-search-decoration {
+        display: none;
+      }
+      &::-webkit-search-cancel-button {
+        display: inherit;
+        font-size: 4px;
+        // line-height: 5px;
+        // height: 6px;
+      }
+      -webkit-appearance: textfield;
+      -webkit-box-sizing: content-box;
+    }
+    input {
+      // thanks http://stackoverflow.com/a/2610741
+      &::-webkit-input-placeholder { color: $color; }
+      &:-moz-placeholder { color: $color; }
+      &::-moz-input-placeholder { color: $color; opacity: 1; }
+      &:-ms-input-placeholder { color: $color; }
+      &::-ms-input-placeholder { color: $color; }
+    }
+  }
+
 }
 
-#footer {
-  border-top:		1px solid #aaa;
-  margin-bottom:	20px;
+
+
+
+body>article>header {
+  margin-bottom: 1rem;
+}
+body>article>header>h1 {
+  margin-bottom: 0;
+}
+body>article>header time {
+  font-size: 0.75rem;
+  color: lighten($color, 50%);
+}
+
+// currently empty
+body>article>footer {
+  margin-top: 1rem;
+  text-align: right;
 }

@@ -95,15 +95,15 @@
           ) %>
         </li>
       </ul>
-      <form method="get" action="/search.html" class="search">
-        <input id="search" type="search" autosave="site-search" placeholder="search" name="query" />
-      </form>
     </div>
   </header>
 
   <%= yield %>
 
   <footer>
+    <form method="get" action="/search.html" class="search">
+      <input id="search" type="search" autosave="site-search" placeholder="search" name="query" />
+    </form>
     <nav>
       <ul>
 <!--
@@ -133,30 +133,6 @@
       </ul>
     </nav>
   </footer>
-
-    <!-- header shadow-on-scroll -->
-    <script type="text/javascript">
-        var dickbar = document.getElementById("dickbar");
-        var distance = dickbar.offsetHeight-10;
-        var handleScroll = function () {
-            if (dickbar) {
-                var offset = 0.0;
-                var scrollPosition = window.pageYOffset;
-                if (scrollPosition < distance) {
-                    offset = (distance - scrollPosition) / distance;
-                    var opacity = 1.0 - (offset * 1.0);
-                    dickbar.style["border-bottom"] = "none";
-                    dickbar.style["boxShadow"] = "0px 4px 4px -4px rgba(50, 50, 50, " + opacity + ")";
-                } else {
-                    dickbar.style["border-bottom"] = "solid 2px black";
-                }
-            }
-        }
-        if (window.addEventListener) {
-            window.addEventListener("scroll", handleScroll);
-            window.addEventListener("touchmove", handleScroll);
-        }
-    </script>
 
     <!-- Google Analytics (async) -->
     <script type="text/javascript">
