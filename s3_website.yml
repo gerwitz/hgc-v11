@@ -1,14 +1,16 @@
 site: build
 
-# You can remove the first two lines to have credentials read from
-# the environment variables AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY or
-# ~/.aws/credentials.
-
-# s3_id: YOUR_AWS_S3_ACCESS_KEY_ID
-# s3_secret: YOUR_AWS_S3_SECRET_ACCESS_KEY
+redirects:
+  feed/microblog.rss: /notes/feed.rss
+  feed/writing.rss: /writing/feed.rss
 
 s3_bucket: hans.gerwitz.com
 s3_endpoint: eu-west-1
+
+# trying to solve https://github.com/laurilehmijoki/s3_website/issues/73
+cache_control: public
+
+s3_reduced_redundancy: true
 
 cloudfront_distribution_id: E1O2446YRZ7KT3
 cloudfront_distribution_config:
