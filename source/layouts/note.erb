@@ -8,12 +8,12 @@
       end
     end
   %>
-  <article class="note">
+  <article class="note h-entry">
   <% if current_page.data.title %>
     <h1><%= current_page.data.title %></h1>
   <% end %>
   <div class="meta">
-    <time datetime="<%= current_page.date.strftime("%F") %>"><%= current_page.date.strftime("%B %e, %Y, %k:%M") %></time>
+    <time class="dt-published" datetime="<%= current_page.date.strftime("%F") %>"><%= current_page.date.strftime("%B %e, %Y, %k:%M") %></time>
     <% if current_page.data.abstract %>
       <!-- <%= current_page.data.abstract %> -->
     <% end %>
@@ -27,13 +27,13 @@
 %>
     <span class="external">
       <img src="https://plus.google.com/_/favicon?domain=<%= host %>" height="12" width="12" class="favicon" />
-      published at <%= link_to host, current_page.data.external %>
+      published at <%= link_to host, current_page.data.external, rel: 'syndication' %>
     </span>
   </div>
-  <div class="content republished">
+  <div class="content republished e-content">
 <% else %>
   </div>
-  <div class="content">
+  <div class="content e-content">
 <% end %>
     <%= yield %>
   </div>

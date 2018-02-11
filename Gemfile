@@ -10,7 +10,7 @@ gem 'redcarpet'
 gem 'nokogiri'
 gem 'builder'
 
-gem 'middleman-search', git: 'https://github.com/sn3p/middleman-search.git', branch: 'update-lunr'
+gem 'middleman-search', git: 'https://github.com/Notificare/middleman-search.git'
 
 # for Travis deployment
 gem 's3_website'

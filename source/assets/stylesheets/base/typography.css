@@ -13,7 +13,7 @@ body, aside h1, .sidenote h1, aside, .sidenote, blockquote{font-family:Arial, sa
 h1, h2, h3, h4, h5, h6, .header, .subheader, .head, .subhead, .pullquote, .kicker{font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;}
 
 /*Size & Vertical Rhythm*/
-body{font-size:100%;font-size:16px;line-height:1.5em;background:url('grid-24.png') repeat;}
+body{font-size:100%;font-size:16px;line-height:1.5em;}
 
 /*HTML Standard Elements*/
 h1{font-size:2.25em;line-height:1.35em;margin:.8em 0 0em;}

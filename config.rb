@@ -111,7 +111,7 @@ activate :search do |search|
     to_store[:section] = section
     if section == 'writing'
       throw(:skip) unless resource.is_a?( ::Middleman::Blog::BlogArticle )
-      to_store[:date] = resource.date
+      to_store[:date] = resource.date.iso8601
     end
   end
 end

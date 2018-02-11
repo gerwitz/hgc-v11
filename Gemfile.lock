@@ -1,9 +1,8 @@
 GIT
-  remote: https://github.com/sn3p/middleman-search.git
-  revision: 6077d7b76d010ade046a32711536cab3601e4910
-  branch: update-lunr
+  remote: https://github.com/Notificare/middleman-search.git
+  revision: abcfab1c91d617a14e58c9176896e40428d747d7
   specs:
-    middleman-search (0.10.0)
+    middleman-search (0.10.2)
       middleman-core (>= 3.2)
       nokogiri (~> 1.6)
       therubyracer (~> 0.12.2)
