@@ -9,8 +9,8 @@ Though I'd like a smidgeon of credit, so just leave this bit in here. K?
 */
 
 /*Pick Your Fonts*/
-body, aside h1, .sidenote h1, aside, .sidenote, blockquote{font-family:Arial, sans-serif;}
-h1, h2, h3, h4, h5, h6, .header, .subheader, .head, .subhead, .pullquote, .kicker{font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;}
+body, aside h1, .sidenote h1, aside, .sidenote, blockquote{font-family:PoppinsRegular, Arial, sans-serif;}
+h1, h2, h3, h4, h5, h6, .header, .subheader, .head, .subhead, .pullquote, .kicker{font-family:'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;}
 
 /*Size & Vertical Rhythm*/
 body{font-size:100%;font-size:16px;line-height:1.5em;}
