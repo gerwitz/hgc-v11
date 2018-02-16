@@ -2,7 +2,7 @@
 title: Colophon
 ---
 
-## ⴲ
+## What's with the ⴲ?
 
 The circled cross is an ancient astronomy symbol for Earth. I am fond of Earth.
 
@@ -15,7 +15,7 @@ Of course, there are [many other meanings](https://en.wikipedia.org/wiki/Sun_cro
 - [U+2D32](https://unicode-table.com/en/2D32/): Tifinagh letter yabh (ⴲ)
 - [U+1F728](https://unicode-table.com/en/1F728/): alchemical symbol for verdigris (🜨)
 
-## Toolset
+## How do you make this?
 
 This site is generated as static HTML via [Middleman][], and [the source is available on GitHub][source].
 
@@ -32,7 +32,7 @@ When I publish to a specific git branch, [Travis CI][travis] builds the site and
 
 Body type is set in [ITF](https://www.indiantypefoundry.com/) Poppins.
 
-## External Services
+## Who else is making this work?
 
 Type is served by the [Font Library](https://fontlibrary.org/).
 

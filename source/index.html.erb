@@ -23,36 +23,40 @@ layout: site
 
 <section class="home">
 
-  <p>
-      This site is a narcissistic archive of my online activities. You are probably here to figure out <a href="/about/" rel="me">who I am</a> or <a href="https://twitter.com/intent/user?user_id=521">be my friend</a>.
-  </p>
+  <h2>
+    hans.gerwitz.com
+  </h2>
 
-  <h2><a href="/notes/">Notes</a></h2>
-  <% note = blog('notes').articles.first %>
-  <div class="note">
-    <div class="content">
-      <%= note.body.html_safe %>
-    </div>
-    <div class="meta">
-      <% link_to note do %>
-        <span class="date">&mdash;&nbsp;<%= note.date.strftime('%B %e, %Y, %k:%M') %></span>
-      <% end %>
+  <div class="notes">
+    <!-- <h2><a href="/notes/">Notes</a></h2> -->
+    <% note = blog('notes').articles.first %>
+    <div class="note">
+      <div class="content">
+        <%= note.body.html_safe %>
+      </div>
+      <div class="meta">
+        <% link_to note do %>
+          <span class="date">&mdash;&nbsp;<%= note.date.strftime('%B %e, %Y, %k:%M') %></span>
+        <% end %>
+      </div>
     </div>
   </div>
 
-  <h2><a href="/writing/">Writing</a></h2>
-  <ol class="article-list">
-    <% blog('writing').articles.select{|a| !a.data.title.nil? }[0...5].each_with_index do |article, i| %>
-      <li><% link_to article do %>
-        <span class="title"><%= article.title %></span>
-        <span class="date"><%= article.date.strftime('%B %e') %></span>
+  <div class="writing">
+    <!-- <h2><a href="/writing/">Writing</a></h2> -->
+    <ol class="article-list">
+      <% blog('writing').articles.select{|a| !a.data.title.nil? }[0...5].each_with_index do |article, i| %>
+        <li><% link_to article do %>
+          <span class="title"><%= article.title %></span>
+          <span class="date"><%= article.date.strftime('%B %e') %></span>
+        <% end %>
+         </li>
       <% end %>
-       </li>
-    <% end %>
-  </ol>
+    </ol>
+  </div>
 
-  <h2><a href="https://www.flickr.com/photos/phobia/" title="from Flickr">Photographs</a></h2>
-  <div class="flickr-photos">
+  <div class="photos flickr-photos">
+  <!-- <h2><a href="https://www.flickr.com/photos/phobia/" title="from Flickr">Photographs</a></h2> -->
   <script type="text/javascript" src="https://www.flickr.com/badge_code_v2.gne?count=5&amp;display=latest&amp;size=s&amp;layout=h&amp;source=user&amp;user=78928298%40N00"></script>
   </div>
 

@@ -15,7 +15,7 @@
     <title>ⴲ <%= title %></title>
 
     <!-- type -->
-    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/poppins" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:500|Poppins" rel="stylesheet">
 
     <!-- favicon -->
     <link rel="icon" href="/assets/tree.png" type="image/x-icon">
@@ -67,15 +67,13 @@
   <body class="<%= page_classes %>">
 
   <header class="site">
-    <div id="dickbar">
-      <h1><%= nav_link '&#11570; Hans Gerwitz', '/' %></h1>
-    </div>
+    <div class="earth"><%= nav_link '&#11570;', '/' %></div>
     <div class="nav">
-      <ul>
+      <ol>
         <li>
           <%= nav_link(
-            '/about',
-            '/about/'
+            '/notes',
+            '/notes/'
           ) %>
         </li>
         <li>
@@ -86,17 +84,17 @@
         </li>
         <li>
           <%= nav_link(
-            '/notes',
-            '/notes/'
-          ) %>
-        </li>
-        <li>
-          <%= nav_link(
             '/library',
             '/library/'
           ) %>
         </li>
-      </ul>
+        <li>
+          <%= nav_link(
+            '/about',
+            '/about/'
+          ) %>
+        </li>
+      </ol>
     </div>
   </header>
 
@@ -119,18 +117,15 @@
 -->
         <li>
                   <%= nav_link(
-                        'Site',
+                        '/site',
                         '/site/',
                         title: 'About this site'
                   ) %>
         </li>
         <li>
           <a href="/feed/atom.xml" rel="alternate" type="application/atom+xml">
-            Feed
+            /feeds
           </a>
-        </li>
-        <li>
-          &#11570;
         </li>
       </ul>
     </nav>

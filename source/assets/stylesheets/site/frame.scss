@@ -2,46 +2,33 @@
 
 header.site {
 
-  #dickbar {
-    width: $width;
+  width: $width;
+  height: 36px;
 
-    // height: 2em;
-    padding-top: 1em;
-    display: block;
-    // z-index: 1;
+  margin-bottom: 36px;
 
+  a {
+    text-decoration: none;
+  }
 
-    a {
-      text-decoration: none;
-    }
+  .earth {
+    float: left;
 
-    h1 {
-      font-family: PoppinsLight;
+    padding: 0;
+    margin: 0;
 
-      display: inline;
-      line-height: inherit;
-
-      font-weight: bold;
-
-      // float: left;
-      // margin-top: 0;
-      // margin-bottom: 0;
-    }
-
+    font-size: 2.5em;
+    line-height: 58px;
   }
 
   .nav {
-    // margin: 32px auto 0; // need more than #dickbar's height
-
-    height: 24px;
-
-    border-bottom: solid 3px $color;
+    line-height: 48px;
 
     padding: 0;
-    // padding-top: 8px;
+    padding-top: 8px;
     padding-bottom: 4px;
 
-    ul {
+    ol {
       list-style: none;
 
       padding: 0;
@@ -50,7 +37,7 @@ header.site {
       // font-size: 0.75rem;
       line-height: inherit;
 
-      float: left;
+      float: right;
 
       li {
         display: inline;
