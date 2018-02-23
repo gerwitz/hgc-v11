@@ -39,17 +39,17 @@ article img, article video, article audio {
 @mixin list-leaders {
   overflow-x: hidden;
 
-  a:before {
-    float: left;
-    width: 0;
-    white-space: nowrap;
-    pointer-events: all;
-    content:
- ". . . . . . . . . . . . . . . . . . . . "
- ". . . . . . . . . . . . . . . . . . . . "
- ". . . . . . . . . . . . . . . . . . . . "
- ". . . . . . . . . . . . . . . . . . . . "
-  }
+ //  a:before {
+ //    float: left;
+ //    width: 0;
+ //    white-space: nowrap;
+ //    pointer-events: all;
+ //    content:
+ // ". . . . . . . . . . . . . . . . . . . . "
+ // ". . . . . . . . . . . . . . . . . . . . "
+ // ". . . . . . . . . . . . . . . . . . . . "
+ // ". . . . . . . . . . . . . . . . . . . . "
+ //  }
   a {
     text-decoration: none;
     span {
