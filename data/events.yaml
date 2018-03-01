@@ -195,10 +195,10 @@
 -
   date: 1992-11
   type: home
-  geo: [38.707371, -90.363589] # Midland Blvd
+  geo: [38.603409, -90.248333] # Arsenal
   text:
-    Moved into Airstream trailer
-    # at Colleen's parents in Overland
+    Moved into Tower Grove apartment
+    # miserable heat in summer
     # Because Mom sold the house, moved to Creve Coeur
 -
   date: 1993
@@ -208,10 +208,16 @@
 -
   date: 1993
   type: home
-  geo: [38.603409, -90.248333] # Arsenal
+  geo: [38.707371, -90.363589] # Midland Blvd
   text:
-    Moved into Tower Grove apartment
-    # miserable heat in summer
+    Moved into Airstream trailer
+    # at Colleen's parents in Overland
+-
+  date: 1993
+  type: car
+  text:
+    Bought 1983 Buick Skyhawk
+    # white, under $1000
 -
   date: 1993
   type: work
@@ -227,23 +233,24 @@
     Began classes at SLU
     # no entrence exam, only SAT scores
 -
-  date: 1993
-  type: car
-  text:
-    Bought 1983 Buick Skyhawk
-    # white, under $1000
--
   date: 1993-10 #01
   type: life
   geo: [38.642466, -90.257940] # Lindell and Taylor
   text:
     Serious auto accident
 -
-  date: 1993
+  date: 1993-11
   type: car
   text:
     Bought 1985 Honda Civic wagon
     # blue, so much glass
+-
+  date: 1993
+  type: home
+  geo: [38.627213, -90.261645] # 1117 S. Taylor
+  text:
+    Moved to Forest Park Southwest
+    # nice neighbor downstairs, terrible neighborhood
 -
   date: 1994-01
   type: school
@@ -260,14 +267,6 @@
   text:
     Bought 1984 Honda Accord from dad
     # the car I had learned to drive in
--
-  date: 1994
-  confidence: low
-  type: home
-  geo: [38.627213, -90.261645] # 11xx S. Taylor
-  text:
-    Moved to Forest Park Southwest
-    # nice neighbor downstairs, terrible neighborhood
 -
   date: 1995
   type: geek
