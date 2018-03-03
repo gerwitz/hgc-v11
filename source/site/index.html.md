@@ -2,7 +2,7 @@
 title: Colophon
 ---
 
-## What's with the ⴲ?
+## What's with the ⨁?
 
 The circled cross is an ancient astronomy symbol for Earth. I am fond of Earth.
 
