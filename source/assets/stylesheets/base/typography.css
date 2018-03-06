@@ -9,11 +9,11 @@ Though I'd like a smidgeon of credit, so just leave this bit in here. K?
 */
 
 /*Pick Your Fonts*/
-body, aside h1, .sidenote h1, aside, .sidenote, blockquote{font-family:Poppins, Arial, sans-serif;}
-h1, h2, h3, h4, h5, h6, .header, .subheader, .head, .subhead, .pullquote, .kicker{font-family:Oswald, 'Lucida Grande', sans-serif;}
+body, aside h1, .sidenote h1, aside, .sidenote, blockquote{font-family: NunitoSansLight, Arial, sans-serif;}
+h1, h2, h3, h4, h5, h6, .header, .subheader, .head, .subhead, .pullquote, .kicker{font-family: NowMedium, 'Lucida Grande', sans-serif;}
 
 /*Size & Vertical Rhythm*/
-body{font-size:100%;font-size:16px;line-height:1.5em;}
+body{font-size:100%;font-size:18px;line-height:1.5em;}
 
 /*HTML Standard Elements*/
 h1{font-size:2.25em;line-height:1.35em;margin:.8em 0 0em;}

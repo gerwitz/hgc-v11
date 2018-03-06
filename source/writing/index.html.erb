@@ -14,9 +14,20 @@ noindex: true
 
 <ol class="article-list">
   <% blog('writing').articles.select{|a| !a.data.title.nil? }.each_with_index do |article, i| %>
-      <li><% link_to article do %>
+    <li>
+      <% link_to article do %>
+        <%
+          if article.data.external.present?
+            host = URI.parse(article.data.external).host.downcase
+            host = host.start_with?('www.') ? host[4..-1] : host
+        %>
+          <img src="https://plus.google.com/_/favicon?domain=<%= host %>" height="14" width="14" class="favicon" title="published at <%= host %>">
+        <% else %>
+          &#11570;
+        <% end %>
         <span class="title"><%= article.title %></span>
         <span class="date"><%= article.date.strftime('%B %e, %Y') %></span>
-      <% end %></li>
+      <% end %>
+    </li>
   <% end %>
 </ol>

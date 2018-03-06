@@ -15,14 +15,15 @@
     <title>⨁ <%= title %></title>
 
     <!-- type -->
-    <link href="https://fonts.googleapis.com/css?family=Oswald:500|Poppins" rel="stylesheet">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/now" type="text/css"/>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/nunito-sans" type="text/css"/>
 
     <!-- favicon -->
     <link rel="icon" href="/assets/tree.png" type="image/x-icon">
     <link rel="shortcut icon" href="/assets/tree.png" type="image/x-icon">
 
     <!-- webmentions -->
-    <link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
+    <link rel="webmention" href="https://webmention.herokuapp.com/api/webmention">
 
     <!-- basics -->
     <meta name="keywords" content="<%= tags.join(', ') %>">
@@ -56,9 +57,9 @@
     <meta name="robots" content="noindex">
     <% end %>
     <% if current_page.data.external.present? %>
-    <link rel="canonical" href="<%= current_page.data.external %>" />
+    <link rel="canonical" href="<%= current_page.data.external %>">
     <% else # http://www.thesempost.com/using-rel-canonical-on-all-pages-for-duplicate-content-protection/ %>
-    <link rel="canonical" href="<%= current_page.url %>" />
+    <link rel="canonical" href="<%= current_page.url %>">
     <% end %>
     <meta http-equiv="last-modifed" content="<%= File.mtime(current_page.source_file).iso8601 %>">
     <%= yield_content :head_content %>
@@ -72,26 +73,27 @@
       <ol>
         <li>
           <%= nav_link(
-            '/notes',
+            '<b>/</b>&thinsp;notes',
             '/notes/'
           ) %>
         </li>
         <li>
           <%= nav_link(
-            '/writing',
+            '<b>/</b>&thinsp;writing',
             '/writing/'
           ) %>
         </li>
         <li>
           <%= nav_link(
-            '/library',
+            '<b>/</b>&thinsp;library',
             '/library/'
           ) %>
         </li>
         <li>
           <%= nav_link(
-            '/about',
-            '/about/'
+            '<b>/</b>&thinsp;about',
+            '/about/',
+            {rel: 'me'}
           ) %>
         </li>
       </ol>
@@ -102,7 +104,7 @@
 
   <footer>
     <form method="get" action="/search.html" class="search">
-      <input id="search" type="search" autosave="site-search" placeholder="search" name="query" />
+      <input id="search" type="search" autosave="site-search" placeholder="search" name="query">
     </form>
     <nav>
       <ul>
@@ -117,14 +119,14 @@
 -->
         <li>
                   <%= nav_link(
-                        '/site',
+                        '<b>/</b>&thinsp;site',
                         '/site/',
                         title: 'About this site'
                   ) %>
         </li>
         <li>
           <a href="/feed/atom.xml" rel="alternate" type="application/atom+xml">
-            /feeds
+            <b>/</b>&thinsp;feeds
           </a>
         </li>
       </ul>
