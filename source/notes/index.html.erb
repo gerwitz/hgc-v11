@@ -14,17 +14,17 @@ per_page: 12
 </div>
 <% end %>
 
-<ol class="notes-list">
+<ol class="notes-list h-feed">
   <% page_articles.each_with_index do |note, i| %>
     <% next if note.body.empty? %>
     <li>
-      <div class="note">
-        <div class="content">
+      <div class="note h-entry">
+        <div class="content e-content">
           <%= note.body %>
         </div>
         <div class="meta">
           <% link_to note do %>
-            <span class="date">&mdash;&nbsp;<%= note.date.strftime('%B %e, %Y, %k:%M') %></span>
+            <time class="date dt-published" datetime="<%= note.date.strftime("%F") %>">&mdash;&nbsp;<%= note.date.strftime('%B %e, %Y, %k:%M') %></time>
           <% end %>
         </div>
       </div>

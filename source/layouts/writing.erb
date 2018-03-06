@@ -1,11 +1,11 @@
 <% wrap_layout :site do %>
-  <article class="writing">
+  <article class="writing h-entry">
 <!--
   <div class="parents">
     <a href="/archive/">Writing</a> / <%= current_page.date.strftime("%Y") %> / <%= current_page.date.strftime("%B") %>
   </div>
 -->
-  <h1><%= current_page.data.title %></h1>
+  <h1 class="p-name"><%= current_page.data.title %></h1>
   <div class="meta">
     <% if current_page.data.abstract %>
       <!-- <%= current_page.data.abstract %> -->
@@ -22,12 +22,12 @@
     host = host.start_with?('www.') ? host[4..-1] : host
 %>
     <span class="external">
-      published at <%= link_to host, current_page.data.external, rel: 'canonical' %> on 
+      published at <%= link_to host, current_page.data.external, rel: 'canonical' %> on
     </span>
-    <time datetime="<%= current_page.date.strftime("%F") %>"><%= current_page.date.strftime("%B %d, %Y") %></time>
+    <time datetime="<%= current_page.date.strftime("%F") %>" class="dt-published"><%= current_page.date.strftime("%B %d, %Y") %></time>
   <% end %>
   </div>
-  <div class="content">
+  <div class="content e-content">
     <%= yield %>
   </div>
   </article>
