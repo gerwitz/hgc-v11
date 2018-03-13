@@ -17,4 +17,4 @@ Mike Pompeo, representative from Kansas, will be the new head of the CIA. His mo
 
 Five years ago, Mr. Pompeo thought that the [Koch Industries illegal business with Iran and bribery were acceptable](https://thinkprogress.org/congressman-from-koch-uninterested-in-investigating-koch-industries-business-deals-with-iran-efd93361507c).
 
-So, if your an business leader in Iran (local or American) hoping to have the CIA look the other way while they restrict the work of your competitors, make sure you have a line item in your budget for Director Pompeo.
+So, if you're a business leader in Iran (local or American) hoping to have the CIA look the other way while they restrict the work of your competitors, make sure you have a line item in your budget for Director Pompeo.
