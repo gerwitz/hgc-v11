@@ -14,8 +14,8 @@ Caching and optimizing made me comfortable for a while, but that Ruby itch final
 
 <!-- Even more information about the history of this site might be found in [meta posts](/writing/categories/meta.html). -->
 
-  [^phobia]: Inspired by [Philip Greenspun](http://philip.greenspun.com/panda/server-programming) on photo.net, I had picked up [PHP/FI](http://www.php.net/manual/en/history.php.php) and built sites in the late 1990s. My favorite client was [Crown Candy](http://crowncandykitchen.net/), who bartered for meals and chocolate.
+[^phobia]: Inspired by [Philip Greenspun](http://philip.greenspun.com/panda/server-programming) on photo.net, I had picked up [PHP/FI](http://www.php.net/manual/en/history.php.php) and built sites in the late 1990s. My favorite client was [Crown Candy](http://crowncandykitchen.net/), who bartered for meals and chocolate.
 
-  [^si]: I still felt the need for a "brand" of some sort, and soon began using [safelyignored.com][]. In late 2009 I finally accepted the value of my unique name and have embraced it online.
+[^si]: I still felt the need for a "brand" of some sort, and soon began using [safelyignored.com][]. In late 2009 I finally accepted the value of my unique name and have embraced it online.
 
-  [safelyignored.com]: /2007/01/29/this-blog-is-now-safely-ignored.html
+[safelyignored.com]: /2007/01/29/this-blog-is-now-safely-ignored.html
