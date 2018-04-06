@@ -258,6 +258,12 @@
     Restarted SLU after medical cancellation
 -
   date: 1994
+  type: geek
+  text:
+    Posted first webpage
+  link: http://www.nyx.net/~hgerwitz/
+-
+  date: 1994
   type: work
   text:
     Started working at SLU (student lab manager)
@@ -269,17 +275,16 @@
     # the car I had learned to drive in
 -
   date: 1995
-  type: geek
-  text:
-    Posted first webpage
-  link: http://www.nyx.net/~hgerwitz/
--
-  date: 1995
   type: work
   geo: [38.6502, -90.3383] # Downtown Clayton
   text:
     Started more part-time work, with Apple Partners as IT assistant
     # built ERP and communication system with Lotus 1-2-3 and NeXTstep scripts
+-
+  date: 1995
+  type: geek
+  text:
+    Discovered PHP/FI and decided dynamic web pages were the future
 -
   date: 1995
   confidence: low
