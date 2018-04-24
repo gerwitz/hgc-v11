@@ -1,12 +1,8 @@
 sudo: false
 language: ruby
+rvm: 2.3.4 # pre-installed
 cache: bundler
-rvm:
-- 2.2.4
-# before_install:
-# - gem update --system
-# - gem update bundler
 script:
-- bundle exec middleman build
+- NO_CONTRACTS=true bundle exec middleman build --no-clean
 after_success:
 - bundle exec s3_website push
