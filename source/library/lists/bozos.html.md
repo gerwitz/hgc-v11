@@ -33,6 +33,8 @@ Everybody needs somebody to despise.
 
 * [David Caton][14]
 
+* [Charles Coughlin](https://encyclopedia.ushmm.org/content/en/article/charles-e-coughlin)
+
    [1]: http://men.style.com/gq/features/landing?id=content_9217
    [2]: http://www.rollingstone.com/politics/story/12840743/porks_dirty_secret_the_nations_top_hog_producer_is_also_one_of_americas_worst_polluters
    [3]: http://www.nytimes.com/2010/01/04/world/africa/04uganda.html
@@ -47,4 +49,3 @@ Everybody needs somebody to despise.
    [12]: http://www.washingtonpost.com/wp-dyn/content/article/2010/09/22/AR2010092204665.html
    [13]: http://www.alternet.org/economy/147154/why_billionaire_matty_moroun_is_one_of_the_worst_corporate_citizens_ever/
    [14]: http://floridafamily.org/
-
