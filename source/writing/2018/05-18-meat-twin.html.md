@@ -1,8 +1,11 @@
 ---
-published: false
-title: title
-date: 2018-05-18T20:38:03+00:00
+title: Your Ledger's Meat Twin
+abstract: The data will set you free.
+categories: culture
 tags:
+- google
+- agents
+- future
 ---
 _The Verge has recently published a [2016 video](https://www.theverge.com/2018/5/17/17344250/google-x-selfish-ledger-video-data-privacy) from Google X. This is a retelling of its story._
 
