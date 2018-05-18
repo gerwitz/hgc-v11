@@ -1,7 +1,8 @@
 ---
 title: Your Ledger's Meat Twin
 abstract: The data will set you free.
-categories: culture
+categories:
+- culture
 tags:
 - google
 - agents
