@@ -28,7 +28,7 @@ layout: site
   </h2>
 
   <div class="notes">
-    <!-- <h2><a href="/notes/">Notes</a></h2> -->
+    <h2>Latest Note</h2>
     <% note = blog('notes').articles.first %>
     <div class="note">
       <div class="content">
@@ -40,6 +40,7 @@ layout: site
         <% end %>
       </div>
     </div>
+    <a href="/notes/">more notes…</a>
   </div>
 
   <div class="writing">
@@ -53,6 +54,7 @@ layout: site
          </li>
       <% end %>
     </ol>
+    <a href="/writing/">more writing…</a>
   </div>
 
   <div class="photos flickr-photos">

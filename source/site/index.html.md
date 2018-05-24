@@ -2,19 +2,6 @@
 title: Colophon
 ---
 
-## What's with the ⨁?
-
-The circled cross is an ancient astronomy symbol for Earth. I am fond of Earth.
-
-It's also used for [XOR](https://en.wikipedia.org/wiki/Exclusive_or), which tickles my fancy as a fan of Boolean algebra and matrix mathematics.
-
-Of course, there are [many other meanings](https://en.wikipedia.org/wiki/Sun_cross) in various cultures. As such, it appears several times in Unicode:
-
-- [U+2A01](https://unicode-table.com/en/2A01/): N-ary circle plus operator (⨁)
-- [U+2295](https://unicode-table.com/en/2295/): circled plus (⊕)
-- [U+2D32](https://unicode-table.com/en/2D32/): Tifinagh letter yabh (ⴲ)
-- [U+1F728](https://unicode-table.com/en/1F728/): alchemical symbol for verdigris (🜨)
-
 ## How do you make this?
 
 This site is generated as static HTML via [Middleman][], and [the source is available on GitHub][source].
