@@ -3,9 +3,10 @@
 header.site {
 
   // font-family: NowMedium, 'Lucida Grande', sans-serif;
+  font-size: 1em;
 
   width: $width;
-  height: 36px;
+  // height: 36px;
 
   margin-bottom: 36px;
 
@@ -13,28 +14,27 @@ header.site {
     text-decoration: none;
   }
 
-  .earth {
+  .title {
     float: left;
 
     padding: 0;
     margin: 0;
 
-    font-size: 2.5em;
-    line-height: 58px;
+    font-weight: 800;
   }
 
   .nav {
-    line-height: 48px;
+    // line-height: 48px;
 
     padding: 0;
-    padding-top: 8px;
+    // padding-top: 8px;
     padding-bottom: 4px;
 
     ol {
       list-style: none;
 
       padding: 0;
-      margin-top: 3px;
+      margin-top: 0;
       margin-bottom: 0;
 
       // font-size: 0.75rem;
@@ -51,6 +51,9 @@ header.site {
       }
       a.current {
         text-decoration: underline;
+      }
+      li:last-child {
+        margin-right: 0;
       }
     }
   }
