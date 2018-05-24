@@ -19,12 +19,18 @@ set :markdown,
 helpers do
   def nav_link(link_text, url, options = {})
     options[:class] ||= ""
-    if url != "/"
-      options[:class] << " current" if current_resource.url.start_with?(url)
-    elsif current_resource.url == "/"
-      options[:class] << " current"
+    current_url = current_resource.url
+    if current_url.end_with?('index.html')
+      current_url = File.dirname(current_url)
     end
-    link_to(link_text, url, options)
+    if current_resource.url == url
+      return "<span class=""current top"">#{link_text}</span>"
+    elsif current_resource.url.start_with?(url)
+      options[:class] << " current"
+      return link_to(link_text, url, options)
+    else
+      return link_to(link_text, url, options)
+    end
   end
 
   def list_pages(pages)
