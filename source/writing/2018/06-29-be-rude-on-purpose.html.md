@@ -1,8 +1,9 @@
 ---
-published: false
 title: Be Rude On Purpose
-date: 2018-06-29T14:03:19+00:00
-tags:
+abstract: How are we supposed to react?
+categories: 
+- culture
+tags: [usa, politics, nazis, civility]
 ---
 The public debate in America today is about civility. Should we "go high" and not feed the trolls, or is it always okay to punch a Nazi?
 
