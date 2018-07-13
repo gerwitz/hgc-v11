@@ -5,7 +5,7 @@
     <meta name="generator" content="middleman">
     <meta name="viewport" content="width=device-width">
 <%
-  title = current_page.data.title || "&#11820; Hans Gerwitz"
+  title = current_page.data.title || "Hans Gerwitz"
   abstract = current_page.data.abstract || title
   tags = ['gerwitz', 'hans gerwitz']
   if current_page.data.tags && current_page.data.tags.kind_of?(Array)
@@ -18,9 +18,14 @@
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/now" type="text/css"/>
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/nunito-sans" type="text/css"/>
 
-    <!-- favicon -->
-    <link rel="icon" href="/assets/tree.png" type="image/x-icon">
-    <link rel="shortcut icon" href="/assets/tree.png" type="image/x-icon">
+    <!-- favicon, etc. -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#00852B">
+    <meta name="msapplication-TileColor" content="#00852B">
+    <meta name="theme-color" content="#00852B">
 
     <!-- webmentions -->
     <link rel="webmention" href="https://webmention.herokuapp.com/api/webmention">
@@ -43,7 +48,7 @@
     <meta property="og:url" content="<%= current_page.url %>">
     <meta property="og:title" content="<%= title %>">
     <meta property="og:description" content="<%= abstract %>">
-    <meta property="og:image" content="/assets/tree.png">
+    <meta property="og:image" content="/favicon/tree.png">
 
     <!-- RSS feeds -->
     <link rel="alternate" type="application/rss+xml" href="/feed/microblog.rss" title="Notes from Hans Gerwitz">

@@ -18,11 +18,11 @@ a {
 }
 
 p:hover a, li:hover a, dl:hover a, table:hover a {
-  color: #1A1AC7;
-  transition: color 1s 0.5s ease;
+  color: $green;
+  transition: color 0.5s 0.25s ease;
 }
 a:hover {
-  color: #00E;
+  color: $blue;
 }
 
 article img, article video, article audio {
