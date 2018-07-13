@@ -43,6 +43,11 @@ helpers do
     end
     output << "</ul>"
   end
+
+  def quote_for_tags(tags)
+    q = data.quotes.select{|q| q.tags && (tags - q.tags) == []}.sample
+    partial 'library/quotes/quote', object: q
+  end
 end
 
 activate :blog do |blog|

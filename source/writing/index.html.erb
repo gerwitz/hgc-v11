@@ -5,12 +5,7 @@ pageable: true
 noindex: true
 ---
 
-<blockquote>
-  <p>I hate to think that all my current experiences will someday become stories with no point.</p>
-  <footer>
-    Bill Watterson, <cite><a href="http://www.gocomics.com/calvinandhobbes/1995/05/25/">Calvin and Hobbes</a></cite>, May 25, 1995
-  </footer>
-</blockquote>
+<%= quote_for_tags(['writing','feature']) %>
 
 <ol class="article-list">
   <% blog('writing').articles.select{|a| !a.data.title.nil? }.each_with_index do |article, i| %>

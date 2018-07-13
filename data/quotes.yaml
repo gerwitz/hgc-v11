@@ -1,22 +1,26 @@
 -
-  quote: "I asked myself on behalf of the oracle, whether I would like to be as I was, neither having their knowledge nor their ignorance, or like them in both; and I made answer to myself and to the oracle that I was better off as I was."
+  quote: |
+    I asked myself on behalf of the oracle, whether I would like to be as I was, neither having their knowledge nor their ignorance, or like them in both; and I made answer to myself and to the oracle that I was better off as I was.
   who: Socrates
   source: "Plato's Apology"
 -
-  quote: "I would like to warn against these relatively premature judgements, especially in the long scope of history."
+  quote: |
+    I would like to warn against these relatively premature judgements, especially in the long scope of history.
   who: Rick Roderick
   who-url: http://rickroderick.org/
   source: Hegel and Modern Life
   source-url: http://www.youtube.com/watch?v=4OF_mesgSxg
 -
-  quote: "The people can always be brought to the bidding of the leaders. That is easy. All you have to do is tell them they are being attacked, and denounce the pacifists for lack of patriotism, and exposing the country to greater danger."
+  quote: |
+    The people can always be brought to the bidding of the leaders. That is easy. All you have to do is tell them they are being attacked, and denounce the pacifists for lack of patriotism, and exposing the country to greater danger.
   who: Hermann Göring
   who-url: http://en.wikipedia.org/wiki/Hermann_Göring
   source: Nuremburg proceedings
   source-url: http://www.snopes.com/quotes/goering.asp
   date: 1946-04-18
 -
-  quote: "Dealing with failure is easy: Work hard to improve. Success is also easy to handle: You've solved the wrong problem. Work hard to improve."
+  quote: |
+    "Dealing with failure is easy: Work hard to improve. Success is also easy to handle: You've solved the wrong problem. Work hard to improve."
   who: Alan J. Perlis
   who-url: http://www.cs.cmu.edu/afs/cs.cmu.edu/misc/mosaic/common/omega/Web/csd/perlis.html
   source: Epigrams on Programming
@@ -39,7 +43,7 @@
   quote: "Conspiracy is optimistic."
   who: Steve Jobs
   who-url: http://www.apple.com/pr/bios/jobs.html
-  source: "Steve Jobs: The Next Insanely Great Thing, Wired 4.02, Feburary 1996"
+  source: "Steve Jobs: The Next Insanely Great Thing, Wired 4.02"
   source-url: http://www.wired.com/wired/archive/4.02/jobs.html
   date: 1996-02
 -
@@ -49,7 +53,7 @@
     Unfortunately, that's too rare a commodity. A lot of people in our industry haven't had very diverse experiences. So they don't have enough dots to connect, and they end up with very linear solutions without a broad perspective on the problem. The broader one's understanding of the human experience, the better design we will have.
   who: Steve Jobs
   who-url: http://www.apple.com/pr/bios/jobs.html
-  source: "Steve Jobs: The Next Insanely Great Thing, Wired 4.02, Feburary 1996"
+  source: "Steve Jobs: The Next Insanely Great Thing, Wired 4.02"
   source-url: http://www.wired.com/wired/archive/4.02/jobs.html
   date: 1996-02
 -
@@ -106,7 +110,7 @@
   quote: "We are already disappearing up our own brainstems."
   who: Geoffrey Miller
   who-url: http://www.unm.edu/~psych/faculty/lg_gmiller.html
-  source: The Edge Annual Question — 2006
+  source: The Edge Annual Question
   source-url: http://www.edge.org/q2006/q06_print.html#miller
   date: 2006
 -
@@ -132,7 +136,8 @@
   quote: "My definition of a free society is a society where it is safe to be unpopular."
   who: Adlai Stevenson II
   who-url: http://www.adlaitoday.org/
-  source: Detroit campaign speech, 1952
+  source: Detroit campaign speech
+  date: 1952
 -
   quote: "If you are able to state a problem, it can be solved."
   who: Edwin H. Land
@@ -250,11 +255,45 @@
 -
   quote: "The amount of energy needed to refute bullshit is an order of magnitude bigger than to produce it."
   who: Alberto Brandolini
-  source: Twitter, 11 Jan 2013
+  source: Twitter
   source-url: https://twitter.com/ziobrando/status/289635060758507521
+  date: 2013-01-11
+  tags: [bullshit]
 -
   quote: "Zorg goed voor onze stad en voor elkaar."
   who: Eberhard van der Laan
   who-url: https://nl.wikipedia.org/wiki/Eberhard_van_der_Laan
-  source: Letter to Amsterdammers, 18 Sep 2017
+  source: Letter to Amsterdammers
   source-url: https://nl.wikipedia.org/wiki/Eberhard_van_der_Laan
+  date: 2017-09-18
+  tags: [amsterdam]
+-
+  quote: |
+    I arise in the morning torn between a desire to improve (or save) the world and a desire to enjoy (or savor) the world.  This makes it hard to plan the day.
+  who: E. B. White
+  source-url: http://www.nytimes.com/books/97/08/03/lifetimes/white-notes.html
+  tags: [feature, me]
+-
+  quote: |
+    This volume does not aspire to the name of an autobiography.
+    It relates a variety of isolated circumstances in which I have taken part…
+  who: Charles Babbage
+  source: Passages from the Life of a Philosopher
+  source-url: https://www.goodreads.com/book/show/2627810-passages-from-the-life-of-a-philosopher
+  date: 1864
+  tags: [feature, autobiography]
+-
+  quote: |
+    Broad, wholesome, charitable views of men and things cannot be acquired by vegetating in one little corner of the earth all one's lifetime.
+  who: Mark Twain
+  source: The Innocents Abroad/Roughing It
+  source-url: https://www.goodreads.com/book/show/307844
+  tags: [feature, travel]
+-
+  quote: |
+    I hate to think that all my current experiences will someday become stories with no point.
+  who: Bill Watterson
+  source: Calvin and Hobbes
+  source-url: http://www.gocomics.com/calvinandhobbes/1995/05/25/
+  date: 1995-05-25
+  tags: [feature, writing]

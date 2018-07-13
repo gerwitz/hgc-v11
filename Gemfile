@@ -12,6 +12,10 @@ gem 'builder'
 
 gem 'middleman-search', git: 'https://github.com/Notificare/middleman-search.git'
 
+# allows for imprecise dates in quotes, events
+gem 'edtf'
+gem 'edtf-humanize'
+
 # for Travis deployment
 gem 's3_website'
 

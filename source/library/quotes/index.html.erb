@@ -1,22 +1,13 @@
 ---
 title: Commonplaces
 ---
-<%# see data/quotes.yaml for contents %>
+<%# See data/quotes.yaml for contents. %>
 
 <section>
   <%
     quotes = data.quotes
     quotes.each do |q|
   %>
-    <blockquote>
-      <%= Tilt['markdown'].new {q.quote}.render %><%# will wrap in P %>
-      <footer>
-        <%= "#{q.who}" if q.who %><%= ", " if q.who && q.source %>
-        <% if q.source %>
-          <cite><%= escape_html(q.source) %></cite>
-        <% end %>
-        <%#= ", #{q.date}" if q.date %>
-      </footer>
-    </blockquote>
+  <%= partial('quote', object: q) %>
   <% end %>
 </section>

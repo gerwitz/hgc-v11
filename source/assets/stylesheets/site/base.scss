@@ -12,7 +12,7 @@ body {
 }
 
 a {
-  text-decoration:underline;
+  text-decoration: underline;
   color: inherit;
   transition: color 0.5s 0;
 }
@@ -95,4 +95,37 @@ img.float-right {
   margin: 0;
   margin-right: 0.5rem;
   float: right;
+}
+
+figure.quote {
+  margin: 0;
+
+  blockquote {
+    font-style:italic;
+
+    &:before {
+    content: "“";
+    font-size: 4em;
+    text-indent: -.6em;
+    margin-top: .15em;
+    float: left;
+    }
+  }
+  figcaption {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: smaller;
+
+    &:before {
+      content: "–";
+      float: left;
+      font-size: 1.5em;
+      text-indent: -1.3em;
+      font-weight: bold;
+      // margin-top:-.1em;
+    }
+  }
 }
