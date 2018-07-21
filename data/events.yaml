@@ -405,14 +405,14 @@
   text:
     Finalized divorce
 -
-  date: 2002-07 #14
+  date: 2002-07 #22
   type: home
   geo: [38.330187, -90.806966] # 338 Wild Turkey Ln, Robertsville
   text:
     Moved to friend's "spare" house (after selling mine)
     # Andrew Hoog
 -
-  date: 2002-10
+  date: 2002-10 #26
   type: home
   geo: [38.632606, -90.197337] # 703 N 13th St
   text:
