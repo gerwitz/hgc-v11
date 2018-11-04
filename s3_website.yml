@@ -3,6 +3,7 @@ site: build
 redirects:
   feed/microblog.rss: /notes/feed.rss
   feed/writing.rss: /writing/feed.rss
+  library/records/: /history/records/
 
 s3_bucket: hans.gerwitz.com
 s3_endpoint: eu-west-1
