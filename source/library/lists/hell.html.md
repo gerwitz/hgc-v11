@@ -13,7 +13,7 @@ subtitle: We all have our own special Hell
 ## Second
 
 - Umbrella-wielders that take all the room under an awning
-- Those who insist on being in front at a stoplight, but are slow to move onward
+- Aggressive slowpokes: Those who insist on being in front at a stoplight, but are slow to move onward
 
 ## Third
 
@@ -32,6 +32,8 @@ subtitle: We all have our own special Hell
 
 ## Sixth
 
+- People who don't vote
+
 ## Seventh
 
 - Drivers who threaten vulnerable roadway users
@@ -39,8 +41,9 @@ subtitle: We all have our own special Hell
 
 ## Eigth
 
-- People who empower Donald Trump
+- Roger Severino
+- Members of the Westboro Baptist Church
 
 ## Ninth
 
-- Members of the Westboro Baptist Church
+- The men who will trade the United States federation and its role in global peace and justice for personal gain or religious spite (Mitch McConnell, Orin Hatch, et al)
