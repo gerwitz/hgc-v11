@@ -304,3 +304,11 @@
   source: The Motto Book
   date: 1907
   tags: [communication]
+-
+  quote: |
+    I judge you unfortunate because you have never been unfortunate; you have passed through life without an antagonist; no one will know what you can do, not even yourself.
+  who: Lucius Annasus Seneca
+  source: De Providentia
+  source-url: https://en.wikipedia.org/wiki/De_Providentia
+  date: 64
+  tags: [stoicism, character, life]
