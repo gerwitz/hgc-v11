@@ -2094,3 +2094,43 @@
       nights: 1
       geo: [41.87973,-87.63314] # W Loop
       title: Chicago
+-
+  tripit: 224713795
+  date: 2018-07 #07
+  nights: 9
+  modes: [air]
+  geo: [47.60739,-122.33363] # W
+  title:
+    Seattle for work and storage sorting # with Shannon
+-
+  tripit: 231171535
+  date: 2018-08 # 22
+  nights: 1
+  modes: [rail]
+  geo: [52.5153811,6.0954878] # De Librije
+  title:
+    Zwolle for anniversary dinner # with Shannon
+-
+  tripit: 229957741
+  date: 2018-08 # 26
+  nights: 5
+  modes: [air]
+  geo: [13.0008998,77.5723711] # Sheraton
+  title:
+    Bangelore for work
+-
+  tripit: 235987553
+  date: 2018-10 # 27
+  nights: 3
+  modes: [air]
+  geo: [50.080086,14.4224653] # ICON Hotel
+  title:
+    Prague for Firebase Summit # with Shannon
+-
+  tripit: 225153205
+  date: 2018-11 # 21
+  nights: 4
+  modes: [air]
+  geo: [43.7736808,11.2552349] # Palazzo Niccolini al Duomo
+  title:
+    Florence thanksgiving # with Shannon, Bobby, Allison, et al

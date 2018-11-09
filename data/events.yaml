@@ -450,11 +450,11 @@
   text:
     Started dating Shannon 😍
 -
-  date: 2007
+  date: 2007-08 #27
   type: car
   text:
     Bought 2006 Mazda Miata
-    # black, "Selene"
+    # black, "Selene", for $23k
 -
   date: 2008-06
   type: home
@@ -500,12 +500,6 @@
   text:
     Moved to Amsterdam, for two year stint with frog
 -
-  date: 2013-01
-  type: home
-  geo: [52.390381, 4.883940] # Nova Zemblastraat 12-A
-  text:
-    Moved to Spaarndammerbuurt
--
   date: 2013-02
   type: life
   text:
@@ -523,6 +517,12 @@
     Registered The Artificial with Shannon
     # as technique to get Dutch residency with Shannon
 -
+  date: 2013-05 #01
+  type: home
+  geo: [52.390381, 4.883940] # Nova Zemblastraat 12-A
+  text:
+    Moved to Spaarndammerbuurt
+-
   date: 2013-06
   type: work
   geo: [52.366023, 4.890183] # Herengract 477
@@ -530,7 +530,7 @@
     Started working at AKQA
     # as freelance strategist
 -
-  date: 2013-10
+  date: 2013-10 #01
   type: home
   geo: [52.385756, 4.886770] # Prinseneiland 79-M
   text:
@@ -570,3 +570,13 @@
   type: life
   text:
     Fog moved in
+-
+  date: 2018-06 #18
+  type: work
+  text:
+    Announced end of The Artificial studio
+-
+  date: 2018-08 #01
+  type: work
+  text:
+    Started at Philips
