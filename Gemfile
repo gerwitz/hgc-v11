@@ -2,7 +2,7 @@
 # the following line to use "https"
 source 'http://rubygems.org'
 
-gem "middleman", "~>4.0"
+gem "middleman", "~>4.2"
 
 # bloggity-blog
 gem 'middleman-blog'
