@@ -1,6 +1,6 @@
 sudo: false
 language: ruby
-rvm: 2.3.4 # pre-installed
+rvm: 2.5.3
 cache: bundler
 script:
 - NO_CONTRACTS=true bundle exec middleman build --no-clean
