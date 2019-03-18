@@ -5,7 +5,7 @@ slug: it-s-normal-now-to-ask
 category: microblog
 tags:
 ---
-It's normal, now to ask to what degree the “leader of the free world” is publishing crass, ignorant, or hateful messages each day.
+It's normal, now to ask to what degree the “leader of the free world” is publishing crass, ignorant, or hateful messages each day. #notnormal
 
 https://www.vanityfair.com/news/2019/03/trump-spirals-on-twitter-as-presidency-reaches-crisis-point-john-mccain-saturday-night-live
 
