@@ -8,7 +8,7 @@ tags:
 - history
 ---
 
-_Updated January 2017_
+_Updated February 2019_
 
 It's inevitable that we carve up geography to group people. Political borders are usually the result of negotiations between land-hungry powers, or politicians seeking to tweak group distribution.
 
@@ -44,7 +44,7 @@ Dirk Brockmann got a lot of attention mapping [areas of mobility](http://rocs.no
 Neil Freeman has drawn [fifty states of equal population](http://fakeisthenewreal.org/reform/).
 
 ![EPA ecoregions](04-29-mapping/ecoregions.png)
-I wouldn't be a proud citizen of [Cascadia](http://www.cascadianow.org/about-cascadia/) if I didn't include [ecoregions](http://www.epa.gov/wed/pages/ecoregions/na_eco.htm#Level%20I).
+I wouldn't be a proud citizen of [Cascadia](http://www.cascadianow.org/about-cascadia/) if I didn't include [ecoregions](https://www.epa.gov/eco-research/ecoregions).
 
 ![Constellations](04-29-mapping/constellations.png)
 With a [midnight mapping of star constellations](http://www.ifweassume.com/2013/01/mapping-constellations.html) to Earth's surface, Jim Davenport also finds a Cascadia in Corona Borealis.
@@ -73,3 +73,9 @@ Alasdair Rae and Garrett Nelson studied [commuter patterns](http://www.sheffield
 
 ![California](04-29-mapping/california.jpg)
 Rob Beschizza shows us what 8 states of [populations equal to California](http://boingboing.net/2017/03/02/america-divided-into-states-th.html) would look like.
+
+![Connected](04-29-mapping/connected.png)
+Emily Badger and Quoctrung Bui of the New York Times use [clusters of social connection](https://www.nytimes.com/interactive/2018/09/19/upshot/facebook-county-friendships.html) and find that state lines are strong boundaries.
+
+![Watersheds](04-29-mapping/watersheds.png)
+Robert Szucs [colored watersheds](https://www.reddit.com/r/MapPorn/comments/589sh9/requested_rivers_basins_of_the_us_in_rainbow/), which implies divisions but is suitably chaotic in the Great Basin.
